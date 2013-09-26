@@ -1,0 +1,97 @@
+<Levels>
+
+  <!-- 1 4-->
+  <Level name="Soldier First Class"		xp="0"		sprite="./assets/clips/level/soldier_first_class.png"/>
+  <Level name="Soldier First Class I"		xp="20"		sprite="./assets/clips/level/soldier_first_class.png"/>
+  <Level name="42"				xp="42"		sprite="./assets/clips/level/soldier_first_class.png"/>
+  <Level name="Soldier First Class II"		xp="120"	sprite="./assets/clips/level/soldier_first_class.png"/>
+
+  <!-- 2 -->
+  <Level name="Lance Caporal"			xp="270"	sprite="./assets/clips/level/lance_caporal.png"/>/>
+  <Level name="Lance Caporal I"			xp="480"	sprite="./assets/clips/level/lance_caporal.png"/>/>
+  <Level name="Lance Caporal II"		xp="750"	sprite="./assets/clips/level/lance_caporal.png"/>/>
+
+  <!-- 3 5-->
+  <Level name="Caporal"				xp="1080"	sprite="./assets/clips/level/caporal.png"/>
+  <Level name="Caporal I"			xp="1470"	sprite="./assets/clips/level/caporal.png"/>
+  <Level name="Caporal II"			xp="1920"	sprite="./assets/clips/level/caporal.png"/>
+
+  <!-- 4 -->
+  <Level name="Sergeant"			xp="2430"	sprite="./assets/clips/level/sergeant.png"/>
+  <Level name="Sergeant I"			xp="3000"	sprite="./assets/clips/level/sergeant.png"/>
+  <Level name="Sergeant II"			xp="3650"	sprite="./assets/clips/level/sergeant.png"/>
+
+  <!-- 5 6-->
+  <Level name="Staff Sergeant"			xp="4380"	sprite="./assets/clips/level/staff_sergeant.png"/>
+  <Level name="Staff Sergeant I"		xp="5190"	sprite="./assets/clips/level/staff_sergeant.png"/>
+  <Level name="Staff Sergeant II"		xp="6080"	sprite="./assets/clips/level/staff_sergeant.png"/>
+
+  <!-- 6 -->
+  <Level name="Gunnery Sergeant"		xp="7050"	sprite="./assets/clips/level/gunnery_sergeant.png"/>
+  <Level name="Gunnery Sergeant I"		xp="8100"	sprite="./assets/clips/level/gunnery_sergeant.png"/>
+  <Level name="Gunnery Sergeant II"		xp="9230"	sprite="./assets/clips/level/gunnery_sergeant.png"/>
+
+  <!-- 7 7-->
+  <Level name="Master Sergeant"			xp="10440"	sprite="./assets/clips/level/master_sergeant.png"/>
+  <Level name="Matser Sergent I"		xp="11730"	sprite="./assets/clips/level/master_sergeant.png"/>
+  <Level name="Master Sergent II"		xp="13100"	sprite="./assets/clips/level/master_sergeant.png"/>
+
+  <!-- 8 8-->
+  <Level name="Master Gunnery Sergeant"		xp="14550"	sprite="./assets/clips/level/master_gunnery_sergeant.png"/>
+  <Level name="Master Gunnery Sergeant I"	xp="16080"	sprite="./assets/clips/level/master_gunnery_sergeant.png"/>
+  <Level name="Master Gunnery Sergeant II"	xp="17690"	sprite="./assets/clips/level/master_gunnery_sergeant.png"/>
+
+  <!-- 9 -->
+  <Level name="Second Lieutenant"		xp="19380"	sprite="./assets/clips/level/second_lieutenant.png"/>
+  <Level name="Second Lieutenant I"		xp="21150"	sprite="./assets/clips/level/second_lieutenant.png"/>
+  <Level name="Second Lieutenant II"		xp="23000"	sprite="./assets/clips/level/second_lieutenant.png"/>
+
+  <!-- 10 9-->
+  <Level name="First Lieutenant"		xp="24930"	sprite="./assets/clips/level/first_lieutenant.png"/>
+  <Level name="First Lieutenant I"		xp="26940"	sprite="./assets/clips/level/first_lieutenant.png"/>
+  <Level name="First Lieutenant II"		xp="29030"	sprite="./assets/clips/level/first_lieutenant.png"/>
+
+  <!-- 11 10-->
+  <Level name="Captain"				xp="31240"	sprite="./assets/clips/level/captain.png"/>
+  <Level name="Captain I"			xp="33100"	sprite="./assets/clips/level/captain.png"/>
+  <Level name="Captain II"			xp="36020"	sprite="./assets/clips/level/captain.png"/>
+
+  <!-- 12 -->
+  <Level name="Major"				xp="38490"	sprite="./assets/clips/level/major.png"/>
+  <Level name="Major I"				xp="41280"	sprite="./assets/clips/level/major.png"/>
+  <Level name="Major II"			xp="44090"	sprite="./assets/clips/level/major.png"/>
+
+  <!-- 13 11-->
+  <Level name="Lieutenant Colonel"		xp="47020"	sprite="./assets/clips/level/lieutenant_colonel.png"/>
+  <Level name="Lieutenant Colonel I"		xp="50070"	sprite="./assets/clips/level/lieutenant_colonel.png"/>
+  <Level name="Lieutenant Colonel II"		xp="53240"	sprite="./assets/clips/level/lieutenant_colonel.png"/>
+
+  <!-- 14 -->
+  <Level name="Colonel"				xp="56530"	sprite="./assets/clips/level/colonel.png"/>
+  <Level name="Colonel I"			xp="59940"	sprite="./assets/clips/level/colonel.png"/>
+  <Level name="Colonel II"			xp="63470"	sprite="./assets/clips/level/colonel.png"/>
+
+  <!-- 15 12-->
+  <Level name="Brigadier General"		xp="67120"	sprite="./assets/clips/level/brigadier_general.png"/>
+  <Level name="Brigadier General I"		xp="70890"	sprite="./assets/clips/level/brigadier_general.png"/>
+  <Level name="Brigadier General II"		xp="74780"	sprite="./assets/clips/level/brigadier_general.png"/>
+
+  <!-- 16 -->
+  <Level name="Major General"			xp="78790"	sprite="./assets/clips/level/major_general.png"/>
+  <Level name="Major General I"			xp="82920"	sprite="./assets/clips/level/major_general.png"/>
+  <Level name="Major General II"		xp="87170"	sprite="./assets/clips/level/major_general.png"/>
+
+  <!-- 17 13-->
+  <Level name="Lieutenant General"		xp="91450"	sprite="./assets/clips/level/lieutenant_general.png"/>
+  <Level name="Lieutenant General I"		xp="96030"	sprite="./assets/clips/level/lieutenant_general.png"/>
+  <Level name="Lieutenant General II"		xp="100640"	sprite="./assets/clips/level/lieutenant_general.png"/>
+
+  <!-- 18 14-->
+  <Level name="General"				xp="105370"	sprite="./assets/clips/level/general.png"/>
+  <Level name="General I"			xp="110220"	sprite="./assets/clips/level/general.png"/>
+  <Level name="General II"			xp="115190"	sprite="./assets/clips/level/general.png"/>
+
+  <!-- 19 15-->
+  <Level name="Commander"			xp="120280"	sprite="./assets/clips/level/commander.png"/>
+
+</Levels>

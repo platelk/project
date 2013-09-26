@@ -1,0 +1,21 @@
+<exo>
+  <name>Ave cesar</name>
+  <subject>
+    faire un programme qui reproduit l'algorithme de cryptage de cesar
+    la rotation s'effectue uniquement sur les lettre minuscule et majuscule
+    ex: salut ---> vdoxw
+    a la fin de chaque affichage mettre un retour a la ligne
+  </subject>
+  <credit>55</credit>
+  <achievement>
+    <name>les romains c'est mes copain</name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_8_file</output_file>
+    <params>
+      <param>salut</param>
+      <param>lololol</param>
+      <param>bande de tek1</param>
+    </params>
+  </test>
+</exo>

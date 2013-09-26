@@ -1,0 +1,294 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2709706119/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2709706119.dir/build.make CMakeFiles/cmTryCompileExec2709706119.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2709706119.dir/TestEndianess.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2709706119.dir/TestEndianess.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2709706119
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2709706119.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2709706119.dir/TestEndianess.c.o  -o cmTryCompileExec2709706119 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files soundcard.h exist failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3213053571/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3213053571.dir/build.make CMakeFiles/cmTryCompileExec3213053571.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3213053571.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec3213053571.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: fatal error: soundcard.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3213053571.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3213053571/fast] Error 2
+
+Source:
+/* */
+#include <soundcard.h>
+
+
+int main(){return 0;}
+
+Determining if files machine/soundcard.h exist failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2268806481/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2268806481.dir/build.make CMakeFiles/cmTryCompileExec2268806481.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2268806481.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2268806481.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:31: fatal error: machine/soundcard.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2268806481.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2268806481/fast] Error 2
+
+Source:
+/* */
+#include <machine/soundcard.h>
+
+
+int main(){return 0;}
+
+Determining if files libkern/OSAtomic.h exist failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2995578351/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2995578351.dir/build.make CMakeFiles/cmTryCompileExec2995578351.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2995578351.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2995578351.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:30: fatal error: libkern/OSAtomic.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2995578351.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2995578351/fast] Error 2
+
+Source:
+/* */
+#include <libkern/OSAtomic.h>
+
+
+int main(){return 0;}
+
+Determining if the function getexecname exists failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3838835791/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3838835791.dir/build.make CMakeFiles/cmTryCompileExec3838835791.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3838835791.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=getexecname   -o CMakeFiles/cmTryCompileExec3838835791.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3838835791
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3838835791.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=getexecname    CMakeFiles/cmTryCompileExec3838835791.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3838835791 -rdynamic 
+CMakeFiles/cmTryCompileExec3838835791.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `getexecname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3838835791] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3838835791/fast] Error 2
+
+
+Performing C SOURCE FILE Test ALLEGRO_HAVE_PROCFS_ARGCV failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2960364741/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2960364741.dir/build.make CMakeFiles/cmTryCompileExec2960364741.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2960364741.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DALLEGRO_HAVE_PROCFS_ARGCV   -o CMakeFiles/cmTryCompileExec2960364741.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:4:25: error: storage size of 'psinfo' isn't known
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:4:25: warning: unused variable 'psinfo' [-Wunused-variable]
+make[1]: *** [CMakeFiles/cmTryCompileExec2960364741.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2960364741/fast] Error 2
+
+Source file was:
+
+    #include <sys/procfs.h>
+    int main(void) {
+        struct prpsinfo psinfo;
+        psinfo.pr_argc = 0;
+        return 0;
+    }
+Performing C SOURCE FILE Test ALLEGRO_HAVE_SV_PROCFS_H failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3332284885/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3332284885.dir/build.make CMakeFiles/cmTryCompileExec3332284885.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3332284885.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DALLEGRO_HAVE_SV_PROCFS_H   -o CMakeFiles/cmTryCompileExec3332284885.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:5:25: error: storage size of 'psinfo' isn't known
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:6:18: error: 'PIOCPSINFO' undeclared (first use in this function)
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:6:18: note: each undeclared identifier is reported only once for each function it appears in
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:5:25: warning: unused variable 'psinfo' [-Wunused-variable]
+make[1]: *** [CMakeFiles/cmTryCompileExec3332284885.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3332284885/fast] Error 2
+
+Source file was:
+
+    #include <sys/procfs.h>
+    #include <sys/ioctl.h>
+    int main(void) {
+        struct prpsinfo psinfo;
+        ioctl(0, PIOCPSINFO, &psinfo);
+        return 0;
+    }
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2422283050/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2422283050.dir/build.make CMakeFiles/cmTryCompileExec2422283050.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2422283050.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2422283050.dir/CheckSymbolExists.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2422283050
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2422283050.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2422283050.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2422283050 -rdynamic 
+CMakeFiles/cmTryCompileExec2422283050.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2422283050] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2422283050/fast] Error 2
+
+File /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3429715593/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3429715593.dir/build.make CMakeFiles/cmTryCompileExec3429715593.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3429715593.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3429715593.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3429715593
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3429715593.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3429715593.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3429715593 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3429715593] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3429715593/fast] Error 2
+
+
+Determining if the include file X11/extensions/xf86vmode.h exists failed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2681820341/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2681820341.dir/build.make CMakeFiles/cmTryCompileExec2681820341.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2681820341.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2681820341.dir/CheckIncludeFile.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+In file included from /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:0:
+/usr/include/X11/extensions/xf86vmode.h:127:5: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:128:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:129:5: error: unknown type name 'Window'
+/usr/include/X11/extensions/xf86vmode.h:132:5: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:133:5: error: unknown type name 'Time'
+/usr/include/X11/extensions/xf86vmode.h:150:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:151:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:156:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:157:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:162:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:163:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:166:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:167:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:173:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:174:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:180:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:181:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:187:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:188:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:193:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:194:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:199:1: error: unknown type name 'Status'
+/usr/include/X11/extensions/xf86vmode.h:200:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:205:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:206:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:211:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:212:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:217:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:218:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:223:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:224:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:229:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:230:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:236:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:237:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:243:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:244:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:252:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:253:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:258:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:259:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:264:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:265:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:273:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:274:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:282:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:283:5: error: unknown type name 'Display'
+/usr/include/X11/extensions/xf86vmode.h:288:1: error: unknown type name 'Bool'
+/usr/include/X11/extensions/xf86vmode.h:289:5: error: unknown type name 'Display'
+make[1]: *** [CMakeFiles/cmTryCompileExec2681820341.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2681820341/fast] Error 2
+
+

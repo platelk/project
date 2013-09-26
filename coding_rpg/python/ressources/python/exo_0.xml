@@ -1,0 +1,28 @@
+<exo>
+  <name>boucle</name>
+  <subject>
+    ploplpoplplpoo
+    lplplcdpockldpokvsdovfv
+    vfkvofkvfokvfovkk kvofkvofkv
+    kckovfkovk    vkvofkvofo
+  </subject>
+  <credit>10</credit>
+  <achievement>
+    <name>kikou</name>
+    <name>kikou*</name>
+    <name>kikou**</name>
+    <name>kikou***</name>
+    <name>kikou****</name>
+  </achievement>
+  <test>
+    <output_file>./resources/python/exo_0_file</output_file>
+    <params>
+      <param>lol</param>
+      <param>lol</param>
+      <param>lol</param>
+      <param>lol</param>
+      <param>lol</param>
+      <param>lol</param>
+    </params>
+  </test>
+</exo>

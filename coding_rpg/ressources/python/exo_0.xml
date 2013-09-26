@@ -1,0 +1,21 @@
+<exo>
+  <name>boucle</name>
+  <subject>
+    Affiche une suite de nombre de 0 a 10.
+    chaque nombre sera suivi d'un \n
+    ex:
+    0
+    1
+    ...
+    10
+  </subject>
+  <credit>10</credit>
+  <achievement>
+    <name></name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_0_file</output_file>
+    <params>
+    </params>
+  </test>
+</exo>

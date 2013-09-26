@@ -1,0 +1,25 @@
+<Persos>
+
+  <Perso name="mario"		 level="1"/>
+  <Perso name="sonic"		 level="1"/>
+  <Perso name="darunia"		 level="1"/>
+  <Perso name="sacboy"		 level="1"/>
+
+  <Perso name="gohan"		 level="8"/>
+
+  <Perso name="shrek"		 level="14"/>
+
+  <Perso name="pit"		 level="20"/>
+  <Perso name="peach"		 level="23"/>
+
+  <Perso name="link"		 level="29"/>
+  <Perso name="superman"	 level="32"/>
+
+  <Perso name="megaman"		 level="38"/>
+  <Perso name="naruto"		 level="44"/>
+
+  <Perso name="lucario"		 level="50"/>
+  <Perso name="kratos"		 level="53"/>
+  <Perso name="falco"		 level="56"/>
+
+</Persos>

@@ -1,0 +1,15 @@
+nom: triangle
+sujet: ecrire une fonction qui prend en parametre un entier et qui 
+       affiche un triangle de cette taille suivis d'un "\n"
+       ex: nbr = 6
+       	   sortie :
+	   X
+	   XX
+	   XXX
+	   XXXX
+	   XXXXX
+	   XXXXXX
+       	   	    	    	 
+				 
+
+				 

@@ -1,0 +1,33 @@
+<Achievments>
+
+  <!-- Players Killed Achievements (8) -->
+  <Achievment name="Killer Missing"		desc="Just a noob achievment"			players="1"	sprite="./assests/clips/achievments/01_killer_missing.png"/>
+  <Achievment name="Good Trigger"		desc="You have just kill 20 players"		players="5"	sprite="./assests/clips/achievments/02_good_trigger.png"/>
+  <Achievment name="Recidivist"			desc="Yeah, you like that"			players="10"	sprite="./assests/clips/achievments/03_recidivist.png"/>
+  <Achievment name="Digger Skull"		desc="Yes, we can !"				players="15"	sprite="./assests/clips/achievments/04_digger_skull.png"/>
+  <Achievment name="Butcher of Noobs"		desc="Oh no, they have killed Kenny !"		players="20"	sprite="./assests/clips/achievments/05_butcher_of_noobs.png"/>
+  <Achievment name="Serial Killer"		desc="Dexter ?!"				players="30"	sprite="./assests/clips/achievments/06_serial_killer"/>
+  <Achievment name="Public Ennemy"		desc="You are in the TV !!"			players="40"	sprite="./assests/clips/achievments/07_public_ennemy"/>
+  <Achievment name="Chuck Norris"		desc="Nobody can be Chuck Norris... Sorry"	players="50"	sprite="./assests/clips/achievments/08_chuck_norris"/>
+
+  <!-- Games Played Achievements (8) -->
+  <Achievment name="Newbie"			desc="You can do this ! LOL"			games="1"	sprite="./assests/clips/achievments/01_newbie.png"/>
+  <Achievment name="Noob"			desc="Stop flood and Play !"			games="5"	sprite="./assests/clips/achievments/02_noob.png"/>
+  <Achievment name="Padawan"			desc="Yeah, is great"				games="10"	sprite="./assests/clips/achievments/03_padawan.png"/>
+  <Achievment name="Gamer"			desc="You a Gamer ?! Nooooo"			games="15"	sprite="./assests/clips/achievments/04_gamer.png"/>
+  <Achievment name="Game Master"		desc="Respect"					games="20"	sprite="./assests/clips/achievments/05_game_master.png"/>
+  <Achievment name="No-Life"			desc="Hey guy slowly"				games="30"	sprite="./assests/clips/achievments/06_no_life.png"/>
+  <Achievment name="Marwin"			desc="Don't Panic"				games="40"	sprite="./assests/clips/achievments/07_marwin.png"/>
+  <Achievment name="Get a life !"		desc="Just go outdoor for see the sun ;)"	games="50"	sprite="./assests/clips/achievments/08_back_to_life.png"/>
+
+  <!-- Damages Achievements (8) -->
+  <Achievment name="Kirikou"			desc="Where are you ??"				damages="1"	sprite="./assests/clips/achievments/01_kirikou.png"/>
+  <Achievment name="Vagabond"			desc="Please take a shower"			damages="100"	sprite="./assests/clips/achievments/02_vagabond.png"/>
+  <Achievment name="Bomber"			desc="Great... but []"				damages="300"	sprite="./assests/clips/achievments/03_bomber.png"/>
+  <Achievment name="Chain Bombing"		desc="Level Up !"				damages="700"	sprite="./assests/clips/achievments/04_chain_bombing.png"/>
+  <Achievment name="Destroyer"			desc="Please stop"				damages="1100"	sprite="./assests/clips/achievments/05_destroyer.png"/>
+  <Achievment name="Crazy Bomber"		desc="I'm affraid :("				damages="2000"	sprite="./assests/clips/achievments/06_crazy_bomber.png"/>
+  <Achievment name="Amazing"			desc="Just terrific !"				damages="3200"	sprite="./assests/clips/achievments/07_amazing.png"/>
+  <Achievment name="Insane"			desc="Don't kill meeeeeee.."			damages="5000"	sprite="./assests/clips/achievments/08_insane.png"/>
+
+</Achievments>

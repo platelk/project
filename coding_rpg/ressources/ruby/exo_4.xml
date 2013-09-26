@@ -1,0 +1,21 @@
+<exo>
+  <name>Sorting</name>
+  <subject>
+    additionner deux vecteur en dimension 3 passer en parametre
+    l'affichage du vecteur resultat se fera sous la forme :
+    5 9 8
+    si un 7eme parametre a ete donner cela sera le coefficient multiplicateur du vecteur resultat
+  </subject>
+  <credit>30</credit>
+  <achievement>
+    <name>Mathator</name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_4_file</output_file>
+    <params>
+      <param>5 2 3 6 7 8</param>
+      <param>2 1 4 5 7 1</param>
+      <param>8 8 8 6 5 4 9</param>
+    </params>
+  </test>
+</exo>

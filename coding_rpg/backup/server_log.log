@@ -1,0 +1,55 @@
+============================================
+	Sat, 01 Dec 2012 11:25:39 +0000
+============================================
+-- Client-server connection ...
+-- Client-server conntection success
+
+New user : platel_k
+
+Request of [1;34m['8', 'platel_k'][1;30m
+[1;32mSuccess[1;30m
+return : [][1;30m
+
+Request of [1;34m['7', 'platel_k', ''][1;30m
+[1;32mSuccess[1;30m
+return : [Check exo0:	Success
+][1;30m
+
+Request of [1;34m['8', 'platel_k'][1;30m
+[1;32mSuccess[1;30m
+return : [][1;30m
+
+Request of [1;34m['7', 'platel_k', ''][1;30m
+[1;32mSuccess[1;30m
+return : [Check exo1:	Success
+][1;30m
+
+Request of [1;34m['8', 'platel_k'][1;30m
+[1;32mSuccess[1;30m
+return : [salut::plop42::lolilol Plop][1;30m
+
+Request of [1;34m['7', 'platel_k', ''][1;30m
+[1;31m-> Error : invalide parameter [][1;30m
+
+Request of [1;34m['8', 'platel_k'][1;30m
+[1;32mSuccess[1;30m
+return : [salut::plop42::lolilol Plop][1;30m
+
+Request of [1;34m['7', 'platel_k', ''][1;30m
+[1;31m-> Error : invalide parameter [][1;30m
+
+Request of [1;34m['8', 'platel_k'][1;30m
+[1;32mSuccess[1;30m
+return : [salut::plop42::lolilol Plop][1;30m
+
+Request of [1;34m['7', 'platel_k', ''][1;30m
+[1;31m-> Error : invalide parameter [][1;30m
+
+Request of [1;34m['9', 'platel_k'][1;30m
+[1;32mSuccess[1;30m
+return : [nom: cesar
+sujet: faire un programme qui reproduit l'algorithme de cryptage de cesar
+       la rotation s'effectue uniquement sur les lettre minuscule et majuscule
+       ex: salut ---> vdoxw
+
+       a la fin de chaque affichage mettre un retour a la ligne][1;30m

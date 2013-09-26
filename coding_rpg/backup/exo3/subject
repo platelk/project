@@ -1,0 +1,8 @@
+nom: vector
+sujet: faire un programme  d'addition de matrice 2x2
+       en parametre les matrices:
+       matrice.py 2 2 2 2 1 1 1 1
+       pour une [[2,2],[2,2]] et [[1,1],[1,1]]
+       le retour doit se faire sous cette forme:
+       3 3
+       3 3

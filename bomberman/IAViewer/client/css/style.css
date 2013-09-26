@@ -1,0 +1,15 @@
+
+body
+{
+    background-color: #EBEBEB;
+}
+
+canvas
+{
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    background: url("../img/grass.png");
+    border: solid 1px #999999;    
+}
+

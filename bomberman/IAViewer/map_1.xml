@@ -1,0 +1,5 @@
+<Map id="1" name="map">
+  <Content serial="GO:5:decor:1:6:122:{CP:7:colider:27:{i:1:1;i:2:30;i:2:30;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:39:{i:2:30;i:2:30;i:1:0;d:1:0;d:1:0;d:1:0}}|GO:5:decor:1:6:123:{CP:7:colider:27:{i:1:1;i:2:30;i:2:30;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:40:{i:3:200;i:2:20;i:1:0;d:1:0;d:1:0;d:1:0}}|"/>
+  <Players serial="GO:4:game:1:5:60:{CP:8:end_game:2:{};CP:7:network:2:{};CP:10:new_player:2:{}}|GO:5:decor:1:6:126:{CP:7:colider:29:{i:1:1;i:3:300;i:3:300;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:41:{i:3:300;i:3:300;i:1:0;d:1:0;d:1:0;d:1:0}}|"/>
+</Map>
+

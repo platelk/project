@@ -1,0 +1,10 @@
+nom: tri
+sujet: ecrire un programme qui prend en parametre une liste de nombre,
+       le but de l'exercice est de trier ces nombres. 
+       	
+       ex: tri.py 25 10 5 ---> 5 10 25
+       avec un "\n" en fin de ligne
+       	   	    	    	 
+				 
+
+				 

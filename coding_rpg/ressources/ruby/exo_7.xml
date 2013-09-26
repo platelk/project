@@ -1,0 +1,16 @@
+<exo>
+  <name>Petit lapin</name>
+  <subject>
+    afficher les 25 premieres valeurs de la suite de fibonacci
+    a chaque fin de nombre mettre un retour a la ligne
+  </subject>
+  <credit>50</credit>
+  <achievement>
+    <name>mon lapinou</name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_7_file</output_file>
+    <params>
+    </params>
+  </test>
+</exo>

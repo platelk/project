@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Viewer</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+  <!-- =============================  navbar  ================================ -->
+  <div class="navbar" id="home">
+    <div class="container">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">IA Viewer</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">home</a></li>
+              <li><a href="#documentation">documentation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==============================  main   ================================ -->
+  <!-- ==============================  main/toolbox  ========================= -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="span2">
+	<h3><i class="icon-th"></i> Tools <small>select</small></h3>
+	<hr />	
+	<div class="hero-unit">
+	  <div class="btn-toolbar">
+	    <div class="btn-group btn-group-vertical">
+	      <button type="button" class="btn" id="addObject"><i class="icon-edit"></i></button>
+	      <button type="button" class="btn" id="addCollider"><i class="icon-pencil"></i></button>
+	      <button type="button" class="btn" id="selectObject"><i class="icon-hand-right"></i></button>
+	      <button type="button" class="btn" id="moveObject"><i class="icon-move"></i></button>
+	      <button type="button" class="btn" id="addPlayer"><i class="icon-user"></i></button>
+	      <button type="button" class="btn" id="movePlayer"><i class="icon-road"></i></button>
+	      <button type="button" class="btn" id="throwBomb"><i class="icon-share-alt"></i></button>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <!-- ===========================  main/config-tool  =========================-->
+      <div class="span4">
+	<h3><i class="icon-th"></i> Tools <small>config</small></h3>
+	<hr />
+	<div class="hero-unit">
+	  <div id="config-tool">
+	  </div>
+	</div>
+      </div>
+      <!-- ===========================  main/map  =========================-->
+      <div class="span12">
+	<h3><i class="icon-th"></i> Map <small>viewer</small></h3>
+	<hr />
+	<div class="hero-unit">
+	  <canvas id="map" width="800" height="500" class="img-rounded">
+	    <p>
+	      <h2>please update your browser!</h2>
+	      <a href="http://www.google.fr/intl/fr/chrome/browser/">
+		<img src="http://www.google.fr/intl/fr/chrome/assets/common/images/chrome_logo_2x.png" alt="chrome-logo" />
+	      </a>
+	    </p>
+	  </canvas>
+	  <button type="button" class="btn btn-inverse" id="nextStep">Next step</button>
+	</div>
+      </div>
+    <!-- ============================== console ============================== -->
+      <div class="span5">
+	<h3><i class="icon-th"></i> Console <small>logs</small></h3>
+	<hr />
+	<div class="hero-unit">
+	  <textarea id="console" rows="20" cols="1"></textarea>
+	</div>
+      </div>
+    </div>
+    <hr />
+    <h1  id="documentation"><i class="icon-th"></i> Documentation <small><a href="#home"><i class="icon-chevron-up"></i></a></small></h1>
+    <div class="span11 offset6">
+      <p>
+	<div class="alert alert-info">
+	  pour proposer une nouvelle IA pour le bomberman vous devez implementer deux fonctions se trouvant dans "UserInterface.py":
+	</div>
+	<dl class="dl-horizontal">
+	  <dt>def	init(actions):</dt>
+	  <dd>cette fonction vous permet d'initialiser cette
+	    variable que vous utiliserez dans votre IA
+	    dans le cas ou vous souhaitez initiliser une 
+	    varible nome "increment" a 0 vous devez faire 
+	    comme cela:
+	    actions.storeData("increment", 0)
+	  </dd>
+	</dl>
+	<dl class="dl-horizontal">
+	  <dt>def	run(actions):</dt>
+	  <dd>
+	    cette fonction est le coeur de votre IA. l'API
+	    python fonctionne par appel en boucle de la 
+	    fonction "run". lorsque vous programmez celle ci 
+	    imaginez vous a la place d'un joueur qui se 
+	    prepare a faire une action. dans cette fonction
+	    vous ne DEVEZ PAS FAIRE DE BOUCLE INFINI. en 
+	    effet le comportement du bot se doit de respecter
+	    plusieurs regle pour le bon deroulement d'une
+	    partie:
+	    <ul>
+	      <li>utilisez uniquement les fonctions cite plus bas</li>
+	      <li>ne cherchez pas a corompre le core du moteur vous n'influrez pas sur le server cependant votre IA sera probablement inutile</li>
+	    </ul>
+	  </dd>
+	</dl>
+
+	<div class="alert alert-info">
+	  L'API python du bomberman met a votre disposition un certain nombre d'outils vous aidant
+	  au scripting d'un bot.
+	  vous diposez des fonctions suivantes:
+	</div>
+	<ol>
+	  <li>def noCollision(self, pos)</li>
+	  <li>def pointIsInCircle(self, point, pos_circle, radius)</li>
+	  <li>def dirToPos(self, pos, direction)</li>
+	  <li>def range(self, pos1, pos2)</li>
+	  <li>def headFor(self, pos1, pos2)</li>
+	  <li>def getMyPos(self)</li>
+	  <li>def getMyDir(self)</li>
+	  <li>def getNbrBombs(self)</li>
+	  <li>def getPossibleDirections(self)</li>
+	  <li>def move(self, direction)</li>
+	  <li>def throwBomb(self, direction, strength)</li>
+	  <li>def addTimer(self, name, action_type, timeout, callback, args)</li>
+	  <li>def deleteTimer(self, name)</li>
+	  <li>def getTimeout(self, name)</li>
+	  <li>def inExplosion(self, pos, radius)</li>
+	  <li>def timeBeforeExplosion(self, pos, radius)</li>
+	  <li>def storeData(self, name, value)</li>
+	  <li>def getData(self, name)</li>
+	</ol>
+	<div class="alert alert-info">
+	  explications:
+	</div>
+	<dl class="dl-horizontal">
+	  <dt>1</dt>
+	  <dd>cette methode vous permet de savoir si il y a une collision avec un object aux 
+	    positions pos = (x, y, z).
+	    RETURN: True si il n'y a pas de collision False sinon
+	  </dd>
+	  
+	  <dt>2</dt>
+	  <dd>
+	    vous renseigne si un point(pos = (x, y, z)) est a l'interieur d'un cercle de 
+	    position pos_circle(x, y, z) et de rayon radius
+	    RETURN: True si dedans False sinon
+	  </dd>
+	  <dt>3</dt>
+	  <dd>
+	    converti une direction en position en tenant compte de votre vitesse de 
+	    deplacement. elle prend en parametre votre position de depart(pos = (x, y, z))
+	    et la directions souhaite (direction determine grace a la methode  
+	    getPossibleDirections ou headFor)
+	    RETURN: la nouvelle position (x, y, z) 
+	  </dd>
+	  <dt>4</dt>
+	  <dd>
+	    calcul la distance euclidienne entre deux point: pos1 = (x, y, z) et pos2 (x, y, z)
+	    RETURN: la distance, valeur toujour positive, peut etre de type float
+	  </dd>
+	  <dt>5</dt>
+	  <dd>
+	    calcul a partir des cordonnees actuel du bot la meilleur direction a prendre pour 
+	    se diriger vers le point pos2 en partant du point pos1
+	    RETURN: la directions a prendre (en degre)
+	  </dd>
+	  <dt>6</dt>
+	  <dd>
+	    RETURN: la position actuel du bot (x, y, z)
+	  </dd>
+	  <dt>7</dt>
+	  <dd>
+	    RETURN: la direction actuel du bot (x, y, z) sous forme d'un vecteur
+	  </dd>
+	  <dt>8</dt>
+	  <dd>RETURN: le nombre de bombes que le bot possede sous la forme d'un entier strictement
+	    superieur a zero
+	  </dd>
+	  <dt>9</dt>
+	  <dd>
+	    pour simplifier les deplacement du bot l'API met a votre disposition un certain
+	    nombre de direction que le bot peut prendre. ces directions s'exprime en degre et
+	    sont au nombre de 12.
+	    RETURN: une liste de directions
+	  </dd>
+	  <dt>10</dt>
+	  <dd>permet au bot de bouger en direction de celle passe en parametre (direction)
+	    RETURN: ne renvoit rien. dans le cas ou le deplacement et impossible suite a une
+	    collision, aucune action n'est effectue.
+	  </dd>
+	  <dt>11</dt>
+	  <dd>
+	    lance une bombe dans la direction passe en parametre d'une force (strength)
+	    RETURN: ne renvoit rien, si vous ne disposez pas de suffisamment de bombe a votre
+	    disposition, rien ne se passe.
+	  </dd>
+	  <dt>12</dt>
+	  <dd>cree un nouveau timer dans lequel vous pouvez renseigner un certain nombre de 
+	    caracteristique:
+	    <ul>
+	      <li>son nom(name) de type string</li>
+	      <li>le type de son action:</li>
+	      <ul>
+		<li>"each" =  pour que l'action s'effectue a chaque frame de la boucle de jeu durant le temps precise</li>
+		<li>"after" = pour que l'action s'effectue a la fin du temps precisede type string</li>
+	      </ul>
+	      <li>le dure de vie du timer (timeout) en seconde de type float ou int</li>
+	      <li>la fonction a appeler (callbacl) peut importe le prototype</li>
+	      <li>les arguments a passer a cette fonction</li>
+	    </ul>
+	    RETURN: rien, dans le cas ou un timer du meme nom existe deja, l'ancien sera ecrase
+	  </dd>
+	  <dt>13</dt>
+	  <dd>suprime le timer du nom (name) passe en parametre
+	    RETURN: rien.
+	  </dd>
+	  
+	  <dt>14</dt>
+	  <dd>
+	    RETURN: la dure de vie restante du timer de nom name
+	  </dd>
+	  
+	  <dt>15</dt>
+	  <dd>permet de savoir si une bombe se trouve a la position pos dans un rayon d'influence
+	    radius
+	    RETURN: True si une bombe s'y trouve False sinon
+	  </dd>
+	  
+	  <dt>16</dt>
+	  <dd>RETURN: le temps avant que la premiere bombe se trouvant a la position pos et le 
+	    rayon radius n'explose temps en seconde peut etre de type float
+	  </dd>
+
+	  <dt>17</dt>
+	  <dd>
+	    permet de stoquer une information(value) suivant un nom(name). cela permet la 
+	    sauvegarde d'un etat entre deux frame de jeu. si la valeur existe deja elle sera ecrase
+	    RETURN: rien
+	  </dd>
+
+	  <dt>18</dt>
+	  <dd>RETURN: la valeur se trouvant dans la zone de stoquage au nom(name). si elle n'est pas
+	    presente, None sera renvoye
+	  </dd>
+
+	  <h2>Timers</h2>
+	  <div class="alert alert-info">
+	    les timers permettent la mise en place d'inteligence atificielle plus pousse. en effet suivant
+	    le resultat d'une action, un timer peut etre place pour avoir des repercussions a chaque frame
+	    suivante ou a la fin du temps souhaite.<br />
+	    il existe deux type de timer:
+	  </div>
+	  <ol>
+	    <li>
+	      <h5>le "after"</h5>
+	      <pre>
+     timer                                                                    timeout
+|_____v_____________________________________________________________________________v________|> temps
+      ===============================================================================
+      |     |     |     |     |     |     |     |     |     |     |     |     |     | <---- une frame
+      	    	  	      	    	  	      	    	  	      	    ^
+										  action(callback)
+											    </pre>
+	      <div class="alert">
+		l'action est effectue a la fin du temps renseigne lors de sa creation
+	      </div>
+	    </li>
+	    <li>
+   <h5>le "each"</h5>
+<pre>
+     timer                                                                    timeout
+|_____v_____________________________________________________________________________v________|> temps
+      ===============================================================================
+      |     |     |     |     |     |     |     |     |     |     |     |     |     | <---- une frame
+      ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^
+      act   act   act   act   act   act   act   act   act   act   act   act   act   act	    	  	      	    
+</pre>
+	      <div class="alert">
+		l'action est effectue a avant chaque nouvelle frame de jeu.
+	      </div>
+
+
+	      <h2>Data Storage</h2>
+	      <div class="alert alert-info">
+	      Pour garder une memoire sur plus d'une frame de jeu vous pouvez utiliser une petite zone de stoquage
+	      qui y est destine.
+	      pour cela vous pouvez ajouter une valeur corespondant a un nom, puis la recuperer a partir de son nom.
+	      voir (17), (18)</div>
+	      
+    </div>
+  </div>
+  <!-- ================================  javacript  ===============================-->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/render.js"></script>  
+  <script type="text/javascript" src="js/map.js"></script>  
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

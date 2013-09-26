@@ -1,0 +1,18 @@
+<exo>
+  <name>Vive noel</name>
+  <subject>
+    Realiser le sapin demander en projet lors de la semaine 1 de piscine en prenant en parametre le nombre d'etages qu'il prend.
+  </subject>
+  <credit>40</credit>
+  <achievement>
+    <name>j'aime noel</name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_6_file</output_file>
+    <params>
+      <param>2</param>
+      <param>3</param>
+      <param>0</param>
+    </params>
+  </test>
+</exo>

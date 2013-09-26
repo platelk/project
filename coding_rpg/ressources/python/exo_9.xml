@@ -1,0 +1,22 @@
+<exo>
+  <name>Tu sais compter ?</name>
+  <subject>
+    ecrire une fonction qui prend en parametre une chaine de caractere,
+    le but de l'exercice est d'afficher la frequence d'apparition des lettres:
+    comme ceci:
+    "lolilol" --> l:4:o:2:i:1
+    attention, "\n" en fin de chaine
+  </subject>
+  <credit>60</credit>
+  <achievement>
+    <name>j'ai passer la primaire !</name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_9_file</output_file>
+    <params>
+      <param>salut</param>
+      <param>lololol</param>
+      <param>bande de tek1</param>
+    </params>
+  </test>
+</exo>

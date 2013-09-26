@@ -1,0 +1,10 @@
+nom: repetition
+sujet: ecrire une fonction qui prend en parametre une chaine de caractere,
+       le but de l'exercice est d'afficher la frequence d'apparition des lettres:
+       comme ceci:
+       "lolilol" --> l:4:o:2:i:1
+       attention, "\n" en fin de chaine
+              	   	    	    	 
+				 
+
+				 

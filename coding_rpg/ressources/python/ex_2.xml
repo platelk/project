@@ -1,0 +1,17 @@
+<exo>
+  <name>Tri</name>
+  <subject>
+    trier par ordre ascii une suite de charactere passe en parametre.
+    l'affichage se fera sous la forme:
+    8 4 5 A E a b$
+  </subject>
+  <credit>10</credit>
+  <achievement>
+    <name></name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_0_file</output_file>
+    <params>
+    </params>
+  </test>
+</exo>

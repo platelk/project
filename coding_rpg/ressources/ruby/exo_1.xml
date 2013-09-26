@@ -1,0 +1,21 @@
+<exo>
+  <name>bienvenue au primaire</name>
+  <subject>
+    affiche la table de multiplication du nombre passer en parametre sous la forme:
+    1 * NB = RES
+    2 * NB = RES
+    ...
+    10 * NB = RES
+  </subject>
+  <credit>20</credit>
+  <achievement>
+  </achievement>
+  <test>
+    <output_file>./resources/python/exo_1_file</output_file>
+    <params>
+      <param>5</param>
+      <param>121</param>
+      <param>83</param>
+    </params>
+  </test>
+</exo>

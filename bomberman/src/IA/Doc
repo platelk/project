@@ -1,0 +1,165 @@
+ ________________________________
+|       IA Scripting             |
+|________________________________|
+
+pour proposer une nouvelle IA pour le bomberman vous devez implementer deux fonctions
+ se trouvant dans "UserInterface.py":
+	    - def	init(actions):	cette fonction vous permet d'initialiser cette
+	      				variable que vous utiliserez dans votre IA
+					dans le cas ou vous souhaitez initiliser une 
+					varible nome "increment" a 0 vous devez faire 
+					comme cela:
+					      actions.storeData("increment", 0)
+	    - def	run(actions):	cette fonction est le coeur de votre IA. l'API
+	      				python fonctionne par appel en boucle de la 
+					fonction "run". lorsque vous programmez celle ci 
+					imaginez vous a la place d'un joueur qui se 
+					prepare a faire une action. dans cette fonction
+					vous ne DEVEZ PAS FAIRE DE BOUCLE INFINI. en 
+					effet le comportement du bot se doit de respecter
+					plusieurs regle pour le bon deroulement d'une
+					partie:
+						- utilisez uniquement les fonctions cite 
+						  plus bas
+						- ne cherchez pas a corompre le core du 
+						  moteur vous n'influrez pas sur le server
+						  cependant votre IA sera probablement 
+						  inutile
+
+L'API python du bomberman met a votre disposition un certain nombre d'outils vous aidant
+au scripting d'un bot.
+vous diposez des fonctions suivantes:
+    (1)---def noCollision(self, pos):
+    (2)---def pointIsInCircle(self, point, pos_circle, radius):
+    (3)---def dirToPos(self, pos, direction):
+    (4)---def range(self, pos1, pos2):
+    (5)---def headFor(self, pos1, pos2):
+    (6)---def getMyPos(self):
+    (7)---def getMyDir(self):
+    (8)---def getNbrBombs(self):
+    (9)---def getPossibleDirections(self):
+    (10)--def move(self, direction):
+    (11)--def throwBomb(self, direction, strength):
+    (12)--def addTimer(self, name, action_type, timeout, callback, args):
+    (13)--def deleteTimer(self, name):
+    (14)--def getTimeout(self, name):
+    (15)--def inExplosion(self, pos, radius):
+    (16)--def timeBeforeExplosion(self, pos, radius):
+    (17)--def storeData(self, name, value):
+    (18)--def getData(self, name):
+explications:
+(1)	cette methode vous permet de savoir si il y a une collision avec un object aux 
+	positions pos = (x, y, z).
+	RETURN: True si il n'y a pas de collision False sinon
+
+(2)	vous renseigne si un point(pos = (x, y, z)) est a l'interieur d'un cercle de 
+	position pos_circle(x, y, z) et de rayon radius
+	RETURN: True si dedans False sinon
+
+(3)	converti une direction en position en tenant compte de votre vitesse de 
+	deplacement. elle prend en parametre votre position de depart(pos = (x, y, z))
+	et la directions souhaite (direction determine grace a la methode  
+	getPossibleDirections ou headFor)
+	RETURN: la nouvelle position (x, y, z) 
+
+(4)	calcul la distance euclidienne entre deux point: pos1 = (x, y, z) et pos2 (x, y, z)
+	RETURN: la distance, valeur toujour positive, peut etre de type float
+
+(5)	calcul a partir des cordonnees actuel du bot la meilleur direction a prendre pour 
+	se diriger vers le point pos2 en partant du point pos1
+	RETURN: la directions a prendre (en degre)
+
+(6)	RETURN: la position actuel du bot (x, y, z)
+
+(7)	RETURN: la direction actuel du bot (x, y, z) sous forme d'un vecteur
+
+(8)	RETURN: le nombre de bombes que le bot possede sous la forme d'un entier strictement
+	superieur a zero
+
+(9)	pour simplifier les deplacement du bot l'API met a votre disposition un certain
+	nombre de direction que le bot peut prendre. ces directions s'exprime en degre et
+	sont au nombre de 12.
+	RETURN: une liste de directions
+
+(10)	permet au bot de bouger en direction de celle passe en parametre (direction)
+	RETURN: ne renvoit rien. dans le cas ou le deplacement et impossible suite a une
+	collision, aucune action n'est effectue.
+
+(11)	lance une bombe dans la direction passe en parametre d'une force (strength)
+	RETURN: ne renvoit rien, si vous ne disposez pas de suffisamment de bombe a votre
+	disposition, rien ne se passe.
+
+(12)	cree un nouveau timer dans lequel vous pouvez renseigner un certain nombre de 
+	caracteristique:
+		- son nom(name) de type string
+		- le type de son action:
+		  "each" ---> pour que l'action s'effectue a chaque frame de la boucle de
+		  	      jeu durant le temps precise
+		  "after" --> pour que l'action s'effectue a la fin du temps precise
+		  de type string
+		- le dure de vie du timer (timeout) en seconde de type float ou int
+		- la fonction a appeler (callbacl) peut importe le prototype
+		- les arguments a passer a cette fonction
+	RETURN: rien, dans le cas ou un timer du meme nom existe deja, l'ancien sera ecrase
+
+(13)	suprime le timer du nom (name) passe en parametre
+	RETURN: rien.
+
+(14)	RETURN: la dure de vie restante du timer de nom name
+
+(15)	permet de savoir si une bombe se trouve a la position pos dans un rayon d'influence
+	radius
+	RETURN: True si une bombe s'y trouve False sinon
+
+(16)	RETURN: le temps avant que la premiere bombe se trouvant a la position pos et le 
+	rayon radius n'explose temps en seconde peut etre de type float
+
+(17)	permet de stoquer une information(value) suivant un nom(name). cela permet la 
+	sauvegarde d'un etat entre deux frame de jeu. si la valeur existe deja elle sera ecrase
+	RETURN: rien
+
+(18)	RETURN: la valeur se trouvant dans la zone de stoquage au nom(name). si elle n'est pas
+	presente, None sera renvoye
+
+
+
+ ________________________________
+|       TIMER                    |
+|________________________________|
+
+les timers permettent la mise en place d'inteligence atificielle plus pousse. en effet suivant
+le resultat d'une action, un timer peut etre place pour avoir des repercussions a chaque frame
+suivante ou a la fin du temps souhaite.
+
+il existe deux type de timer:
+   -le "after":
+
+     timer                                                                    timeout
+|_____v_____________________________________________________________________________v________|> temps
+      ===============================================================================
+      |     |     |     |     |     |     |     |     |     |     |     |     |     | <---- une frame
+      	    	  	      	    	  	      	    	  	      	    ^
+										  action(callback)
+l'action est effectue a la fin du temps renseigne lors de sa creation
+   -le "each":
+
+     timer                                                                    timeout
+|_____v_____________________________________________________________________________v________|> temps
+      ===============================================================================
+      |     |     |     |     |     |     |     |     |     |     |     |     |     | <---- une frame
+      ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^     ^
+      act   act   act   act   act   act   act   act   act   act   act   act   act   act	    	  	      	    
+
+l'action est effectue a avant chaque nouvelle frame de jeu.
+
+
+ ________________________________
+|       DATA STORAGE             |
+|________________________________|
+
+Pour garder une memoire sur plus d'une frame de jeu vous pouvez utiliser une petite zone de stoquage
+qui y est destine.
+pour cela vous pouvez ajouter une valeur corespondant a un nom, puis la recuperer a partir de son nom.
+voir (17), (18)
+
+

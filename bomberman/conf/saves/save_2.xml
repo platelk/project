@@ -1,0 +1,8 @@
+<Save name="save" id="2">
+	<Content serial="GO:4:game:1:5:60:{CP:8:end_game:2:{};CP:7:network:2:{};CP:10:new_player:2:{}}|GO:5:decor:1:6:126:{CP:7:colider:29:{i:1:1;i:3:300;i:3:300;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:41:{i:3:300;i:3:300;i:1:0;d:1:0;d:1:0;d:1:0}}|"/>
+	<Player_1 serial="GO:4:game:1:5:60:{CP:8:end_game:2:{};CP:7:network:2:{};CP:10:new_player:2:{}}|GO:5:decor:1:6:126:{CP:7:colider:29:{i:1:1;i:3:300;i:3:300;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:41:{i:3:300;i:3:300;i:1:0;d:1:0;d:1:0;d:1:0}}|"/>
+	<Player_2 serial="GO:4:game:1:5:60:{CP:8:end_game:2:{};CP:7:network:2:{};CP:10:new_player:2:{}}|GO:5:decor:1:6:126:{CP:7:colider:29:{i:1:1;i:3:300;i:3:300;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:41:{i:3:300;i:3:300;i:1:0;d:1:0;d:1:0;d:1:0}}|"/>
+	<IA serial="GO:4:game:1:5:60:{CP:8:end_game:2:{};CP:7:network:2:{};CP:10:new_player:2:{}}|GO:5:decor:1:6:126:{CP:7:colider:29:{i:1:1;i:3:300;i:3:300;i:1:1};CP:4:life:7:{i:1:1};CP:8:position:41:{i:3:300;i:3:300;i:1:0;d:1:0;d:1:0;d:1:0}}|"/>
+	<IA serial="PUUUUUUUTEEEEEE"/>
+	<Screen img=""/>
+</Save>

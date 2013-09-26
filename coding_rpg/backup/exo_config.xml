@@ -1,0 +1,7 @@
+<config>
+  <python>
+    <path>exo0</path>
+    <path>exo1</path>
+    <path>exo2</path>
+  </python>
+</config>

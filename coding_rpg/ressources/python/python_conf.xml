@@ -1,0 +1,30 @@
+<python>
+  <tips>
+    <tip>
+      <name>it's me ... Mario</name>
+      <content>
+	Pour afficher des informations il y a plusieur moyen.
+	soit -> "mon nom est " + str(name) + "mon age est " + str(age) + ".";
+	soit -> "mon nom est {} mon age est {}.".format(name, age);
+      </content>
+      <cost>50</cost>
+    </tip>
+    <tip>
+      <name>2.21 GigoWatt !!!</name>
+      <content>
+	pour boucler en python vous pouvez utiliser le mot clef 'while'
+	donc dans le cas d'une liste nous avons :
+	while i sup len(my_list):
+	#mon code... avec my_list[i] pour le contenu au Ieme membre
+	print(my_list[i])
+	mais il y a un une autre facon ...
+	-- for i in my_list:
+	# avec i le contenu de my_list. la boucle va determiner la fin toute seule
+	print(i)
+      </content>
+      <cost>100</cost>
+    </tip>
+  </tips>
+  <lessons>
+  </lessons>
+</python>

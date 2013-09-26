@@ -1,0 +1,10 @@
+<Profile name="BENOIT" id="1">
+	<Experience value="753"/>
+	<GamesPlayed value="1"/>
+	<PlayersKilled value="2"/>
+	<Damages value="460"/>
+	<Player_1 up="25" down="18" right="3" left="16" spell="20" throw="24"/>
+	<Player_2 up="73" down="74" right="72" left="71" spell="58" throw="26"/>
+	<Ambiance value="20"/>
+	<Effect value="50"/>
+</Profile>

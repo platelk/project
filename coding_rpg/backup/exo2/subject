@@ -1,0 +1,6 @@
+nom: cesar
+sujet: faire un programme qui reproduit l'algorithme de cryptage de cesar
+       la rotation s'effectue uniquement sur les lettre minuscule et majuscule
+       ex: salut ---> vdoxw
+
+       a la fin de chaque affichage mettre un retour a la ligne

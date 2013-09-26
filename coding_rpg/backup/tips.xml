@@ -1,0 +1,32 @@
+<tips>
+  <tip>
+    <name>Une nouvelle list</name>
+    <cost>40</cost>
+    <content>
+      faite >> for votre_var in votre_list:
+			print(votre_var)
+	pour afficher tout les elements de votre liste sans se preocuper de la fin
+    </content>
+  </tip>
+  <tip>
+    <name>parcour de chaine</name>
+  <cost>70</cost>
+  <content>
+    faites votre_list[-1] pour acceder au derniere element d'un tableau ou d'une list
+  </content>
+  </tip>
+  <tip>
+    <name>Mega parcours</name>
+    <cost>80</cost>
+    <content>
+      ce tips est inutiles
+    </content>
+  </tip>
+  <tip>
+    <name>Ultime parcours</name>
+    <cost>110</cost>
+    <content>
+      pour recuperer du 3eme au 5eme d'une tableau ou list faite votre_list[3:5]
+    </content>
+  </tip>
+</tips>

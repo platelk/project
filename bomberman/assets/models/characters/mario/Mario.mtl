@@ -1,0 +1,75 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+newmtl FitMarioBodyB-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl FitMarioBodyB_SP-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl FitMarioBodyA-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl EyeYellowL-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl EyeYellowR-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl FitMarioEyeDmg-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl EyeL-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl EyeR-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl kage-fx
+Ka  0.4 0.4 0.4
+Kd  1.0 1.0 1.0
+Ks  0.3 0.3 0.3
+d  1.0
+Ns  10.0
+illum 2
+#
+# EOF

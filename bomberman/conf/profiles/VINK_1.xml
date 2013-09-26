@@ -1,0 +1,10 @@
+<Profile name="VINK" id="1">
+	<Experience value="13395"/>
+	<GamesPlayed value="15"/>
+	<PlayersKilled value="91"/>
+	<Damages value="4290"/>
+	<Player_1 up="73" down="74" right="72" left="71" spell="17" throw="57"/>
+	<Player_2 up="73" down="74" right="72" left="71" spell="58" throw="26"/>
+	<Ambiance value="20"/>
+	<Effect value="50"/>
+</Profile>

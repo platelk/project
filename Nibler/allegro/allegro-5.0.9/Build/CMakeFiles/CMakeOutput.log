@@ -1,0 +1,1106 @@
+The system is: Linux - 3.8.4-1-ARCH - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/2.8.10.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/2.8.10.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec918373758/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec918373758.dir/build.make CMakeFiles/cmTryCompileExec918373758.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec918373758.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec918373758.dir/testCCompiler.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec918373758
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec918373758.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec918373758.dir/testCCompiler.c.o  -o cmTryCompileExec918373758 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec220284160/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec220284160.dir/build.make CMakeFiles/cmTryCompileExec220284160.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec220284160
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec220284160.dir/link.txt --verbose=1
+/usr/bin/cc       -v CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec220284160 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /build/src/gcc-4.7.2/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --enable-libstdcxx-time --enable-gnu-unique-object --enable-linker-build-id --with-ppl --enable-cloog-backend=isl --disable-ppl-version-check --disable-cloog-version-check --enable-lto --enable-gold --enable-ld=default --enable-plugin --with-plugin-ld=ld.gold --with-linker-hash-style=gnu --enable-multilib --disable-libssp --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-checking=release
+Thread model: posix
+gcc version 4.7.2 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec220284160' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/collect2 --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec220284160 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crtn.o
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec220284160/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec220284160.dir/build.make CMakeFiles/cmTryCompileExec220284160.dir/build]
+  ignore line: [make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec220284160]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec220284160.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc       -v CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec220284160 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /build/src/gcc-4.7.2/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --enable-libstdcxx-time --enable-gnu-unique-object --enable-linker-build-id --with-ppl --enable-cloog-backend=isl --disable-ppl-version-check --disable-cloog-version-check --enable-lto --enable-gold --enable-ld=default --enable-plugin --with-plugin-ld=ld.gold --with-linker-hash-style=gnu --enable-multilib --disable-libssp --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec220284160' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/collect2 --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec220284160 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec220284160] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec220284160.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2]
+  collapse dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2;/usr/lib;/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec762218830/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec762218830.dir/build.make CMakeFiles/cmTryCompileExec762218830.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec762218830.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec762218830.dir/testCXXCompiler.cxx.o -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec762218830
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec762218830.dir/link.txt --verbose=1
+/usr/bin/c++          CMakeFiles/cmTryCompileExec762218830.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec762218830 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2108718827/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2108718827.dir/build.make CMakeFiles/cmTryCompileExec2108718827.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2108718827
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2108718827.dir/link.txt --verbose=1
+/usr/bin/c++        -v CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2108718827 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /build/src/gcc-4.7.2/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --enable-libstdcxx-time --enable-gnu-unique-object --enable-linker-build-id --with-ppl --enable-cloog-backend=isl --disable-ppl-version-check --disable-cloog-version-check --enable-lto --enable-gold --enable-ld=default --enable-plugin --with-plugin-ld=ld.gold --with-linker-hash-style=gnu --enable-multilib --disable-libssp --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-checking=release
+Thread model: posix
+gcc version 4.7.2 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2108718827' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/collect2 --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2108718827 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crtn.o
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2108718827/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2108718827.dir/build.make CMakeFiles/cmTryCompileExec2108718827.dir/build]
+  ignore line: [make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2108718827]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2108718827.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2108718827 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /build/src/gcc-4.7.2/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --enable-libstdcxx-time --enable-gnu-unique-object --enable-linker-build-id --with-ppl --enable-cloog-backend=isl --disable-ppl-version-check --disable-cloog-version-check --enable-lto --enable-gold --enable-ld=default --enable-plugin --with-plugin-ld=ld.gold --with-linker-hash-style=gnu --enable-multilib --disable-libssp --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2108718827' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/collect2 --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2108718827 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2108718827] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec2108718827.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2]
+  collapse dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.2;/usr/lib;/lib]
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2896180984/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2896180984.dir/build.make CMakeFiles/cmTryCompileExec2896180984.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2896180984.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2896180984.dir/CheckIncludeFile.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2896180984
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2896180984.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2896180984.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2896180984 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1703212478/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1703212478.dir/build.make CMakeFiles/cmTryCompileExec1703212478.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1703212478.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1703212478.dir/CheckIncludeFile.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1703212478
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1703212478.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1703212478.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1703212478 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2476591090/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2476591090.dir/build.make CMakeFiles/cmTryCompileExec2476591090.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2476591090.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2476591090.dir/CheckIncludeFile.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2476591090
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2476591090.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2476591090.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2476591090 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3976916360/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3976916360.dir/build.make CMakeFiles/cmTryCompileExec3976916360.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3976916360.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec3976916360.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec3976916360
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3976916360.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec3976916360.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec3976916360 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files dirent.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1531362942/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1531362942.dir/build.make CMakeFiles/cmTryCompileExec1531362942.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1531362942.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1531362942.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1531362942
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1531362942.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1531362942.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1531362942 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1628902688/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1628902688.dir/build.make CMakeFiles/cmTryCompileExec1628902688.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1628902688.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1628902688.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1628902688
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1628902688.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1628902688.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1628902688 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/types.h;linux/joystick.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1617314242/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1617314242.dir/build.make CMakeFiles/cmTryCompileExec1617314242.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1617314242.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1617314242.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1617314242
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1617314242.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1617314242.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1617314242 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdbool.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1774414384/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1774414384.dir/build.make CMakeFiles/cmTryCompileExec1774414384.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1774414384.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1774414384.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1774414384
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1774414384.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1774414384.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1774414384 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdint.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2106493647/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2106493647.dir/build.make CMakeFiles/cmTryCompileExec2106493647.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2106493647.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2106493647.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2106493647
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2106493647.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2106493647.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2106493647 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/io.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec982396491/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec982396491.dir/build.make CMakeFiles/cmTryCompileExec982396491.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec982396491.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec982396491.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec982396491
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec982396491.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec982396491.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec982396491 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/stat.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec41146280/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec41146280.dir/build.make CMakeFiles/cmTryCompileExec41146280.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec41146280.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec41146280.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec41146280
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec41146280.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec41146280.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec41146280 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2495747892/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2495747892.dir/build.make CMakeFiles/cmTryCompileExec2495747892.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2495747892.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2495747892.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2495747892
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2495747892.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2495747892.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2495747892 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files time.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3767156553/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3767156553.dir/build.make CMakeFiles/cmTryCompileExec3767156553.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3767156553.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec3767156553.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3767156553
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3767156553.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec3767156553.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3767156553 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/utsname.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec313864135/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec313864135.dir/build.make CMakeFiles/cmTryCompileExec313864135.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec313864135.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec313864135.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec313864135
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec313864135.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec313864135.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec313864135 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/types.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2150726821/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2150726821.dir/build.make CMakeFiles/cmTryCompileExec2150726821.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2150726821.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec2150726821.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2150726821
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2150726821.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec2150726821.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2150726821 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/soundcard.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1927798127/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1927798127.dir/build.make CMakeFiles/cmTryCompileExec1927798127.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1927798127.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1927798127.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1927798127
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1927798127.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1927798127.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1927798127 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files linux/soundcard.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec239784020/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec239784020.dir/build.make CMakeFiles/cmTryCompileExec239784020.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec239784020.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec239784020.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec239784020
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec239784020.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec239784020.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec239784020 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/inotify.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec697916297/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec697916297.dir/build.make CMakeFiles/cmTryCompileExec697916297.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec697916297.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec697916297.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec697916297
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec697916297.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec697916297.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec697916297 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/timerfd.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec449331733/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec449331733.dir/build.make CMakeFiles/cmTryCompileExec449331733.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec449331733.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec449331733.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec449331733
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec449331733.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec449331733.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec449331733 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2511154530/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2511154530.dir/build.make CMakeFiles/cmTryCompileExec2511154530.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2511154530.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=mkstemp   -o CMakeFiles/cmTryCompileExec2511154530.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2511154530
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2511154530.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=mkstemp    CMakeFiles/cmTryCompileExec2511154530.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2511154530 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec989191208/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec989191208.dir/build.make CMakeFiles/cmTryCompileExec989191208.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec989191208.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=mmap   -o CMakeFiles/cmTryCompileExec989191208.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec989191208
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec989191208.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=mmap    CMakeFiles/cmTryCompileExec989191208.dir/CheckFunctionExists.c.o  -o cmTryCompileExec989191208 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mprotect exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1970438065/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1970438065.dir/build.make CMakeFiles/cmTryCompileExec1970438065.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1970438065.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=mprotect   -o CMakeFiles/cmTryCompileExec1970438065.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1970438065
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1970438065.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=mprotect    CMakeFiles/cmTryCompileExec1970438065.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1970438065 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sched_yield exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3809658507/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3809658507.dir/build.make CMakeFiles/cmTryCompileExec3809658507.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3809658507.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=sched_yield   -o CMakeFiles/cmTryCompileExec3809658507.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3809658507
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3809658507.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=sched_yield    CMakeFiles/cmTryCompileExec3809658507.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3809658507 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sysconf exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec180138822/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec180138822.dir/build.make CMakeFiles/cmTryCompileExec180138822.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec180138822.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=sysconf   -o CMakeFiles/cmTryCompileExec180138822.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec180138822
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec180138822.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=sysconf    CMakeFiles/cmTryCompileExec180138822.dir/CheckFunctionExists.c.o  -o cmTryCompileExec180138822 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2062913617/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2062913617.dir/build.make CMakeFiles/cmTryCompileExec2062913617.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2062913617.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=fseeko   -o CMakeFiles/cmTryCompileExec2062913617.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2062913617
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2062913617.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=fseeko    CMakeFiles/cmTryCompileExec2062913617.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2062913617 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function ftello exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1015846178/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1015846178.dir/build.make CMakeFiles/cmTryCompileExec1015846178.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1015846178.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=ftello   -o CMakeFiles/cmTryCompileExec1015846178.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1015846178
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1015846178.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=ftello    CMakeFiles/cmTryCompileExec1015846178.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1015846178 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining size of _Bool passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1105697322/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1105697322.dir/build.make CMakeFiles/cmTryCompileExec1105697322.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1105697322.dir/ALLEGRO_HAVE__BOOL.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1105697322.dir/ALLEGRO_HAVE__BOOL.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CheckTypeSize/ALLEGRO_HAVE__BOOL.c
+Linking C executable cmTryCompileExec1105697322
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1105697322.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1105697322.dir/ALLEGRO_HAVE__BOOL.c.o  -o cmTryCompileExec1105697322 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test ALLEGRO_HAVE_VA_COPY succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1780509419/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1780509419.dir/build.make CMakeFiles/cmTryCompileExec1780509419.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1780509419.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DALLEGRO_HAVE_VA_COPY   -o CMakeFiles/cmTryCompileExec1780509419.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1780509419
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1780509419.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DALLEGRO_HAVE_VA_COPY    CMakeFiles/cmTryCompileExec1780509419.dir/src.c.o  -o cmTryCompileExec1780509419 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <stdarg.h>
+    int main(void) {
+        va_list a, b;
+        va_copy(a, b);
+        return 0;
+    }
+Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec939795156/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec939795156.dir/build.make CMakeFiles/cmTryCompileExec939795156.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec939795156.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec939795156.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec939795156
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec939795156.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec939795156.dir/CheckFunctionExists.c.o  -o cmTryCompileExec939795156 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4289147324/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4289147324.dir/build.make CMakeFiles/cmTryCompileExec4289147324.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4289147324.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec4289147324.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4289147324
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4289147324.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec4289147324.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4289147324 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1474320585/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1474320585.dir/build.make CMakeFiles/cmTryCompileExec1474320585.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1474320585.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1474320585.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1474320585
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1474320585.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1474320585.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1474320585 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec933870994/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec933870994.dir/build.make CMakeFiles/cmTryCompileExec933870994.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec933870994.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec933870994.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec933870994
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec933870994.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec933870994.dir/CheckFunctionExists.c.o  -o cmTryCompileExec933870994 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec339237891/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec339237891.dir/build.make CMakeFiles/cmTryCompileExec339237891.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec339237891.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec339237891.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec339237891
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec339237891.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec339237891.dir/CheckFunctionExists.c.o  -o cmTryCompileExec339237891 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec496733443/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec496733443.dir/build.make CMakeFiles/cmTryCompileExec496733443.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec496733443.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec496733443.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec496733443
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec496733443.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec496733443.dir/CheckFunctionExists.c.o  -o cmTryCompileExec496733443 -rdynamic -lICE 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec328538740/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec328538740.dir/build.make CMakeFiles/cmTryCompileExec328538740.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec328538740.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec328538740.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec328538740
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec328538740.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec328538740.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec328538740 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2301218075/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2301218075.dir/build.make CMakeFiles/cmTryCompileExec2301218075.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2301218075.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2301218075.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2301218075
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2301218075.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2301218075.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2301218075 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XShmQueryExtension exists in the Xext passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3420123204/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3420123204.dir/build.make CMakeFiles/cmTryCompileExec3420123204.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3420123204.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XShmQueryExtension   -o CMakeFiles/cmTryCompileExec3420123204.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3420123204
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3420123204.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XShmQueryExtension    CMakeFiles/cmTryCompileExec3420123204.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3420123204 -rdynamic -lXext -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XcursorImageCreate exists in the Xcursor passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3236219210/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3236219210.dir/build.make CMakeFiles/cmTryCompileExec3236219210.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3236219210.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XcursorImageCreate   -o CMakeFiles/cmTryCompileExec3236219210.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3236219210
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3236219210.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XcursorImageCreate    CMakeFiles/cmTryCompileExec3236219210.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3236219210 -rdynamic -lXcursor -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XF86VidModeQueryExtension exists in the Xxf86vm passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2906092386/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2906092386.dir/build.make CMakeFiles/cmTryCompileExec2906092386.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2906092386.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XF86VidModeQueryExtension   -o CMakeFiles/cmTryCompileExec2906092386.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2906092386
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2906092386.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XF86VidModeQueryExtension    CMakeFiles/cmTryCompileExec2906092386.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2906092386 -rdynamic -lXxf86vm -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file X11/extensions/Xinerama.h exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4036345655/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4036345655.dir/build.make CMakeFiles/cmTryCompileExec4036345655.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4036345655.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec4036345655.dir/CheckIncludeFile.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4036345655
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4036345655.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec4036345655.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4036345655 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XineramaQueryExtension exists in the Xinerama passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2561363322/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2561363322.dir/build.make CMakeFiles/cmTryCompileExec2561363322.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2561363322.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XineramaQueryExtension   -o CMakeFiles/cmTryCompileExec2561363322.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2561363322
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2561363322.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XineramaQueryExtension    CMakeFiles/cmTryCompileExec2561363322.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2561363322 -rdynamic -lXinerama -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file X11/extensions/Xrandr.h exists passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec322608417/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec322608417.dir/build.make CMakeFiles/cmTryCompileExec322608417.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec322608417.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec322608417.dir/CheckIncludeFile.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec322608417
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec322608417.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec322608417.dir/CheckIncludeFile.c.o  -o cmTryCompileExec322608417 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XRRQueryExtension exists in the Xrandr passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2070643811/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2070643811.dir/build.make CMakeFiles/cmTryCompileExec2070643811.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2070643811.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XRRQueryExtension   -o CMakeFiles/cmTryCompileExec2070643811.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2070643811
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2070643811.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XRRQueryExtension    CMakeFiles/cmTryCompileExec2070643811.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2070643811 -rdynamic -lXrandr -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XOpenIM exists in the X11 passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2656395445/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2656395445.dir/build.make CMakeFiles/cmTryCompileExec2656395445.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2656395445.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XOpenIM   -o CMakeFiles/cmTryCompileExec2656395445.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2656395445
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2656395445.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XOpenIM    CMakeFiles/cmTryCompileExec2656395445.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2656395445 -rdynamic -lX11 -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if files X11/xpm.h exist passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1992397037/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1992397037.dir/build.make CMakeFiles/cmTryCompileExec1992397037.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1992397037.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -msse -W -Wall      -o CMakeFiles/cmTryCompileExec1992397037.dir/CheckIncludeFiles.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1992397037
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1992397037.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall       CMakeFiles/cmTryCompileExec1992397037.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1992397037 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XpmCreatePixmapFromData exists in the Xpm passed with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2871874325/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2871874325.dir/build.make CMakeFiles/cmTryCompileExec2871874325.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2871874325.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XpmCreatePixmapFromData   -o CMakeFiles/cmTryCompileExec2871874325.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2871874325
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2871874325.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DCHECK_FUNCTION_EXISTS=XpmCreatePixmapFromData    CMakeFiles/cmTryCompileExec2871874325.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2871874325 -rdynamic -lXpm -lSM -lICE -lX11 -lXext 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test OSS_COMPILES succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3063891699/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3063891699.dir/build.make CMakeFiles/cmTryCompileExec3063891699.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3063891699.dir/src.c.o
+/usr/bin/cc  -DALLEGRO_HAVE_LINUX_SOUNDCARD_H -DALLEGRO_HAVE_SYS_SOUNDCARD_H -msse -W -Wall   -DOSS_COMPILES   -o CMakeFiles/cmTryCompileExec3063891699.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:15:28: warning: unused variable 'abi' [-Wunused-variable]
+Linking C executable cmTryCompileExec3063891699
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3063891699.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DOSS_COMPILES    CMakeFiles/cmTryCompileExec3063891699.dir/src.c.o  -o cmTryCompileExec3063891699 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        #ifdef ALLEGRO_HAVE_SOUNDCARD_H
+        #include <soundcard.h>
+        #endif
+        #ifdef ALLEGRO_HAVE_SYS_SOUNDCARD_H
+        #include <sys/soundcard.h>
+        #endif
+        #ifdef ALLEGRO_HAVE_LINUX_SOUNDCARD_H
+        #include <linux/soundcard.h>
+        #endif
+        #ifdef ALLEGRO_HAVE_MACHINE_SOUNDCARD_H
+        #include <machine/soundcard.h>
+        #endif
+        int main(void) {
+            audio_buf_info abi;
+            return 0;
+        }
+Performing C SOURCE FILE Test PULSEAUDIO_COMPILES succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4006246516/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4006246516.dir/build.make CMakeFiles/cmTryCompileExec4006246516.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4006246516.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DPULSEAUDIO_COMPILES   -o CMakeFiles/cmTryCompileExec4006246516.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:11:34: warning: unused variable 'ss' [-Wunused-variable]
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:10:31: warning: unused variable 'si' [-Wunused-variable]
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:9:29: warning: unused variable 'c' [-Wunused-variable]
+Linking C executable cmTryCompileExec4006246516
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4006246516.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DPULSEAUDIO_COMPILES    CMakeFiles/cmTryCompileExec4006246516.dir/src.c.o  -o cmTryCompileExec4006246516 -rdynamic 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+            #include <pulse/simple.h>
+            #include <pulse/error.h>
+            #include <pulse/introspect.h>
+            #include <pulse/mainloop.h>
+            int main(void)
+            {
+                /* Require pulseaudio 0.9.15 */
+                pa_context *c;
+                pa_sink_info *si;
+                pa_sink_state_t *ss;
+                return 0;
+            }
+Performing C SOURCE FILE Test FLAC_COMPILES succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2879261202/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2879261202.dir/build.make CMakeFiles/cmTryCompileExec2879261202.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2879261202.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DFLAC_COMPILES   -o CMakeFiles/cmTryCompileExec2879261202.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:5:47: warning: unused variable 'status' [-Wunused-variable]
+Linking C executable cmTryCompileExec2879261202
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2879261202.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DFLAC_COMPILES    CMakeFiles/cmTryCompileExec2879261202.dir/src.c.o  -o cmTryCompileExec2879261202 -rdynamic -lFLAC -logg 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+            #include <FLAC/stream_decoder.h>
+            int main(void)
+            {
+                FLAC__StreamDecoderInitStatus status;
+                return 0;
+            }
+Performing C SOURCE FILE Test DUMB_COMPILES succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec678179442/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec678179442.dir/build.make CMakeFiles/cmTryCompileExec678179442.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec678179442.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DDUMB_COMPILES   -o CMakeFiles/cmTryCompileExec678179442.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec678179442
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec678179442.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DDUMB_COMPILES    CMakeFiles/cmTryCompileExec678179442.dir/src.c.o  -o cmTryCompileExec678179442 -rdynamic -ldumb 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+            #include <dumb.h>
+            int main(void)
+            {
+                dumb_register_stdfiles();
+                return 0;
+            }
+Performing C SOURCE FILE Test VORBIS_COMPILES succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2740931273/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2740931273.dir/build.make CMakeFiles/cmTryCompileExec2740931273.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2740931273.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DVORBIS_COMPILES   -o CMakeFiles/cmTryCompileExec2740931273.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c:6:30: warning: variable 'callback' set but not used [-Wunused-but-set-variable]
+Linking C executable cmTryCompileExec2740931273
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2740931273.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DVORBIS_COMPILES    CMakeFiles/cmTryCompileExec2740931273.dir/src.c.o  -o cmTryCompileExec2740931273 -rdynamic -lvorbisfile -lvorbis -logg -lm 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+            #include <vorbis/vorbisfile.h>
+            int main(void)
+            {
+                OggVorbis_File f;
+                ov_callbacks callback;
+                vorbis_info *v = 0;
+                (void)v;
+                ov_info(&f, -1);
+                callback = OV_CALLBACKS_NOCLOSE;
+                return 0;
+            }
+Performing C SOURCE FILE Test PHYSFS_IMPLICIT_ZLIB succeded with the following output:
+Change Dir: /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2381465099/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2381465099.dir/build.make CMakeFiles/cmTryCompileExec2381465099.dir/build
+make[1]: Entering directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2381465099.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall   -DPHYSFS_IMPLICIT_ZLIB   -o CMakeFiles/cmTryCompileExec2381465099.dir/src.c.o   -c /home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2381465099
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2381465099.dir/link.txt --verbose=1
+/usr/bin/cc    -msse -W -Wall   -DPHYSFS_IMPLICIT_ZLIB    CMakeFiles/cmTryCompileExec2381465099.dir/src.c.o  -o cmTryCompileExec2381465099 -rdynamic -lphysfs 
+make[1]: Leaving directory `/home/vink/projet/cpp/Nibler-patel-ozouf/allegro/allegro-5.0.9/Build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+            #include <physfs.h>
+
+            int main(int argc, char **argv)
+            {
+                (void)argc;
+                PHYSFS_init(argv[0]);
+                PHYSFS_deinit();
+                return 0;
+            }

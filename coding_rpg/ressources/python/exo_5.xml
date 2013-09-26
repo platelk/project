@@ -1,0 +1,25 @@
+<exo>
+  <name>
+    Refaire le systeme de globing du shell
+    vous receverez x parametre, le premier contenant une phrase avec n *
+    le reste contenant les mots ou phrase pouvant matcher.
+    vous afficherez les resultats sous la forme :
+    res1$
+    res2$
+    ...
+    resn$
+  </name>
+  <subject>
+  </subject>
+  <credit>35</credit>
+  <achievement>
+    <name></name>
+  </achievement>
+  <test>
+    <output_file>./ressources/python/exo_5_file</output_file>
+    <params>
+      <param>"*llo*" "hello" "pollo" "salut" "llo" "test"</param>
+      <param>"* salut*" "    salut" "lolololsalut*" "* salut*"</param>
+    </params>
+  </test>
+</exo>
