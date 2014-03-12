@@ -1,0 +1,91 @@
+/*
+** inter.c for inter in /home/ozouf_h//rt/src/parse_obj
+** 
+** Made by harold ozouf
+** Login   <ozouf_h@epitech.net>
+** 
+** Started on  Sun Jun  3 07:21:07 2012 harold ozouf
+** Last update Sun Jun  3 09:23:04 2012 harold ozouf
+*/
+
+#include	<stdlib.h>
+#include	"raytracer.h"
+#include	"camera.h"
+#include	"calc.h"
+#include        "utils.h"
+#include        "object.h"
+#include        "moebus.h"
+#include	"detail.h"
+#include	"init_triangle.h"
+
+void	create_vector(double *res, double *pt1, double *pt2)
+{
+  res[0] = pt2[0] - pt1[0];
+  res[1] = pt2[1] - pt1[1];
+  res[2] = pt2[2] - pt1[2];
+}
+
+double	prod_scal(double *u, double *v)
+{
+  return (u[0] * v[0] + u[1] * v[1] + u[2] * v[2]);
+}
+
+void	prod_vect(double *res, double *u, double *v)
+{
+  res[0] = u[1] * v[2] - v[1] * u[2];
+  res[1] = u[2] * v[0] - v[2] * u[0];
+  res[2] = u[0] * v[1] - v[0] * u[1];
+}
+
+int	 inter_triangle(t_camera *camera, t_object *o, t_detail *detail, double *vector)
+{
+  double	a;
+  double	b;
+  double	t;
+  double	u[3];
+  double	v[3];
+  double	w[3];
+  double	delta;
+  double	uv[3];
+  double	uw[3];
+  double	wv[3];
+
+  create_vector(u, ((t_triangle *)o->son)->pt1, ((t_triangle *)o->son)->pt3);
+  create_vector(v, ((t_triangle *)o->son)->pt1, ((t_triangle *)o->son)->pt2);
+  create_vector(w, ((t_triangle *)o->son)->pt1, camera->position);
+  prod_vect(uv, u, v);
+  if (EQUALZERO(prod_scal(uv, vector)))
+    return (EXIT_FAILURE);
+  //  if (EQUALZERO(prod_scal(uv, vector)))
+  prod_vect(wv, w, v);
+  prod_vect(uw, u, w);
+  delta = -prod_scal(uv, vector);
+  a = -prod_scal(wv, vector) / delta;
+  b = -prod_scal(uw, vector) / delta;
+  t = prod_scal(uv, w) / delta;
+  if (a < 0.00001 || a > 1.00001)
+    return (EXIT_FAILURE);
+  if (b < 0.00001 && (a + b) > 1.00001)
+    return (EXIT_FAILURE);
+  /* if (-a > 0.00001 && b > 0.00001 && -(a + b) <= 1.00001) */
+  /*   { */
+      detail->k = t;
+      printf("%f %f %f d =  %f %f\n",uv[0], uv[1], uv[2], delta, t); 
+      printf("k = %f\n", detail->k);
+      detail->object = o;
+      copy_tab(detail->normal, ((t_triangle *)o->son)->n);
+      detail->non_initialize = 1;
+      return (EXIT_SUCCESS);
+    /* } */
+  return (EXIT_FAILURE);
+}
+
+int
+inter_blender(t_camera *camera, t_object *o, t_detail *detail, double *vector)
+{
+  camera = camera;
+  o = o;
+  detail = detail;
+  vector = vector;
+  return (EXIT_FAILURE);
+}

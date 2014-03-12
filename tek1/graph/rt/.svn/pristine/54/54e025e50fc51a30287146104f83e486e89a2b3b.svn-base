@@ -1,0 +1,59 @@
+/*
+** inter_moebius.c for moebuis in /home/vink/projet/graph/rt/src/inter
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Sun May 27 14:18:03 2012 kevin platel
+** Last update Sat Jun  2 04:27:56 2012 kevin platel
+*/
+
+#include	<stdlib.h>
+
+#include	<stdio.h>
+#include	"global.h"
+#include	"moebus.h"
+#include	"camera.h"
+#include	"object.h"
+#include        "utils.h"
+#include        "inter.h"
+#include	"calc.h"
+#include        "objects_neg.h"
+
+int
+inter_moebius(t_camera *camera, t_object *object, t_detail *detail, double *vector)
+{
+  t_line	line;
+  t_couple	out;
+  t_moebius	moebuis;
+  double	u[NB_DIMENSION];
+  double	pos[NB_DIMENSION];
+
+  if (!camera || !object || !detail || !vector)
+    return (EXIT_FAILURE);
+  modif_position(camera->position, object, pos, INVERSE_ROTATION);
+  modif_vector(object->rotation, vector, u, INVERSE_ROTATION);
+  line.point.x = pos[X];
+  line.point.y = pos[Y];
+  line.point.z = pos[Z];
+  line.direction.x = u[X];
+  line.direction.y = u[Y];
+  line.direction.z = u[Z];
+  moebuis.center.x = object->position[X];
+  moebuis.center.y = object->position[Y];
+  moebuis.center.z = object->position[Z];
+  if (object->son == NULL)
+    return (EXIT_FAILURE);
+  moebuis.size.x = ((t_mobius *) object->son)->a;
+  moebuis.size.y = ((t_mobius *) object->son)->b;
+  moebuis.size.z = ((t_mobius *) object->son)->c;
+  if (moebius_cast_get_k(&line, &moebuis, &out) == NULL)
+    return (EXIT_FAILURE);
+  detail->non_initialize = 1;
+  detail->normal[X] = out.normal[X];
+  detail->normal[Y] = out.normal[Y];
+  detail->normal[Z] = out.normal[Z];
+  detail->k = out.a;
+  detail->object = object;
+  return (0);
+}

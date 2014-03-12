@@ -1,0 +1,28 @@
+<window y="1050" x="1680">
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="-45" Y="0" Z="0"/>
+	<rotation X="0" Y="-45" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type="normal">
+	<location X="0" Y="0" Z="-500"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="1"/>
+	<bump_mapping>./texture/heightpave.xpm</bump_mapping>
+	<radius>100</radius>
+	<color>AAAAAA</color>
+      </sphere>
+    </object>
+    <lights>
+	<light type="diffuse">
+	  <location X="-1000" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

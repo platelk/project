@@ -1,0 +1,16 @@
+/*
+** obj_bzero_dim.h for obj_bzero_dim in /home/jordan/Projets/debug_rt/rt/src/obj
+** 
+** Made by jordan vanwalleghem
+** Login   <vanwal_j@epitech.net>
+** 
+** Started on  Sat Jun  2 11:48:14 2012 jordan vanwalleghem
+** Last update Sat Jun  2 11:48:50 2012 jordan vanwalleghem
+*/
+
+#ifndef	__OBJ_BZERO_DIM__
+#define	__OBJ_BZERO_DIM__
+
+void            obj_bzero_dim(double *tab);
+
+#endif

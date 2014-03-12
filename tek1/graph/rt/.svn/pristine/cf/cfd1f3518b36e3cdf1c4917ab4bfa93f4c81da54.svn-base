@@ -1,0 +1,71 @@
+/*
+** get_vector.c for raytracer in /home/leprov_a//depot/rt/src/utils
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Fri Jun  1 00:18:38 2012 alexis leprovost
+** Last update Sun Jun  3 12:25:15 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<math.h>
+
+#include	"detail.h"
+#include	"color.h"
+#include	"light.h"
+#include	"calc.h"
+#include	"utils.h"
+#include	"shadow.h"
+
+int
+get_vector_light(t_light *light, t_detail *detail, double *v)
+{
+  if (light == NULL || detail == NULL || v == NULL)
+    return (EXIT_FAILURE);
+  if (light->type == PARALLELE)
+    cpy_point(v, light->location);
+  if (light->type == DIFFUSE)
+    calc_any_vector(detail->position, light->location, v);
+  return (EXIT_SUCCESS);
+}
+
+int
+get_vector_reflechie(double *i, double *n, double *r)
+{
+  double	ps;
+
+  if (i == NULL || n == NULL || r == NULL)
+    return (EXIT_FAILURE);
+  ps = calc_ps(i, n);
+  r[X] = ((-2.0F * ps * n[X])) + i[X];
+  r[Y] = ((-2.0F * ps * n[Y])) + i[Y];
+  r[Z] = ((-2.0F * ps * n[Z])) + i[Z];
+  return (EXIT_SUCCESS);
+}
+
+int	get_vector_refracte(double *v, double *n, double n1, double n2)
+{
+  double	mr;
+  double	cosi;
+  double	cosr;
+  double	i;
+  double	r;
+
+  mr = n1 / n2;
+  normalize_vector(v);
+  inverse_vector(v);
+  cosi = calc_angle(v, n);
+  inverse_vector(v);
+  i = acos(cosi);
+  r = asin((n1 * sin(i)) / n2);
+  cosr = cos(r);
+  printf("cosi: %f - cosr : %f\n", acos(cosi)/M_PI*180, acos(cosr)/M_PI*180);
+  /*  if (cosr > 0.0F)
+    {
+      v[X] = (mr * v[X]) + (mr * cosi - sqrt(cosr)) * n[X];
+      v[Y] = (mr * v[Y]) + (mr * cosi - sqrt(cosr)) * n[Y];
+      v[Z] = (mr * v[Z]) + (mr * cosi - sqrt(cosr)) * n[Z];
+      }*/
+  return (EXIT_SUCCESS);
+}

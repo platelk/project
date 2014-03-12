@@ -1,0 +1,102 @@
+#!/bin/bash
+## remote_control.bash for remote in /home/guiho_r/tek1/rt/clustering
+##
+## Made by ronan guiho
+## Login   <guiho_r@epitech.net>
+##
+## Started on  Fri Jun  1 13:25:35 2012 ronan guiho
+##
+
+# Ctrl+C
+trap ctrl_c INT
+
+function ctrl_c()
+{
+    echo "DELETE FROM server WHERE host=\"$ip\"" > /tmp/query2.sql
+    results=`mysql $name -h $host -u $user -pbcdmdas2 < /tmp/query2.sql`
+    exit
+}
+
+# Configuration Argument Raytracer
+type=$1
+link_scene=$3
+port=$2
+
+os=`uname -r`
+files="lol.txt"
+
+if [[ $os == "2.6.35.13-92.fc14.x86_64" ]]
+then
+    nc="nc"
+    ip=`ifconfig  wlan0| grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`
+else
+    if [[ $os == "3.3.6-1-ARCH" ]]
+    then
+	nc="/usr/bin/nc.openbsd"
+	ip=`ifconfig wlan0 | grep -E 'inet.[0-9]' | grep -v '127.0.0.1' | awk '{ print $2}'`
+    else
+	nc="nc"
+	ip=`ifconfig  wlan0| grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`
+    fi
+fi
+
+port_rt=8000
+
+# Configuration Database
+host="88.191.133.132"
+user="antiqe"
+name="allum1"
+
+# Configuration Color Message
+green="\\033[1;32m"
+normal="\\033[0;39m"
+red="\\033[1;31m"
+
+i=0
+
+if [[ $type == "--server" ]]
+then
+    wget $link_scene -O tmp.xml
+    echo "SELECT host FROM server" > /tmp/query.sql
+    results=`mysql $name -h $host -u $user -pbcdmdas2 < /tmp/query.sql`
+    echo $row
+    ./raytracer --server -p $port_rt tmp.xml &
+    for row in $results
+    do
+	echo $row
+	exec 5<> /dev/tcp/$row/$port
+	echo "URL $link_scene">&5
+	echo "IP $ip">&5
+	echo "PORT $port_rt">&5
+    done
+    fg
+else
+    if [[ $type == "--client" ]]
+    then
+	echo "INSERT INTO server VALUES('', '$ip', '0')" > /tmp/query1.sql
+	mysql $name -h $host -u $user -pbcdmdas2 < /tmp/query1.sql
+	while [ $i -lt 2 ]
+	do
+	    echo "Creation log..."
+	    $nc -l $port > $files
+	    echo -e "Recup url..."
+	    url=`cat $files | grep URL | cut -d' ' -f2`
+	    echo " $url"
+	    echo -e "Recup ip..."
+	    ip_recv=`cat $files | grep IP | cut -d' ' -f2`
+	    echo " $ip_recv"
+	    echo -e "Recup port..."
+	    port_recv=`cat $files | grep PORT | cut -d' ' -f2`
+	    echo " $port_recv"
+	    echo "Recup du xml..."
+	    wget $url -O tmp.xml
+	    echo $ip_recv
+	    echo $port_rt
+	    ./raytracer --client -i $ip_recv -p $port_rt tmp.xml -t 4
+	    rm -f tmp.xml
+	    $port_rt = $port_rt + 1
+	done
+    else
+	echo "Help"
+    fi
+fi

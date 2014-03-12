@@ -1,0 +1,128 @@
+
+Starting Nmap 5.51 ( http://nmap.org ) at 2012-04-05 17:17 CEST
+Nmap scan report for 10.19.253.61
+Host is up (0.013s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.76
+Host is up (0.069s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.93
+Host is up (0.0064s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.107
+Host is up (0.011s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.111
+Host is up (0.014s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.116
+Host is up (0.017s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.117
+Host is up (0.023s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.124
+Host is up (0.015s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.127
+Host is up (0.013s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.128
+Host is up (0.013s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.149
+Host is up (0.017s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.150
+Host is up (0.013s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.154
+Host is up (0.0076s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.178
+Host is up (0.0089s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.181
+Host is up (0.000068s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.184
+Host is up (0.069s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.186
+Host is up (0.0063s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.189
+Host is up (0.011s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.192
+Host is up (0.010s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.194
+Host is up (0.0069s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.196
+Host is up (0.0064s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.197
+Host is up (0.0059s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.220
+Host is up (0.0063s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.242
+Host is up (0.0044s latency).
+PORT      STATE  SERVICE
+31337/tcp closed Elite
+
+Nmap scan report for 10.19.253.251
+Host is up (0.0071s latency).
+PORT      STATE    SERVICE
+31337/tcp filtered Elite
+
+Nmap done: 256 IP addresses (25 hosts up) scanned in 7.40 seconds

@@ -1,0 +1,32 @@
+/*
+** calc_detail.c for raytracer in /home/leprov_a//depot/rt/src/calc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed May  9 11:48:21 2012 alexis leprovost
+** Last update Sat May 26 14:19:15 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+
+#include        "texture.h"
+#include	"global.h"
+#include	"detail.h"
+#include	"color.h"
+#include	"calc.h"
+#include	"normal.h"
+#include	"my.h"
+
+int
+calc_detail(t_detail *detail, t_color *color, t_camera *camera, double *vector)
+{
+  if (detail == NULL || color == NULL || camera == NULL || vector == NULL)
+    return (EXIT_FAILURE);
+  calc_point(camera->position, vector, detail->position, detail->k);
+  calc_color(color, detail);
+  calc_normal(camera, detail, vector, detail->normal);
+  calc_perturbation(detail->object, detail->position, detail->normal);
+  return (EXIT_SUCCESS);
+}

@@ -1,0 +1,19 @@
+/*
+** main.c for lem_in in /home/leprov_a//depot/lemin/src
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Mon Apr  2 09:31:15 2012 alexis leprovost
+** Last update Wed Apr  4 13:58:11 2012 ronan guiho
+*/
+
+#include	<stdlib.h>
+
+#include	"lemin.h"
+
+int	main(void)
+{
+  parser_main();
+  return (EXIT_SUCCESS);
+}

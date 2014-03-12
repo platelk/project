@@ -1,0 +1,468 @@
+
+
+
+Le but est de recuperer les KEY_PASS.
+Ils sont sous la forme d'un md5, les sources sont uniquement
+la pour vous aider a trouver le moyen le plus rapide
+(la fonction la plus utile) pour reussir a les recuperer.
+
+
+
+Pour scorer, utilisez ~/scoring{1,2}
+
+$ ~/scoring{1,2} KEY_PASS un_pseudo
+[+] Congrats un_pseudo!
+$ tail ~/ranking{1,2}.txt
+** un_pseudo solved ex42 **
+$
+
+
+
+Pensez a unsetenv LD_PRELOAD apres chacun des tests, car emacs, ls et cat
+seront charges avec votre librairie si elle est toujours presente dans
+votre environnement.
+Vous pouvez vous faire un petit script shell qui executera
+votre commande avec le LD_PRELOAD puis l'enlevera juste apres.
+Ou encore utiliser bash de cette maniere :
+
+$ bash
+% LD_PRELOAD='/home/pepito_XXXXX/tpY/.../votrelib.so' ./check_access
+
+Ce qui indique que vous souhaitez utiliser la variable d'env
+uniquement pour l'execution de ce binaire.
+
+Il est possible de le faire dans tcsh
+$ env LD_PRELOAD='/home/pepito_XXXXX/tpY/.../votrelib.so' ./check_access
+
+
+
+Lorsque vous tapez :
+
+$ setenv LD_PRELOAD votrelib.so
+
+Pensez a mettre le PATH complet jusqu'a votre librairie
+
+$ setenv LD_PRELOAD '/home/pepito_XXXXX/tpY/.../votrelib.so'
+
+sinon des que vous changerez de dossier, plus rien ne fonctionnera.
+Un petit trick pour eviter de tout taper :
+
+$ pwd
+/home/pepito_XXXXX/
+$ setenv LD_PRELOAD `pwd`/votrelib.so
+
+
+
+Lorsque vous commencez a surcharger des fonctions tres utilisees
+de la libc (typiquement strncmp), n'utilisez pas dans le code de
+votre fonction des choses comme printf. Pourquoi ? Parce que
+printf() utilise la fonction strncmp, et va donc l'appeler.
+Il va appeler la votre qui va refaire un printf, qui va re-appeler
+votre strncmp, qui va re=re=appeler printf, ... Segmentation fault.
+Utiliser le plus bas niveau possible lorsque vous surchargez
+les fonctions. Typiquement, des appels systemes (write), ou des
+fonctions simples (strlen).
+
+
+
+Si vous n'arrivez pas a scorer l'ex1, reregardez bien le code
+source associe (surtout vers le '+ 2').
+
+
+
+Yes you did it!
+Le but n'est pas d'afficher cette phrase. Votre but c'est de
+recuperer les KEY_PASS!
+
+
+
+Pour info, uname() est inline a la compilation, vous ne pourrez
+donc pas le pre-charger. Allez plutot chercher ailleurs... :)
+
+
+
+Pour recuperer les fichiers README et INFO, ou encore les sources
+sur votre compte PIE, utilisez une commande de ce type sur votre poste
+
+$ scp -P <le_port> -ri ./<votre_clef>.dsa \
+    <votre_login>@<adresse>:./ ./B2-SEC_TP1
+
+P majuscule pour le port, r pour recursif, i pour lui donner
+la clef, man scp pour le reste.
+Pour envoyer un dossier dans l'autre sens, pareil :
+
+$ scp -P <le_port> -ri ./<votre_clef>.dsa ~/rendu/vos_sources \
+    <votre_login>@<adresse>:./
+
+
+
+La suite contient la partie theorique du TP.
+
+
+
+*************************************************************
+* Architecture x86
+
+** Langage assembleur
+Le langage assembleur (ou asm) est un langage bas niveau.
+On appelle mnemonique les instructions assembleurs representees par un symbole.
+Par exemple:
+NOP est un mnemonique et 0x90 est sa representation en hexadecimal.
+Le processus pour convertir une mnemonique en valeur numerique est
+l'"assemblage", le processus contraire est le "desassemblage".
+Par exempleah
+"NOP" -> 0x90  (assemblage)
+0x90  -> "NOP" (desassemblage)
+
+Les instructions assembleurs (sous forme numerique) sont executees par le
+processeur.
+Chaque processeur possede son propre jeu d'instruction.
+
+** MMU
+MMU ou Memory Management Unit permet de gerer l'acces a la memoire.
+Les systemes d'exploitations recents fonctionnants sous x86 utilisent la
+pagination memoire, cela permet :
++ D'avoir 4GB de memoire disponible pour chaque processus
++ De separer la memoire des processus
++ Le concept de memoire virtuelle et memoire physique, e.g.: soit deux
+processus A et B, si les processus A et B lisent la meme adresse virtuelle,
+ils ne sont pas certains de lire la meme adresse physique.
+
+** Difference Kerneland / Userland
+Les architectures x86 possedent 4 "niveaux" (appelle anneau ou ring) de
+securite, le plus fort etant le 0 et le plus faible 3.
+Les systemes d'exploitations actuels utilisent, en general, que deux niveaux :
+le niveau 0 et le niveau 3.
+C'est deux niveaux correspondent au kerneland (ring0) et au userland (ring3).
+Le kerneland a "tous" les droits, il peut :
++ executer des instructions asm privilegees
++ acceder a toute la memoire (quoi qu'il existe une exception avec la virtualisation)
+Le kernel et les drivers (dans leurs majorites...) des systemes d'exploitations tournent
+en ring0, alors que les programmes que vous faites pour l'ecole, votre serveur X, etc,
+tournent en ring3.
+
+** Appel systeme
+Les appels systemes permettent d'appeler des fonctions dont le code est situe au niveau du kernel.
+Par exemple, lors d'un appel vers open(2), l'application userland va demander au kernel s'il peut
+acceder a un fichier, une fois en mode kernel, ce dernier va utiliser un driver vers le filesystem
+pour connaitre la disponibilite du fichier (en terme d'existence, de droit, ...).
+Si vous desirez tracer les appels systemes d'un programme, vous pouvez utiliser les logiciels
+{d,k,l,s}trace ou truss sous UNIX.
+Actuellement, sur le PIE, vous disposez de ktrace et truss.
+Exemple avec truss (plus simple d'utilisation) :
+On prend les sources suivantes
+
+int main(void)
+{
+  return write(2, "yup\n", 4);
+}
+
+On utilisera un 'tail -n 4' pour masquer les syscalls effectues durant la creation du processus.
+
+szkudl_k@dolar:/tmp% truss ./a.out |& tail -n 4
+yup                                                       // On voit le 'yup' qui s'affiche sur la sortie standard
+write(1,0x80485ef,4)                 = 4 (0x4)  // L'appel vers le syscall write et sa valeur de retour
+exit(0x4)                                               // Le compilateur appel le syscall exit avec la valeur de retour de la fonction 'main'
+process exit, rval = 1024
+
+Autre exemple en specifiant un mauvais fd (42)
+
+szkudl_k@dolar:/tmp% truss ./a.out |& tail -n 3
+write(42,0x80485ef,4)                ERR#9 'Bad file descriptor'
+exit(0xffffffff)
+process exit, rval = 65280
+
+
+*************************************************************
+
+* Executable sous UNIX
+
+** Format
+Sous environnement UNIX, plusieurs formats d'executable peuvent etre utilises,
+cependant, le plus courant est l'elf(5) (Executable and Linking Format).
+Nous parlerons uniquement de ce format.
+
+Ce format est compose de plusieurs structures :
+
+NOTE: Le 'N' sur le nom des types permet de definir, a la fois, les versions
+32 et 64 bits.
+
+typedef struct {
+  unsigned char e_ident[EI_NIDENT];
+  uint16_t      e_type;
+  uint16_t      e_machine;
+  uint32_t      e_version;
+  ElfN_Addr     e_entry;
+  ElfN_Off      e_phoff;
+  ElfN_Off      e_shoff;
+  uint32_t      e_flags;
+  uint16_t      e_ehsize;
+  uint16_t      e_phentsize;
+  uint16_t      e_phnum;
+  uint16_t      e_shentsize;
+  uint16_t      e_shnum;
+  uint16_t      e_shstrndx;
+}               ElfN_Ehdr;
+
+ElfN_Ehdr est la structure principale, elle definit : l'architecture pour le
+binaire (si vous compilez un binaire sur votre machine, un x86, vous ne
+pourrez pas l'executer sur maya, inca, ...), le point d'entre du programme (
+d'ailleurs, votre executable ne debute pas reellement par main mais par
+_start), des flags qui disent par exemple si c'est un executable normal ou
+une lib, ...
+
+Elle contient aussi un offset vers le Program Header Table, cette structure
+definit un segment du programme. Un segment est, dans ce cas, une
+zone memoire avec des droits et flags.
+Par exemple, le segment qui contiendra le code du programme aura les droits
+d'execution (PF_X) et de lecture (PF_R).
+Il contiendra aussi le flag PT_LOAD pour specifier que ce segment doit etre
+mappe a une adresse precise.
+On trouve une structure par segment.
+
+typedef struct {
+  uint32_t      p_type;
+  Elf32_Off     p_offset;
+  Elf32_Addr    p_vaddr;
+  Elf32_Addr    p_paddr;
+  uint32_t      p_filesz;
+  uint32_t      p_memsz;
+  uint32_t      p_flags;
+  uint32_t      p_align;
+}               Elf32_Phdr;
+
+typedef struct {
+  uint32_t      p_type;
+  uint32_t      p_flags;
+  Elf64_Off     p_offset;
+  Elf64_Addr    p_vaddr;
+  Elf64_Addr    p_paddr;
+  uint64_t      p_filesz;
+  uint64_t      p_memsz;
+  uint64_t      p_align;
+}               Elf64_Phdr;
+
+Enfin, a la fin du binaire, on trouve le Section Header Table,
+Une structure decrit une section.
+Les segments contiennent les sections, ces sections permettent de separer
+les differentes donnees d'un executable.
+Par exemple la ligne en C suivante :
+  puts("Hello world !");
+
+Le code assembler correspondant a l'appelle de la fonction puts ira dans la
+section .text et cette section sera contenue dans un segment ayant les droits
+PF_X (execution) & PF_R (lecture).
+
+La chaine de caractere "Hello world !" ira dans une section .data, une section
+contenue dans un segment ayant le droit en PF_R (lecture).
+
+NOTE: On peut changer le nom d'une section sans que ca ait un impact sur le
+programme.
+
+** Execution
+
+Pour executer un binaire sous UNIX, il faut appeler le syscall
+execve(2).
+Cette fonction va remplacer le binaire courant par celui appelle en parametre.
+Cela signifie que le binaire qui appelle cette fonction va etre termine et un
+nouveau va prendre sa place.
+
+NOTE: Pour garder le binaire courant, il faut passer par un fork(2).
+
+Les executables sont, par defaut, mappes a l'adresse 0x08048000, pour verifier
+ca, utilisez la commande objdump(1) :
+
+gandalf% objdump -p /bin/ls
+[...]
+    LOAD off    0x00000000 vaddr 0x08048000 paddr 0x08048000 align 2**12
+         filesz 0x0001a8e8 memsz 0x0001a8e8 flags r-x
+[...]
+
+On remarque que l'offset est nul, donc on prend le debut du fichier,
+l'adresse virtual est 0x08048000 et enfin il possede le flag PT_LOAD.
+
+** Importation / Exportation
+
+Les executables utilisent divers fonctions, il serait tres couteux en taille que chaque
+executable possede tout le code des fonctions qu'elle utilise.
+De plus, si une fonction est mise a jour, cela necessite de recompiler le
+programme.
+C'est pourquoi il existe un mecanisme appeler l'importation et l'exportation
+de fonction.
+Le code des fonctions sera contenu dans des lib dynamiques (*.so).
+
+NOTE: On peut tout de fois forcer gcc a compiler les dependances en statique
+avec -static.
+NOTE: Les fichiers .so sont egalement au format ELF.
+
+Lors du chargement d'un binaire, c'est ld.so(8) va resoudre les dependances
+dynamiques.
+
+Pour voir les dependances d'un binaire, il suffit d'utiliser la commande ldd(1).
+
+gandalf% ldd /bin/ls
+        linux-gate.so.1 =>  (0xffffe000)
+        librt.so.1 => /lib/librt.so.1 (0xb8081000)
+        libacl.so.1 => /lib/libacl.so.1 (0xb8078000)
+        libc.so.6 => /lib/libc.so.6 (0xb7f3e000)
+        libpthread.so.0 => /lib/libpthread.so.0 (0xb7f26000)
+        /lib/ld-linux.so.2 (0xb80a0000)
+        libattr.so.1 => /lib/libattr.so.1 (0xb7f20000)
+
+ld.so(8) possede different variable d'environnement, parmis lesquelles on
+trouve LD_PRELOAD, elle permet de specifier sa propre lib dynamique.
+
+Par exemple, creeons une simple lib dynamique avec une fonction exportee
+write(2).
+
+#include <sys/syscall.h>
+#include <stdio.h>
+
+int write(int fd, const void *buf, unsigned int len)
+{
+  int res;
+
+  res = syscall(SYS_write, fd, buf, len);
+  printf("%d = %s(fd=%d, buf=%p, len=%u);\n", res, __FUNCTION__, fd, buf, len);
+  return (res);
+}
+
+NOTE: la fonction syscall permet d'appeler la vraie fonction write(2).
+
+On compile avec :
+gandalf% cc -shared write_proxy.c -o write_proxy.so
+
+On obtient un write_proxy.so, c'est une lib dynamique qui exporte la fonction
+write(2).
+
+Prenons maintenant un programme basique :
+
+int main(void)
+{
+  char s[] = "Hello world !\n";
+
+  write(1, s, sizeof s);
+  return (0);
+}
+On le compile (sans -static) pour obtenir un a.out.
+gcc test.c
+
+Pour etre sur que le binaire a.out ait bien la fonction write dans sa liste
+d'import, nous allons utiliser la commande nm(1).
+
+gandalf% nm a.out| grep write
+         U write@@GLIBC_2.0
+
+Le 'U' dit que la fonction est "undefined", c'est a dire que le code de la
+fonction n'est pas contenu dans l'executable.
+
+C'est bon. :)
+
+Enfin, lancons le a.out, mais on va demander a ld.so(8) de charger notre lib
+avant les autres.
+
+gandalf% LD_PRELOAD=./write_proxy.so ./a.out
+Hello world !
+15 = write(fd=1, buf=0xbff6e865, len=15);
+
+Comme on peut le constater, la fonction write de la lib write_proxy.so a ete
+appeller a la place de celle presente dans la GLIBC_2.0.
+
+** Constructor / Destructor
+
+Contenues dans les sections .ctors et .dtors, les fonctions constructors et
+destructors permettent d'appeller des fonctions avant (ctor) et apres (dtor) la
+fonction main.
+Par exemple, ce mecanisme est utilise en C++ pour la construction et destruction
+des objets globaux.
+
+NOTE: Cette fonctionnalite est uniquement disponible si le binaire a ete compile
+avec les outils GNU (gcc).
+
+Pour trouver les fonctions constructors et destructors (dans le cas d'un binaire non
+modifier), il faut utiliser objdump(1).
+
+gandalf% objdump -s -j .ctors /bin/ls
+
+a.out:     file format elf32-i386
+
+Contents of section .ctors:
+ 8049f0c ffffffff 00000000                    ........
+
+Ici, on a dumped le contenu de la section .ctors, on voit l'offset puis les donnees.
+ffffffff marque le debut de la section.
+00000000 marque la fin de la section.
+Ici on trouve aucun constructor.
+
+Autre exemple :
+
+szkudl_k@dolar:/tmp% objdump -s -j .ctors /usr/bin/gperf
+
+/usr/bin/gperf:     file format elf32-i386-freebsd
+
+Contents of section .ctors:
+ 8055318 ffffffff d0ef0408 00000000           ............
+
+On voit au milieu des deux marqueurs une adresse.
+Le dump etant un byte et l'architecture en little endian, il faut inverser les octets
+pour retrouver l'adresse de la fonction, soit 0x0804efd0.
+
+Maintenant, voyons voir comment faire pour ajouter un constructor ou/et un
+destructor a un programme en C.
+
+// Definition de notre constructor
+void __attribute__((constructor)) ctor(void)
+{
+  puts(__FUNCTION__);
+}
+
+// Defintion de notre destructor
+void __attribute__((destructor)) dtor(void)
+{
+  puts(__FUNCTION__);
+}
+
+// Point d'entre
+int main(void)
+{
+  puts(__FUNCTION__);
+  return (0);
+}
+
+NOTE: __FUNCTION__ est un macro C qui va etre remplace par le nom de la fonction
+courante.
+
+Lorsqu'on execute ce programme on obtient :
+
+gandalf% ./a.out
+ctor
+main
+dtor
+
+Enfin, sachez que les libs dynamiques peuvent elles aussi avoir des ctors/dtors, les
+fonctions seront appellees lors du chargement dans le processus.
+Exemple :
+
+// ctor_dtor_dyn.c
+void __attribute__((constructor)) ctor(void)
+{
+  puts("Hello from ctor_dtor_dyn.so");
+}
+
+void __attribute__((destructor)) dtor(void)
+{
+  puts("Bye from ctor_dtor_dyn.so");
+}
+
+gandalf% cc -shared ctor_dtor_dyn.c -o ctor_dtor_dyn.so
+gandalf% LD_PRELOAD=./ctor_dtor_dyn.so ./a.out        
+Hello from ctor_dtor_dyn.so
+ctor
+main
+dtor
+Bye from ctor_dtor_dyn.so
+
+Ici, le ctor de la lib est appelle avant celui du programme, car il est charge avant lui,
+pour le dtor, c'est le contraire car le programme est decharge avant la lib.
+
+*************************************************************

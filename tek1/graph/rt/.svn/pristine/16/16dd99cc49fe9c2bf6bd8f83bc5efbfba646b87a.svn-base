@@ -1,0 +1,86 @@
+<window y="1000" x="1000">
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type="normal">
+	<location X="0" Y="-50" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0"/>
+	<size>50</size>
+	<limit>
+	  <x MIN="-300" MAX="300"/>
+	  <y MIN="-50" MAX="50"/>
+	</limit>
+	<color>FF0000</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="50" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<size>50</size>
+	<limit>
+	  <x MIN="-300" MAX="300"/>
+	  <y MIN="-50" MAX="50"/>
+	</limit>
+	<color>0000FF</color>
+      </plan>
+      <plan type="normal">
+	<location X="50" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<size>50</size>
+	<limit>
+	  <x MIN="-50" MAX="50"/>
+	  <y MIN="-50" MAX="50"/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="-150" Y="0" Z="0"/>
+	<rotation X="0" Y="-90" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<size>50</size>
+	<limit>
+	  <x MIN="-50" MAX="50"/>
+	  <y MIN="-50" MAX="50"/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-50"/>
+	<rotation X="0" Y="-180" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<limit>
+	  <x MIN="-300" MAX="300"/>
+	  <y MIN="-50" MAX="50"/>
+	</limit>
+	<size>50</size>
+	<color>00FF00</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="50"/>
+	<rotation X="0" Y="-180" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<limit>
+	  <x MIN="-300" MAX="300"/>
+	  <y MIN="-50" MAX="50"/>
+	</limit>
+	<size>50</size>
+	<color>FFFF00</color>
+      </plan>
+    </object>
+    <lights>
+	<light type="diffuse">
+	  <location X="-500" Y="0" Z="0"/>
+	  <intensity>0.3</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

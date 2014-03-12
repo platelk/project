@@ -1,0 +1,168 @@
+/*
+** main.c for normal in /home/ozouf_h//rt_normal
+**
+** Made by harold ozouf
+** Login   <ozouf_h@epitech.net>
+** 
+** Started on  Wed May  9 17:23:32 2012 harold ozouf
+** Last update Sun May 20 03:43:13 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+
+#include	"raytracer.h"
+#include	"camera.h"
+#include	"detail.h"
+#include	"calc.h"
+#include	"init.h"
+
+static void	corrector_normal(t_detail *detail, double *normal)
+{
+  t_camera	camera;
+  t_detail	tmp;
+
+  init_detail(&tmp);
+  camera.position[X] = detail->position[X];
+  camera.position[Y] = detail->position[Y];
+  camera.position[Z] = detail->position[Z];
+  detail->object->inter(&camera, detail->object, &tmp, normal);
+  if (tmp.k <= 0.00001)
+    {
+      normal[X] *= (-1.000);
+      normal[Y] *= (-1.000);
+      normal[Z] *= (-1.000);
+    }
+}
+
+static void	get_normals_from_base(double *v_base, double *v_left, double *v_right, double test)
+{
+  int	i;
+
+  i = 0;
+  while (i < NB_DIMENSION)
+    {
+      v_left[i] = v_base[i] + (EPSILON / CARRE(test));
+      v_right[i] = v_base[i] - (EPSILON / CARRE(test));
+      ++i;
+    }
+  v_left[X] += (EPSILON / CARRE(test));
+  v_left[Y] -= (EPSILON / CARRE(test));
+  v_left[Z] += (EPSILON / CARRE(test));
+  v_right[X] -= (EPSILON / CARRE(test));
+  v_right[Y] -= (EPSILON / CARRE(test));
+  v_right[Z] += (EPSILON / CARRE(test));
+}
+
+static void	calc_normal(t_detail *det, t_detail *t, double *normal)
+{
+  double	u[NB_DIMENSION];
+  double	v[NB_DIMENSION];
+  int		i;
+
+  i = -1;
+  while (++i < NB_DIMENSION)
+    {
+      u[i] = det[0].position[i] -t->position[i];
+      v[i] = det[1].position[i] - t->position[i];
+    }
+  normal[X] = (u[Y] * v[Z]) - (u[Z] * v[Y]);
+  normal[Y] = (u[Z] * v[X]) - (u[X] * v[Z]);
+  normal[Z] = (u[X] * v[Y]) - (u[Y] * v[X]);
+}
+
+void	get_normal(t_camera *c, t_detail *t, double *v_base, double *normal)
+{
+  double	vec[2][NB_DIMENSION];
+  t_detail	det[2];
+  double	test;
+
+  init_detail(&det[0]);
+  init_detail(&det[1]);
+  test = 1.000;
+  while (test < 10)
+    {
+      get_normals_from_base(v_base, vec[0], vec[1], test);
+      t->object->inter(c, t->object, &det[0], vec[0]);
+      t->object->inter(c, t->object, &det[1], vec[1]);
+      if (det[0].object != NULL && det[1].object != NULL)
+	{
+	  calc_point(c->position, vec[0], det[0].position, det[0].k);
+	  calc_point(c->position, vec[1], det[1].position, det[1].k);
+	  calc_normal(det, t, normal);
+	  corrector_normal(t, normal);
+	  test = 42.000;
+	}
+      test += 1.000;
+    }
+}
+
+/*
+static void	get_normals_from_base(double *vector, double *t1, double *t2, double *t3, double prec)
+{
+  int	i;
+
+  i = 0;
+  while (i < NB_DIMENSION)
+    {
+      t1[i] = vector[i];
+      t2[i] = vector[i];
+      t3[i] = vector[i];
+      ++i;
+    }
+  t1[Z] = t1[Z] + (1.000 / prec);
+  t1[Y] = t1[Y] - (1.000 / prec);
+  t1[X] = t1[X] - (1.000 / prec);
+  t2[Z] = t2[Z] - (1.000 / prec);
+  t2[Y] = t2[Y] + (1.000 / prec);
+  t2[X] = t2[X] + (1.000 / prec);
+  t3[Z] = t3[Z] - (1.000 / prec);
+  t3[Y] = t3[Y] - (1.000 / prec);
+  t3[X] = t3[X] + (1.000 / prec);
+}
+
+static void	calc_normal(t_detail *detail, double *normal)
+{
+  double	u[NB_DIMENSION];
+  double	v[NB_DIMENSION];
+  int		i;
+
+  i = -1;
+  while (++i < NB_DIMENSION)
+    {
+      u[i] = detail[0].position[i] - detail[2].position[i];
+      v[i] = detail[1].position[i] - detail[2].position[i];
+    }
+  normal[X] = (u[Y] * v[Z]) - (u[Z] * v[Y]);
+  normal[Y] = (u[Z] * v[X]) - (u[X] * v[Z]);
+  normal[Z] = (u[X] * v[Y]) - (u[Y] * v[X]);
+  corrector_normal(detail, normal);
+}
+
+void	get_normal(t_camera *c, t_detail *d, double *v, double *n)
+{
+  double        tmp[3][NB_DIMENSION];
+  t_detail	detail[3];
+  double	prec;
+
+  init_detail(&detail[0]);
+  init_detail(&detail[1]);
+  init_detail(&detail[2]);
+  prec = 0.000;
+  while (prec < 10.000)
+    {
+      get_normals_from_base(v, tmp[0], tmp[1], tmp[2], prec);
+      d->object->inter(c, d->object, &detail[0], tmp[0]);
+      d->object->inter(c, d->object, &detail[1], tmp[1]);
+      d->object->inter(c, d->object, &detail[2], tmp[2]);
+      if (detail[0].object != NULL && detail[1].object != NULL && detail[2].object)
+	{
+	  calc_point(c->position, tmp[0], detail[0].position, detail[0].k);
+	  calc_point(c->position, tmp[1], detail[1].position, detail[1].k);
+	  calc_point(c->position, tmp[2], detail[2].position, detail[2].k);
+	  calc_normal(detail, n);
+	  prec = 10.000;
+	}
+      prec += 1.000;
+    }
+}*/

@@ -1,0 +1,22 @@
+## 42SH 2011 - 2012
+## FEDORA DUMP
+
+setenv EDITOR "emacs"
+setenv PAGER "less"
+
+set autolist
+set complete
+set prompt="[\033[1;31m%~\033[0m] >> "
+set history=100
+set savehist=1000
+
+alias ne 'emacs -nw'
+alias ll 'ls -l'
+alias la 'ls -la'
+alias ls 'ls --color'
+alias le 'ls;ls;l'
+alias l 'ls;ls;le'
+alias grep 'grep --color'
+alias rm 'rm -i'
+
+## EOF

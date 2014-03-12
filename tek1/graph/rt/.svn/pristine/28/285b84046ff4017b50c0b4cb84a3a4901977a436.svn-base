@@ -1,0 +1,19 @@
+/*
+** obj_init_image.h for obj_init_image in /home/jordan/Projets/debug_rt/rt/src/obj
+** 
+** Made by jordan vanwalleghem
+** Login   <vanwal_j@epitech.net>
+** 
+** Started on  Sat Jun  2 11:43:55 2012 jordan vanwalleghem
+** Last update Sat Jun  2 11:45:00 2012 jordan vanwalleghem
+*/
+
+#ifndef	__OBJ_INIT_IMAGE__
+#define	__OBJ_INIT_IMAGE__
+
+int     obj_get_perlin_ceil(t_xtree *tree);
+int     obj_get_perlin_apply(t_xtree *tree);
+int     obj_get_perlin_type(t_xtree *tree);
+t_object        *obj_init_bump(t_object *new, t_xtree *tree, void *mlx_ptr);
+
+#endif

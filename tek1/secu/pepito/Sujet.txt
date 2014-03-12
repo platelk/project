@@ -1,0 +1,95 @@
+2012  est une année difficile pour Pepito. Après l’échec de sa
+tentative d’automatisation de ses magasins causé par un  certain
+Monsieur O., pirate disk jockey, la crise est passée par là.
+
+La dure concurrence imposée par Granola Corp. ne peut plus durer
+à ses yeux. Les produits à base de chocolat enrichi font fureur
+et  Pepito  en a ras la moustache.  Bien décidé à reprendre le
+marché en main et conscient que le fair  play  ne  vaut  plus
+rien  dans  notre  Monde, Pepito se laisse cette année corrompre
+par le coté obscur du chocolat.
+
+Votre mission, si vous l’acceptez, sera de compromettre  les  in‐
+stallations   d’enrichissement   du  chocolat  de  Granola  Corp.
+situées en Iran.  Une  équipe  de  pirates  précédemment  em‐
+bauchée  par  Pepito,  le Red Mexican Hackers Crew, a réussi à
+mettre la main sur une partie du code source du logiciel  Semence
+qui  permet  à   Granola  de  piloter ses usines.  Il vous faudra
+détecter les vulnérabilités de celui‐ci, les expliquer et  les
+corriger afin que le logiciel soit utilisable par Pepito dans ses
+propres usines. Plusieurs objectifs secondaires  vous  sont  de‐
+mandés  et  feront  l’objet  d’une  prime  non‐négligeable  :
+
+‐ Détecter et corriger les  vulnérabilités  dans  la  partie  du
+logiciel  dont  les  sources  n’ont pu être récupérées;
+
+‐ Exploiter les vulnérabilités découvertes afin de mettre les  in‐
+frastructures  Granola Corp. hors d’usage;
+
+‐ Voler à  Granola ses recettes secrètes.
+
+En tant que rapport de votre mission Pepito attend au minimum :
+
+‐ Un ezine à  l’ancienne reprenant les points suivant en détails :
+  * Description des vulnérabilités découvertes, type, impact,
+    localisation dans le code ...
+  * Proposition de correction et explications du fonctionnement
+    des celles‐ci
+  * De l’ascii-art
+
+‐ Un patch pour les sources généré avec diff ‐u (man 1 diff,
+man 1 patch). Celui‐ci devra être le  plus compact possible,
+sans éléments inutiles
+
+La correction ne devra pas changer le comportement normal du pro‐
+gramme et garder la structure du code au plus proche de  l’origi‐
+nal.
+
+Le  paper  devra être aussi détaillé que possible et organisé
+de façon claire.
+
+En complément seront appréciés :
+‐ Une  description  précise des  possibilités  d’exploitation;
+‐ Des scripts d’exploitation (3l337 5pl01tz ftw!1~);
+‐ Un retranscription en C  de  la  bibliothèque  partagée.
+
+Vous sont fournis :
+‐ Le code  source  précédemment  volé^Wemprunté  à  Granola;
+‐ La bibliothèque partagée en version FreeBSD et GNU/Linux;
+
+Pour vos tests vous devrez lancer le programme de la façon
+suivante :
+
+$ env -i LD_LIBRARY_PATH <chemin_vers_le_dossier_de_la_lib> ./pepito start
+
+Deux dossiers existent, l'un pour FreeBSD, l'autre pour GNU/Linux.
+
+Pour stoper le programme :
+
+$ env -i LD_LIBRARY_PATH <chemin_vers_le_dossier_de_la_lib> ./pepito stop
+
+Vous pouvez communiquer avec le serveur grâce à la commande suivante :
+
+echo "0 11oldpassword 11newpassword" | nc <host> <port>
+
+(A vous de découvrir les autres commandes en lisant le code source :)
+
+Pour les plus courageux qui souhaiteraient faire de l'exploitation, quelques
+remarques :
+- FreeBSD ne propose pas les protections fournies par GNU/Linux (ASLR, NX,
+  ASCII Armor ...). Commencez par là :)
+- Il est tout de même possible de désactiver tout ou partie des protections
+  offertes par GNU/Linux. Google vous aidera dans cette voie.
+- L'exploitation sur GNU/Linux reste possible malgré les protections :D
+- Malgré la suppression récente des machines FreeBSD du PIE par le Bocal,
+  il vous est toujours possible de faire vos tests sur Pepitasse (la machine
+  qui héberge les TPs) avec les clés qui vous ont été distribuées :)
+
+Pour ceux qui creuseraient l'exploitation nous sommes disponibles pour toute
+question née d'un minimum de réflexion :
+- Mail : pepito@episeclab.org
+- IRC : ##esl sur le réseau Freenode
+
+Bon courage à tous et surtout, amusez‐vous bien.
+
+L’équipe Pepito, (|€~

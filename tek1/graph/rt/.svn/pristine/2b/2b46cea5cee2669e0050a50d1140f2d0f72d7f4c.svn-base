@@ -1,0 +1,234 @@
+##
+## Makefile for Makefile in /home/guiho_r//tek1/wolf3d
+##
+## Made by ronan guiho
+## Login   <guiho_r@epitech.net>
+##
+## Started on  Sun Dec 18 01:41:09 2011 ronan guiho
+##
+
+NAME	=	raytracer
+
+CFLAGS	=	-Wno-unused-result -Wall -Wextra -I$(INC) -O3 -g -I$(INC)xml_inc/
+
+LINK	=	./src/
+
+SRC	=	$(LINK)raytracer.c \
+
+SRC	+=	$(LINK)parse_obj/init_triangle.c \
+		$(LINK)parse_obj/inter_tri.c \
+		$(LINK)parse_obj/my_rev_f.c \
+		$(LINK)parse_obj/my_rev_n.c \
+		$(LINK)parse_obj/my_rev_list.c \
+		$(LINK)parse_obj/parse.c \
+		$(LINK)parse_obj/parse_normal.c \
+
+SRC	+=	$(LINK)init/init_image.c \
+		$(LINK)init/init_detail.c \
+		$(LINK)init/init_color.c \
+		$(LINK)init/import_bmp.c \
+		$(LINK)init/import_jpg.c \
+		$(LINK)init/determ_img_type.c \
+
+SRC	+=	$(LINK)event/event_expose.c \
+		$(LINK)event/event_key.c \
+		$(LINK)event/event_mouse.c \
+
+SRC	+=	$(LINK)free/free_global.c \
+		$(LINK)free/free_window.c \
+		$(LINK)free/free_image.c \
+		$(LINK)free/free_info.c \
+
+SRC	+=	$(LINK)clustering/server/server_main.c \
+		$(LINK)clustering/server/server_int_to_str.c \
+		$(LINK)clustering/server/server_management.c \
+		$(LINK)clustering/server/server_ping.c \
+		$(LINK)clustering/server/server_ping_raz.c \
+		$(LINK)clustering/server/server_ping_check_recv.c \
+		$(LINK)clustering/server/server_close.c \
+		$(LINK)clustering/server/server_listen.c \
+		$(LINK)clustering/server/server_sockaddr_create.c \
+		$(LINK)clustering/server/server_distribution.c \
+		$(LINK)clustering/server/server_distribution_atribution.c \
+		$(LINK)clustering/server/server_distribution_send.c \
+		$(LINK)clustering/server/server_distribution_plage_calcul.c \
+		$(LINK)clustering/server/server_client_id.c \
+		$(LINK)clustering/server/server_client_receive.c \
+		$(LINK)clustering/server/server_client_receive_analize.c \
+		$(LINK)clustering/server/server_client_receive_is_valide.c \
+		$(LINK)clustering/server/server_client_receive_cut_trame.c \
+		$(LINK)clustering/server/server_client_receive_remove.c \
+		$(LINK)clustering/server/server_client_receive_send.c \
+		$(LINK)clustering/server/server_client_receive_plage.c \
+		$(LINK)clustering/server/server_client_remove.c \
+		$(LINK)clustering/server/server_client_create.c \
+		$(LINK)clustering/server/server_client_add.c \
+		$(LINK)clustering/server/server_client_core.c \
+		$(LINK)clustering/server/server_client_count.c \
+		$(LINK)clustering/server/server_client_display.c \
+		$(LINK)clustering/server/server_client_connected.c \
+
+SRC	+=	$(LINK)clustering/client/client_main.c \
+		$(LINK)clustering/client/client_close.c \
+		$(LINK)clustering/client/client_endtrame.c \
+		$(LINK)clustering/client/client_core.c \
+		$(LINK)clustering/client/client_calculation.c \
+		$(LINK)clustering/client/client_calculation_send.c \
+		$(LINK)clustering/client/client_calculation_header.c \
+		$(LINK)clustering/client/client_listen.c \
+		$(LINK)clustering/client/client_sockaddr_create.c \
+		$(LINK)clustering/client/client_calculation_buffer.c \
+
+SRC	+=	$(LINK)mlx/mlx_ppti.c \
+
+SRC	+=	$(LINK)display/display_image.c \
+		$(LINK)display/display_image_calc.c \
+		$(LINK)display/display_image_thread.c \
+		$(LINK)display/display_fill_thread.c \
+		$(LINK)display/display_aliasing.c \
+		$(LINK)display/display_antialiasing.c \
+		$(LINK)display/progress_bar.c \
+
+SRC	+=	$(LINK)calc/calc_management.c \
+		$(LINK)calc/calc_vector.c \
+		$(LINK)calc/calc_rotation.c \
+		$(LINK)calc/calc_k.c \
+		$(LINK)calc/calc_objects_neg.c \
+		$(LINK)calc/calc_limit.c \
+		$(LINK)calc/calc_detail.c \
+		$(LINK)calc/calc_color.c \
+		$(LINK)calc/calc_point.c \
+		$(LINK)calc/calc_effect.c \
+		$(LINK)calc/calc_normal.c \
+		$(LINK)calc/calc_angle.c \
+		$(LINK)calc/calc_ps.c \
+		$(LINK)calc/calc_perturbation.c \
+		$(LINK)calc/calc_norme.c \
+		$(LINK)calc/calc_reflection.c \
+		$(LINK)calc/calc_refraction.c \
+		$(LINK)calc/calc_cut_texture.c \
+		$(LINK)calc/calc_equation4deg.c \
+		$(LINK)calc/calc_procedural.c \
+
+SRC	+=	$(LINK)cmd_line/parse.c \
+		$(LINK)cmd_line/parse_option.c \
+		$(LINK)cmd_line/parse_option_n.c \
+		$(LINK)cmd_line/parse_client.c \
+		$(LINK)cmd_line/parse_server.c \
+		$(LINK)cmd_line/parse_normal.c \
+		$(LINK)cmd_line/parse_ip.c \
+		$(LINK)cmd_line/put_error.c \
+		$(LINK)cmd_line/aff.c \
+
+SRC	+=	$(LINK)utils/restat_color.c \
+		$(LINK)utils/add_color.c \
+		$(LINK)utils/modif_point.c \
+		$(LINK)utils/modif_vector.c \
+		$(LINK)utils/cpy_point.c \
+		$(LINK)utils/get_vector.c \
+		$(LINK)utils/cmp_k.c \
+		$(LINK)utils/cpy_color.c \
+
+SRC	+=	$(LINK)xml_src/src/xml_check_token.c \
+		$(LINK)xml_src/src/xml_chr.c \
+		$(LINK)xml_src/src/xml_creat_attr.c \
+		$(LINK)xml_src/src/xml_fct_utils.c \
+		$(LINK)xml_src/src/xml_gest_file.c \
+		$(LINK)xml_src/src/xml_parser.c \
+		$(LINK)xml_src/src/xml_put_error.c \
+		$(LINK)xml_src/src/xml_token_list.c \
+		$(LINK)xml_src/src/xml_tree.c \
+
+SRC	+=	$(LINK)obj/obj_create_object.c \
+		$(LINK)obj/obj_create_scene.c \
+		$(LINK)obj/obj_create_sun.c \
+		$(LINK)obj/obj_create_sun_n.c \
+		$(LINK)obj/obj_create_sun_nn.c \
+		$(LINK)obj/obj_create_cube.c \
+		$(LINK)obj/obj_create_window.c \
+		$(LINK)obj/obj_type.c \
+		$(LINK)obj/obj_bzero_dim.c \
+		$(LINK)obj/obj_create_list_cam.c \
+		$(LINK)obj/obj_create_list_light.c \
+		$(LINK)obj/obj_create_limit.c \
+		$(LINK)obj/obj_create_cube_plan.c \
+		$(LINK)obj/obj_init_image.c \
+		$(LINK)obj/obj_init_image_n.c \
+
+SRC	+=	$(LINK)inter/inter_plan.c \
+		$(LINK)inter/inter_sphere.c \
+		$(LINK)inter/inter_cylindre.c \
+		$(LINK)inter/inter_cone.c \
+		$(LINK)inter/inter_equation4deg.c \
+		$(LINK)inter/inter_tore.c \
+		$(LINK)inter/inter_cubetroue.c \
+		$(LINK)inter/inter_paraboloide.c \
+		$(LINK)inter/inter_hyperboloide.c \
+		$(LINK)inter/inter_moebius.c \
+
+SRC	+=	$(LINK)export/export_bmp.c \
+		$(LINK)export/export_img.c \
+		$(LINK)export/export_jpg.c \
+		$(LINK)export/determ_export.c \
+
+SRC	+=	$(LINK)texture/texture_mapping.c \
+		$(LINK)texture/texture_getcolor.c \
+		$(LINK)texture/texture_normalmap.c \
+		$(LINK)texture/texture_bumpmap.c \
+		$(LINK)texture/texture_map_sphere.c \
+		$(LINK)texture/texture_map_plan.c \
+		$(LINK)texture/texture_map_tore.c \
+		$(LINK)texture/texture_map_cylindre.c \
+
+SRC	+=	$(LINK)box/box.c \
+		$(LINK)box/init_box.c \
+
+SRC	+=	$(LINK)light/light_management.c \
+
+SRC	+=	$(LINK)perlin_noise/perlin_noise.c \
+		$(LINK)perlin_noise/perlin_effect.c \
+		$(LINK)perlin_noise/perlin_texture.c \
+
+SRC	+=	$(LINK)moebus/garbage_math.c \
+		$(LINK)moebus/interval.c \
+		$(LINK)moebus/Moebius.c \
+		$(LINK)moebus/moebius_part_two.c \
+		$(LINK)moebus/vec_utilites.c \
+
+SRC	+=	$(LINK)shadow/shadow_management.c \
+
+SRC	+=	$(LINK)verbose_mode/verbose_mode.c \
+		$(LINK)verbose_mode/verbose_details.c \
+		$(LINK)verbose_mode/print_win_atrib.c \
+		$(LINK)verbose_mode/print_special_figs.c \
+		$(LINK)verbose_mode/print_scene_attrib.c \
+
+OBJ=	$(SRC:.c=.o)
+
+INC=	./inc/
+
+LIB=	./lib/
+
+MLX=	/usr/X11/lib
+
+CC=	gcc -lpthread -pthread
+
+RM=	rm -f
+
+all:		$(NAME)
+
+%.o:		%.c
+		$(CC) -c $^ -o $@ $(CFLAGS)
+
+$(NAME):	$(OBJ)
+		make -C $(LIB)
+		$(CC) -o $(NAME) $(OBJ) -L/usr/local/lib -ljpeg -L$(MLX) -lmlx_$(HOSTTYPE) -lXext -lX11 -L$(LIB) -lmy -lm $(CFLAGS)
+clean:
+		make clean -C $(LIB)
+		$(RM) $(OBJ)
+
+fclean:		clean
+		make fclean -C $(LIB)
+		$(RM) $(NAME)
+
+re:		fclean all

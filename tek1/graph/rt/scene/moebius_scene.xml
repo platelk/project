@@ -1,0 +1,30 @@
+<window Y="400" X="500">
+  <scene name="Basic" ANTIALIASING="-10">
+    <cameras>
+      <camera>
+	<location X="-500" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>400</fov>
+      </camera>
+    </cameras>
+    <object>
+      <moebius TYPE="normal">
+	<location X="0" Y="0" Z="0"/>
+	<color>FFFFFF</color>
+	<size A="90" B="90" C="90"/>
+      </moebius>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="-500" Y="0" Z="0" />
+	<color>FFFFFF</color>
+	<intensity>0.9</intensity>
+      </light>
+      <light TYPE="ambient">
+	<location X="-500" Y="0" Z="0" />
+	<color>FFFFFF</color>
+	<intensity>0.9</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

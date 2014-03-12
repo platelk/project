@@ -1,0 +1,82 @@
+<window y=1000 x=1000>
+  <scene name=Basic antialiasing=2>
+    <cameras>
+      <camera>
+	<location X=0 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<fov>800</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type=normal>
+	<location X=500 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0.3/>
+	<color>856991</color>
+	<radius>200</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=500 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=550 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=300 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>100</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=400 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=450 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=600 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere type=negatif>
+	<location X=650 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0/>
+	<color>856991</color>
+	<radius>80</radius>
+      </sphere>
+      <plan type=normal>
+        <location X=0 Y=-20 Z=-50/>
+        <rotation X=0 Y=0 Z=0/>
+        <effect BRIGHTNESS=0.3/>
+        <color>FFFFFF</color>
+      </plan>
+    </object>
+    <lights>
+      <light type=diffuse>
+	<location X=0 Y=0 Z=0/>
+	<color>FFFFFF</color>
+	<intensity>1</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

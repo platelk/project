@@ -1,0 +1,1161 @@
+ABS	my_ls/lib/c/my_putnbr_base.c	/^#define ABS(x)	(x < 0)? x = (x * (-1)): x$/
+ABS	my_ls/lib/c/opt_o.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_ls/lib/c/opt_u.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_ls/lib/c/opt_p.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_ls/lib/c/opt_less.c	/^#define ABS(x)		(x < 0) ? (x = (-x)) : (x)$/
+ABS	my_ls/lib/c/opt_d.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_ls/lib/c/opt_b.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_ls/lib/c/opt_x.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell2/lib/c/my_putnbr_base.c	/^#define ABS(x)	(x < 0)? x = (x * (-1)): x$/
+ABS	minishell2/lib/c/opt_o.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell2/lib/c/opt_u.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell2/lib/c/opt_p.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell2/lib/c/opt_less.c	/^#define ABS(x)		(x < 0) ? (x = (-x)) : (x)$/
+ABS	minishell2/lib/c/opt_d.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell2/lib/c/opt_b.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell2/lib/c/opt_x.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	myselect/lib/c/my_putnbr_base.c	/^#define ABS(x)	(x < 0)? x = (x * (-1)): x$/
+ABS	myselect/lib/c/opt_o.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	myselect/lib/c/opt_u.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	myselect/lib/c/opt_p.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	myselect/lib/c/opt_less.c	/^#define ABS(x)		(x < 0) ? (x = (-x)) : (x)$/
+ABS	myselect/lib/c/opt_d.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	myselect/lib/c/opt_b.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	myselect/lib/c/opt_x.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_printf/source/my_putnbrul_base.c	/^#define ABS(x)	(x < 0)? x = (x * (-1)): x$/
+ABS	my_printf/source/opt_o.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_printf/source/opt_u.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_printf/source/opt_p.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_printf/source/opt_less.c	/^#define ABS(x)		(x < 0) ? (x = (-x)) : (x)$/
+ABS	my_printf/source/opt_d.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_printf/source/opt_b.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	my_printf/source/opt_x.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell1/lib/c/my_putnbr_base.c	/^#define ABS(x)	(x < 0)? x = (x * (-1)): x$/
+ABS	minishell1/lib/c/opt_o.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell1/lib/c/opt_u.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell1/lib/c/opt_p.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell1/lib/c/opt_less.c	/^#define ABS(x)		(x < 0) ? (x = (-x)) : (x)$/
+ABS	minishell1/lib/c/opt_d.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell1/lib/c/opt_b.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ABS	minishell1/lib/c/opt_x.c	/^#define ABS(x)		(x < 0)? x = (-x) : (x)$/
+ERROR_ONE	42sh/src/builtin/src/setenv/builtin_setenv.c	19
+IS_ALPHA	my_ls/lib/c/my_printf.c	15
+IS_IN_STR	minishell2/lib/c/my_strtok.c	14
+IS_NOT_IN_OPT	my_ls/lib/c/my_printf.c	16
+IS_NOT_OPT	minishell2/lib/c/my_printf.c	15
+IS_NOT_OPT	myselect/lib/c/my_printf.c	15
+IS_NOT_OPT	minishell1/lib/c/my_printf.c	15
+IS_NOT_STR	minishell2/lib/c/my_strtok.c	15
+MASTER_NODE	o_42sh/src/stack_exec/src/exec_convert.c	16
+MASTER_NODE	42sh/src/stack_exec/src/exec_convert.c	19
+MAX_TIME_NUMBER	o_42sh/src/my/src/xtime.c	13
+MAX_TIME_NUMBER	42sh/src/my/src/xtime.c	13
+Mmain	my_ls/source/main.c	/^int	main(int ac, char **av)$/
+Mmain	o_42sh/src/stack_exec/unit_test/main.c	/^int		main(int ac, char **av)$/
+Mmain	o_42sh/src/env/main.c	/^int	main(int ac, char **av, char **env)$/
+Mmain	o_42sh/src/globing/main.c	/^int	main()$/
+Mmain	o_42sh/src/main.c	/^int	main(void)$/
+Mmain	o_42sh/src/parsing/main.c	/^int	main(void)$/
+Mmain	o_42sh/src/edit/main.c	/^int	main(void)$/
+Mmain	minishell2/source/main.c	/^int	main(int ac, char **av, char **envp)$/
+Mmain	myselect/source/main.c	/^int	main(int ac, char **av, char **envp)$/
+Mmain	parsing/main.c	/^int	main(void)$/
+Mmain	my_printf/main/main.c	/^int	main(int ac, char **av)$/
+Mmain	42sh/src/main.c	/^int	main(void)$/
+Mmain	minishell1/source/main.c	/^int	main(int ac, char **av, char **envp)$/
+Munit_add_child	o_42sh/src/parsing/unit_add_child.c	/^int	main(void)$/
+Munit_add_child	parsing/unit_add_child.c	/^int	main(void)$/
+Munit_config_alias	o_42sh/src/config/test_unit/unit_config_alias.c	/^int	main(void)$/
+Munit_config_env	o_42sh/src/config/test_unit/unit_config_env.c	/^int	main(void)$/
+Munit_config_globing	o_42sh/src/config/test_unit/unit_config_globing.c	/^int	main(void)$/
+Munit_config_history	o_42sh/src/config/test_unit/unit_config_history.c	/^int	main(void)$/
+Munit_config_parser	o_42sh/src/config/test_unit/unit_config_parser.c	/^int	main(void)$/
+Munit_config_prompt	o_42sh/src/config/test_unit/unit_config_prompt.c	/^int	main(void)$/
+Munit_echo	o_42sh/src/builtin/test_unit/unit_echo.c	/^int	main()$/
+Munit_edit_prompt	o_42sh/src/edit/test_unit/unit_edit_prompt.c	/^int	main(void)$/
+Munit_env	o_42sh/src/env/test_unit/unit_env.c	/^int	main()$/
+Munit_glob_alias	o_42sh/src/globing/test_unit/unit_glob_alias.c	/^int	main()$/
+Munit_glob_list	o_42sh/src/globing/test_unit/unit_glob_list.c	/^int	main()$/
+Munit_globing	o_42sh/src/globing/test_unit/unit_globing.c	/^int	main()$/
+Munit_globing_env	o_42sh/src/globing/test_unit/unit_globing_env.c	/^int	main()$/
+Munit_history_putlist	o_42sh/src/history/test_unit/unit_history_putlist.c	/^int	main()$/
+Munit_is_builtin	o_42sh/src/builtin/test_unit/unit_is_builtin.c	/^int	main()$/
+Munit_search_env	o_42sh/src/env/test_unit/unit_search_env.c	/^int	main()$/
+Munit_termcap_init	o_42sh/src/edit/test_unit/unit_termcap_init.c	/^int	main(int ac, char **av)$/
+Munit_token_funct	o_42sh/src/parsing/unit_token_funct.c	/^int	main(void)$/
+Munit_token_funct	parsing/unit_token_funct.c	/^int	main(void)$/
+NODE_OR	42sh/src/stack_exec/src/exec_course_branch.c	27
+add_child	o_42sh/src/parsing/add_child.c	/^void	add_child(t_node **root)$/
+add_child	parsing/add_child.c	/^void	add_child(t_node **root)$/
+add_child	42sh/src/parsing/add_child.c	/^int	add_child(t_node **root)$/
+add_element	42sh/src/edit/src/edit_list.c	/^static void	add_element(t_line **begin, t_line *ne/
+add_in_list	myselect/source/list.c	/^t_element	*add_in_list(t_element *list, char *name/
+add_new	my_ls/source/my_sort_list.c	/^t_data		*add_new(t_data **list, char *name)$/
+add_new	minishell2/source/get_env.c	/^t_env	*add_new(char *field, t_env *begin)$/
+add_new	minishell1/source/get_env.c	/^t_env	*add_new(char *field, t_env *begin)$/
+add_new_with_two_arg	minishell2/source/get_env.c	/^t_env	 *add_new_with_two_arg(char *name, char *con/
+add_new_with_two_arg	minishell1/source/get_env.c	/^t_env	 *add_new_with_two_arg(char *name, char *con/
+add_node	o_42sh/src/parsing/add_child.c	/^void	add_node(t_node **new, t_t_list id, char *con/
+add_node	parsing/add_child.c	/^void	add_node(t_node **new, t_t_list id, char *con/
+add_node	42sh/src/parsing/add_child.c	/^int	add_node(t_node **new, t_t_list id, char *cont/
+add_pwd	minishell2/source/show_dir.c	/^t_pwd	*add_pwd(char *element, t_pwd *my_pwd)$/
+add_pwd	minishell1/source/show_dir.c	/^t_pwd	*add_pwd(char *element, t_pwd *my_pwd)$/
+add_token	o_42sh/src/parsing/tokenizer.c	/^void	add_token(t_token **tok, t_t_list id, char *c/
+add_token	parsing/tokenizer.c	/^void	add_token(t_token **tok, t_t_list id, char *c/
+add_token	42sh/src/parsing/tokenizer.c	/^int	add_token(t_token **tok, t_t_list id, char *c,/
+advance_history	42sh/src/builtin/src/history/history_showlist.c	/^t_history	*advance_history(t_history *history, cha/
+aff_ls	my_ls/source/show_dir.c	/^void	aff_ls(t_data *direc, int opt, char *link, t_/
+aff_rch	42sh/src/edit/src/edit_globing.c	/^aff_rch(char **tab, t_global *global, t_line *line/
+aff_rch	42sh/src/edit/src/edit_strstr.c	/^static void	aff_rch(t_global *global, t_line *line/
+aff_space	o_42sh/src/parsing/aff_tree.c	/^static void	aff_space(int nbr)$/
+aff_token	o_42sh/src/parsing/tokenizer.c	/^void	aff_token(t_token *tok)$/
+aff_token	parsing/tokenizer.c	/^void	aff_token(t_token *tok)$/
+aff_token	42sh/src/parsing/tokenizer.c	/^void	aff_token(t_token *tok)$/
+aff_tree	o_42sh/src/parsing/aff_tree.c	/^void	aff_tree(t_node *root)$/
+aff_tree	parsing/main.c	/^void	aff_tree(t_node *root)$/
+alias_concat	42sh/src/builtin/src/alias/builtin_alias.c	/^static char	*alias_concat(char **tab)$/
+alias_free	42sh/src/config/src/config_free.c	/^static void	alias_free(t_alias *alias)$/
+analyse_cmd	o_42sh/src/parsing_func.c	/^t_token	*analyse_cmd(char *cmd)$/
+analyse_cmd	minishell2/source/analise_cmd.c	/^t_cmd	 *analyse_cmd(char *cmd)$/
+analyse_cmd	42sh/src/parsing_func.c	/^t_token	*analyse_cmd(char *cmd)$/
+aply_operand	minishell2/source/analise_cmd.c	/^t_cmd	*aply_operand(char *cmd, int operand, t_cmd /
+args_c	o_42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_c(char **cmd, t_history **history)$/
+args_c	42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_c(char **cmd, t_history **history)$/
+args_h	o_42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_h(char **cmd, t_history **history)$/
+args_h	42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_h(char **cmd, t_history **history)$/
+args_l	o_42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_l(char **cmd, t_history **history)$/
+args_l	42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_l(char **cmd, t_history **history)$/
+args_m	o_42sh/src/builtin/src/history/builtin_history_param_secondpart.c	/^int	args_m(char **cmd, t_history **history)$/
+args_r	o_42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_r(char **cmd, t_history **history)$/
+args_r	42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_r(char **cmd, t_history **history)$/
+args_s	o_42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_s(char **cmd, t_history **history)$/
+args_s	42sh/src/builtin/src/history/builtin_history_param_firstpart.c	/^int	args_s(char **cmd, t_history **history)$/
+args_t	o_42sh/src/builtin/src/history/builtin_history_param_secondpart.c	/^int	args_t(char **cmd, t_history **history)$/
+args_t	42sh/src/builtin/src/history/builtin_history_param_secondpart.c	/^int	args_t(char **cmd, t_history **history)$/
+asc	parsing/main.c	/^void	asc(t_node *rt)$/
+builtin	minishell2/source/is_builtin.c	/^int	builtin(char *buffer)$/
+builtin_alias	42sh/src/builtin/src/alias/builtin_alias.c	/^int	builtin_alias(t_global *global, char **cmd)$/
+builtin_create_ptr_func	o_42sh/src/builtin/src/builtin_ptr_func.c	/^builtin_ptr_f	*builtin_create_ptr_func(builtin_ptr/
+builtin_create_ptr_func	42sh/src/builtin/src/builtin_ptr_func.c	/^builtin_ptr_f	*builtin_create_ptr_func(builtin_ptr/
+builtin_exit	o_42sh/src/builtin/src/exit.c	/^int	builtin_exit(t_global *g, char **cmd)$/
+builtin_exit	42sh/src/builtin/src/exit.c	/^int	builtin_exit(t_global *g, char **cmd)$/
+builtin_ptr_func	o_42sh/src/builtin/src/builtin_ptr_func.c	/^int	builtin_ptr_func(char **cmd, t_global *global)/
+builtin_ptr_func	42sh/src/builtin/src/builtin_ptr_func.c	/^int	builtin_ptr_func(char **cmd, t_global *global)/
+builtin_unalias	42sh/src/builtin/src/alias/builtin_alias.c	/^int	builtin_unalias(t_global *global, char **cmd)$/
+can_display_list	myselect/source/info_term.c	/^int	can_display_list(t_element *list, t_element *b/
+cat_token	42sh/src/parsing/concat_token.c	/^t_token	*cat_token(t_token *b, t_token *e, t_t_lis/
+cd	o_42sh/src/builtin/src/cd/cd.c	/^int	cd(t_global *global, char **cmd)$/
+cd	42sh/src/builtin/src/cd/cd.c	/^int	cd(t_global *global, char **cmd)$/
+change_dir	minishell2/source/show_dir.c	/^t_pwd   *change_dir(char *link, t_env **envp, t_pw/
+change_dir	minishell1/source/show_dir.c	/^t_pwd   *change_dir(char *link, t_env **envp, t_pw/
+change_token_exec	o_42sh/src/parsing/reconstruct_token.c	/^void	change_token_exec(t_token **tok)$/
+change_token_exec	parsing/reconstruct_token.c	/^void	change_token_exec(t_token **tok)$/
+change_token_exec	42sh/src/parsing/reconstruct_token.c	/^void	change_token_exec(t_token **tok)$/
+change_variable	o_42sh/src/builtin/src/setenv/builtin_setenv.c	/^void	change_variable(t_env *env, char *name, char /
+change_variable	42sh/src/builtin/src/setenv/builtin_setenv.c	/^void	change_variable(t_env *env, char *name, char /
+check_alias	o_42sh/src/globing/globing/glob_gest_tok_list.c	/^int	check_alias(t_token *t, char *str)$/
+check_alias	42sh/src/globing/globing/glob_gest_tok_list.c	/^int	check_alias(t_token *t, char *str)$/
+check_attr	myselect/source/main.c	/^int	check_attr()$/
+check_base	o_42sh/src/my/src/check_base.c	/^int	check_base(char c, char *base)$/
+check_base	42sh/src/my/src/check_base.c	/^int	check_base(char c, char *base)$/
+check_bloc_exec	o_42sh/src/parsing/check_bloc_exec.c	/^t_bool	check_bloc_exec(t_token *b, t_token *e, t_n/
+check_bloc_exec	parsing/check_bloc_exec.c	/^t_bool	check_bloc_exec(t_token *b, t_token *e, t_n/
+check_bloc_exec	42sh/src/parsing/check_bloc_exec.c	/^t_bool	check_bloc_exec(t_token *b, t_token *e, t_n/
+check_bloc_exec_ext	42sh/src/parsing/check_bloc_exec_ext.c	/^t_bool	check_bloc_exec_ext(t_node **root, t_token /
+check_cd_access	o_42sh/src/builtin/src/cd/cd.c	/^int	check_cd_access(char *pwd)$/
+check_cd_access	42sh/src/builtin/src/cd/cd.c	/^int	check_cd_access(char *pwd)$/
+check_cmd	o_42sh/src/parsing/check_cmd.c	/^t_bool	check_cmd(t_token *b, t_token *e, t_node **/
+check_cmd	parsing/check_cmd.c	/^t_bool	check_cmd(t_token *b, t_token *e, t_node **/
+check_cmd	42sh/src/parsing/check_cmd.c	/^t_bool	check_cmd(t_token *b, t_token *e, t_node **/
+check_exist_or_not	o_42sh/src/builtin/src/setenv/builtin_setenv.c	/^void	check_exist_or_not(t_env **env, char *name, c/
+check_exist_or_not	42sh/src/builtin/src/setenv/builtin_setenv.c	/^void	check_exist_or_not(t_env **env, char *name, c/
+check_expression	o_42sh/src/parsing/check_expression.c	/^t_bool	check_expression(t_token *tok, t_node **roo/
+check_expression	parsing/check_expression.c	/^t_bool	check_expression(t_token *tok, t_node **roo/
+check_expression	42sh/src/parsing/check_expression.c	/^t_bool	check_expression(t_token *tok, t_node **roo/
+check_grammar_exec	o_42sh/src/parsing/check_grammar_exec.c	/^t_bool	check_grammar_exec(t_token *b, t_token *e)$/
+check_grammar_exec	parsing/check_bloc_exec.c	/^static	t_bool	check_grammar_exec(t_token *b, t_tok/
+check_grammar_exec	42sh/src/parsing/check_grammar_exec.c	/^t_bool	check_grammar_exec(t_token *b, t_token *e)$/
+check_grammar_log	o_42sh/src/parsing/check_log.c	/^static t_bool	check_grammar_log(t_token *begin, t_/
+check_grammar_log	parsing/check_log.c	/^static t_bool	check_grammar_log(t_token *begin, t_/
+check_grammar_log	42sh/src/parsing/check_log.c	/^static t_bool	check_grammar_log(t_token *begin, t_/
+check_history	o_42sh/src/builtin/src/history/builtin_history.c	/^int	check_history(t_global *global, char **cmd)$/
+check_history	42sh/src/builtin/src/history/builtin_history.c	/^int	check_history(t_global *global, char **cmd)$/
+check_left	o_42sh/src/parsing/check_grammar_exec.c	/^static t_bool	check_left(t_token *b, t_token *e)$/
+check_left	parsing/check_bloc_exec.c	/^static t_bool	check_left(t_token *b, t_token *e)$/
+check_left	42sh/src/parsing/check_grammar_exec.c	/^static t_bool	check_left(t_token *b, t_token *e)$/
+check_log	o_42sh/src/parsing/check_log.c	/^t_bool	check_log(t_token *b, t_token *e, t_node **/
+check_log	parsing/check_log.c	/^t_bool	check_log(t_token *b, t_token *e, t_node **/
+check_log	42sh/src/parsing/check_log.c	/^t_bool	check_log(t_token *b, t_token *e, t_node **/
+check_par	42sh/src/parsing/retoken_redir_par.c	/^static	t_bool	check_par(t_token **root, t_token **/
+check_pipe	o_42sh/src/parsing/check_pipe.c	/^t_bool	check_pipe(t_token *b, t_token *e, t_node */
+check_pipe	42sh/src/parsing/check_pipe.c	/^t_bool	check_pipe(t_token *b, t_token *e, t_node */
+check_pipe_ext	42sh/src/parsing/check_pipe.c	/^static t_bool	check_pipe_ext(t_node **root)$/
+check_prefix_exec	o_42sh/src/parsing/check_grammar_exec.c	/^static	t_bool	check_prefix_exec(t_token **begin, t/
+check_prefix_exec	parsing/check_bloc_exec.c	/^static	t_bool	check_prefix_exec(t_token **begin, t/
+check_prefix_exec	42sh/src/parsing/check_grammar_exec.c	/^static	t_bool	check_prefix_exec(t_token **begin, t/
+check_quote	42sh/src/config/src/config_prompt.c	/^static int	check_quote(int match)$/
+check_red	o_42sh/src/parsing/check_bloc_exec.c	/^static t_bool	check_red(t_token *b, t_token *e, t_/
+check_red	42sh/src/parsing/check_bloc_exec.c	/^static t_bool	check_red(t_token *b, t_token *end, /
+check_red_ext	42sh/src/parsing/check_bloc_exec_ext.c	/^t_bool	check_red_ext(t_token **begin, t_node **roo/
+check_redirection_pipe	o_42sh/src/stack_exec/unit_test/main.c	/^int	check_redirection_pipe(char *str)$/
+check_right	o_42sh/src/parsing/check_grammar_exec.c	/^static t_bool	check_right(t_token *b, t_token *e)$/
+check_right	parsing/check_bloc_exec.c	/^static t_bool	check_right(t_token *b, t_token *e)$/
+check_right	42sh/src/parsing/check_grammar_exec.c	/^static t_bool	check_right(t_token *b, t_token *e)$/
+check_setenv	o_42sh/src/builtin/src/setenv/builtin_setenv.c	/^int	check_setenv(t_global *global, char **cmd)$/
+check_setenv	42sh/src/builtin/src/setenv/builtin_setenv.c	/^int	check_setenv(t_global *global, char **cmd)$/
+check_unsetenv	o_42sh/src/builtin/src/unsetenv/builtin_unsetenv.c	/^int	check_unsetenv(t_global *global, char **cmd)$/
+check_unsetenv	42sh/src/builtin/src/unsetenv/builtin_unsetenv.c	/^int	check_unsetenv(t_global *global, char **cmd)$/
+clear_rch	42sh/src/edit/src/edit_strstr.c	/^static void	clear_rch(t_global *global, t_line *li/
+concat_token	o_42sh/src/parsing/concat_token.c	/^t_token	*concat_token(t_token *b, t_token *e, t_t_/
+concat_token	parsing/concat_token.c	/^t_token	*concat_token(t_token *b, t_token *e, t_t_/
+config_alias	o_42sh/src/config/src/config_alias.c	/^int	config_alias(char *str, t_config *config)$/
+config_alias	42sh/src/config/src/config_alias.c	/^int	config_alias(char *str, t_config *config)$/
+config_comment	o_42sh/src/config/src/config_func.c	/^int	config_comment(char *str, t_config *config)$/
+config_comment	42sh/src/config/src/config_func.c	/^int	config_comment(char *str, t_config *config)$/
+config_default	42sh/src/config/src/config_parser.c	/^static t_config	*config_default()$/
+config_env	o_42sh/src/config/src/config_env.c	/^int	config_env(char *str, t_config *config)$/
+config_env	42sh/src/config/src/config_env.c	/^int	config_env(char *str, t_config *config)$/
+config_free	42sh/src/config/src/config_free.c	/^void	config_free(t_config *config)$/
+config_func	o_42sh/src/config/src/config_func.c	/^t_func	*config_func(void)$/
+config_func	42sh/src/config/src/config_func.c	/^t_func	*config_func(void)$/
+config_globing	o_42sh/src/config/src/config_globing.c	/^int	config_globing(char *str, t_config *config)$/
+config_globing	42sh/src/config/src/config_globing.c	/^int	config_globing(char *str, t_config *config)$/
+config_history	o_42sh/src/config/src/config_history.c	/^int	config_history(char *str, t_config *config)$/
+config_history	42sh/src/config/src/config_history.c	/^int	config_history(char *str, t_config *config)$/
+config_iskeyword	o_42sh/src/config/src/config_keyword.c	/^int	config_iskeyword(char *str, char **keyword)$/
+config_iskeyword	42sh/src/config/src/config_keyword.c	/^int	config_iskeyword(char *str, char **keyword, in/
+config_keyword	o_42sh/src/config/src/config_keyword.c	/^char	**config_keyword(void)$/
+config_keyword	42sh/src/config/src/config_keyword.c	/^int	config_keyword(char **tab)$/
+config_parser	o_42sh/src/config/src/config_parser.c	/^t_config	*config_parser(char *path)$/
+config_parser	42sh/src/config/src/config_parser.c	/^t_config	*config_parser(char *path)$/
+config_prompt	o_42sh/src/config/src/config_prompt.c	/^int	config_prompt(char *str, t_config *config)$/
+config_prompt	42sh/src/config/src/config_prompt.c	/^int	config_prompt(char *str, t_config *config)$/
+config_savehist	o_42sh/src/config/src/config_history.c	/^int	config_savehist(char *str, t_config *config)$/
+config_savehist	42sh/src/config/src/config_history.c	/^int	config_savehist(char *str, t_config *config)$/
+convert_base	my_ls/lib/c/convert_base.c	/^char	*convert_base(char *nbr, char *base_from, cha/
+convert_base	minishell2/lib/c/convert_base.c	/^char	*convert_base(char *nbr, char *base_from, cha/
+convert_base	myselect/lib/c/convert_base.c	/^char	*convert_base(char *nbr, char *base_from, cha/
+convert_base	minishell1/lib/c/convert_base.c	/^char	*convert_base(char *nbr, char *base_from, cha/
+creat_env	o_42sh/src/env/src/env.c	/^t_env	*creat_env(void)$/
+creat_env	42sh/src/env/src/env.c	/^t_env	*creat_env(void)$/
+creat_list	myselect/source/list.c	/^t_element	*creat_list(char **av, int ac)$/
+creat_list_env	o_42sh/src/env/src/env.c	/^t_env	*creat_list_env(char *str, t_env *env)$/
+creat_list_env	42sh/src/env/src/env.c	/^t_env	*creat_list_env(char *str, t_env *env)$/
+creat_list_token	o_42sh/src/parsing_func.c	/^t_token	*creat_list_token(char *cmd, t_global *glo/
+creat_list_token	42sh/src/parsing_func.c	/^t_token	*creat_list_token(char *cmd, t_global *glo/
+creat_pwd	minishell2/source/manag_pwd.c	/^t_pwd	*creat_pwd(char *link)$/
+creat_pwd	minishell1/source/manag_pwd.c	/^t_pwd	*creat_pwd(char *link)$/
+create_args_history	o_42sh/src/builtin/src/history/builtin_history_create_param.c	/^char	**create_args_history(void)$/
+create_args_history	42sh/src/builtin/src/history/builtin_history_create_param.c	/^char	**create_args_history(void)$/
+create_command	o_42sh/src/stack_exec/unit_test/main.c	/^t_node		*create_command(char *str)$/
+create_ptr_built_history	o_42sh/src/builtin/src/history/builtin_history_create_param.c	/^ptr_f_built_history *create_ptr_built_history(ptr_/
+create_ptr_built_history	42sh/src/builtin/src/history/builtin_history_create_param.c	/^ptr_f_built_history *create_ptr_built_history(ptr_/
+create_ptr_func_history	o_42sh/src/history/src/history_create_ptr_func.c	/^ptr_f_history	*create_ptr_func_history(ptr_f_histo/
+create_ptr_func_history	42sh/src/history/src/history_create_ptr_func.c	/^ptr_f_history	*create_ptr_func_history(ptr_f_histo/
+create_variable	o_42sh/src/builtin/src/setenv/builtin_setenv.c	/^void	create_variable(t_env **env, char *name, char/
+create_variable	42sh/src/builtin/src/setenv/builtin_setenv.c	/^void	create_variable(t_env **env, char *name, char/
+custom_prompt	o_42sh/src/edit/src/edit_prompt.c	/^static int	custom_prompt(char *str, char c, int i,/
+custom_prompt	42sh/src/edit/src/edit_prompt.c	/^static int	custom_prompt(char *str, char c, int i,/
+default_prompt	o_42sh/src/edit/src/edit_prompt.c	/^static char	*default_prompt(t_env *env)$/
+default_prompt	42sh/src/edit/src/edit_prompt.c	/^static char	*default_prompt(t_env *env)$/
+del_in_list	my_ls/source/my_sort_list.c	/^t_data		*del_in_list(t_data *begin)$/
+del_one	minishell2/source/un_set.c	/^t_env	*del_one(t_env *envp)$/
+del_one	minishell1/source/un_set.c	/^t_env	*del_one(t_env *envp)$/
+del_one_in_list	myselect/source/list.c	/^t_element	*del_one_in_list(t_element *list)$/
+del_one_pwd	minishell2/source/manag_pwd.c	/^t_pwd	*del_one_pwd(t_pwd *pwd)$/
+del_one_pwd	minishell1/source/manag_pwd.c	/^t_pwd	*del_one_pwd(t_pwd *pwd)$/
+disable_signal	myselect/source/signal.c	/^int	disable_signal(void)$/
+display	myselect/source/display.c	/^int	display(t_element *list, int max_lenght)$/
+display_list	myselect/source/display.c	/^int	display_list(t_element *list, t_term *term)$/
+display_tab	o_42sh/src/stack_exec/unit_test/main.c	/^void		display_tab(char **tab)$/
+echo	o_42sh/src/builtin/src/echo/echo.c	/^int	echo(t_global *global, char **av)$/
+echo	42sh/src/builtin/src/echo/echo.c	/^int	echo(t_global *global, char **av)$/
+echo_mode	minishell2/source/term_mode.c	/^int	echo_mode(int mode)$/
+echo_mode	myselect/source/term_mode.c	/^int	echo_mode(int mode)$/
+edit_afflist	o_42sh/src/edit/src/edit_list.c	/^void	edit_afflist(t_line *line)$/
+edit_afflist	42sh/src/edit/src/edit_list.c	/^void	edit_afflist(t_line *line)$/
+edit_allstore	o_42sh/src/edit/src/edit_store.c	/^edit_allstore(t_global *global, t_line **line, cha/
+edit_allstore	42sh/src/edit/src/edit_store.c	/^edit_allstore(t_global *global, t_line **line, cha/
+edit_autocomplete	42sh/src/edit/src/edit_globing.c	/^*edit_autocomplete(char *str, char *path, t_global/
+edit_clear	o_42sh/src/edit/src/edit_func.c	/^edit_clear(t_global *global, t_line **line, char */
+edit_clear	42sh/src/edit/src/edit_clear.c	/^edit_clear(t_global *global, t_line **line, char */
+edit_cmd	o_42sh/src/edit/src/edit_cmd.c	/^char	*edit_cmd(t_global *global, char *prompt)$/
+edit_cmd	42sh/src/edit/src/edit_cmd.c	/^char	*edit_cmd(t_global *global, char *prompt)$/
+edit_cmpstr	o_42sh/src/edit/src/edit_globing.c	/^static t_line	*edit_cmpstr(char **tab)$/
+edit_concatlist	o_42sh/src/edit/src/edit_list.c	/^t_line	*edit_concatlist(t_line *p1, t_line *p2, in/
+edit_concatlist	42sh/src/edit/src/edit_utils.c	/^t_line	*edit_concatlist(t_line *p1, t_line *p2, in/
+edit_control	o_42sh/src/edit/src/edit_func.c	/^edit_control(t_global *global, t_line **line, char/
+edit_control	42sh/src/edit/src/edit_func.c	/^edit_control(t_global *global, t_line **line, char/
+edit_convertlist	o_42sh/src/edit/src/edit_list.c	/^char	*edit_convertlist(t_line *line)$/
+edit_convertlist	42sh/src/edit/src/edit_utils.c	/^char	*edit_convertlist(t_line *line)$/
+edit_convertstr	o_42sh/src/edit/src/edit_list.c	/^t_line	*edit_convertstr(char *str)$/
+edit_convertstr	42sh/src/edit/src/edit_utils.c	/^t_line	*edit_convertstr(char *str)$/
+edit_core	42sh/src/edit/src/edit_strstr.c	/^edit_core(char *sol, char *buff, t_global *global,/
+edit_cp	42sh/src/edit/src/edit_utils.c	/^int	edit_cp(t_line *line)$/
+edit_default	o_42sh/src/edit/src/edit_func.c	/^edit_default(t_global *global, t_line **line, char/
+edit_default	42sh/src/edit/src/edit_func.c	/^edit_default(t_global *global, t_line **line, char/
+edit_delete	o_42sh/src/edit/src/edit_func.c	/^edit_delete(t_global *global, t_line **line, char /
+edit_delete	42sh/src/edit/src/edit_clear.c	/^edit_delete(t_global *global, t_line **line, char /
+edit_downhistory	o_42sh/src/edit/src/edit_history.c	/^edit_downhistory(t_global *global, t_line **line, /
+edit_downhistory	42sh/src/edit/src/edit_history.c	/^edit_downhistory(t_global *global, t_line **line, /
+edit_env	42sh/src/edit/src/edit_env.c	/^int	edit_env(t_config *config, t_env **sys)$/
+edit_exit	o_42sh/src/edit/src/edit_cmd.c	/^static void	edit_exit(t_global *global)$/
+edit_exit	42sh/src/edit/src/edit_cmd.c	/^static void	edit_exit(t_global *global)$/
+edit_freelist	o_42sh/src/edit/src/edit_list.c	/^void	edit_freelist(t_line *line)$/
+edit_freelist	42sh/src/edit/src/edit_list.c	/^void	edit_freelist(t_line *line)$/
+edit_func	o_42sh/src/edit/src/edit_func.c	/^t_efunc	*edit_func(void)$/
+edit_func	42sh/src/edit/src/edit_func.c	/^t_efunc	*edit_func(void)$/
+edit_getword	42sh/src/edit/src/edit_globing.c	/^static char	*edit_getword(t_line *line, int *pos)$/
+edit_global	42sh/src/edit/src/edit_cmd.c	/^int	edit_global(t_global *global, int flag)$/
+edit_globing	o_42sh/src/edit/src/edit_globing.c	/^edit_globing(t_global *global, t_line **line, char/
+edit_globing	42sh/src/edit/src/edit_globing.c	/^edit_globing(t_global *global, t_line **line, char/
+edit_goto_nextspace	o_42sh/src/edit/src/edit_move.c	/^edit_goto_nextspace(t_global *global, t_line **lin/
+edit_goto_nextspace	42sh/src/edit/src/edit_move.c	/^edit_goto_nextspace(t_global *global, t_line **lin/
+edit_goto_prevspace	o_42sh/src/edit/src/edit_move.c	/^edit_goto_prevspace(t_global *global, t_line **lin/
+edit_goto_prevspace	42sh/src/edit/src/edit_move.c	/^edit_goto_prevspace(t_global *global, t_line **lin/
+edit_iskeyword	o_42sh/src/edit/src/edit_keyword.c	/^int	edit_iskeyword(char *str, char **keyword)$/
+edit_iskeyword	42sh/src/edit/src/edit_keyword.c	/^int	edit_iskeyword(char *str, char **keyword)$/
+edit_keyword	o_42sh/src/edit/src/edit_keyword.c	/^char	**edit_keyword(void)$/
+edit_keyword	42sh/src/edit/src/edit_keyword.c	/^void	edit_keyword(char **tab)$/
+edit_leftmove	o_42sh/src/edit/src/edit_move.c	/^edit_leftmove(t_global *global, t_line **line, cha/
+edit_leftmove	42sh/src/edit/src/edit_move.c	/^edit_leftmove(t_global *global, t_line **line, cha/
+edit_leftstore	o_42sh/src/edit/src/edit_store.c	/^edit_leftstore(t_global *global, t_line **line, ch/
+edit_leftstore	42sh/src/edit/src/edit_store.c	/^edit_leftstore(t_global *global, t_line **line, ch/
+edit_listlen	o_42sh/src/edit/src/edit_list.c	/^int	edit_listlen(t_line *line)$/
+edit_listlen	42sh/src/edit/src/edit_list.c	/^int	edit_listlen(t_line *line)$/
+edit_management	o_42sh/src/edit/src/edit_cmd.c	/^t_line   *edit_management(t_global *global, char */
+edit_management	42sh/src/edit/src/edit_cmd.c	/^t_line   *edit_management(t_global *global, char */
+edit_paste	o_42sh/src/edit/src/edit_store.c	/^edit_paste(t_global *global, t_line **line, char */
+edit_paste	42sh/src/edit/src/edit_store.c	/^edit_paste(t_global *global, t_line **line, char */
+edit_prompt	o_42sh/src/edit/src/edit_prompt.c	/^char	*edit_prompt(t_config *config, t_env *env)$/
+edit_prompt	42sh/src/edit/src/edit_prompt.c	/^char	*edit_prompt(t_config *config, t_env *env)$/
+edit_putlist	o_42sh/src/edit/src/edit_list.c	/^int	edit_putlist(t_line **begin, char letter)$/
+edit_putlist	42sh/src/edit/src/edit_list.c	/^int	edit_putlist(t_line **begin, char letter)$/
+edit_recurrence	42sh/src/edit/src/edit_globing.c	/^static t_line	*edit_recurrence(char **tab, int rec/
+edit_replacelist	o_42sh/src/edit/src/edit_globing.c	/^static char	*edit_replacelist(t_line *line)$/
+edit_rightmove	o_42sh/src/edit/src/edit_move.c	/^edit_rightmove(t_global *global, t_line **line, ch/
+edit_rightmove	42sh/src/edit/src/edit_move.c	/^edit_rightmove(t_global *global, t_line **line, ch/
+edit_rightstore	o_42sh/src/edit/src/edit_store.c	/^edit_rightstore(t_global *global, t_line **line, c/
+edit_rightstore	42sh/src/edit/src/edit_store.c	/^edit_rightstore(t_global *global, t_line **line, c/
+edit_showglob	o_42sh/src/edit/src/edit_globing.c	/^static int	edit_showglob(t_line *line, char **tab,/
+edit_strlen	42sh/src/edit/src/edit_cmd.c	/^static int	edit_strlen(char *str)$/
+edit_strstr	42sh/src/edit/src/edit_strstr.c	/^edit_strstr(t_global *global, t_line **line, char /
+edit_suppr	o_42sh/src/edit/src/edit_func.c	/^edit_suppr(t_global *global, t_line **line, char */
+edit_suppr	42sh/src/edit/src/edit_clear.c	/^edit_suppr(t_global *global, t_line **line, char */
+edit_swap	o_42sh/src/edit/src/edit_swap.c	/^edit_swap(t_global *global, t_line **line, char *p/
+edit_swap	42sh/src/edit/src/edit_swap.c	/^edit_swap(t_global *global, t_line **line, char *p/
+edit_switchmove	o_42sh/src/edit/src/edit_move.c	/^edit_switchmove(t_global *global, t_line **line, c/
+edit_switchmove	42sh/src/edit/src/edit_move.c	/^edit_switchmove(t_global *global, t_line **line, c/
+edit_uphistory	o_42sh/src/edit/src/edit_history.c	/^edit_uphistory(t_global *global, t_line **line, ch/
+edit_uphistory	42sh/src/edit/src/edit_history.c	/^edit_uphistory(t_global *global, t_line **line, ch/
+env_free	42sh/src/env/src/free_env.c	/^void	env_free(t_env *env)$/
+environ_set	minishell2/source/set_env.c	/^t_env	*environ_set(char *buffer, t_env *envp)$/
+environ_set	minishell1/source/set_env.c	/^t_env	*environ_set(char *buffer, t_env *envp)$/
+error	my_ls/lib/c/opt_less.c	/^int	error(const char *format)$/
+error	minishell2/lib/c/opt_less.c	/^int	error(const char *format)$/
+error	myselect/lib/c/opt_less.c	/^int	error(const char *format)$/
+error	my_printf/source/opt_less.c	/^int	error(char *format)$/
+error	minishell1/lib/c/opt_less.c	/^int	error(const char *format)$/
+error_sig	minishell2/source/main_loop.c	/^void	error_sig(int sig)$/
+error_sig	minishell1/source/main_loop.c	/^void	error_sig(int sig)$/
+escape_char	o_42sh/src/config/src/config_prompt.c	/^int	escape_char(char c)$/
+escape_char	42sh/src/config/src/config_prompt.c	/^static int	escape_char(char c)$/
+exec	minishell2/source/exec.c	/^void	exec(t_env *envp, char *buffer)$/
+exec	minishell1/source/exec.c	/^void	exec(t_env *envp, char *buffer)$/
+exec_builtin	o_42sh/src/stack_exec/src/exec_bultin.c	/^int	exec_builtin(t_node *node, t_global *global)$/
+exec_builtin	42sh/src/stack_exec/src/exec_bultin.c	/^int	exec_builtin(t_node *node, t_global *global)$/
+exec_check_slash	o_42sh/src/stack_exec/src/exec_check_slash.c	/^int	exec_check_slash(char *cmd)$/
+exec_check_slash	42sh/src/stack_exec/src/exec_check_slash.c	/^int	exec_check_slash(char *cmd)$/
+exec_cmd	minishell2/source/analise_cmd.c	/^int	exec_cmd(char *cmd, t_env **envp)$/
+exec_comd	minishell2/source/exec_com.c	/^int	exec_comd(t_cmd *cmd, t_env **envp, t_pwd **my/
+exec_command	o_42sh/src/stack_exec/src/exec_command.c	/^int		exec_command(t_node *master_node, t_env *env)/
+exec_command	42sh/src/stack_exec/src/exec_command.c	/^int		exec_command(t_node *master_node, t_env *env,/
+exec_command_check	o_42sh/src/stack_exec/src/exec_command.c	/^static int		exec_command_check(char *cmd)$/
+exec_command_check	42sh/src/stack_exec/src/exec_command.c	/^static int		exec_command_check(char *cmd)$/
+exec_command_end	42sh/src/stack_exec/src/exec_command.c	/^int		exec_command_end(char **tab_command, char **t/
+exec_command_pathvar	o_42sh/src/stack_exec/src/exec_command.c	/^static char		*exec_command_pathvar(char *cmd, t_en/
+exec_command_pathvar	42sh/src/stack_exec/src/exec_command.c	/^char		*exec_command_pathvar(char *cmd, t_env *env,/
+exec_command_pathvar_none	42sh/src/stack_exec/src/exec_command_pathvar.c	/^char		*exec_command_pathvar_none(char **tab_path)$/
+exec_commmand_exec	42sh/src/stack_exec/src/exec_command.c	/^int		exec_commmand_exec(char **tab_environ, char */
+exec_convert	o_42sh/src/stack_exec/src/exec_convert.c	/^char		**exec_convert(t_node *master_node)$/
+exec_convert	42sh/src/stack_exec/src/exec_convert.c	/^char		**exec_convert(t_node *master_node, t_global/
+exec_convert_fill	42sh/src/stack_exec/src/exec_convert.c	/^int		exec_convert_fill(t_global *global, t_child */
+exec_count_child	o_42sh/src/stack_exec/src/exec_count_child.c	/^int		exec_count_child(t_child *child_node)$/
+exec_count_child	42sh/src/stack_exec/src/exec_count_child.c	/^int		exec_count_child(t_child *child_node)$/
+exec_course_branch	o_42sh/src/stack_exec/src/exec_course_branch.c	/^int		exec_course_branch(t_node *root, t_env *env, /
+exec_course_branch	42sh/src/stack_exec/src/exec_course_branch.c	/^int		exec_course_branch(t_node *root, t_env *env, /
+exec_course_branch_execute	o_42sh/src/stack_exec/src/exec_course_branch.c	/^int	exec_course_branch_execute(t_node *root, t_glo/
+exec_course_branch_execute	42sh/src/stack_exec/src/exec_course_branch.c	/^int	exec_course_branch_execute(t_node *root, t_glo/
+exec_course_branch_or	42sh/src/stack_exec/src/exec_course_branch.c	/^int		exec_course_branch_or(t_node *root, t_env *en/
+exec_course_branch_other	42sh/src/stack_exec/src/exec_course_branch.c	/^int	        exec_course_branch_other(t_node *root,/
+exec_course_branch_other_dolar	42sh/src/stack_exec/src/exec_course_branch_other.c	/^int		exec_course_branch_other_dolar(t_node *root, /
+exec_course_branch_select	o_42sh/src/stack_exec/src/exec_course_branch.c	/^int	exec_course_branch_select(t_node *root, t_glob/
+exec_course_branch_select	42sh/src/stack_exec/src/exec_course_branch.c	/^int	exec_course_branch_select(t_node *root, t_glob/
+exec_course_father	42sh/src/stack_exec/src/exec_course_branch_execute.c	/^int	exec_course_father(t_global *global, int pid)$/
+exec_course_son	42sh/src/stack_exec/src/exec_course_branch_execute.c	/^int	exec_course_son(t_node *root, t_global *global/
+exec_course_tree	o_42sh/src/stack_exec/src/exec_course_tree.c	/^int		exec_course_tree(t_node *node, t_env *env, t_/
+exec_course_tree	42sh/src/stack_exec/src/exec_course_tree.c	/^int		exec_course_tree(t_node *node, t_env *env, t_/
+exec_create_tabvar_env	o_42sh/src/stack_exec/src/exec_create_tabenv_var.c	/^char	**exec_create_tabvar_env(t_env *env, char *va/
+exec_create_tabvar_env	42sh/src/stack_exec/src/exec_create_tabenv_var.c	/^char	**exec_create_tabvar_env(t_env *env, char *va/
+exec_pipe	o_42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe(t_node *master_node, t_global *glob/
+exec_pipe	42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe(t_node *master_node, t_global *glob/
+exec_pipe_cascada	o_42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_cascada(t_node *master_node, t_glob/
+exec_pipe_cascada	42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_cascada(t_node *master_node, t_glob/
+exec_pipe_cascada_fath	42sh/src/stack_exec/src/pipe/exec_pipe_cascada_father.c	/^int		exec_pipe_cascada_fath(t_node *master_node, t/
+exec_pipe_count	o_42sh/src/stack_exec/src/pipe/exec_pipe_count.c	/^int		exec_pipe_count(t_node *master_node)$/
+exec_pipe_count	42sh/src/stack_exec/src/pipe/exec_pipe_count.c	/^int		exec_pipe_count(t_node *master_node)$/
+exec_pipe_current	o_42sh/src/stack_exec/src/pipe/exec_pipe_current.c	/^t_node		*exec_pipe_current(t_node *master_node, in/
+exec_pipe_current	42sh/src/stack_exec/src/pipe/exec_pipe_current.c	/^t_node		*exec_pipe_current(t_node *master_node, in/
+exec_pipe_mono	o_42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_mono(t_node *master_node, t_global /
+exec_pipe_mono	42sh/src/stack_exec/src/pipe/exec_pipe_mono.c	/^int		exec_pipe_mono(t_node *master_node, t_global /
+exec_pipe_mono_father	42sh/src/stack_exec/src/pipe/exec_pipe_mono.c	/^int		exec_pipe_mono_father(t_node *master_node, t_/
+exec_pipe_mono_son	42sh/src/stack_exec/src/pipe/exec_pipe_mono.c	/^int		exec_pipe_mono_son(t_node *master_node, t_glo/
+exec_pipe_recursif	o_42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_recursif(t_node *master_node, t_glo/
+exec_pipe_recursif	42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_recursif(t_node *master_node, t_glo/
+exec_pipe_recursif_child	42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_recursif_child(t_node *master_node,/
+exec_pipe_recursif_fathe	42sh/src/stack_exec/src/pipe/exec_pipe.c	/^int		exec_pipe_recursif_fathe(t_node *master_node,/
+exec_redirection	o_42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection(t_node *master_node, t_globa/
+exec_redirection	42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection(t_node *master_node, t_globa/
+exec_redirection_double_child	42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^int			exec_redirection_double_child(int *fd, char /
+exec_redirection_double_father	42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^int			exec_redirection_double_father(int *fd, t_ch/
+exec_redirection_double_left	o_42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^int		exec_redirection_double_left(t_node  *master_/
+exec_redirection_double_left	42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^int		exec_redirection_double_left(t_node  *master_/
+exec_redirection_double_left_fork	o_42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^static int		exec_redirection_double_left_fork(t_ch/
+exec_redirection_double_left_fork	42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^static int		exec_redirection_double_left_fork(t_ch/
+exec_redirection_double_left_loop	42sh/src/stack_exec/src/redirection/exec_redirection_double_left.c	/^char		*exec_redirection_double_left_loop(t_global /
+exec_redirection_dup	o_42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection_dup(int fd, enum e_token fla/
+exec_redirection_dup	42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection_dup(int fd, enum e_token fla/
+exec_redirection_execute	42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection_execute(char *file, enum e_t/
+exec_redirection_open	o_42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection_open(char *file, enum e_toke/
+exec_redirection_open	42sh/src/stack_exec/src/redirection/exec_redirection.c	/^int		exec_redirection_open(char *file, enum e_toke/
+exec_select_execution	o_42sh/src/stack_exec/src/exec_select_execution.c	/^int	exec_select_execution(t_node *node, t_global */
+exec_select_execution	42sh/src/stack_exec/src/exec_select_execution.c	/^int	exec_select_execution(t_node *node, t_global */
+exec_select_execution_other	42sh/src/stack_exec/src/exec_select_execution.c	/^int	exec_select_execution_other(t_node *node, t_gl/
+exec_signal	o_42sh/src/stack_exec/src/exec_signal.c	/^int	exec_signal(int signal)$/
+exec_signal	42sh/src/stack_exec/src/exec_signal.c	/^int	exec_signal(int signal)$/
+exec_signal_other	42sh/src/stack_exec/src/exec_signal.c	/^int	exec_signal_other(int signal)$/
+exec_unsetenv	o_42sh/src/builtin/src/unsetenv/builtin_unsetenv.c	/^static int	exec_unsetenv(char *arg, t_env **env)$/
+exec_unsetenv	42sh/src/builtin/src/unsetenv/builtin_unsetenv.c	/^static int	exec_unsetenv(char *arg, t_env **env)$/
+exec_write_fd	o_42sh/src/stack_exec/src/exec_write_fd.c	/^int	exec_write_fd(char *buffer, int fd)$/
+exec_write_fd	42sh/src/stack_exec/src/exec_write_fd.c	/^int	exec_write_fd(char *buffer, int fd)$/
+export_env	o_42sh/src/env/src/export_env.c	/^char	**export_env(t_env *env)$/
+export_env	42sh/src/env/src/export_env.c	/^char	**export_env(t_env *env)$/
+fill_child	o_42sh/src/stack_exec/unit_test/main.c	/^void		fill_child(t_child **list, char *str)$/
+fill_func	42sh/src/edit/src/edit_func.c	/^static void	fill_func(t_efunc *func)$/
+fill_prompt	o_42sh/src/config/src/config_prompt.c	/^int	fill_prompt(char *prompt, char *str)$/
+fill_prompt	42sh/src/config/src/config_prompt.c	/^static int	fill_prompt(char *prompt, char *str)$/
+find_in_env	o_42sh/src/env/src/search_env.c	/^char	*find_in_env(char *name, t_env *env)$/
+find_in_env	42sh/src/env/src/search_env.c	/^char	*find_in_env(char *name, t_env *env)$/
+find_in_list_str	my_ls/source/get_opt.c	/^void	find_in_list_str(char *str, int *opt)$/
+find_in_opt	my_ls/source/get_opt.c	/^void	find_in_opt(char c, int *opt)$/
+find_intab	my_ls/lib/c/find_intab.c	/^char	find_intab(char c)$/
+find_intab	minishell2/lib/c/find_intab.c	/^int	find_intab(char c)$/
+find_intab	myselect/lib/c/find_intab.c	/^char	find_intab(char c)$/
+find_intab	my_printf/source/find_intab.c	/^char	find_intab(char c)$/
+find_intab	minishell1/lib/c/find_intab.c	/^int	find_intab(char c)$/
+free_env	minishell2/source/is_builtin.c	/^void	free_env(t_env *env)$/
+free_env	minishell1/source/is_builtin.c	/^void	free_env(t_env *env)$/
+free_history	42sh/src/history/src/history_freelist.c	/^t_history	*free_history(t_history *history)$/
+free_list	myselect/source/list.c	/^void	free_list(t_element *list)$/
+free_node	42sh/src/parsing/free_child.c	/^void	free_node(t_node *nd)$/
+free_pwd	minishell2/source/show_dir.c	/^void	free_pwd(t_pwd *my_pwd)$/
+free_pwd	minishell1/source/show_dir.c	/^void	free_pwd(t_pwd *my_pwd)$/
+free_term_info	myselect/source/quit.c	/^int	free_term_info(t_term *term)$/
+free_token	42sh/src/parsing/free_child.c	/^void	free_token(t_token *t)$/
+freewordtab	minishell2/source/freewordtab.c	/^char	**freewordtab(char **tab)$/
+freewordtab	minishell1/source/freewordtab.c	/^char	**freewordtab(char **tab)$/
+gest_cd	minishell2/source/gest_cd.c	/^t_pwd	*gest_cd(char *link, t_env *envp, t_pwd *my_/
+gest_cd	minishell1/source/gest_cd.c	/^t_pwd	*gest_cd(char *link, t_env *envp, t_pwd *my_/
+gest_cmd	minishell2/source/gest_cmd.c	/^int	gest_cmd(t_env *envp, t_pwd *my_pwd)$/
+gest_left_right	minishell2/source/exec_com.c	/^t_cmd	*gest_left_right(t_cmd *cmd)$/
+gest_pipe	minishell2/source/exec_com.c	/^int	gest_pipe(t_cmd *cmd)$/
+gest_red_right	minishell2/source/exec_com.c	/^t_cmd	*gest_red_right(t_cmd *cmd)$/
+get_cmd	minishell2/source/get_cmd.c	/^char	*get_cmd(void)$/
+get_cmd_in_list	o_42sh/src/parsing_func.c	/^char	*get_cmd_in_list(t_token *t)$/
+get_cmd_in_list	42sh/src/parsing_func.c	/^char	*get_cmd_in_list(t_token *t)$/
+get_data	my_ls/source/show_dir.c	/^t_data		*get_data(char *link, int opt, DIR **dir)$/
+get_data	myselect/source/data.c	/^int	get_data(t_term *term)$/
+get_env	minishell2/source/get_env.c	/^t_env   *get_env(char **envp)$/
+get_env	minishell1/source/get_env.c	/^t_env   *get_env(char **envp)$/
+get_exec	o_42sh/src/parsing/check_bloc_exec.c	/^static t_t_list	get_exec(t_token *tok, t_token **f/
+get_exec	42sh/src/parsing/check_bloc_exec.c	/^static t_t_list	get_exec(t_token *tok, t_token **f/
+get_link	my_ls/source/get_link.c	/^char	**get_link(int ac, char **av)$/
+get_next_exec	parsing/check_bloc_exec.c	/^static t_t_list	get_next_exec(t_token *e, t_token /
+get_next_line	o_42sh/src/my/src/get_next_line.c	/^char	*get_next_line(const int fd)$/
+get_next_line	minishell2/source/get_next_line.c	/^char		*get_next_line(const int fd, t_env *env, t_p/
+get_next_line	42sh/src/my/src/get_next_line.c	/^char	*get_next_line(const int fd)$/
+get_next_line	minishell1/source/get_next_line.c	/^char		*get_next_line(const int fd, t_env *env, t_p/
+get_next_log	o_42sh/src/parsing/check_log.c	/^static t_bool	get_next_log(t_token *e, t_token **b/
+get_next_log	parsing/check_log.c	/^static t_t_list	get_next_log(t_token *e, t_token */
+get_next_log	42sh/src/parsing/check_log.c	/^static t_bool	get_next_log(t_token *e, t_token **b/
+get_next_pipe	o_42sh/src/parsing/check_pipe.c	/^static t_bool	get_next_pipe(t_token *e, t_token **/
+get_next_pipe	42sh/src/parsing/check_pipe.c	/^static t_bool	get_next_pipe(t_token *e, t_token **/
+get_next_pv	o_42sh/src/parsing/check_expression.c	/^static int	get_next_pv(t_token **begin, t_token **/
+get_next_pv	parsing/check_expression.c	/^static int	get_next_pv(t_token **begin, t_token **/
+get_next_pv	42sh/src/parsing/check_expression.c	/^static int	get_next_pv(t_token **begin, t_token **/
+get_opt	my_ls/source/get_opt.c	/^int	get_opt(int ac, char **av)$/
+get_pre_exec	o_42sh/src/parsing/check_bloc_exec.c	/^static void	get_pre_exec(t_token *tok, t_token **f/
+get_pre_exec	42sh/src/parsing/multired.c	/^void	get_pre_exec(t_token *tok, t_token **file,$/
+get_pwd	o_42sh/src/builtin/src/cd/cd.c	/^char	*get_pwd(char *str, t_env *env)$/
+get_pwd	42sh/src/builtin/src/cd/cd.c	/^char	*get_pwd(char *str, t_env *env)$/
+get_spe_red	o_42sh/src/parsing/check_bloc_exec.c	/^static t_bool	get_spe_red(t_node **r, t_token *b, /
+get_spe_red	42sh/src/parsing/check_bloc_exec.c	/^static t_bool	get_spe_red(t_node **r, t_token *b, /
+get_spe_red_ext	42sh/src/parsing/check_bloc_exec_ext.c	/^t_bool	get_spe_red_ext(t_node **r, t_token **tmp, /
+get_term	minishell2/source/init.c	/^char	*get_term(char **envp)$/
+get_term	myselect/source/init.c	/^char	*get_term(char **envp)$/
+getnode	o_42sh/src/parsing/my_rev_list.c	/^t_token		*getnode(t_token *list, int n)$/
+getnode	o_42sh/src/parsing/my_rev_node.c	/^static t_child		*getnode(t_child *list, int n)$/
+getnode	parsing/my_rev_list.c	/^t_token		*getnode(t_token *list, int n)$/
+getnode	42sh/src/parsing/my_rev_list.c	/^t_token		*getnode(t_token *list, int n)$/
+getnode	42sh/src/parsing/my_rev_node.c	/^static t_child		*getnode(t_child *list, int n)$/
+glob_alias	o_42sh/src/globing/globing/glob_alias.c	/^char	*glob_alias(char *str, t_alias *alias, int *c/
+glob_alias	42sh/src/globing/globing/glob_alias.c	/^char	*glob_alias(char *str, t_alias *alias, int *c/
+glob_back_father	42sh/src/globing/globing/glob_back_quote.c	/^char	*glob_back_father(int *pipe_fd, int pid)$/
+glob_back_quotes	o_42sh/src/globing/globing/glob_back_quote.c	/^t_token	*glob_back_quotes(t_token *t, t_global *gl/
+glob_back_quotes	42sh/src/globing/globing/glob_back_quote.c	/^t_token	*glob_back_quotes(t_token *t, t_global *gl/
+glob_back_son	42sh/src/globing/globing/glob_back_quote.c	/^t_token	*glob_back_son(int *pipe_fd, t_token *t, t/
+glob_cmd	42sh/src/globing/globing/glob_cmd.c	/^char	*glob_cmd(char *str, char *new_str, t_global /
+glob_cmd_in_dir	42sh/src/globing/globing/glob_cmd.c	/^char	*glob_cmd_in_dir(char *link, char *str, char /
+glob_gest_alias	42sh/src/globing/globing/glob_alias.c	/^t_token	*glob_gest_alias(t_token *t, t_global *glo/
+glob_gest_tok_list	o_42sh/src/globing/globing/glob_gest_tok_list.c	/^t_token	*glob_gest_tok_list(t_token *t, t_global */
+glob_gest_tok_list	42sh/src/globing/globing/glob_gest_tok_list.c	/^t_token	*glob_gest_tok_list(t_token *t, t_global */
+glob_hist	42sh/src/globing/globing/glob_hist.c	/^t_token	*glob_hist(t_token *new, t_global *glob, v/
+glob_in_alias	42sh/src/globing/globing/globing.c	/^char	*glob_in_alias(char *str, t_global *glob, cha/
+glob_in_dir	o_42sh/src/globing/globing/globing.c	/^char	*glob_in_dir(char *str, char *new_str, int fl/
+glob_in_dir	42sh/src/globing/globing/globing.c	/^char	*glob_in_dir(char *str, char *new_str, int fl/
+glob_in_env	42sh/src/globing/globing/globing.c	/^char	*glob_in_env(char *str, t_global *glob, char /
+glob_list	o_42sh/src/globing/globing/glob_list.c	/^int	glob_list(t_token *tok, t_global *glob, int i)/
+glob_list	42sh/src/globing/globing/glob_list.c	/^int	glob_list(t_token **tok, t_global *glob, int i/
+glob_make_link	42sh/src/globing/globing/glob_back_quote.c	/^t_token	*glob_make_link(t_token *t, t_token *tmp, /
+glob_match	42sh/src/globing/globing/glob_match.c	/^int	glob_match(char *str, char *try)$/
+glob_print_hist	42sh/src/globing/globing/glob_hist.c	/^void	glob_print_hist(int i, t_token *new, void **r/
+glob_select_flag	42sh/src/globing/globing/glob_select_flag.c	/^int	glob_select_flag(char *str, int pos)$/
+glob_sep_tok	o_42sh/src/globing/globing/glob_list.c	/^t_token	*glob_sep_tok(t_token *t, char *str, int s/
+glob_sep_tok	42sh/src/globing/globing/glob_list.c	/^t_token	*glob_sep_tok(t_token *t, char *str, int s/
+global	o_42sh/src/main.c	26
+global	o_42sh/src/signal.c	16
+global	42sh/src/main.c	30
+global	42sh/src/signal.c	18
+globing	o_42sh/src/globing/globing/globing.c	/^char	*globing(char *str, t_global *glob, int tok)$/
+globing	42sh/src/globing/globing/globing.c	/^char	*globing(char *str, t_global *glob, int tok)$/
+globing_env	o_42sh/src/globing/glob_env/globing_env.c	/^char	*globing_env(char *str, t_env *env, int flag)/
+globing_env	42sh/src/globing/glob_env/globing_env.c	/^char	*globing_env(char *str, t_env *env, t_global /
+globing_var	o_42sh/src/globing/globing/glob_list.c	/^int	globing_var(t_token *t, t_global *glob)$/
+globing_var	42sh/src/globing/globing/glob_list.c	/^int	globing_var(t_token *t, t_global *glob, int fl/
+go_to_home	minishell2/source/gest_cd.c	/^t_pwd	 *go_to_home(t_env *envp, t_pwd *my_pwd)$/
+go_to_home	minishell1/source/gest_cd.c	/^t_pwd	 *go_to_home(t_env *envp, t_pwd *my_pwd)$/
+good_name_and_value	42sh/src/builtin/src/setenv/builtin_setenv.c	/^int	good_name_and_value(char *name)$/
+history_create_list	42sh/src/history/src/history_create_list.c	/^t_history *history_create_list(t_config *config, t/
+history_file_config	42sh/src/history/src/history_create_list.c	/^int	history_file_config(t_config *config, t_histor/
+history_fill	42sh/src/history/src/history_putlist.c	/^void	history_fill(int id_command, char *cmd,$/
+history_fill_list	42sh/src/history/src/history_create_list.c	/^static int history_fill_list(t_history **history,$/
+history_list_config	42sh/src/history/src/history_create_list.c	/^t_history	*history_list_config(t_config *config,$/
+history_put_list	42sh/src/history/src/history_create_list.c	/^static void	history_put_list(t_history *element, c/
+history_putlist	o_42sh/src/history/src/history_putlist.c	/^int	history_putlist(char *cmd, t_history **list)$/
+history_putlist	42sh/src/history/src/history_putlist.c	/^  int	history_putlist(char *cmd, t_history **list,/
+history_substitution	o_42sh/src/history/src/history_substitution.c	/^char	*history_substitution(char *cmd, t_history *l/
+history_substitution	42sh/src/history/src/history_substitution.c	/^char	*history_substitution(char *cmd, t_history *l/
+init	minishell2/source/init.c	/^int	init(char **envp)$/
+init_global	42sh/src/main.c	/^static void	init_global(void)$/
+init_ptr_funct_regroup	o_42sh/src/parsing/reconstruct_token.c	/^f_regroup	*init_ptr_funct_regroup(void)$/
+init_ptr_funct_regroup	parsing/reconstruct_token.c	/^f_regroup	*init_ptr_funct_regroup(void)$/
+init_ptr_funct_regroup	42sh/src/parsing/reconstruct_token.c	/^f_regroup	*init_ptr_funct_regroup(void)$/
+init_ptr_funct_token	o_42sh/src/parsing/tokenizer.c	/^f_token	*init_ptr_funct_token(void)$/
+init_ptr_funct_token	parsing/tokenizer.c	/^f_token	*init_ptr_funct_token(void)$/
+init_ptr_funct_token	42sh/src/parsing/tokenizer.c	/^f_token	*init_ptr_funct_token(void)$/
+init_select	myselect/source/init.c	/^int	init_select(t_element **list, t_term **term, c/
+init_tab_func	my_ls/lib/c/init_tab_fun.c	/^int		init_tab_func()$/
+init_tab_func	minishell2/lib/c/init_tab_fun.c	/^void		*init_tab_func()$/
+init_tab_func	myselect/lib/c/init_tab_fun.c	/^void		*init_tab_func()$/
+init_tab_func	my_printf/source/init_tab_fun.c	/^int		init_tab_func()$/
+init_tab_func	minishell1/lib/c/init_tab_fun.c	/^int		init_tab_func()$/
+init_term_info	myselect/source/info_term.c	/^t_term	*init_term_info(void)$/
+is_a_dollar	o_42sh/src/parsing/token_funct.c	/^t_bool	is_a_dollar(t_token **tok, char **str)$/
+is_a_dollar	parsing/token_funct.c	/^t_bool	is_a_dollar(t_token **tok, char **str)$/
+is_a_dollar	42sh/src/parsing/token_funct.c	/^t_bool	is_a_dollar(t_token **tok, char **str)$/
+is_a_esp	o_42sh/src/parsing/token_funct.c	/^t_bool	is_a_esp(t_token **tok, char **str)$/
+is_a_esp	parsing/token_funct.c	/^t_bool	is_a_esp(t_token **tok, char **str)$/
+is_a_esp	42sh/src/parsing/token_funct.c	/^t_bool	is_a_esp(t_token **tok, char **str)$/
+is_a_inibited_char	o_42sh/src/parsing/token_funct_word.c	/^t_bool	is_a_inibited_char(t_token **tok, char **st/
+is_a_inibited_char	parsing/token_funct_word.c	/^t_bool	is_a_inibited_char(t_token **tok, char **st/
+is_a_inibited_char	42sh/src/parsing/token_funct_word.c	/^t_bool	is_a_inibited_char(t_token **tok, char **st/
+is_a_par	o_42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_par(t_token **tok, char **str)$/
+is_a_par	parsing/token_funct_mult.c	/^t_bool	is_a_par(t_token **tok, char **str)$/
+is_a_par	42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_par(t_token **tok, char **str)$/
+is_a_pv	o_42sh/src/parsing/token_funct.c	/^t_bool	is_a_pv(t_token **tok, char **str)$/
+is_a_pv	parsing/token_funct.c	/^t_bool	is_a_pv(t_token **tok, char **str)$/
+is_a_pv	42sh/src/parsing/token_funct.c	/^t_bool	is_a_pv(t_token **tok, char **str)$/
+is_a_quote	o_42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_quote(t_token **tok, char **str)$/
+is_a_quote	parsing/token_funct_mult.c	/^t_bool	is_a_quote(t_token **tok, char **str)$/
+is_a_quote	42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_quote(t_token **tok, char **str)$/
+is_a_red_d	o_42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_red_d(t_token **tok, char **str)$/
+is_a_red_d	parsing/token_funct_mult.c	/^t_bool	is_a_red_d(t_token **tok, char **str)$/
+is_a_red_d	42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_red_d(t_token **tok, char **str)$/
+is_a_red_s	o_42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_red_s(t_token **tok, char **str)$/
+is_a_red_s	parsing/token_funct_mult.c	/^t_bool	is_a_red_s(t_token **tok, char **str)$/
+is_a_red_s	42sh/src/parsing/token_funct_mult.c	/^t_bool	is_a_red_s(t_token **tok, char **str)$/
+is_a_spacer	o_42sh/src/parsing/token_funct_word.c	/^t_bool	is_a_spacer(t_token **tok, char **str)$/
+is_a_spacer	parsing/token_funct_word.c	/^t_bool	is_a_spacer(t_token **tok, char **str)$/
+is_a_spacer	42sh/src/parsing/token_funct_word.c	/^t_bool	is_a_spacer(t_token **tok, char **str)$/
+is_a_word	o_42sh/src/parsing/token_funct_word.c	/^t_bool	is_a_word(t_token **tok, char **str)$/
+is_a_word	parsing/token_funct_word.c	/^t_bool	is_a_word(t_token **tok, char **str)$/
+is_a_word	42sh/src/parsing/token_funct_word.c	/^t_bool	is_a_word(t_token **tok, char **str)$/
+is_a_word_ext	42sh/src/parsing/token_funct_word.c	/^static t_bool	is_a_word_ext(char **str, char **res/
+is_aln	minishell2/source/my_link_wordtab.c	/^int     is_aln(char c)$/
+is_aln	minishell1/source/my_link_wordtab.c	/^int     is_aln(char c)$/
+is_alnum	my_ls/lib/c/my_str_to_wordtab.c	/^int     is_alnum(char c)$/
+is_alnum	minishell2/lib/c/my_str_to_wordtab.c	/^int     is_alnum(char c)$/
+is_alnum	myselect/lib/c/my_str_to_wordtab.c	/^int     is_alnum(char c)$/
+is_alnum	minishell1/lib/c/my_str_to_wordtab.c	/^int     is_alnum(char c)$/
+is_alnume	minishell2/source/my_wortab.c	/^int     is_alnume(char c)$/
+is_alnume	minishell1/source/my_wortab.c	/^int     is_alnume(char c)$/
+is_alpha	minishell2/lib/c/isalpha.c	/^int	is_alpha(char c)$/
+is_alpha	myselect/lib/c/isalpha.c	/^int	is_alpha(char c)$/
+is_alpha	minishell1/lib/c/isalpha.c	/^int	is_alpha(char c)$/
+is_an_alphanum	o_42sh/src/parsing/token_funct_word.c	/^t_bool	is_an_alphanum(char **str)$/
+is_an_alphanum	parsing/token_funct_word.c	/^t_bool	is_an_alphanum(char **str)$/
+is_an_alphanum	42sh/src/parsing/token_funct_word.c	/^t_bool	is_an_alphanum(char **str)$/
+is_an_excla	o_42sh/src/parsing/token_funct.c	/^t_bool	is_an_excla(t_token **tok, char **str)$/
+is_an_excla	parsing/token_funct.c	/^t_bool	is_an_excla(t_token **tok, char **str)$/
+is_an_excla	42sh/src/parsing/token_funct.c	/^t_bool	is_an_excla(t_token **tok, char **str)$/
+is_an_oper_cond	o_42sh/src/parsing/token_funct_mult.c	/^t_bool	is_an_oper_cond(t_token **tok, char **str)$/
+is_an_oper_cond	parsing/token_funct_mult.c	/^t_bool	is_an_oper_cond(t_token **tok, char **str)$/
+is_an_oper_cond	42sh/src/parsing/token_funct_mult.c	/^t_bool	is_an_oper_cond(t_token **tok, char **str)$/
+is_builtin	o_42sh/src/builtin/src/is_builtin.c	/^int	is_builtin(char *str)$/
+is_builtin	minishell2/source/is_builtin.c	/^int	is_builtin(char *buffer, t_env **envp, t_pwd */
+is_builtin	42sh/src/builtin/src/is_builtin.c	/^int	is_builtin(char *str)$/
+is_builtin	minishell1/source/is_builtin.c	/^int	is_builtin(char *buffer, t_env **envp, t_pwd */
+is_dir	my_ls/source/is_dir.c	/^int	is_dir(t_data *directory, char *link)$/
+is_egal	minishell2/source/my_sep_env.c	/^int     is_egal(char c)$/
+is_egal	minishell1/source/my_sep_env.c	/^int     is_egal(char c)$/
+is_singlestr	o_42sh/src/my/src/is_singlestr.c	/^int	is_singlestr(char c, char *str)$/
+is_singlestr	42sh/src/my/src/is_singlestr.c	/^int	is_singlestr(char c, char *str)$/
+isanumber	o_42sh/src/my/src/isanumber.c	/^int	isanumber(char *str)$/
+isanumber	42sh/src/my/src/isanumber.c	/^int	isanumber(char *str)$/
+isnum	my_ls/lib/c/isnum.c	/^int	isnum(char c)$/
+isnum	minishell2/lib/c/isnum.c	/^int	isnum(char c)$/
+isnum	myselect/lib/c/isnum.c	/^int	isnum(char c)$/
+isnum	minishell1/lib/c/isnum.c	/^int	isnum(char c)$/
+len_env_list	o_42sh/src/env/src/export_env.c	/^int	len_env_list(t_env *env)$/
+len_env_list	42sh/src/env/src/export_env.c	/^int	len_env_list(t_env *env)$/
+link_cat	minishell2/source/link_cat.c	/^char	*link_cat(char *cmd, char *path)$/
+link_cat	minishell1/source/link_cat.c	/^char	*link_cat(char *cmd, char *path)$/
+link_of_file	my_ls/source/is_dir.c	/^char	*link_of_file(char *link, t_data *directory)$/
+listing	my_ls/source/list.c	/^void	listing(t_data *directory, char *link, int op/
+magic_number	o_42sh/src/config/src/config_prompt.c	/^int	magic_number(char *str)$/
+magic_number	42sh/src/config/src/config_prompt.c	/^static int	magic_number(char *str)$/
+main_loop	minishell2/source/main_loop.c	/^void	main_loop(t_env *env, t_pwd *my_pwd)$/
+main_loop	minishell1/source/main_loop.c	/^void	main_loop(t_env *env, t_pwd *my_pwd)$/
+make_free	minishell2/source/exec.c	/^void	make_free(char **tab, char **path)$/
+make_free	minishell1/source/exec.c	/^void	make_free(char ***tab, char ***path)$/
+make_globing	o_42sh/src/globing/globing/globing.c	/^static char	*make_globing(char *str, char *src, in/
+make_globing	42sh/src/globing/globing/globing.c	/^static char	*make_globing(char *str, char *src, in/
+malloc_int_tab	o_42sh/src/my/src/malloc_tabint.c	/^int	**malloc_int_tab(int nb_col, int nb_ligne)$/
+malloc_int_tab	42sh/src/my/src/malloc_tabint.c	/^int	**malloc_int_tab(int nb_col, int nb_ligne)$/
+mouv_curs	minishell2/source/term_mode.c	/^int	mouv_curs(int x, int y)$/
+mouv_curs	myselect/source/term_mode.c	/^int	mouv_curs(int x, int y)$/
+mov_curs	minishell2/source/action_in_cmd.c	/^int   mov_curs(int c, int i, int *j)$/
+my_clstr	o_42sh/src/my/src/my_clstr.c	/^int	my_clstr(char *str, int size)$/
+my_clstr	42sh/src/my/src/my_clstr.c	/^int	my_clstr(char *str, int size)$/
+my_convertlist	o_42sh/src/my/src/get_next_line.c	/^char	*my_convertlist(t_line *line, int size)$/
+my_convertlist	42sh/src/my/src/get_next_line.c	/^char	*my_convertlist(t_line *line, int size)$/
+my_count_str_in_tab	o_42sh/src/globing/globing/utils.c	/^int	my_count_str_in_tab(char **tab)$/
+my_count_str_in_tab	42sh/src/globing/globing/utils.c	/^int	my_count_str_in_tab(char **tab)$/
+my_count_word	minishell2/lib/c/my_strtok.c	/^int	my_count_word(char *str, char *delim)$/
+my_env_wordtab	minishell2/source/my_sep_env.c	/^char	**my_env_wordtab(char *str)$/
+my_env_wordtab	minishell1/source/my_sep_env.c	/^char	**my_env_wordtab(char *str)$/
+my_factorielle_rec	my_ls/lib/c/my_factorielle_rec.c	/^int	my_factorielle_rec(int nb)$/
+my_factorielle_rec	minishell2/lib/c/my_factorielle_rec.c	/^int	my_factorielle_rec(int nb)$/
+my_factorielle_rec	myselect/lib/c/my_factorielle_rec.c	/^int	my_factorielle_rec(int nb)$/
+my_factorielle_rec	minishell1/lib/c/my_factorielle_rec.c	/^int	my_factorielle_rec(int nb)$/
+my_find_prime_sup	my_ls/lib/c/my_find_prime_sup.c	/^int	my_find_prime_sup(int nbr)$/
+my_find_prime_sup	minishell2/lib/c/my_find_prime_sup.c	/^int	my_find_prime_sup(int nbr)$/
+my_find_prime_sup	myselect/lib/c/my_find_prime_sup.c	/^int	my_find_prime_sup(int nbr)$/
+my_find_prime_sup	minishell1/lib/c/my_find_prime_sup.c	/^int	my_find_prime_sup(int nbr)$/
+my_free_tab	o_42sh/src/my/src/my_free_tab.c	/^void	my_free_tab(char **tab)$/
+my_free_tab	42sh/src/my/src/my_free_tab.c	/^void	my_free_tab(char **tab)$/
+my_getchar	o_42sh/src/my/src/my_strtok.c	/^int	my_getchar(char *str, char *base, int *k, t_ty/
+my_getchar	42sh/src/my/src/my_strtok.c	/^int	my_getchar(char *str, char *base, int *k, t_ty/
+my_getnbr	my_ls/lib/c/my_getnbr.c	/^int	my_getnbr(char *str)$/
+my_getnbr	o_42sh/src/my/src/my_getnbr.c	/^int	my_getnbr(char *str)$/
+my_getnbr	minishell2/lib/c/my_getnbr.c	/^int	my_getnbr(char *str)$/
+my_getnbr	myselect/lib/c/my_getnbr.c	/^int	my_getnbr(char *str)$/
+my_getnbr	42sh/src/my/src/my_getnbr.c	/^int	my_getnbr(char *str)$/
+my_getnbr	minishell1/lib/c/my_getnbr.c	/^int	my_getnbr(char *str)$/
+my_getword	o_42sh/src/my/src/my_strtok.c	/^int	my_getword(char *str, char *base, t_type flag)/
+my_getword	42sh/src/my/src/my_strtok.c	/^int	my_getword(char *str, char *base, t_type flag)/
+my_is_alpha	my_ls/lib/c/my_is_alpha.c	/^int	my_is_alpha(char c)$/
+my_is_in_str	42sh/src/globing/globing/glob_select_flag.c	/^int	my_is_in_str(char c, char *str)$/
+my_is_instr	minishell2/lib/c/my_strtok.c	/^int	my_is_instr(char c, char *str)$/
+my_is_neg	my_ls/lib/c/my_isneg.c	/^int	my_is_neg(int nb)$/
+my_is_neg	minishell2/lib/c/my_isneg.c	/^int	my_is_neg(int nb)$/
+my_is_neg	myselect/lib/c/my_isneg.c	/^int	my_is_neg(int nb)$/
+my_is_neg	minishell1/lib/c/my_isneg.c	/^int	my_is_neg(int nb)$/
+my_is_operand	minishell2/source/analise_cmd.c	/^int	my_is_operand(char *str)$/
+my_is_prime	my_ls/lib/c/my_is_prime.c	/^int	my_is_prime(int nbr)$/
+my_is_prime	minishell2/lib/c/my_is_prime.c	/^int	my_is_prime(int nbr)$/
+my_is_prime	myselect/lib/c/my_is_prime.c	/^int	my_is_prime(int nbr)$/
+my_is_prime	minishell1/lib/c/my_is_prime.c	/^int	my_is_prime(int nbr)$/
+my_link_wordtab	minishell2/source/my_link_wordtab.c	/^char	**my_link_wordtab(char *str)$/
+my_link_wordtab	minishell1/source/my_link_wordtab.c	/^char	**my_link_wordtab(char *str)$/
+my_list_sizes	o_42sh/src/parsing/my_rev_list.c	/^int             my_list_sizes(t_token *begin)$/
+my_list_sizes	o_42sh/src/parsing/my_rev_node.c	/^static int             my_list_sizes(t_child *begi/
+my_list_sizes	parsing/my_rev_list.c	/^int             my_list_sizes(t_token *begin)$/
+my_list_sizes	42sh/src/parsing/my_rev_list.c	/^int             my_list_sizes(t_token *begin)$/
+my_list_sizes	42sh/src/parsing/my_rev_node.c	/^static int             my_list_sizes(t_child *begi/
+my_list_swap	my_ls/source/my_sort_list.c	/^t_data		*my_list_swap(t_data *begin)$/
+my_nbr_base	my_ls/lib/c/convert_base.c	/^char     *my_nbr_base(int nbr, char *base, char *n/
+my_nbr_base	minishell2/lib/c/convert_base.c	/^char     *my_nbr_base(int nbr, char *base, char *n/
+my_nbr_base	myselect/lib/c/convert_base.c	/^char     *my_nbr_base(int nbr, char *base, char *n/
+my_nbr_base	minishell1/lib/c/convert_base.c	/^char     *my_nbr_base(int nbr, char *base, char *n/
+my_nbr_malloc	my_ls/lib/c/convert_base.c	/^int     my_nbr_malloc(int nbr, char *base, int c)$/
+my_nbr_malloc	minishell2/lib/c/convert_base.c	/^int     my_nbr_malloc(int nbr, char *base, int c)$/
+my_nbr_malloc	myselect/lib/c/convert_base.c	/^int     my_nbr_malloc(int nbr, char *base, int c)$/
+my_nbr_malloc	minishell1/lib/c/convert_base.c	/^int     my_nbr_malloc(int nbr, char *base, int c)$/
+my_power_rec	my_ls/lib/c/my_power_rec.c	/^int	my_power_rec(int nb, int power)$/
+my_power_rec	minishell2/lib/c/my_power_rec.c	/^int	my_power_rec(int nb, int power)$/
+my_power_rec	myselect/lib/c/my_power_rec.c	/^int	my_power_rec(int nb, int power)$/
+my_power_rec	minishell1/lib/c/my_power_rec.c	/^int	my_power_rec(int nb, int power)$/
+my_printf	my_ls/lib/c/my_printf.c	/^int		my_printf(const char *format, ...)$/
+my_printf	minishell2/lib/c/my_printf.c	/^int		my_printf(const char *format, ...)$/
+my_printf	myselect/lib/c/my_printf.c	/^int		my_printf(const char *format, ...)$/
+my_printf	my_printf/source/my_printf.c	/^int		my_printf(const char *format, ...)$/
+my_printf	minishell1/lib/c/my_printf.c	/^int		my_printf(const char *format, ...)$/
+my_put_right	my_ls/source/list.c	/^void	my_put_right(struct stat *info)$/
+my_putalias	o_42sh/src/config/src/config_alias.c	/^int	my_putalias(t_alias **begin, char *initial, ch/
+my_putalias	42sh/src/config/src/config_alias.c	/^int	my_putalias(t_alias **begin, char *initial, ch/
+my_putchar	my_ls/lib/c/my_putchar.c	/^void	my_putchar(char c)$/
+my_putchar	o_42sh/src/my/src/my_putchar.c	/^void	my_putchar(char c)$/
+my_putchar	minishell2/lib/c/my_putchar.c	/^void	my_putchar(char c)$/
+my_putchar	myselect/lib/c/my_putchar.c	/^void	my_putchar(char c)$/
+my_putchar	42sh/src/my/src/my_putchar.c	/^void	my_putchar(char c)$/
+my_putchar	minishell1/lib/c/my_putchar.c	/^void	my_putchar(char c)$/
+my_putlist	o_42sh/src/my/src/get_next_line.c	/^int	my_putlist(t_line **begin, char letter)$/
+my_putlist	42sh/src/my/src/get_next_line.c	/^int	my_putlist(t_line **begin, char letter)$/
+my_putnbr	my_ls/lib/c/my_put_nbr.c	/^int	my_putnbr(int nb)$/
+my_putnbr	minishell2/lib/c/my_put_nbr.c	/^int	my_putnbr(int nb)$/
+my_putnbr	myselect/lib/c/my_put_nbr.c	/^int	my_putnbr(int nb)$/
+my_putnbr	minishell1/lib/c/my_put_nbr.c	/^int	my_putnbr(int nb)$/
+my_putnbr_base	my_ls/lib/c/my_putnbr_base.c	/^int	my_putnbr_base(int nbr, char *base)$/
+my_putnbr_base	minishell2/lib/c/my_putnbr_base.c	/^int	my_putnbr_base(int nbr, char *base)$/
+my_putnbr_base	myselect/lib/c/my_putnbr_base.c	/^int	my_putnbr_base(int nbr, char *base)$/
+my_putnbr_base	minishell1/lib/c/my_putnbr_base.c	/^int	my_putnbr_base(int nbr, char *base)$/
+my_putnbr_int_base	my_ls/lib/c/my_putnbr_base.c	/^int	my_putnbr_int_base(int nbr, char *base)$/
+my_putnbr_int_base	minishell2/lib/c/my_putnbr_base.c	/^int	my_putnbr_int_base(int nbr, char *base)$/
+my_putnbr_int_base	myselect/lib/c/my_putnbr_base.c	/^int	my_putnbr_int_base(int nbr, char *base)$/
+my_putnbr_int_base	minishell1/lib/c/my_putnbr_base.c	/^int	my_putnbr_int_base(int nbr, char *base)$/
+my_putnbrul_base	my_ls/lib/c/my_putnbrul_base.c	/^int	my_putnbrul_base(unsigned long int nbr, char */
+my_putnbrul_base	minishell2/lib/c/my_putnbrul_base.c	/^int	my_putnbrul_base(unsigned long int nbr, char */
+my_putnbrul_base	myselect/lib/c/my_putnbrul_base.c	/^int	my_putnbrul_base(unsigned long int nbr, char */
+my_putnbrul_base	my_printf/source/my_putnbrul_base.c	/^int	my_putnbrul_base(unsigned long int nbr, char */
+my_putnbrul_base	minishell1/lib/c/my_putnbrul_base.c	/^int	my_putnbrul_base(unsigned long int nbr, char */
+my_putstr	my_ls/lib/c/my_putstr.c	/^int	my_putstr(char *str)$/
+my_putstr	o_42sh/src/my/src/my_putstr.c	/^int	my_putstr(char *str)$/
+my_putstr	minishell2/lib/c/my_putstr.c	/^int	my_putstr(char *str)$/
+my_putstr	myselect/lib/c/my_putstr.c	/^int	my_putstr(char *str)$/
+my_putstr	42sh/src/my/src/my_putstr.c	/^int	my_putstr(char *str)$/
+my_putstr	minishell1/lib/c/my_putstr.c	/^int	my_putstr(char *str)$/
+my_putul_nbr	my_ls/lib/c/my_putnbrul_base.c	/^int	my_putul_nbr(unsigned long int nbr, char *base/
+my_putul_nbr	minishell2/lib/c/my_putnbrul_base.c	/^int	my_putul_nbr(unsigned long int nbr, char *base/
+my_putul_nbr	myselect/lib/c/my_putnbrul_base.c	/^int	my_putul_nbr(unsigned long int nbr, char *base/
+my_putul_nbr	minishell1/lib/c/my_putnbrul_base.c	/^int	my_putul_nbr(unsigned long int nbr, char *base/
+my_putword	o_42sh/src/my/src/my_strtok.c	/^char	*my_putword(char *str, char *base, int *k, t_/
+my_putword	42sh/src/my/src/my_strtok.c	/^char	*my_putword(char *str, char *base, int *k, t_/
+my_rev_list	my_ls/source/my_rev_list.c	/^void		my_rev_list(t_data **begin)$/
+my_rev_list	o_42sh/src/parsing/my_rev_list.c	/^int		my_rev_list(t_token **begin)$/
+my_rev_list	parsing/my_rev_list.c	/^int		my_rev_list(t_token **begin)$/
+my_rev_list	42sh/src/parsing/my_rev_list.c	/^int		my_rev_list(t_token **begin)$/
+my_rev_node	o_42sh/src/parsing/my_rev_node.c	/^int		my_rev_node(t_child **begin)$/
+my_rev_node	42sh/src/parsing/my_rev_node.c	/^int		my_rev_node(t_child **begin)$/
+my_rev_param	my_ls/lib/c/my_rev_params.c	/^int	my_rev_param(int argc, char **argv)$/
+my_rev_param	minishell2/lib/c/my_rev_params.c	/^int	my_rev_param(int argc, char **argv)$/
+my_rev_param	myselect/lib/c/my_rev_params.c	/^int	my_rev_param(int argc, char **argv)$/
+my_rev_param	minishell1/lib/c/my_rev_params.c	/^int	my_rev_param(int argc, char **argv)$/
+my_revstr	my_ls/lib/c/my_revstr.c	/^char	*my_revstr(char *str)$/
+my_revstr	minishell2/lib/c/my_revstr.c	/^char	*my_revstr(char *str)$/
+my_revstr	myselect/lib/c/my_revstr.c	/^char	*my_revstr(char *str)$/
+my_revstr	42sh/src/my/src/my_revstr.c	/^char	*my_revstr(char *str)$/
+my_revstr	minishell1/lib/c/my_revstr.c	/^char	*my_revstr(char *str)$/
+my_show_wordtab	my_ls/lib/c/my_show_wordtab.c	/^int	my_show_wordtab(char **wordtab)$/
+my_show_wordtab	minishell2/lib/c/my_show_wordtab.c	/^int	my_show_wordtab(char **wordtab)$/
+my_show_wordtab	myselect/lib/c/my_show_wordtab.c	/^int	my_show_wordtab(char **wordtab)$/
+my_show_wordtab	minishell1/lib/c/my_show_wordtab.c	/^int	my_show_wordtab(char **wordtab)$/
+my_sort_by_alpha	my_ls/source/my_sort_by_alpha.c	/^int	my_sort_by_alpha(char *str1, char *str2)$/
+my_sort_int_tab	my_ls/lib/c/my_sort_int_tab.c	/^void	my_sort_int_tab(int *tab, int size)$/
+my_sort_int_tab	minishell2/lib/c/my_sort_int_tab.c	/^void	my_sort_int_tab(int *tab, int size)$/
+my_sort_int_tab	myselect/lib/c/my_sort_int_tab.c	/^void	my_sort_int_tab(int *tab, int size)$/
+my_sort_int_tab	minishell1/lib/c/my_sort_int_tab.c	/^void	my_sort_int_tab(int *tab, int size)$/
+my_sort_list	my_ls/source/my_sort_list.c	/^int		my_sort_list(t_data **begin, int (*cmp)())$/
+my_sort_list_time	my_ls/source/time_cmp.c	/^int		my_sort_list_time(t_data **begin, char *link)/
+my_sort_param	my_ls/lib/c/my_sort_params.c	/^int	my_sort_param(int argc, char **argv)$/
+my_sort_param	minishell2/lib/c/my_sort_params.c	/^int	my_sort_param(int argc, char **argv)$/
+my_sort_param	myselect/lib/c/my_sort_params.c	/^int	my_sort_param(int argc, char **argv)$/
+my_sort_param	minishell1/lib/c/my_sort_params.c	/^int	my_sort_param(int argc, char **argv)$/
+my_square_root	my_ls/lib/c/my_square_root.c	/^int	my_square_root(int nbr)$/
+my_square_root	minishell2/lib/c/my_square_root.c	/^int	my_square_root(int nbr)$/
+my_square_root	myselect/lib/c/my_square_root.c	/^int	my_square_root(int nbr)$/
+my_square_root	minishell1/lib/c/my_square_root.c	/^int	my_square_root(int nbr)$/
+my_str_isalpha	my_ls/lib/c/my_str_isalpha.c	/^int	my_str_isalpha(char *str)$/
+my_str_isalpha	minishell2/lib/c/my_str_isalpha.c	/^int	my_str_isalpha(char *str)$/
+my_str_isalpha	myselect/lib/c/my_str_isalpha.c	/^int	my_str_isalpha(char *str)$/
+my_str_isalpha	minishell1/lib/c/my_str_isalpha.c	/^int	my_str_isalpha(char *str)$/
+my_str_islower	my_ls/lib/c/my_str_islower.c	/^int     my_str_islower(char *str)$/
+my_str_islower	minishell2/lib/c/my_str_islower.c	/^int     my_str_islower(char *str)$/
+my_str_islower	myselect/lib/c/my_str_islower.c	/^int     my_str_islower(char *str)$/
+my_str_islower	minishell1/lib/c/my_str_islower.c	/^int     my_str_islower(char *str)$/
+my_str_isnum	my_ls/lib/c/my_str_isnum.c	/^int     my_str_isnum(char *str)$/
+my_str_isnum	minishell2/lib/c/my_str_isnum.c	/^int     my_str_isnum(char *str)$/
+my_str_isnum	myselect/lib/c/my_str_isnum.c	/^int     my_str_isnum(char *str)$/
+my_str_isnum	minishell1/lib/c/my_str_isnum.c	/^int     my_str_isnum(char *str)$/
+my_str_isprintable	my_ls/lib/c/my_str_isprintable.c	/^int     my_str_isprintable(char *str)$/
+my_str_isprintable	minishell2/lib/c/my_str_isprintable.c	/^int     my_str_isprintable(char *str)$/
+my_str_isprintable	myselect/lib/c/my_str_isprintable.c	/^int     my_str_isprintable(char *str)$/
+my_str_isprintable	minishell1/lib/c/my_str_isprintable.c	/^int     my_str_isprintable(char *str)$/
+my_str_isupper	my_ls/lib/c/my_str_isupper.c	/^int     my_str_isupper(char *str)$/
+my_str_isupper	minishell2/lib/c/my_str_isupper.c	/^int     my_str_isupper(char *str)$/
+my_str_isupper	myselect/lib/c/my_str_isupper.c	/^int     my_str_isupper(char *str)$/
+my_str_isupper	minishell1/lib/c/my_str_isupper.c	/^int     my_str_isupper(char *str)$/
+my_str_to_wordtab	my_ls/lib/c/my_str_to_wordtab.c	/^char	**my_str_to_wordtab(char *str)$/
+my_str_to_wordtab	minishell2/lib/c/my_str_to_wordtab.c	/^char	**my_str_to_wordtab(char *str)$/
+my_str_to_wordtab	myselect/lib/c/my_str_to_wordtab.c	/^char	**my_str_to_wordtab(char *str)$/
+my_str_to_wordtab	minishell1/lib/c/my_str_to_wordtab.c	/^char	**my_str_to_wordtab(char *str)$/
+my_strcapitalize	my_ls/lib/c/my_strcapitalize.c	/^char	*my_strcapitalize(char *str)$/
+my_strcapitalize	minishell2/lib/c/my_strcapitalize.c	/^char	*my_strcapitalize(char *str)$/
+my_strcapitalize	myselect/lib/c/my_strcapitalize.c	/^char	*my_strcapitalize(char *str)$/
+my_strcapitalize	minishell1/lib/c/my_strcapitalize.c	/^char	*my_strcapitalize(char *str)$/
+my_strcat	my_ls/lib/c/my_strcat.c	/^char	*my_strcat(char *dest, char *src)$/
+my_strcat	o_42sh/src/my/src/my_strcat.c	/^char	*my_strcat(char *dest, char *src)$/
+my_strcat	minishell2/lib/c/my_strcat.c	/^char	*my_strcat(char *dest, char *src)$/
+my_strcat	myselect/lib/c/my_strcat.c	/^char	*my_strcat(char *dest, char *src)$/
+my_strcat	42sh/src/my/src/my_strcat.c	/^char	*my_strcat(char *dest, char *src)$/
+my_strcat	minishell1/lib/c/my_strcat.c	/^char	*my_strcat(char *dest, char *src)$/
+my_strcmp	my_ls/lib/c/my_strcmp.c	/^int	my_strcmp(char *s1, char *s2)$/
+my_strcmp	o_42sh/src/my/src/my_strcmp.c	/^int	my_strcmp(char *s1, char *s2)$/
+my_strcmp	minishell2/lib/c/my_strcmp.c	/^int	my_strcmp(char *s1, char *s2)$/
+my_strcmp	myselect/lib/c/my_strcmp.c	/^int	my_strcmp(char *s1, char *s2)$/
+my_strcmp	42sh/src/my/src/my_strcmp.c	/^int	my_strcmp(char *s1, char *s2)$/
+my_strcmp	minishell1/lib/c/my_strcmp.c	/^int	my_strcmp(char *s1, char *s2)$/
+my_strconcat	o_42sh/src/my/src/concat.c	/^char	*my_strconcat(char *s1, char *s2)$/
+my_strconcat	42sh/src/my/src/concat.c	/^char	*my_strconcat(char *s1, char *s2)$/
+my_strcpy	my_ls/lib/c/my_strcpy.c	/^char	*my_strcpy(char *dest, char *src)$/
+my_strcpy	o_42sh/src/my/src/my_strcpy.c	/^char	*my_strcpy(char *dest, char *src)$/
+my_strcpy	minishell2/lib/c/my_strcpy.c	/^char	*my_strcpy(char *dest, char *src)$/
+my_strcpy	myselect/lib/c/my_strcpy.c	/^char	*my_strcpy(char *dest, char *src)$/
+my_strcpy	42sh/src/my/src/my_strcpy.c	/^char	*my_strcpy(char *dest, char *src)$/
+my_strcpy	minishell1/lib/c/my_strcpy.c	/^char	*my_strcpy(char *dest, char *src)$/
+my_strdup	my_ls/lib/c/my_strdup.c	/^char	*my_strdup(char *src)$/
+my_strdup	o_42sh/src/my/src/my_strdup.c	/^char	*my_strdup(char *str)$/
+my_strdup	minishell2/lib/c/my_strdup.c	/^char	*my_strdup(char *src)$/
+my_strdup	myselect/lib/c/my_strdup.c	/^char	*my_strdup(char *src)$/
+my_strdup	42sh/src/my/src/my_strdup.c	/^char	*my_strdup(char *str)$/
+my_strdup	minishell1/lib/c/my_strdup.c	/^char	*my_strdup(char *src)$/
+my_strlcat	my_ls/lib/c/my_strlcat.c	/^int    my_strlcat(char *dest, char *src, int n)$/
+my_strlcat	minishell2/lib/c/my_strlcat.c	/^int    my_strlcat(char *dest, char *src, int n)$/
+my_strlcat	myselect/lib/c/my_strlcat.c	/^int    my_strlcat(char *dest, char *src, int n)$/
+my_strlcat	minishell1/lib/c/my_strlcat.c	/^int    my_strlcat(char *dest, char *src, int n)$/
+my_strlen	my_ls/lib/c/my_strlen.c	/^int	my_strlen(char *str)$/
+my_strlen	o_42sh/src/my/src/my_strlen.c	/^int	my_strlen(char *str)$/
+my_strlen	minishell2/lib/c/my_strlen.c	/^int	my_strlen(char *str)$/
+my_strlen	myselect/lib/c/my_strlen.c	/^int	my_strlen(char *str)$/
+my_strlen	42sh/src/my/src/my_strlen.c	/^int	my_strlen(char *str)$/
+my_strlen	minishell1/lib/c/my_strlen.c	/^int	my_strlen(char *str)$/
+my_strleng	my_ls/lib/c/my_revstr.c	/^int	my_strleng(char *str)$/
+my_strleng	minishell2/lib/c/my_revstr.c	/^int	my_strleng(char *str)$/
+my_strleng	myselect/lib/c/my_revstr.c	/^int	my_strleng(char *str)$/
+my_strleng	minishell1/lib/c/my_revstr.c	/^int	my_strleng(char *str)$/
+my_strlowcase	my_ls/lib/c/my_strlowcase.c	/^char    *my_strlowcase(char *str)$/
+my_strlowcase	minishell2/lib/c/my_strlowcase.c	/^char    *my_strlowcase(char *str)$/
+my_strlowcase	myselect/lib/c/my_strlowcase.c	/^char    *my_strlowcase(char *str)$/
+my_strlowcase	minishell1/lib/c/my_strlowcase.c	/^char    *my_strlowcase(char *str)$/
+my_strmcat	o_42sh/src/my/src/my_strmcat.c	/^char	*my_strmcat(char *dest, char *src)$/
+my_strmcat	minishell2/lib/c/my_strmcat.c	/^char	*my_strmcat(char *dest, char *src)$/
+my_strmcat	42sh/src/my/src/my_strmcat.c	/^char	*my_strmcat(char *dest, char *src)$/
+my_strncat	my_ls/lib/c/my_strncat.c	/^char    *my_strncat(char *dest, char *src, int n)$/
+my_strncat	minishell2/lib/c/my_strncat.c	/^char    *my_strncat(char *dest, char *src, int n)$/
+my_strncat	myselect/lib/c/my_strncat.c	/^char    *my_strncat(char *dest, char *src, int n)$/
+my_strncat	minishell1/lib/c/my_strncat.c	/^char    *my_strncat(char *dest, char *src, int n)$/
+my_strncmp	my_ls/lib/c/my_strncmp.c	/^int	my_strncmp(char *s1, char *s2, int n)$/
+my_strncmp	o_42sh/src/my/src/my_strncmp.c	/^int	my_strncmp(char *s1, char *s2, int n)$/
+my_strncmp	minishell2/lib/c/my_strncmp.c	/^int	my_strncmp(char *s1, char *s2, int n)$/
+my_strncmp	myselect/lib/c/my_strncmp.c	/^int	my_strncmp(char *s1, char *s2, int n)$/
+my_strncmp	42sh/src/my/src/my_strncmp.c	/^int	my_strncmp(char *s1, char *s2, int n)$/
+my_strncmp	minishell1/lib/c/my_strncmp.c	/^int	my_strncmp(char *s1, char *s2, int n)$/
+my_strncpy	my_ls/lib/c/my_strncpy.c	/^char	*my_strncpy(char *dest, char *src, int n)$/
+my_strncpy	minishell2/lib/c/my_strncpy.c	/^char	*my_strncpy(char *dest, char *src, int n)$/
+my_strncpy	myselect/lib/c/my_strncpy.c	/^char	*my_strncpy(char *dest, char *src, int n)$/
+my_strncpy	minishell1/lib/c/my_strncpy.c	/^char	*my_strncpy(char *dest, char *src, int n)$/
+my_strsearch	42sh/src/my/src/strsearch.c	/^int	my_strsearch(char *str, char c)$/
+my_strstr	my_ls/lib/c/my_strstr.c	/^char	*my_strstr(char *str, char *to_find)$/
+my_strstr	minishell2/lib/c/my_strstr.c	/^char	*my_strstr(char *str, char *to_find)$/
+my_strstr	myselect/lib/c/my_strstr.c	/^char	*my_strstr(char *str, char *to_find)$/
+my_strstr	minishell1/lib/c/my_strstr.c	/^char	*my_strstr(char *str, char *to_find)$/
+my_strtok	o_42sh/src/my/src/my_strtok.c	/^char	**my_strtok(char *str, char *base, t_type fla/
+my_strtok	minishell2/lib/c/my_strtok.c	/^char	**my_strtok(char *str, char *delim)$/
+my_strtok	42sh/src/my/src/my_strtok.c	/^char	**my_strtok(char *str, char *base, t_type fla/
+my_strupcase	my_ls/lib/c/my_strupcase.c	/^char	*my_strupcase(char *str)$/
+my_strupcase	minishell2/lib/c/my_strupcase.c	/^char	*my_strupcase(char *str)$/
+my_strupcase	myselect/lib/c/my_strupcase.c	/^char	*my_strupcase(char *str)$/
+my_strupcase	minishell1/lib/c/my_strupcase.c	/^char	*my_strupcase(char *str)$/
+my_subalias	42sh/src/builtin/src/alias/builtin_alias.c	/^static int	my_subalias(t_alias **begin, char *str)/
+my_swap	my_ls/lib/c/my_swap.c	/^int	my_swap(int *a, int *b)$/
+my_swap	my_ls/lib/c/my_sort_int_tab.c	/^int     my_swap(int *a, int *b)$/
+my_swap	minishell2/lib/c/my_swap.c	/^int	my_swap(int *a, int *b)$/
+my_swap	minishell2/lib/c/my_sort_int_tab.c	/^int     my_swap(int *a, int *b)$/
+my_swap	myselect/lib/c/my_swap.c	/^int	my_swap(int *a, int *b)$/
+my_swap	myselect/lib/c/my_sort_int_tab.c	/^int     my_swap(int *a, int *b)$/
+my_swap	minishell1/lib/c/my_swap.c	/^int	my_swap(int *a, int *b)$/
+my_swap	minishell1/lib/c/my_sort_int_tab.c	/^int     my_swap(int *a, int *b)$/
+my_swap_char	my_ls/lib/c/my_swap.c	/^char	my_swap_char(char *a, char *b)$/
+my_swap_char	minishell2/lib/c/my_swap.c	/^char	my_swap_char(char *a, char *b)$/
+my_swap_char	myselect/lib/c/my_swap.c	/^char	my_swap_char(char *a, char *b)$/
+my_swap_char	minishell1/lib/c/my_swap.c	/^char	my_swap_char(char *a, char *b)$/
+my_tablen	o_42sh/src/my/src/my_tablen.c	/^int	my_tablen(char **tab)$/
+my_tablen	42sh/src/my/src/my_tablen.c	/^int	my_tablen(char **tab)$/
+my_wordtab	minishell2/source/my_wortab.c	/^char	**my_wordtab(char *str)$/
+my_wordtab	minishell1/source/my_wortab.c	/^char	**my_wordtab(char *str)$/
+my_wordtab_len	o_42sh/src/globing/globing/utils.c	/^int	my_wordtab_len(char **tab)$/
+my_wordtab_len	42sh/src/globing/globing/utils.c	/^int	my_wordtab_len(char **tab)$/
+nb_col	myselect/source/info_term.c	/^int	nb_col(t_term *term)$/
+nb_lin	myselect/source/info_term.c	/^int	nb_lin(t_term *term)$/
+new_pwd	minishell2/source/manag_pwd.c	/^t_pwd	*new_pwd(char *element, t_pwd *my_pwd)$/
+new_pwd	minishell1/source/manag_pwd.c	/^t_pwd	*new_pwd(char *element, t_pwd *my_pwd)$/
+opt	my_ls/lib/c/my_printf.c	/^int	opt(const char *format, int *i, int *cont, va_/
+opt	minishell2/lib/c/my_printf.c	/^int	opt(const char *format, int *i, int *cont, va_/
+opt	myselect/lib/c/my_printf.c	/^int	opt(const char *format, int *i, int *cont, va_/
+opt	my_printf/source/my_printf.c	/^int	opt(const char *format, int *i, int *cont, va_/
+opt	minishell1/lib/c/my_printf.c	/^int	opt(const char *format, int *i, int *cont, va_/
+opt_X	my_ls/lib/c/opt_x.c	/^int	opt_X(va_list *ap, const char *format)$/
+opt_X	minishell2/lib/c/opt_x.c	/^int	opt_X(va_list *ap, const char *format)$/
+opt_X	myselect/lib/c/opt_x.c	/^int	opt_X(va_list *ap, const char *format)$/
+opt_X	my_printf/source/opt_x.c	/^int	opt_X(va_list *ap, const char *format)$/
+opt_X	minishell1/lib/c/opt_x.c	/^int	opt_X(va_list *ap, const char *format)$/
+opt_b	my_ls/lib/c/opt_b.c	/^int	opt_b(va_list *ap, const char *format)$/
+opt_b	minishell2/lib/c/opt_b.c	/^int	opt_b(va_list *ap, const char *format)$/
+opt_b	myselect/lib/c/opt_b.c	/^int	opt_b(va_list *ap, const char *format)$/
+opt_b	my_printf/source/opt_b.c	/^int	opt_b(va_list *ap, const char *format)$/
+opt_b	minishell1/lib/c/opt_b.c	/^int	opt_b(va_list *ap, const char *format)$/
+opt_c	my_ls/lib/c/opt_c.c	/^int	opt_c(va_list *ap, const char *format)$/
+opt_c	minishell2/lib/c/opt_c.c	/^int	opt_c(va_list *ap, const char *format)$/
+opt_c	myselect/lib/c/opt_c.c	/^int	opt_c(va_list *ap, const char *format)$/
+opt_c	my_printf/source/opt_c.c	/^int	opt_c(va_list *ap, const char *format)$/
+opt_c	minishell1/lib/c/opt_c.c	/^int	opt_c(va_list *ap, const char *format)$/
+opt_d	my_ls/lib/c/opt_d.c	/^int	opt_d(va_list *ap, const char *format)$/
+opt_d	minishell2/lib/c/opt_d.c	/^int	opt_d(va_list *ap, const char *format)$/
+opt_d	myselect/lib/c/opt_d.c	/^int	opt_d(va_list *ap, const char *format)$/
+opt_d	my_printf/source/opt_d.c	/^int	opt_d(va_list *ap, const char *format)$/
+opt_d	minishell1/lib/c/opt_d.c	/^int	opt_d(va_list *ap, const char *format)$/
+opt_less	my_ls/lib/c/opt_less.c	/^int	opt_less(const char *format, int i)$/
+opt_less	minishell2/lib/c/opt_less.c	/^int	opt_less(const char *format, int i)$/
+opt_less	myselect/lib/c/opt_less.c	/^int	opt_less(const char *format, int i)$/
+opt_less	my_printf/source/opt_less.c	/^int	opt_less(char *format, int i)$/
+opt_less	minishell1/lib/c/opt_less.c	/^int	opt_less(const char *format, int i)$/
+opt_mod	my_ls/lib/c/opt_mod.c	/^int	opt_mod(va_list *ap, const char *format)$/
+opt_mod	minishell2/lib/c/opt_mod.c	/^int	opt_mod(va_list *ap, const char *format)$/
+opt_mod	myselect/lib/c/opt_mod.c	/^int	opt_mod(va_list *ap, const char *format)$/
+opt_mod	my_printf/source/opt_mod.c	/^int	opt_mod(va_list *ap, const char *format)$/
+opt_mod	minishell1/lib/c/opt_mod.c	/^int	opt_mod(va_list *ap, const char *format)$/
+opt_o	my_ls/lib/c/opt_o.c	/^int	opt_o(va_list *ap, const char *format)$/
+opt_o	minishell2/lib/c/opt_o.c	/^int	opt_o(va_list *ap, const char *format)$/
+opt_o	myselect/lib/c/opt_o.c	/^int	opt_o(va_list *ap, const char *format)$/
+opt_o	my_printf/source/opt_o.c	/^int	opt_o(va_list *ap, const char *format)$/
+opt_o	minishell1/lib/c/opt_o.c	/^int	opt_o(va_list *ap, const char *format)$/
+opt_p	my_ls/lib/c/opt_p.c	/^int	opt_p(va_list *ap, const char *format)$/
+opt_p	minishell2/lib/c/opt_p.c	/^int	opt_p(va_list *ap, const char *format)$/
+opt_p	myselect/lib/c/opt_p.c	/^int	opt_p(va_list *ap, const char *format)$/
+opt_p	my_printf/source/opt_p.c	/^int	opt_p(va_list *ap, const char *format)$/
+opt_p	minishell1/lib/c/opt_p.c	/^int	opt_p(va_list *ap, const char *format)$/
+opt_pres	my_ls/lib/c/opt_less.c	/^int	opt_pres(const char *format, int i)$/
+opt_pres	minishell2/lib/c/opt_less.c	/^int	opt_pres(const char *format, int i)$/
+opt_pres	myselect/lib/c/opt_less.c	/^int	opt_pres(const char *format, int i)$/
+opt_pres	my_printf/source/opt_less.c	/^int	opt_pres(char *format, int i)$/
+opt_pres	minishell1/lib/c/opt_less.c	/^int	opt_pres(const char *format, int i)$/
+opt_s	my_ls/lib/c/opt_S.c	/^int	opt_s(va_list *ap, const char *format)$/
+opt_s	minishell2/lib/c/opt_S.c	/^int	opt_s(va_list *ap, const char *format)$/
+opt_s	myselect/lib/c/opt_S.c	/^int	opt_s(va_list *ap, const char *format)$/
+opt_s	my_printf/source/opt_S.c	/^int	opt_s(va_list *ap, const char *format)$/
+opt_s	minishell1/lib/c/opt_S.c	/^int	opt_s(va_list *ap, const char *format)$/
+opt_u	my_ls/lib/c/opt_u.c	/^int	opt_u(va_list *ap, const char *format)$/
+opt_u	minishell2/lib/c/opt_u.c	/^int	opt_u(va_list *ap, const char *format)$/
+opt_u	myselect/lib/c/opt_u.c	/^int	opt_u(va_list *ap, const char *format)$/
+opt_u	my_printf/source/opt_u.c	/^int	opt_u(va_list *ap, const char *format)$/
+opt_u	minishell1/lib/c/opt_u.c	/^int	opt_u(va_list *ap, const char *format)$/
+other_cas	42sh/src/globing/glob_env/globing_env.c	/^char	*other_cas(char *str, t_global *glob)$/
+param_history	o_42sh/src/builtin/src/history/builtin_history.c	/^static int	param_history(t_history **history, char/
+param_history	42sh/src/builtin/src/history/builtin_history.c	/^static int	param_history(t_history **history, char/
+pars_tokenizer	o_42sh/src/parsing/tokenizer.c	/^t_token	*pars_tokenizer(char *str)$/
+pars_tokenizer	parsing/tokenizer.c	/^t_token	*pars_tokenizer(char *str)$/
+pars_tokenizer	42sh/src/parsing/tokenizer.c	/^t_token	*pars_tokenizer(char *str)$/
+parsing_func	o_42sh/src/parsing_func.c	/^t_node	*parsing_func(char *cmd, t_global *glob)$/
+parsing_func	42sh/src/parsing_func.c	/^t_node	*parsing_func(char *cmd, t_global *glob, in/
+print_env	o_42sh/src/env/src/env.c	/^void	print_env(t_env *env)$/
+print_env	42sh/src/env/src/env.c	/^void	print_env(t_env *env)$/
+put_c	minishell2/source/main.c	/^int	put_c(int cap)$/
+put_c	myselect/source/main.c	/^int	put_c(int cap)$/
+put_error	o_42sh/src/builtin/src/history/history_showlist.c	/^int	put_error(char *cmd)$/
+put_error	42sh/src/builtin/src/history/history_showlist.c	/^int	put_error(char *cmd, int flag)$/
+put_gid	my_ls/source/list.c	/^void	put_gid(gid_t gruid)$/
+put_id	my_ls/source/list.c	/^void	put_id(uid_t pwuid)$/
+put_in_list	o_42sh/src/globing/globing/glob_list.c	/^t_token	*put_in_list(t_token *t, int id, int spec,/
+put_in_list	42sh/src/globing/globing/glob_list.c	/^t_token	*put_in_list(t_token *t, int id, int spec,/
+put_rv	minishell2/source/action_in_cmd.c	/^int	put_rv(char c)$/
+put_rv	myselect/source/display.c	/^int	put_rv(char *str)$/
+put_str_subs	o_42sh/src/history/src/history_create_ptr_func.c	/^char	**put_str_subs(void)$/
+put_str_subs	42sh/src/history/src/history_create_ptr_func.c	/^char	**put_str_subs(void)$/
+put_us	myselect/source/display.c	/^int	put_us(char *str)$/
+puterror	o_42sh/src/history/src/history_substitution.c	/^static char	*puterror(char *cmd, int flag)$/
+puterror	o_42sh/src/parsing/puterror.c	/^t_bool	puterror(char *err, char *content)$/
+puterror	parsing/puterror.c	/^t_bool	puterror(char *err, char *content)$/
+puterror	42sh/src/history/src/history_substitution.c	/^static char	*puterror(char *cmd, int flag)$/
+puterror	42sh/src/parsing/puterror.c	/^t_bool	puterror(char *err, char *content)$/
+pwd_to_char	minishell2/source/manag_pwd.c	/^char	*pwd_to_char(t_pwd *my_pwd)$/
+pwd_to_char	minishell1/source/manag_pwd.c	/^char	*pwd_to_char(t_pwd *my_pwd)$/
+quit	minishell2/source/is_builtin.c	/^void	quit(t_env *envp, t_pwd *my_pwd)$/
+quit	minishell1/source/is_builtin.c	/^void	quit(t_env *envp, t_pwd *my_pwd)$/
+quit_select	myselect/source/quit.c	/^int	quit_select(t_element *list, t_term *term, int/
+quit_signal	myselect/source/quit.c	/^void	quit_signal(int signal)$/
+raw_mode	minishell2/source/term_mode.c	/^int	raw_mode(int mode)$/
+raw_mode	myselect/source/term_mode.c	/^int	raw_mode(int mode)$/
+re_add_token	o_42sh/src/parsing/reconstruct_token.c	/^t_bool	re_add_token(t_token **root, t_token **tok)/
+re_add_token	parsing/reconstruct_token.c	/^t_bool	re_add_token(t_token **root, t_token **tok)/
+re_add_token	42sh/src/parsing/reconstruct_token.c	/^t_bool	re_add_token(t_token **root, t_token **tok)/
+reconstruct_token	o_42sh/src/parsing/reconstruct_token.c	/^t_token	*reconstruct_token(t_token *tok)$/
+reconstruct_token	parsing/reconstruct_token.c	/^t_token	*reconstruct_token(t_token *tok)$/
+reconstruct_token	42sh/src/parsing/reconstruct_token.c	/^t_token	*reconstruct_token(t_token *tok)$/
+regroup_esp	42sh/src/parsing/retoken_redir_par.c	/^t_bool	regroup_esp(t_token **r, t_token **o)$/
+regroup_history	o_42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_history(t_token **r, t_token **o)$/
+regroup_history	parsing/retoken_redir.c	/^t_bool	regroup_history(t_token **r, t_token **o)$/
+regroup_history	42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_history(t_token **r, t_token **o)$/
+regroup_inibit	o_42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_inibit(t_token **r, t_token **o)$/
+regroup_inibit	parsing/retoken_redir.c	/^t_bool	regroup_inibit(t_token **r, t_token **o)$/
+regroup_inibit	42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_inibit(t_token **r, t_token **o)$/
+regroup_inibit_ext	42sh/src/parsing/retoken_redir_ext.c	/^t_bool	regroup_inibit_ext(t_token **o, t_token **n/
+regroup_par	o_42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_par(t_token **root, t_token **old)$/
+regroup_par	parsing/retoken_redir.c	/^t_bool	regroup_par(t_token **root, t_token **old)$/
+regroup_par	42sh/src/parsing/retoken_redir_par.c	/^t_bool	regroup_par(t_token **root, t_token **old)$/
+regroup_quote	o_42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_quote(t_token **r, t_token **o)$/
+regroup_quote	parsing/retoken_redir.c	/^t_bool	regroup_quote(t_token **r, t_token **o)$/
+regroup_quote	42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_quote(t_token **r, t_token **o)$/
+regroup_quote_ext	42sh/src/parsing/retoken_redir_ext.c	/^void	regroup_quote_ext(t_token **o, t_token *b)$/
+regroup_red	o_42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_red(t_token **r, t_token **o)$/
+regroup_red	parsing/retoken_redir.c	/^t_bool	regroup_red(t_token **r, t_token **o)$/
+regroup_red	42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_red(t_token **r, t_token **o)$/
+regroup_variable	o_42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_variable(t_token **r, t_token **o)$/
+regroup_variable	parsing/retoken_redir.c	/^t_bool	regroup_variable(t_token **r, t_token **o)$/
+regroup_variable	42sh/src/parsing/retoken_redir.c	/^t_bool	regroup_variable(t_token **r, t_token **o)$/
+remove_var	o_42sh/src/builtin/src/unsetenv/builtin_unsetenv.c	/^static void	remove_var(t_env **env)$/
+remove_var	42sh/src/builtin/src/unsetenv/builtin_unsetenv.c	/^static void	remove_var(t_env **env)$/
+rep_token_env	o_42sh/src/globing/glob_env/globing_env.c	/^t_token	 *rep_token_env(t_token *tok, t_env *env)$/
+replace_str	o_42sh/src/globing/globing/utils.c	/^char	*replace_str(char *new, char *old, char *str)/
+replace_str	42sh/src/globing/globing/utils.c	/^char	*replace_str(char *new, char *old, char *str)/
+res_alias	o_42sh/src/globing/globing/glob_alias.c	/^void	res_alias(t_alias *alias)$/
+res_alias	42sh/src/globing/globing/glob_alias.c	/^void	res_alias(t_alias *alias)$/
+reset_alias	o_42sh/src/parsing_func.c	/^void	reset_alias(t_alias *alias)$/
+reset_alias	42sh/src/globing/globing/glob_alias.c	/^void	reset_alias(t_alias *alias)$/
+return_data	myselect/source/data.c	/^int	return_data(t_element *list)$/
+rev	my_ls/source/rev_list.c	/^void	rev(t_data **begin)$/
+rev_list	my_ls/source/rev_list.c	/^void	rev_list(t_data **directory)$/
+screen_clean	minishell2/source/term_mode.c	/^int	screen_clean(void)$/
+screen_clean	myselect/source/term_mode.c	/^int	screen_clean(void)$/
+search_in_tab	o_42sh/src/builtin/src/echo/echo.c	/^char	*search_in_tab(char *str, char **tab)$/
+search_in_tab	42sh/src/builtin/src/echo/echo.c	/^char	*search_in_tab(char *str, char **tab)$/
+sep_in_dif_tok	o_42sh/src/globing/globing/glob_list.c	/^t_token	*sep_in_dif_tok(t_token *t, char *str, int/
+sep_in_dif_tok	42sh/src/globing/globing/glob_list.c	/^t_token	*sep_in_dif_tok(t_token *t, char *str, int/
+sh_free	42sh/src/sh_free.c	/^void	sh_free(t_global *global, t_node *tree, char /
+show_alias	42sh/src/builtin/src/alias/builtin_alias.c	/^static void	show_alias(t_alias *alias, char *str)$/
+show_dir	my_ls/source/show_dir.c	/^int	show_dir(char *link, int opt)$/
+show_dir	minishell2/source/show_dir.c	/^void	show_dir(t_pwd *my_pwd)$/
+show_dir	minishell1/source/show_dir.c	/^void	show_dir(t_pwd *my_pwd)$/
+show_history	o_42sh/src/builtin/src/history/history_showlist.c	/^void	show_history(t_history *list, int nb)$/
+show_history	42sh/src/builtin/src/history/history_showlist.c	/^void	show_history(t_history *list, char *nb)$/
+show_param_history	o_42sh/src/builtin/src/history/history_showlist.c	/^void	show_param_history(t_history *list)$/
+show_param_history	42sh/src/builtin/src/history/history_showlist.c	/^void	show_param_history(t_history *list)$/
+show_prompt	minishell2/source/main_loop.c	/^char	*show_prompt(t_env *env, t_pwd *my_pwd)$/
+show_prompt	minishell1/source/main_loop.c	/^char	*show_prompt(t_env *env, t_pwd *my_pwd)$/
+signal_sigint	o_42sh/src/signal.c	/^void	signal_sigint(int seg)$/
+signal_sigint	42sh/src/signal.c	/^void	signal_sigint(int seg)$/
+size_tot	my_ls/source/size_tot.c	/^void	size_tot(t_data *directory, char *link)$/
+special_case	42sh/src/edit/src/edit_utils.c	/^static t_line	*special_case(t_line *p1, t_line *p2/
+start_signal	o_42sh/src/signal.c	/^void	start_signal(void)$/
+start_signal	42sh/src/signal.c	/^void	start_signal(void)$/
+stop_signal	o_42sh/src/signal.c	/^void	stop_signal(void)$/
+stop_signal	minishell2/source/main_loop.c	/^void	stop_signal(void)$/
+stop_signal	42sh/src/signal.c	/^void	stop_signal(void)$/
+stop_signal	minishell1/source/main_loop.c	/^void	stop_signal(void)$/
+str_upper	my_ls/source/my_sort_by_alpha.c	/^char	*str_upper(char	*str)$/
+subs_back_in_history	o_42sh/src/history/src/history_subs_func.c	/^char	*subs_back_in_history(char *cmd, t_history *l/
+subs_back_in_history	42sh/src/history/src/history_subs_func.c	/^char	*subs_back_in_history(char *cmd, t_history *l/
+subs_dollar	42sh/src/history/src/history_subs_func_dollar.c	/^char	*subs_dollar(char *cmd, t_history *list)$/
+subs_exclamation_mark	o_42sh/src/history/src/history_subs_func.c	/^char	*subs_exclamation_mark(char *cmd, t_history */
+subs_exclamation_mark	42sh/src/history/src/history_subs_func.c	/^char	*subs_exclamation_mark(char *cmd, t_history */
+subs_interogation_mark	o_42sh/src/history/src/history_subs_func.c	/^char	*subs_interogation_mark(char *cmd, t_history /
+subs_interogation_mark	42sh/src/history/src/history_subs_func.c	/^char	*subs_interogation_mark(char *cmd, t_history /
+subs_letter	o_42sh/src/history/src/history_subs_func.c	/^char	*subs_letter(char *cmd, t_history *list)$/
+subs_letter	42sh/src/history/src/history_subs_func.c	/^char	*subs_letter(char *cmd, t_history *list)$/
+subs_nbr	o_42sh/src/history/src/history_subs_func.c	/^char	*subs_nbr(char *cmd, t_history *list)$/
+subs_nbr	42sh/src/history/src/history_subs_func.c	/^char	*subs_nbr(char *cmd, t_history *list)$/
+suppr_letter	42sh/src/edit/src/edit_clear.c	/^static void	suppr_letter(t_line **line)$/
+termcap_action	o_42sh/src/edit/src/termcap_action.c	/^int	termcap_action(int size, char *flag)$/
+termcap_action	42sh/src/edit/src/termcap_action.c	/^int	termcap_action(int size, char *flag, t_global /
+termcap_delete	o_42sh/src/edit/src/termcap_delete.c	/^int	termcap_delete(int size, char *flag)$/
+termcap_delete	42sh/src/edit/src/termcap_delete.c	/^int	termcap_delete(int size, char *flag, t_global /
+termcap_display	o_42sh/src/edit/src/termcap_display.c	/^int	termcap_display(t_line *line, int cm)$/
+termcap_display	42sh/src/edit/src/termcap_display.c	/^int	termcap_display(t_line *line, t_global *global/
+termcap_echo	o_42sh/src/edit/src/termcap_raw.c	/^int	termcap_echo(struct termios *t, int flag)$/
+termcap_echo	o_42sh/src/edit/src/termcap_mode.c	/^int	termcap_echo(struct termios *t, int flag)$/
+termcap_echo	42sh/src/edit/src/termcap_raw.c	/^int	termcap_echo(struct termios *t, int flag)$/
+termcap_echo	42sh/src/edit/src/termcap_mode.c	/^int	termcap_echo(struct termios *t, int flag)$/
+termcap_init	o_42sh/src/edit/src/termcap_init.c	/^int	termcap_init(t_env *env)$/
+termcap_init	42sh/src/edit/src/termcap_init.c	/^int	termcap_init(t_env *env)$/
+termcap_ioctl	42sh/src/edit/src/termcap_display.c	/^int	termcap_ioctl(struct winsize *argp)$/
+termcap_move	42sh/src/edit/src/termcap_action.c	/^int	termcap_move(t_global *global, int value, int /
+termcap_prompt	42sh/src/edit/src/termcap_display.c	/^int	termcap_prompt(char *str, int limit)$/
+termcap_put	o_42sh/src/edit/src/termcap_put.c	/^int	termcap_put(int cap)$/
+termcap_put	42sh/src/edit/src/termcap_put.c	/^int	termcap_put(int cap)$/
+termcap_raw	o_42sh/src/edit/src/termcap_raw.c	/^int	termcap_raw(struct termios *t, int flag)$/
+termcap_raw	o_42sh/src/edit/src/termcap_mode.c	/^int	termcap_raw(struct termios *t, int flag)$/
+termcap_raw	42sh/src/edit/src/termcap_raw.c	/^int	termcap_raw(struct termios *t, int flag)$/
+termcap_raw	42sh/src/edit/src/termcap_mode.c	/^int	termcap_raw(struct termios *t, int flag)$/
+test_execute	o_42sh/src/stack_exec/unit_test/main.c	/^int		test_execute(char *str)$/
+test_multi_pipe	o_42sh/src/stack_exec/unit_test/main.c	/^int		test_multi_pipe()$/
+test_pipe	o_42sh/src/stack_exec/unit_test/main.c	/^int		test_pipe(char *command)$/
+test_redirection	o_42sh/src/stack_exec/unit_test/main.c	/^int		test_redirection(char *command)$/
+there_are_pipe	o_42sh/src/parsing/check_pipe.c	/^static t_bool	there_are_pipe(t_token *b, t_token */
+there_are_pipe	42sh/src/parsing/check_pipe.c	/^static t_bool	there_are_pipe(t_token *b, t_token */
+there_are_red	o_42sh/src/parsing/check_bloc_exec.c	/^static t_bool	there_are_red(t_token *b, t_token *e/
+there_are_red	42sh/src/parsing/check_bloc_exec.c	/^static t_bool	there_are_red(t_token *b, t_token *e/
+there_are_red	42sh/src/parsing/check_grammar_exec.c	/^static	int	there_are_red(t_token *b, t_token *e)$/
+there_are_two_red	o_42sh/src/parsing/check_bloc_exec.c	/^static t_bool	there_are_two_red(t_token *b, t_toke/
+there_are_two_red	42sh/src/parsing/multired.c	/^t_bool	there_are_two_red(t_token *b, t_token *e)$/
+time_file	my_ls/source/time_cmp.c	/^int	time_file(t_data *directory, char *link)$/
+toto	o_42sh/src/parsing/aff_tree.c	/^static void	toto(t_node *rt, int space)$/
+transform_inib	42sh/src/parsing/transform.c	/^void	transform_inib(t_token *t)$/
+treat_cmd	minishell2/source/gest_cmd.c	/^int	treat_cmd(char *buffer, t_env **envp, t_pwd **/
+treatment_of_data	minishell2/source/data.c	/^char	treatment_of_data(void)$/
+treatment_of_data	myselect/source/data.c	/^int	treatment_of_data(int action, t_element *list)/
+trunc_str	42sh/src/history/src/history_subs_func_dollar.c	/^static char    *trunc_str(char *str)$/
+ultim_func	42sh/src/edit/src/termcap_display.c	/^void	ultim_func(t_line *line, t_global *global)$/
+un_set	minishell2/source/un_set.c	/^t_env	*un_set(char *buffer, t_env *envp)$/
+un_set	minishell1/source/un_set.c	/^t_env	*un_set(char *buffer, t_env *envp)$/
+update_pwd	minishell2/source/manag_pwd.c	/^t_pwd   *update_pwd(char *link, t_pwd *my_pwd)$/
+update_pwd	minishell1/source/manag_pwd.c	/^t_pwd   *update_pwd(char *link, t_pwd *my_pwd)$/
+use_termcap	minishell2/source/main.c	/^int	use_termcap(char *cap)$/
+use_termcap	myselect/source/display.c	/^int	use_termcap(char *cap)$/
+visible_cursor	minishell2/source/term_mode.c	/^int	visible_cursor(int mode)$/
+visible_cursor	myselect/source/term_mode.c	/^int	visible_cursor(int mode)$/
+winch_signal	myselect/source/signal.c	/^void	winch_signal(int signal)$/
+word	minishell2/source/my_sep_env.c	/^int	word(char *str)$/
+word	minishell1/source/my_sep_env.c	/^int	word(char *str)$/
+word_cnt	minishell2/source/my_wortab.c	/^int	word_cnt(char *str)$/
+word_cnt	minishell1/source/my_wortab.c	/^int	word_cnt(char *str)$/
+word_count	my_ls/lib/c/my_str_to_wordtab.c	/^int	word_count(char *str)$/
+word_count	minishell2/lib/c/my_str_to_wordtab.c	/^int	word_count(char *str)$/
+word_count	myselect/lib/c/my_str_to_wordtab.c	/^int	word_count(char *str)$/
+word_count	minishell1/lib/c/my_str_to_wordtab.c	/^int	word_count(char *str)$/
+word_counter	minishell2/source/my_link_wordtab.c	/^int	word_counter(char *str)$/
+word_counter	minishell1/source/my_link_wordtab.c	/^int	word_counter(char *str)$/
+xmalloc	o_42sh/src/my/src/xmalloc.c	/^void	*xmalloc(size_t size)$/
+xmalloc	42sh/src/my/src/xmalloc.c	/^void	*xmalloc(size_t size)$/
+xopen	o_42sh/src/my/src/xopen.c	/^int	xopen(const char *pathname, int status, int fl/
+xopen	42sh/src/my/src/xopen.c	/^int	xopen(const char *pathname, int status, int fl/
+xtime	o_42sh/src/my/src/xtime.c	/^char	*xtime(void)$/
+xtime	42sh/src/my/src/xtime.c	/^char	*xtime(void)$/

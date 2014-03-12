@@ -1,0 +1,31 @@
+/*
+** teuquain.h for teuquain in /home/vink/projet/rush/rush-troll-oz-pl/trunk/inc
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Thu Jun  7 10:43:25 2012 kevin platel
+** Last update Thu Jun  7 11:13:05 2012 kevin platel
+*/
+
+#ifndef __TEUQUAIN_H__
+#define __TEUQUAIN_H__
+
+typedef struct s_param
+{
+  int	delai_attak;
+  int	nb_door;
+  int	delai_door;
+  int	*door;
+} t_param;
+
+typedef struct s_attak
+{
+  char	*city;
+  char	*login;
+  int	num_door;
+} t_attak;
+
+#define	MAGIK	"NYAN"
+
+#endif

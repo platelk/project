@@ -1,0 +1,207 @@
+.TH RAYTRACER 1 local
+.SH NAME
+raytracer, rt \- Compute 3D realistic pictures
+.SH SYNONPSIS
+.ll +8
+.B raytracer
+.RB [ --client ] [ --server ] [ --help ] [ -m ] [ -v ] [ -e
+.I "file name [ .jpg ] [ .bmp ]"
+.RB ] [ -i 
+.I "server ip"
+.RB ] [ -p 
+.I "server port"
+.RB ] [ -t 
+.I "number of simultaneous thread"
+.RB ] [ -w 
+.I "wait in seconds"
+.RB ] 
+.ll +8
+.B raytracer
+.RB [ --server ]
+
+.SH DESCRIPTION
+.I Raytracer
+
+.br
+raytracer is a soft wich is build to compute really realistic pictures, by using lot's of lights mathematical proprieties in order to get the most acurate précision, by the way, we can't actually get real time raytracing at home anit's not the way this raytracing program is developed for. This raytracer is fueled by epitech Minilibx, that's must be install on your pc in order to get this program working, Minilibx wich is also dependant from X11 Server.The program core run under a standart X11 terminal emulator. Raytracer can also be launched through the graphical user interface, espacialy made for creating and editing scene in real time.
+
+.SH USING THE STANDART RAYTRACER FUNCTIONALITY
+This raytracer use a normalised XML file format as scene, the main core can be start using:
+
+	$ raytracer [path to your XML file]
+
+Then it may takes seconds to hour computing your scene, depending on scene complexity and avalaible ressources, you'll quickly get on wheel's using Raytracer, then advanced configuration options may interest you by giving more ressources too Raytracer and then per exemple reduce computing duration or saving your files as a standart format, see below for more advanced tips.
+
+.SH COMMAND LINE OPTIONS
+.B \--help
+Provide basics help information
+
+.B \--server
+Launch as a computing server, you must specify a connection port and a scene to compute, see below into SHARED COMPUTING section for complete instruction about shared computing.
+
+.B \--client
+Launch as a computing client, you must specify the server IP using -i option and the connection port using the -p option, see below into SHARED COMPUTING section for complete instruction about shared computing.
+
+.B \-e [ output_file_name [.jpg] | [.bmp] ]
+You can specify an output for your image, one your image is totaly computed, Raycaster will create a jpeg using jpeglib or a BMP file, note that Raycaster will automaticaly choose jpg output if you forgot to specify an output name note also that the jpeg files are created into a folder named after the files.
+
+.B \-i [ ip.adress ]
+Only when --client is activate, this option specify the cluster server IP adress.
+
+.B \-m
+Disable the output window, can be useful for computing without showing the result at the same time.
+
+.B \-p [PORT]
+Define the server port.
+
+.B \-t [nbr of threads]
+Set a number of threads, by default, is set to one, note the this feature is a bit bugged and may slow your compute, only interesting for espacialy condencenced scenes.
+
+.B \-v
+Set the verbose mode on, and gives special information one the scene is completelly computed.
+
+.B \-w
+Only in case of --server, specify how long the server will still waiting for the host before lauching the computing.
+
+.SH CREATING AN XML FILE TO GENERATE YOUR SCENE, THE HOW TO.
+XML provide user readable files, than can be really powerfull once accustemed, just after this short presentation a short XML code, usable just in a copypast, will be explained.
+
+	Every line start with a tag, a tag define for whom the line is build.
+	XML is build like a tree, the more deeper you are, the less general information you'll find
+
+	Start, a the top, by placing the windows informations wide and width
+
+	# <window y="800" x="800"> #
+
+	Then the second most important thing, the scene name, and the strong of the anti-aliasing applied on this sc	    ene, note that more than one scene can be on the same XML file and will be automaticaly computed, 
+
+	# <scene name="Basic"antialiasing="2"> #
+
+	next step, cameras, as scene, as many camera you whant.
+
+	# <cameras> #
+	# <camera> #
+
+	the the camera location, rotation and fov, as we are in 3D, we cam mouve through X Y and Z and then rotate	    through X Y and Z you can notice the "/>" at the end of the line, once you wouldn't go down further you             can close the tag.
+
+        # <location X="0" Y="0" Z="0"/> #
+        # <rotation X="0" Y="0" Z="0"/> #
+        # <fov>1000</fov> #
+
+	Then, you can close tags, and folow the next part, the scene building.
+
+        # </camera> #
+        # </cameras> #
+        # <object> #
+
+	Now, the most interesting part, start by opening a tag called object, then a tag called plan, with type		    normal.
+
+	# <object> #
+	# <plan type="normal"> #
+
+	Then place the params tags for the objets
+
+        # <location X="0" Y="0" Z="-100"/> #
+        # <rotation X="0" Y="0" Z="0"/> #
+        # <effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.0"/> #
+        # <color>FFFFFF</color> #
+
+	And then close the "object plan", you can also close curently opened tags and try your scene.
+
+	# </plan> #
+
+	You can replace "plan" by forms as Sphere cone, pipe... every forms are detailed bellow.
+
+
+.SH LIST OF DIFFERENT GEOMETRYCAL
+
+Bellow listed all objects and theirs parameters, every objects can move and rotate on X & Y & Z and 
+
+.br
+.B SPHERE - Radius - Textures
+.br
+.B PLAN - Textures
+.br
+.B CYLINDRE - Radius - Textures
+.br
+.B CONE - Textures - Radius
+.br
+.B HOLE CUBE - Size
+.br
+.B TOR - Textures - Radius
+.br
+.B HYPERBOLOID - Radius
+.br
+.B PARABOLOID - Radius
+
+
+.SH ADVANCED RAYTRACER CORE FUNCTIONS
+.br
+.br
+	.B LIVE EDITION USING KEYBOARD AND MICE
+.br
+Select your X11 window running your Raytracer whith your mice cursor then you can 
+.br
+.br
+Enter - Activate position modifications
+.br
+Space - Activate rotation on selected object
+.br
+R or G or B - change colors
+.br
+T and I and S and P - Change effects (Transparency, reflection, phong...)
+.br
+A - Increase or Deacrease anti-aliasing level
+.br
++ and - Move your object on Z axis
+.br
+L and R - Move on X axis
+.br
+	.SH DISTRIBUTED COMPUTING
+.br
+.B What is distributed computing ?
+.br
+Distributed computing permit via TCP IP to easily distribute computings with up to 50 computers
+.br
+.B How to set up server ?
+.br
+Simply run this command
+
+	$ ./raytracer --server -p [port] [XML Dir]
+
+Then you can connect clients, using the command bellow
+.br
+When all clients are connected, type /start
+.br
+you can also type /list to list connected clients 
+.br
+Note that XML must be identical between clients and server.
+.br
+.B How to set up clients
+.br
+Simply run this command
+
+	$ ./raytracer --client -i [clients ip] -p [port] [XML Dir]
+
+Then just wait for the client to launch the compute
+.br
+
+	.SH USING THE GRAPHICAL USER INTERFACE
+.br
+Graphical user interface was especialy designed using Qt 4 Python to simplify raytracer configuration files creation,
+.br
+you can live preview your objects, rotate, apply effects, change colors, apply light effects then finally generate a complete XML file.
+
+.br
+.SH AUTHORS
+.TP 8
+.B \fILetexis Alexis,\fR
+.TP 8
+.B \fIGuiho Ronan, \fR
+.TP 8
+.B \fIZoe Phalipou, \fR
+.TP 8
+.B \fIKevin Platel, \fR
+.TP 8
+.B \fIVan Walleghem Jordan \fR
+

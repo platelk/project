@@ -1,0 +1,35 @@
+/*
+** normal_cylindre.c for raytracer in /home/leprov_a//depot/rt/src/normal
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Fri May 25 19:29:32 2012 alexis leprovost
+** Last update Fri May 25 20:28:36 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"raytracer.h"
+#include	"global.h"
+#include	"detail.h"
+#include	"utils.h"
+#include	"calc.h"
+
+int	normal_cylindre(double *n, t_detail *detail)
+{
+  double	tmp[NB_DIMENSION];
+
+  if (n == NULL || detail == NULL)
+    return (EXIT_FAILURE);
+  tmp[X] = detail->position[X];
+  tmp[Y] = detail->position[Y];
+  tmp[Z] = 0.000;
+  calc_rotation(tmp, detail->object->rotation, INVERSE_ROTATION);
+  n[X] = tmp[X];
+  n[Y] = tmp[Y];
+  n[Z] = tmp[Z];
+  modif_vector(detail->object->rotation, n, n, NORMAL_ROTATION);
+  return (EXIT_SUCCESS);
+}
+

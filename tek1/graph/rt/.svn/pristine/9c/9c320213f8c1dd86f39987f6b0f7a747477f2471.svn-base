@@ -1,0 +1,24 @@
+<window y=256 x=256>
+  <scene>
+    <camera>
+      <location X=-1500 Y=0 Z=0 />
+      <fov>1000</fov>
+    </camera>
+    <object>
+	<sphere type="normal">
+		<location X=0 Y=0 Z=0 />
+		<perlin FREQUENCE="1" PERSISTANCE="0.7" OCTAVE="5" RELIEF="0.8" CEIL="OFF" COLOR1="29FF49" COLOR2="1E83FF" APPLY="BUMP" TYPE="MARBEL"  />
+		<rotation X="0" Y="0" Z="0" />
+		<perturbation X="0" Y="0" Z="0" />
+		<radius>80</radius>
+		<color>8C39FF</color>
+		<effect BRIGHTNESS="0.51" REFLECTION="0.1" />
+	</sphere>
+    </object>
+    <light type="diffuse">
+       <location X=-1000 Y=0 Z=0 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+  </scene>
+</window>

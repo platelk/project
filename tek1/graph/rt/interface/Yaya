@@ -1,0 +1,20 @@
+<window x=1200 y=1080>
+<scene>
+	<camera>
+		<location X="-1000" Y="0" Z="0" />
+		<rotation X="0" Y="0" Z="0" />
+
+	</camera>
+<object>
+	<sphere TYPE="normal">
+		<location X="0" Y="0" Z="0" />
+		<rotation X="0" Y="0" Z="0" />
+		<perturbation X="1.5" Y="0" Z="0" />
+		<radius>100</radius>
+		<color>41FF9A</color>
+		<effect BRIGHTNESS="0.1" REFLECTION="0.28" PHONG="449.0" TRANSPARENCY="0.43" />
+	</sphere>
+</object>
+</scene>
+
+</window>

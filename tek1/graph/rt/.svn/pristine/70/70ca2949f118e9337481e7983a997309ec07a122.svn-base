@@ -1,0 +1,25 @@
+/*
+** moebus.h for moebus in /home/vink/moebus
+**
+** Made by kevin platel
+** Login   <vink@epitech.net>
+**
+** Started on  Tue May 22 09:51:45 2012 kevin platel
+** Last update Fri Jun  1 22:27:47 2012 kevin platel
+*/
+
+#ifndef __MOEBIUS_H__
+#define __MOEBIUS_H__
+
+#include	"GarbageMath.h"
+
+#define	MO_PRES	2.0
+#define MO_STEP	0.01
+#define MO_K	1.0
+
+#define NOZEROMIN	0.00001f
+#define EQUALZERO(x)	((((x) >  NOZEROMIN) && ((x) < NOZEROMIN)) ? 1 : 0)
+
+t_couple *moebius_cast_get_k(t_line *, t_moebius *, t_couple *, double *);
+
+#endif

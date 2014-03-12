@@ -1,0 +1,98 @@
+/*
+** calc_effect.c for raytracer in /home/leprov_a//depot/rt/src/calc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed May  9 20:18:25 2012 alexis leprovost
+** Last update Tue May 15 11:36:56 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+#include	<math.h>
+
+#include	"raytracer.h"
+#include	"global.h"
+#include	"detail.h"
+#include	"object.h"
+#include	"color.h"
+#include	"light.h"
+#include	"utils.h"
+#include	"init.h"
+#include	"calc.h"
+#include	"my.h"
+
+int    opposite_vector(double *vector)
+{
+  if (vector == NULL)
+    return (EXIT_FAILURE);
+  vector[X] *= (-1.000);
+  vector[Y] *= (-1.000);
+  vector[Z] *= (-1.000);
+  return (EXIT_SUCCESS);
+}
+
+int	get_near_object(t_camera *camera, t_detail *detail, double *vector, t_color *color)
+{
+  t_object	*tmp;
+  t_object	*data;
+
+  data = detail->object;
+  tmp = detail->object;
+  while (tmp->prev)
+    tmp = tmp->prev;
+  init_detail(detail);
+  restat_color(color);
+  while (tmp)
+    {
+      if (tmp != data)
+	tmp->inter(camera, tmp, detail, vector);
+      tmp = tmp->next;
+    }
+  if (detail->k >= 0.000)
+    calc_detail(detail, color, camera, vector);
+  return (EXIT_SUCCESS);
+}
+
+int
+calc_effect(t_detail *detail, t_color *color, t_light *light, double *vector)
+{
+  t_detail	*data;
+  t_color	tmp[2];
+  t_camera	camera;
+  double	r[NB_DIMENSION];
+  double	it;
+
+  if (detail == NULL || color == NULL || light == NULL || vector == NULL)
+    return (EXIT_FAILURE);
+  light_management(detail, color, light, vector);
+  restat_color(&tmp[1]);
+  data = detail;
+  it = 0.000;
+  while (it < CONST_REFL && data->k > 0.000 && data->object->effect[BRIGHTNESS])
+    {
+      camera.position[X] = detail->position[X];
+      camera.position[Y] = detail->position[Y];
+      camera.position[Z] = detail->position[Z];
+      opposite_vector(vector);
+      get_vector_reflechie(vector, detail->normal, r);
+      vector[X] = r[X];
+      vector[Y] = r[Y];
+      vector[Z] = r[Z];
+      get_near_object(&camera, detail, vector, &tmp[0]);
+      if (data->k >= 0.000)
+	{
+	  light_management(detail, &tmp[0], light, vector);
+	  color->red = (color->red * (1.000 - data->object->effect[BRIGHTNESS])) +
+	    (tmp[0].red * detail->object->effect[BRIGHTNESS]);
+	  color->green = (color->green * (1.000 - data->object->effect[BRIGHTNESS])) +
+	    (tmp[0].green * detail->object->effect[BRIGHTNESS]);
+	  color->blue = (color->blue * (1.000 - data->object->effect[BRIGHTNESS])) +
+	    (tmp[0].blue * detail->object->effect[BRIGHTNESS]);
+	  it += 1.000;
+	}
+      data = detail;
+    }
+  return (EXIT_SUCCESS);
+}

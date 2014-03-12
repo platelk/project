@@ -1,0 +1,33 @@
+<window y="500" x="500">
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="-10" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>640</fov>
+      </camera>
+    </cameras>
+    <object>
+      <cubetroue type="normal">
+	<location X="5" Y="0" Z="0"/>
+	<rotation X="45" Y="-80" Z="45"/>
+	<color>FF0000</color>
+	<effect BRIGHTNESS="1.0" PHONG="1000"/>
+	<radius>15.0</radius>
+      </cubetroue>
+      <sphere type="normal">
+	<location X="5" Y="0" Z="0"/>
+	<color>FF0000</color>
+	<effect BRIGHTNESS="0.4" PHONG="100"/>
+	<radius>2.0</radius>
+      </sphere>
+    </object>
+    <lights>
+      <light type="diffuse">
+	<location X="-100" Y="0" Z="0"/>
+	<intensity>0.6</intensity>
+	<color>FFFFFF</color>
+      </light>
+    </lights>
+  </scene>
+</window>

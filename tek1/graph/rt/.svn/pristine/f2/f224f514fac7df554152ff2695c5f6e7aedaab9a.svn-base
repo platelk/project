@@ -1,0 +1,26 @@
+<window y=256 x=256>
+  <scene 1 >
+    <camera>
+      <location X=-1500 Y=0 Z=0 />
+      <fov>1000</fov>
+    </camera>
+    <object>
+	<sphere type="normal">
+		<location X=0 Y=0 Z=0 />
+		
+		
+		<texture TYPE="None" COLOR="#7cff4c" KEEP="yes" FREQUENCE="2.0" INTERVAL="2"  >/home/vink/projet/graph/rt/interface/icone/open.jpg</texure>
+		<rotation X="0" Y="0" Z="0" />
+		<perturbation X="1.5" Y="2.5" Z="1.2" />
+		<radius>70</radius>
+		<color>37FFB6</color>
+		<effect BRIGHTNESS="0.5" REFLECTION="0.0" PHONG="13377.0" TRANSPARENCY="0.24" />
+	</sphere>
+    </object>
+    <light type="diffuse">
+       <location X=-1000 Y=0 Z=0 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+  </scene>
+</window>

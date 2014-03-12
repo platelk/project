@@ -1,0 +1,145 @@
+<window Y="1100" X="1100">
+  <scene NAME="Basic" ANTIALIASING="-1">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <cylindre TYPE="normal">
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<perturbation Y="2.0"/>
+	<radius>200</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="50" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="-50" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="-100" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="100" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="0" Z="50"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="0" Z="-50"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="0" Z="-100"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <cylindre TYPE="normal">
+	<location X="2000" Y="0" Z="100"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>231B10</color>
+	<radius>10</radius>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="600" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000" REFLECTION="0.4"/>
+	<color>FFFFFF</color>
+	<radius>40</radius>
+      </sphere>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="1000" REFLECTION="0.5"/>
+	<color>D2BA9C</color>
+      </plan>
+      <tore TYPE="normal">
+	<location X="400" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="90"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<radius MIN="10" MAX="140"/>
+	<color>8F6C41</color>
+      </tore>
+      <tore TYPE="normal">
+	<location X="900" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="90"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<radius MIN="10" MAX="140"/>
+	<color>AA814E</color>
+      </tore>
+      <tore TYPE="normal">
+	<location X="1400" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="90"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<radius MIN="10" MAX="140"/>
+	<color>594429</color>
+      </tore>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="500" Y="60" Z="40"/>
+	<color>B99466</color>
+	<intensity>0.2</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="400" Y="0" Z="50"/>
+	<color>B99466</color>
+	<intensity>0.2</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="600" Y="0" Z="-20"/>
+	<color>FFFFFF</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light TYPE="ambient">
+	<intensity>0.125</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

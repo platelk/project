@@ -1,0 +1,39 @@
+/*
+** server_listen.c for server in /home/guiho_r/tek1/clustering/src/server
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Tue May  1 16:06:02 2012 ronan guiho
+** Last update Wed May  2 14:24:40 2012 ronan guiho
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "client.h"
+
+int		server_listen(SOCKET ssock)
+{
+  t_client	*list;
+  fd_set	readfs;
+
+  list = NULL;
+  while (42)
+    {
+      FD_ZERO(&readfs);
+      FD_SET(ssock, &readfs);
+      if (select(ssock + 1, &readfs, NULL, NULL, NULL) < 0)
+	{
+	  printf("Raytracer: Clustering: Error: Select dysfunction.\n");
+	  return (EXIT_FAILURE);
+	}
+      if (FD_ISSET(ssock, &readfs))
+	{
+	  if ((server_client_connected(&list, ssock)) == EXIT_FAILURE)
+	    return (EXIT_FAILURE);
+	}
+    }
+  return (EXIT_SUCCESS);
+}
+

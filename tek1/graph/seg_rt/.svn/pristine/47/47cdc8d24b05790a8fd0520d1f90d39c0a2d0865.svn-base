@@ -1,0 +1,40 @@
+<window y=1000 x=1000>
+  <scene name=Basic antialiasing=0>
+    <cameras>
+      <camera>
+	<location X=-10000 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=1/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type=normal>
+	<location X=0 Y=0 Z=-100/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=1.0/>
+	<color>0000FF</color>
+      </plan>
+      <plan type=normal>
+	<location X=0 Y=-150 Z=-50/>
+	<rotation X=45 Y=0 Z=0/>
+	<effect BRIGHTNESS=1.0/>
+	<color>FF0000</color>
+      </plan>
+    </object>
+    <lights>
+      <light type=diffuse>
+	<location X=40 Y=20 Z=30/>
+	<color>FFFFFF</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type=diffuse>
+	<location X=250 Y=0 Z=0/>
+	<color>FFFFFF</color>
+	<intensity>0.3</intensity>
+      </light>
+      <light type=ambient>
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

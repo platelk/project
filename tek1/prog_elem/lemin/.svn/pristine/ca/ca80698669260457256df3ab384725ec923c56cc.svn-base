@@ -1,0 +1,135 @@
+/*
+** world.c for hex in /home/leprov_a//depot/lemin/bonus/src
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed Apr  4 13:30:16 2012 alexis leprovost
+** Last update Fri Apr  6 18:11:32 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"hex.h"
+
+t_room	*get_room(t_room *room, const int flag, const int aim)
+{
+  t_room	*tmp;
+
+  tmp = NULL;
+  while (room)
+    {
+      if (!aim && (tmp == NULL || tmp->coord[flag] < room->coord[flag]))
+	tmp = room;
+      if (aim && (tmp == NULL || tmp->coord[flag] > room->coord[flag]))
+	tmp = room;
+      room = room->next;
+    }
+  return (tmp);
+}
+
+int	get_coeff(t_room *room, const int flag, const int max)
+{
+  int	coeff;
+
+  coeff = 2;
+  while ((room->coord[flag] * coeff) < max)
+    coeff++;
+  return (coeff - 1);
+}
+
+int	convert_room(t_room *room)
+{
+  t_room	*max;
+  t_room	*min;
+  t_room	*tmp;
+  int	coeff;
+
+  max = get_room(room, X, 0);
+  min = get_room(room, X, 1);
+  coeff = get_coeff(max, X, (X_WIN / STEP));
+  tmp = room;
+  while (tmp)
+    {
+      if (tmp != min)
+	tmp->coord[X] *= coeff;
+      tmp = tmp->next;
+    }
+  max = get_room(room, Y, 0);
+  min = get_room(room, Y, 1);
+  coeff = get_coeff(max, Y, (Y_WIN / STEP));
+  while (room)
+    {
+      if (room != min)
+	room->coord[Y] *= coeff;
+      room = room->next;
+    }
+  return (EXIT_SUCCESS);
+}
+
+char	**init_world(void)
+{
+  char	**map;
+  int	i;
+  int	k;
+
+  i = -1;
+  if ((map = malloc(sizeof(*map) * ((Y_WIN / STEP) + 2))) == NULL)
+    return (NULL);
+  while (++i <= (Y_WIN / STEP))
+    {
+      k = -1;
+      if ((map[i] = malloc(sizeof(**map) * ((X_WIN / STEP) + 2))) == NULL)
+	return (NULL);
+      while (++k <= (X_WIN / STEP))
+	map[i][k] = GRASS;
+    }
+  return (map);
+}
+
+int	modif_coord(int *x, int *y, t_room *tmp)
+{
+  if (*y > tmp->coord[Y])
+    *y = *y - 1;
+  else if (*x > tmp->coord[X])
+    *x = *x - 1;
+  else if (*x < tmp->coord[X])
+    *x = *x + 1;
+  else if (*y < tmp->coord[Y])
+    *y = *y + 1;
+  return (EXIT_SUCCESS);
+}
+
+char	**spawn_room(t_room *room, char **map)
+{
+  int	x;
+  int	y;
+  int	i;
+
+  if (convert_room(room) == EXIT_FAILURE)
+    return (NULL);
+  while (room)
+    {
+      i = -1;
+      x = room->coord[X];
+      y = room->coord[Y];
+      map[y][x] = room->status;
+      while (room->link[++i])
+	while (x != room->link[i]->coord[X] || y != room->link[i]->coord[Y])
+	  if (!modif_coord(&x, &y, room->link[i]) &&
+	      (x != room->link[i]->coord[X] || y != room->link[i]->coord[Y]) &&
+	      map[y][x] == GRASS)
+	    map[y][x] = ROAD;
+      room = room->next;
+    }
+  return (map);
+}
+
+char	**get_world(t_room *room)
+{
+  char	**map;
+
+  if ((map = init_world()) == NULL)
+    return (NULL);
+  return (spawn_room(room, map));
+}

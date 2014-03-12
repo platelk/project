@@ -1,0 +1,49 @@
+<window y=1000 x=1000>
+  <scene name=Basic antialiasing=0>
+    <cameras>
+      <camera>
+	<location X=-50 Y=0 Z=50/>
+	<rotation X=0 Y=-20 Z=0/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type=normal>
+	<location X=0 Y=-20 Z=-10/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=1.0/>
+	<perturbation Y=5.0/>
+	<color>0000FF</color>
+      </plan>
+      <sphere type=normal>
+	<location X=60 Y=0 Z=0/>
+	<rotation X=45 Y=95 Z=100/>
+	<color>FF0000</color>
+	<effect BRIGHTNESS=0.2/>
+	<radius>5</radius>
+      </sphere>
+      <sphere type=normal>
+	<location X=50 Y=10 Z=10/>
+	<rotation X=45 Y=95 Z=100/>
+	<color>FFFFFF</color>
+	<effect BRIGHTNESS=0.6/>
+	<radius>5</radius>
+      </sphere>
+    </object>
+    <lights>
+      <light type=diffuse>
+	<location X=40 Y=20 Z=30/>
+	<color>FFFFFF</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type=diffuse>
+	<location X=0 Y=0 Z=0/>
+	<color>FFFFFF</color>
+	<intensity>0.3</intensity>
+      </light>
+      <light type=ambient>
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

@@ -1,0 +1,23 @@
+Les mnemoniques:
+
+DWORD == Double WORD  == 4octect
+
+mov == transfere la valeur de la SRC vers la DEST
+    -> mov ebp,esp
+
+sub == soustraction
+    -> sub esp,0x8
+
+inc == incrementation
+
+cmp == compare les valeurs
+
+j*  == operation de saut
+
+       jle == saut si cmp precedent est inferieure ou egal
+       	      cmp  DWORD PTR [ebp-4],0x9
+	      jle  8048393
+	      
+	      si 9 est inferieur a a la valeur sur 4 octect situer a ebp - 4
+
+	jmp == saut a l'adresse indique

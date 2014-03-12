@@ -1,0 +1,74 @@
+/*
+** obj_create_scene.c for ob in /home/vink/projet/graph/rt/src/obj
+**
+** Made by kevin platel
+** Login   <vink@epitech.net>
+**
+** Started on  Tue May  8 15:35:56 2012 kevin platel
+** Last update Sat Jun  2 04:17:35 2012 kevin platel
+*/
+
+#include	<stdlib.h>
+#include	<unistd.h>
+
+#include	"global.h"
+#include	"scene.h"
+#include	"object.h"
+#include	"xml_tree.h"
+#include	"xml_chr.h"
+#include	"obj_create.h"
+#include	"obj_print.h"
+#include	"my.h"
+
+t_scene	*obj_add_scene(t_xtree *tree, t_scene *scene, void *mlx_ptr)
+{
+  t_scene	*new;
+  t_object	*tmp;
+
+  new = malloc(sizeof(*new));
+  if (new == NULL)
+    return (NULL);
+  tmp = obj_create_list_object(tree, STRING_NEG, NULL, mlx_ptr);
+  new->light = obj_create_list_light(tree);
+  new->camera = obj_create_list_cam(tree);
+  new->object = obj_create_list_object(tree, STRING_NORM, tmp, mlx_ptr);
+  parse_3ds(&new->object);
+  obj_analize_cube(&new->object);
+  /*
+
+  int i1 = 0;
+  tmp = new->object;
+  while (tmp)
+    {
+      printf("\nObject %d\n", i1);
+      display_obj(tmp);
+      i1++;
+      tmp = tmp->next;
+      }*/
+  new->antialiasing = my_getdouble(xml_find_attr(tree->attr, STRING_AA));
+  new->image = NULL;
+  new->next = NULL;
+  new->prev = scene;
+  if (scene)
+    scene->next = new;
+  return (new);
+}
+
+t_scene	*obj_create_scene(t_xtree *tree, void *mlx_ptr)
+{
+  t_scene	*scene;
+  t_scene	*tmp;
+
+  tree = xml_find_in_tree(tree, "window/scene");
+  if (tree == NULL)
+    return (NULL);
+  scene = obj_add_scene(tree, NULL, mlx_ptr);
+  tmp = scene;
+  tree = tree->next;
+  while (tree)
+    {
+      tmp = obj_add_scene(tree, tmp, mlx_ptr);
+      tree = tree->next;
+    }
+  return (scene);
+}

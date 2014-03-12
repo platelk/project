@@ -1,0 +1,33 @@
+<window y="1000" x="1000">
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type="normal">
+	<location X="0" Y="0" Z="-10"/>
+	<rotation X="-90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2" REFLECTION="0"/>
+	<radius>70</radius>
+	<template>./texture/pave.xpm</template>
+	<color>00FF00</color>
+      </sphere>
+    </object>
+    <lights>
+	<light type="diffuse">
+	  <location X="0" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light type="diffuse">
+	  <location X="0" Y="0" Z="0"/>
+	  <intensity>0.9</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

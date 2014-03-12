@@ -1,0 +1,67 @@
+/*
+** xml_chr.c for xml in /home/vink/projet/graph/xml/xml_src/src
+**
+** Made by kevin platel
+** Login   <vink@epitech.net>
+**
+** Started on  Mon May  7 11:37:29 2012 kevin platel
+** Last update Sat Jun  2 14:19:16 2012 jordan vanwalleghem
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+
+#include	"xml_tree.h"
+#include	"my_strtok.h"
+#include	"my.h"
+
+char	*xml_find_attr(t_attr *attr, char *name)
+{
+  while (attr)
+    {
+      if (my_strcmp(attr->name, name) == 0)
+	return (attr->content);
+      attr = attr->next;
+    }
+  return (NULL);
+}
+
+t_xtree	*xml_find_one_node(t_xtree *tree, char *name)
+{
+  while (tree)
+    {
+      if (my_strcmp(tree->name, name) == 0)
+	return (tree);
+      tree = tree->next;
+    }
+  return (NULL);
+}
+
+t_xtree	*xml_find_in_tree(t_xtree *tree, char *find, int i)
+{
+  char	**tab;
+  t_xtree	*tmp;
+  t_xtree	*tmp2;
+
+  tab = my_strtok(find, "/ \n\t", TOK_DELIM);
+  tmp = NULL;
+  while (tree && tab && tab[i])
+    {
+      (tmp == NULL) ? (tmp = tree) : (tmp = tmp);
+      tmp2 = tmp;
+      tmp = NULL;
+      while (tmp2 && !tmp)
+	{
+	  if (!tab[i + 1] && my_strcmp(tmp2->name, tab[i]) == 0)
+	    {
+	      my_free_tab(tab);
+	      return (tmp2);
+	    }
+	  tmp = xml_find_one_node(tmp2->sun, tab[i]);
+	  (tmp == NULL) ? tmp2 = tmp2->next : (tmp = tmp);
+	}
+      i++;
+    }
+  my_free_tab(tab);
+  return (tmp);
+}

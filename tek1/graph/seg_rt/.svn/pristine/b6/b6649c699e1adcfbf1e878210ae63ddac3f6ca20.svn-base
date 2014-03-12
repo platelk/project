@@ -1,0 +1,25 @@
+/*
+** utils.h for raytracer in /home/leprov_a//depot/rt/inc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Mon May  7 18:10:00 2012 alexis leprovost
+** Last update Fri May 25 20:03:25 2012 alexis leprovost
+*/
+
+#ifndef __UTILS_H__
+#define __UTILS_H__
+
+#include	"camera.h"
+#include	"object.h"
+#include	"color.h"
+
+int	restat_color(t_color *color);
+int	add_color(t_color *c1, t_color *c2);
+int	modif_position(double *position, t_object *object, double *location, int flag);
+int	modif_vector(double *rotation, double *old_vector, double *new_vector, int flag);
+int	get_vector_reflechie(double *i, double *n, double *r);
+int     modif_normal(t_detail *detail, double *normal);
+
+#endif

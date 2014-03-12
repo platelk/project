@@ -1,0 +1,18 @@
+/*
+** my_rev_list.h for rev in /home/vink/projet/graph/rt
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Sat Jun  2 04:20:48 2012 kevin platel
+** Last update Sun Jun  3 06:17:41 2012 kevin platel
+*/
+
+#ifndef __MY_REV_LIST_H__
+#define __MY_REV_LIST_H__
+
+#include "parse_obj.h"
+
+int		my_rev_list(t_vertice **);
+
+#endif

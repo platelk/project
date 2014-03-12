@@ -1,0 +1,28 @@
+<window y="1000" x="1000">
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>600</fov>
+      </camera>
+    </cameras>
+    <object>
+      <tore type="normal">
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="90" Y="30" Z="90"/>
+	<effect BRIGHTNESS="0.2" REFLECTION="0"/>
+	<template>./texture/fire.xpm</template>
+	<color>FF0000</color>
+	<radius MIN="50" MAX="200"/>
+      </tore>
+    </object>
+    <lights>
+	<light type="diffuse">
+	  <location X="0" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+      </lights>
+    </scene>
+  </window>

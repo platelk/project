@@ -1,0 +1,37 @@
+<window y="500" x="500">
+  <scene name="Basic" antialiasing="1">
+    <cameras>
+      <camera>
+	<location X="-500" Y="10" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>400</fov>
+      </camera>
+    </cameras>
+    <object>
+      <moebius type="normal">
+	<location X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.6"/>
+	<color>FF0000</color>
+	<size A="60" B="60" C="60"/>
+      </moebius>
+      <sphere type="normal">
+	<location X="0" Y="0" Z="0" />
+	<effect BRIGHTNESS="0.6"/>
+	<color>00FF00</color>
+	<radius>30</radius>
+      </sphere>
+    </object>
+     <lights>
+       <light type="diffuse">
+	 <location X="-600" Y="0" Z="0"/>
+	 <color>FFFFFF</color>
+	 <intensity>0.9</intensity>
+       </light>
+       <light type="diffuse">
+	 <location X="0" Y="0" Z="1000"/>
+	 <color>FFFFFF</color>
+	 <intensity>0.9</intensity>
+       </light>
+     </lights>
+  </scene>
+</window>

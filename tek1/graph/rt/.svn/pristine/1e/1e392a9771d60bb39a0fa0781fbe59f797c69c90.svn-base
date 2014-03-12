@@ -1,0 +1,27 @@
+<window y=256 x=256>
+  <scene 1 >
+    <camera>
+      <location X=-1500 Y=0 Z=0 />
+      <fov>1000</fov>
+    </camera>
+    <object>
+	<cubetroue type="normal">
+		<location X=0 Y=0 Z=0 />
+		
+		
+		
+		<rotation X="0" Y="0" Z="0" />
+		<perturbation X="0" Y="0" Z="0" />
+		<radius>0</radius>
+		<size>0</size>
+		<color>00000</color>
+		<effect BRIGHTNESS="0.0" REFLECTION="0.0" PHONG="1.0" TRANSPARENCY="0.0" />
+	</cubetroue>
+    </object>
+    <light type="diffuse">
+       <location X=-1000 Y=0 Z=0 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+  </scene>
+</window>

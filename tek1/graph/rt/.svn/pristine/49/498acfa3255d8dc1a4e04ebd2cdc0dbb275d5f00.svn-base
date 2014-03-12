@@ -1,0 +1,101 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic" ANTIALIASING="1">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>600</fov>
+      </camera>
+    </cameras>
+    <object>
+      <cylindre TYPE="normal">
+	<location X="300" Y="0" Z="0"/>
+	<rotation X="-45" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" PHONG="1000" REFLECTION="0.2" TRANSPARENCE="0.0"/>
+	<color>00FF00</color>
+	<perturbation Z="2.0"/>
+	<material>1.0</material>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre TYPE="negatif">
+	<location X="280" Y="0" Z="2"/>
+	<rotation X="-45" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" PHONG="1000" REFLECTION="0.2" TRANSPARENCE="0.9"/>
+	<color>00FF00</color>
+	<perturbation Z="2.0"/>
+	<material>1.0</material>
+	<radius>15</radius>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="500" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" TRANSPARENCE="0.0"/>
+	<color>743551</color>
+	<radius>200</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="280" Y="50" Z="60"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" TRANSPARENCE="0.0"/>
+	<color>743551</color>
+	<radius>40</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="280" Y="80" Z="-10"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" TRANSPARENCE="0.0"/>
+	<color>743551</color>
+	<radius>40</radius>
+      </sphere>
+      <cylindre TYPE="negatif">
+	<location X="600" Y="500" Z="150"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.6" TRANSPARENCE="0.9"/>
+	<color>F56A55</color>
+	<radius>50</radius>
+      </cylindre>
+      <cylindre TYPE="negatif">
+	<location X="550" Y="200" Z="150"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.6" TRANSPARENCE="0.9"/>
+	<color>F56A55</color>
+	<radius>150</radius>
+      </cylindre>
+      <hyperboloide TYPE="negatif">
+	<location X="350" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.5" PHONG="100"/>
+	<constante A="20" B="40" C="100"/>
+	<perturbation Z="2.0"/>
+	<color>0000FF</color>
+      </hyperboloide>
+      <paraboloide TYPE="normal">
+	<location X="600" Y="300" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.0" PHONG="100"/>
+	<radius>60</radius>
+	<color>5590F5</color>
+	<perturbation Y="2.5" Z="2.5"/>
+      </paraboloide>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.6"/>
+	<color>6A55F5</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="-100" Z="0"/>
+	<rotation X="-90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.6"/>
+	<color>6A55F5</color>
+      </plan>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="0" Y="200" Z="100"/>
+	<color>FFFFFF</color>
+	<intensity>1</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

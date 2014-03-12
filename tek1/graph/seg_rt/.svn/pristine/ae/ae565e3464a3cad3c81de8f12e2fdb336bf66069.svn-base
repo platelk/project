@@ -1,0 +1,50 @@
+/*
+** obj_create_window.c for obj in /home/vink/projet/graph/xml/obj_src
+**
+** Made by kevin platel
+** Login   <vink@epitech.net>
+**
+** Started on  Mon May  7 14:37:31 2012 kevin platel
+** Last update Fri May 25 13:41:34 2012 ronan guiho
+*/
+
+#include	<stdlib.h>
+
+#include	"mlx.h"
+#include	"init.h"
+#include	"my.h"
+#include	"window.h"
+#include	"xml_chr.h"
+#include	"xml_tree.h"
+
+
+t_window	*obj_create_window(t_global *global, t_xtree *tree)
+{
+  t_normal_info	*normal_info;
+  t_window	*window;
+  t_xtree	*tmp;
+
+  if (global->info.type == TYPE_NORMAL || global->info.type == TYPE_SERVER)
+    normal_info = (t_normal_info *)global->info.arg;
+  if ((tmp = xml_find_in_tree(tree, STRING_WINDOW)) == NULL)
+    return (NULL);
+  if ((window = malloc(sizeof(*window))) == NULL)
+    return (NULL);
+  window->y_win = my_getnbr(xml_find_attr(tmp->attr, STRING_Y_WIN));
+  if (window->y_win <= 0)
+    window->y_win = NUM_WIN_Y;
+  window->x_win = my_getnbr(xml_find_attr(tmp->attr, STRING_X_WIN));
+  if (window->x_win <= 0)
+    window->x_win = NUM_WIN_X;
+  window->name_win = xml_find_attr(tmp->attr, STRING_WIN_NAME);
+  window->attr = tmp->attr;
+  if ((window->mlx_ptr = mlx_init()) == 0)
+    return (NULL);
+  if ((global->info.type == TYPE_NORMAL || global->info.type == TYPE_SERVER)
+      && normal_info->mute == 0)
+    window->win_ptr = mlx_new_window(window->mlx_ptr, window->x_win,
+				     window->y_win, window->name_win);
+  window->background = init_image(window->mlx_ptr, xml_find_attr(window->attr, "background"),
+				  window->x_win, window->y_win);
+  return (window);
+}

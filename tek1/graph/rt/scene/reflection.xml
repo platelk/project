@@ -1,0 +1,94 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic" ANTIALIASING="2">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.2" TRANSPARENCY="0.4"/>
+	<color>FF00FF</color>
+	<procedural TYPE="damier" SIZE="50" COLOR1="FFFFFF" COLOR2="000000"/>
+	<perturbation Y="1.5"/>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="80"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.1"/>
+	<color>FF00FF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="80"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.1"/>
+	<color>FF00FF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="400" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="10000" REFLECTION="0.1"/>
+	<color>0000FF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="-100" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="10000" REFLECTION="0.1"/>
+	<color>FF0000</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="100" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="100" REFLECTION="0.1"/>
+	<color>00FFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="-100" Z="0"/>
+	<rotation X="-90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.1"/>
+	<color>F0F0F0</color>
+      </plan>
+      <sphere TYPE="normal">
+	<location X="100" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2" PHONG="1000" REFLECTION="0.05"/>
+	<color>000000</color>
+	<radius>10</radius>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="200" Y="50" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="1000" REFLECTION="0.5"/>
+	<color>FFFFFF</color>
+	<radius>10</radius>
+      </sphere>
+      <hyperboloide TYPE="normal">
+	<location X="200" Y="-50" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="1000" REFLECTION="0.4"/>
+	<perturbation Z="1.0"/>
+	<color>FFFFFF</color>
+	<constante A="10" B="10" C="25"/>
+      </hyperboloide>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="100" Y="-50" Z="-50"/>
+	<color>FFFFFF</color>
+	<intensity>0.45</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="100" Y="50" Z="50"/>
+	<color>FFFFFF</color>
+	<intensity>0.45</intensity>
+      </light>
+      <light TYPE="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

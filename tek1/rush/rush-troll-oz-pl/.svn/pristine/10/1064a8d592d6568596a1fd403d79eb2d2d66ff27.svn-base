@@ -1,0 +1,23 @@
+/*
+** utils.c for teuquain in /home/vink/projet/rush/rush-troll-oz-pl/trunk/src
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Thu Jun  7 11:16:50 2012 kevin platel
+** Last update Thu Jun  7 11:52:32 2012 kevin platel
+*/
+
+#include	<stdlib.h>
+
+int	my_tab_len(char **tab)
+{
+  int	i;
+
+  i = 0;
+  if (tab == NULL)
+    return (0);
+  while (tab[i] && i > 0)
+    i++;
+  return (i);
+}

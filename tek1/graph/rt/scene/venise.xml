@@ -1,0 +1,404 @@
+<window Y="1000" X="1600">
+  <scene NAME="Basic" ANTIALIASING="3">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan TYPE="normal">
+	<location X="0" Y="-300" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="6.0">./texture/mur.jpg</texture>
+	<color>00FFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="300" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="6.0">./texture/mur.jpg</texture>
+	<size>50</size>
+	<limit>
+	  <x MIN="40" MAX=""/>
+	  <y MIN="" MAX=""/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="40" Y="350" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="3.0">./texture/mur2.jpg</texture>
+	<size>50</size>
+	<limit>
+	  <x MIN="" MAX=""/>
+	  <y MIN="-50" MAX=""/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.6" TRANSPARENCE="0.5"/>
+	<texture FREQUENCE="0.3" TYPE="cut" COLOR="FFFFFF" INTERVAL="150" KEEP="yes">texture/ciel.jpg</texture>
+	<perturbation Y="6.0" Z="6.0"/>
+	<color>A6D2E8</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="750"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" PHONG="0" REFLECTION="0.0" TRANSPARENCE="0.7"/>
+	<texture FREQUENCE="40">texture/etoile.jpg</texture>
+	<color>A6D2E8</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-95"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="100" REFLECTION="0.0" TRANSPARENCY="0.7"/>
+	<color>A6D2E8</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-130"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.9" />
+	<color>A6D2E8</color>
+      </plan>
+      <cylindre TYPE="normal">
+	<location X="0" Y="-280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="0" Y="-280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="600" Y="-280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="600" Y="-280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="1200" Y="-280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="1200" Y="-280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="1800" Y="-280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="1800" Y="-280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="2400" Y="-280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="2400" Y="-280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="0" Y="280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="0" Y="280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="600" Y="280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="600" Y="280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="1200" Y="280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="1200" Y="280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="1800" Y="280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="1800" Y="280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="2400" Y="280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="2400" Y="280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.3"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="3000" Y="280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="3000" Y="280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="3000" Y="-280" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="0.3">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>15</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="3000" Y="-280" Z="90"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="5.0">texture/rayure.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="80"/>
+	</limit>
+	<radius>25</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <tore TYPE="normal">
+	<location X="300" Y="-290" Z="-82"/>
+	<rotation X="80" Y="60" Z="160"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<radius MIN="3" MAX="15"/>
+	<color>594429</color>
+      </tore>
+      <tore TYPE="normal">
+	<location X="3700" Y="0" Z="-350"/>
+	<rotation X="0" Y="0" Z="90"/>
+	<effect BRIGHTNESS="0" PHONG="100" REFLECTION="0.2"/>
+	<radius MIN="100" MAX="450"/>
+	<color>010101</color>
+      </tore>
+      <hyperboloide TYPE="normal">
+	<location X="3500" Y="-300" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.2" PHONG="100"/>
+	<constante A="10" B="25" C="160"/>
+	<color>010101</color>
+      </hyperboloide>
+      <hyperboloide TYPE="normal">
+	<location X="3500" Y="300" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.2" PHONG="100"/>
+	<constante A="10" B="25" C="160"/>
+	<color>010101</color>
+      </hyperboloide>
+      <sphere TYPE="normal">
+	<location X="300" Y="-280" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="5.0">texture/bleu.jpg</texture>
+	<radius>25</radius>
+	<color>CCCCCC</color>
+      </sphere>
+      <cone TYPE="normal">
+	<location X="600" Y="0" Z="-400"/>
+	<rotation X="-90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="20.0">texture/sable.jpg</texture>
+	<limit>
+	  <z MIN="" MAX="0"/>
+	</limit>
+	<radius>40</radius>
+	<color>CCCCCC</color>
+      </cone>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="-500" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="0" Y="0" Z="700"/>
+	  <intensity>0.4</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="800" Y="0" Z="700"/>
+	  <intensity>0.4</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="ambiant">
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>
+

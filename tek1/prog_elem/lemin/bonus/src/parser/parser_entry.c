@@ -1,0 +1,55 @@
+/*
+** parser_entry.c for lemin in /home/guiho_r/tek1/lemin/src/parser
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Wed Apr  4 10:52:16 2012 ronan guiho
+** Last update Fri Apr  6 15:20:40 2012 alexis leprovost
+*/
+
+#include <unistd.h>
+#include <stdlib.h>
+
+#include "hex.h"
+
+int		parser_main_room_link(t_glob *global, char **tab, int i)
+{
+  if ((i = parser_room(global, tab, i + 1)) == -1)
+    return (EXIT_FAILURE);
+  if ((parser_room_analize(global->room)) == EXIT_FAILURE)
+    return (EXIT_FAILURE);
+  if ((global->ant = parser_init_ant(global)) == NULL)
+    return (EXIT_FAILURE);
+  if ((parser_link(global->room, tab, i)) == EXIT_FAILURE)
+    return (EXIT_FAILURE);
+  parser_free_tab(tab);
+  return (EXIT_SUCCESS);
+}
+t_glob		*parser_main()
+{
+  int		i;
+  char		delim[2];
+  t_glob	*global;
+  char		**tab;
+  char		buffer[SIZE_BUFFER];
+
+  i = 0;
+  if ((global = malloc(sizeof(*global))) == NULL)
+    return (NULL);
+  delim[0] = DELIM_BUFFER;
+  delim[1] = '\0';
+  buffer[read(0, buffer, SIZE_BUFFER)] = '\0';
+  if (buffer[1] == '\0')
+    return (NULL);
+  my_printf("%s\n", buffer);
+  if ((tab = my_strtok(buffer, delim, TOK_DELIM)) == NULL)
+    return (NULL);
+  while (tab[i][0] == '#' && tab[i][1] != '#')
+    i++;
+  global->nb_ant = my_getnbr(tab[i]);
+  if ((parser_main_room_link(global, tab, i)) == EXIT_FAILURE)
+    return (NULL);
+  return (global);
+}
+

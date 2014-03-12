@@ -1,0 +1,66 @@
+/*
+** my.h for my in /home/leprov_a//bdd/include
+**
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+**
+** Started on  Thu Oct 13 11:43:31 2011 alexis leprovost
+** Last update Thu Apr  5 11:20:52 2012 ronan guiho
+*/
+
+#ifndef	__MY_H__
+#define	__MY_H__
+
+#include <stdarg.h>
+
+#define	IS_IN_STR	0
+#define	IS_NOT_STR	-1
+
+typedef enum
+{
+  TOK_DELIM,
+  TOK_BASE
+}e_type;
+
+char            find_intab(char c);
+int             my_printf(const char *format, ...);
+int             opt_d(va_list *ap, const char *format);
+int             opt_s(va_list *ap, const char *format);
+int             opt_c(va_list *ap, const char *format);
+int             opt_x(va_list *ap, const char *format);
+int             opt_X(va_list *ap, const char *format);
+int             opt_o(va_list *ap, const char *format);
+int             opt_u(va_list *ap, const char *format);
+int             opt_b(va_list *ap, const char *format);
+int             opt_S(va_list *ap, const char *format);
+int             opt_mod(va_list *ap, const char *format);
+int             opt_p(va_list *ap, const char *format);
+int             opt_less(const char *format, int i);
+int             opt_pres(const char *format, int i);
+int             my_putnbr_base(int nbr, char *base);
+void		*init_tab_func(void);
+int             my_putnbrul_base(unsigned long int nbr, char *base);
+int             error(const char *format);
+int             put_oct(char c);
+int		opt(const char *format, int *i, int *cont, va_list *ap);
+int		isnum(char c);
+int	is_alpha(char c);
+int	my_putnbr_base(int nbr, char *base);
+int	my_getnbr_base(char *str, char *base);
+
+int	my_power_rec(int nb, int power);
+int	my_strlen(char *str);
+int	my_strcmp(char *s1, char *s2);
+int	my_strncmp(char *s1, char *s2, int n);
+
+void	my_putchar(char c);
+int	my_puterror(char *str);
+void	my_putstr(char *str);
+
+char	**my_strtok(char *str, char *bdd, int flag);
+char	*my_strdup(char *expr);
+char	*my_strcat(char *dest, char *src);
+
+int	check_base(char c, char *base);
+
+#endif

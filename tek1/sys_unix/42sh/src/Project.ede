@@ -1,0 +1,13 @@
+;; Object 42sh
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "42sh"
+  :file "Project.ede"
+  :name "42sh"
+  :targets (list 
+   (ede-proj-target-makefile-program "42sh"
+    :name "42sh"
+    :path ""
+    :source '("main.c")
+    )
+   )
+  )

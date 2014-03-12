@@ -1,0 +1,22 @@
+/*
+** main.c for lem_in in /home/leprov_a//depot/lemin/src
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Mon Apr  2 09:31:15 2012 alexis leprovost
+** Last update Mon Apr  9 12:41:55 2012 kevin platel
+*/
+
+#include	<stdlib.h>
+
+#include	"lemin.h"
+
+int	main(void)
+{
+  t_glob	*glob;
+
+  glob = parser_main();
+  attribute_weight(glob);
+  return (EXIT_SUCCESS);
+}

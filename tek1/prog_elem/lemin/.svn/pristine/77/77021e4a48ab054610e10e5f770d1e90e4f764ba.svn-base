@@ -1,0 +1,42 @@
+##
+## Makefile for lem_in in /home/leprov_a//depot/lemin
+## 
+## Made by alexis leprovost
+## Login   <leprov_a@epitech.net>
+## 
+## Started on  Mon Apr  2 09:07:30 2012 alexis leprovost
+## Last update Fri Apr  6 18:04:37 2012 alexis leprovost
+##
+
+NAME=	hex
+
+CFLAGS=	-Wall -Wextra -ansi -pedantic -I$(INC)
+
+SRC=	$(wildcard ./src/*.c \
+		   ./src/parser/*.c \
+		   ./src/world/*.c)
+
+OBJ=	$(SRC:.c=.o)
+
+INC=	./inc/
+
+LIB=	./lib/
+
+SDL=	-lSDL_ttf -lSDL_image -lSDL_net
+
+all:	$(NAME)
+
+$(NAME):	$(OBJ)
+	make -C $(LIB)
+	gcc `sdl-config -- libs` -o $(NAME) $(OBJ) -L$(LIB) $(SDL) -lmy
+	@rm -f *~
+	@rm -f *#
+
+clean:
+	rm -f $(OBJ)
+
+fclean:	clean
+	rm -f $(NAME)
+
+re:	fclean all
+

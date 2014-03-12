@@ -1,0 +1,116 @@
+<window Y="1000" X="1000">
+  <scene name="Basic" ANTIALIASING="-1">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>800</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere TYPE="negatif">
+	<location X="490" Y="50" Z="130"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="480" Y="50" Z="30"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </sphere>
+      <cylindre TYPE="negatif">
+	<location X="460" Y="0" Z="130"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="480" Y="-180" Z="100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0"/>
+	<color>856991</color>
+        <perturbation Z="4.0"/>
+	<radius>80</radius>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="515" Y="130" Z="-150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="1"/>
+	<color>856991</color>
+        <perturbation Z="4.0"/>
+	<radius>60</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="480" Y="-50" Z="-30"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="490" Y="-50" Z="130"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="490" Y="50" Z="-130"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </sphere>
+      <sphere TYPE="negatif">
+	<location X="490" Y="-50" Z="-190"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="500" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>80</radius>
+      </cylindre>
+      <cylindre TYPE="negatif">
+	<location X="470" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FFFFFF</color>
+	<radius>70</radius>
+      </cylindre>
+      <plan TYPE="normal">
+        <location X="0" Y="-20" Z="-280"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.3"/>
+        <perturbation Y="5.0"/>
+        <color>FFFFFF</color>
+      </plan>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="0" Y="-100" Z="100"/>
+	<color>FF0000</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="0" Y="-100" Z="500"/>
+	<color>FFFFFF</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="0" Y="100" Z="-100"/>
+	<color>0000FF</color>
+	<intensity>0.6</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

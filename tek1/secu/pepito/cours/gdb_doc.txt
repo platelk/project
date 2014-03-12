@@ -1,0 +1,360 @@
+Introduction à GDB
+
+###############################################################################
+
+
+* Cible
+*******
+
+Les exécutables que vous désirez debugger peuvent posséder des symboles.
+Les symboles sont des informations stockés dans l'exécutable qui permettent, à
+partir d'une adresse, de connaitre le nom et la signification d'une zone mémoire.
+Sous UNIX, pour lister les symboles d'un exécutable, il faut utiliser la
+commande nm(1).
+Cette commande permet de connaitre l'adresse, le nom ainsi que le type de
+symbole.
+La signification des lettres est disponible sur la page de manuel de nm (man
+nm).
+
+Afin d'avoir un maximum d'information sur un exécutable, il est préférable
+d'utiliser l'option de compilation "-ggdb<n>", n allant de 0 a 3.
+Cette option force gcc à rajouter des symboles spéciaux interpretables par gdb.
+(Note: L'option -g<n> est également possible, mais ces informations de debug
+seront dans un autre format).
+Pour savoir si un exécutable dispose de ce genre de symbole, vous pouvez
+utiliser la commande suivante:
+
+Avec:
+[/tmp]% nm -a hello_gdb | grep ' N '
+00000000 N .debug_abbrev
+00000000 N .debug_aranges
+00000000 N .debug_frame
+00000000 N .debug_info
+00000000 N .debug_line
+00000000 N .debug_loc
+00000000 N .debug_macinfo
+00000000 N .debug_str
+
+Sans:
+[/tmp]% nm -a hello | grep ' N '
+[/tmp]%
+
+Enfin, la plupart des exécutables de base ne possède pas de symbole:
+[/tmp]% nm -a /bin/ls
+nm: /bin/ls: no symbols
+
+Pour retirer les symboles d'un exécutable, il faut utiliser la commande
+strip(1):
+[/tmp]% strip hello_gdb
+[/tmp]% nm hello_gdb
+nm: hello_gdb: no symbols
+
+###############################################################################
+
+
+* Utilisation
+*************
+
+GDB permet de debugger les exécutables de différente façon, ici seules 3
+méthodes seront données:
+
+** Normal
+*********
+
+On fournit un exécutable en paramètre et on démarre manuellement
+l'executable.
+
+gdb /bin/ls
+
+On peut également spécifier des paramètres en utilisant --args
+gdb --args /bin/ls -l
+
+** Attachement d'un processus
+*****************************
+
+L'exécutable est déjà démarré, on demande à gdb de s'attacher sur l'exécutable.
+Cette méthode est pratique pour les exécutables qui utilisent les termcaps ou
+sont trop bavards
+
+[/tmp]% cat
+^Z
+zsh: suspended  cat
+[/tmp]% pidof cat
+2006
+[/tmp]% gdb /bin/cat 2006
+
+'pidof' permet de récupérer les pids à partir d'un nom de processus.
+
+** Coredump
+***********
+
+L'exécutable reçoit un signal qui provoque son arret (e.g.: SIGSEGV ou
+segfault) et le shell est configuré pour dumper la mémoire à cet instant.
+
+[/tmp]% ulimit -c unlimited
+[/tmp]% ./segfault
+zsh: segmentation fault (core dumped)  ./segfault
+[/tmp]% gdb ./segfault core
+
+ulimit -c unlimited permet d'activer les coredumps sous zsh.
+Sous tcsh il faut utiliser la commande limit coredump unlimited (à verifier)
+
+Note: Il n'est pas possible de continuer l'exécution à partir d'un coredump,
+vous devez redémarrer votre programme.
+
+###############################################################################
+
+* Contrôle du flux d'exécution
+******************************
+
+Afin de pouvoir debugger un programme, il faut pouvoir l'instrumentaliser.
+L'idée est de définir à quel moment le programme doit s'arrêter et donner la
+main à gdb et pouvoir observer ce qu'il se passe.
+Généralement, ça se déroule en deux étapes: On definit un endroit ou s'arrêter,
+puis on avance pas-à-pas pour voir ce qui se passe en détail.
+
+** Breakpoint
+*************
+
+Le breakpoint permet de prendre le contrôle avant qu'une adresse donnée soit
+executée.
+Il y a plusieurs façons de donner une adresse
+
+- Par symbole
+  (gdb) b main
+  Breakpoint 1 at 0x839c: file hello.c, line 5.
+  (gdb) r
+  Starting program: /tmp/hello_gdb
+
+  Breakpoint 1, main () at hello.c:5
+  5         puts("hello");
+
+
+- Par adresse
+  (gdb) b *0x82e8
+  Breakpoint 1 at 0x82e8
+  (gdb) r
+  Starting program: /tmp/hello_gdb
+
+- Par ligne
+  (gdb) list main
+  1       #include <stdio.h>
+  2
+  3       int main(void)
+  4       {
+  5         puts("hello");
+  6         return 0;
+  7       }
+  (gdb) b 6
+  Breakpoint 1 at 0x83a4: file hello.c, line 6.
+  (gdb) r
+  Starting program: /tmp/hello_gdb
+  hello
+  Breakpoint 1, main () at hello.c:6
+  6         return 0;
+  Breakpoint 1, 0x000082e8 in _start ()
+
+** Déplacement du flux d'exécution
+**********************************
+
+Trois commandes sont disponibles pour se déplacer dans le code
+
+- step
+  La commande s(step) permet de se déplacer d'une ligne de code en entrant dans
+  les sous-fonctions.
+  (gdb) b main
+  Breakpoint 1 at 0x400555: file debug_me.c, line 13.
+  (gdb) r
+  Starting program: /tmp/debug_me
+
+  Breakpoint 1, main () at debug_me.c:13
+  13        n = -1;
+  (gdb) s
+  14        my_inc(&n);
+  (gdb)
+  my_inc (i=0x7fffffffe8a4) at debug_me.c:5
+  5         (*i)++;
+  (gdb)
+  6       }
+  (gdb)
+  main () at debug_me.c:15
+  15        printf("n=%d\n", n);
+
+- next
+  La commande n(next) permet de se déplacer d'une ligne de code mais sans
+  entrer dans les sous-fonctions.
+  (gdb) b main
+  Breakpoint 1 at 0x400555: file debug_me.c, line 13.
+  (gdb) r
+  Starting program: /tmp/debug_me
+
+  Breakpoint 1, main () at debug_me.c:13
+  13        n = -1;
+  (gdb) n
+  14        my_inc(&n);
+  (gdb)
+  15        printf("n=%d\n", n);
+
+- return
+  La commande return permet de sortir de la fonction courante.
+  (gdb) b my_inc
+  Breakpoint 1 at 0x40053c: file debug_me.c, line 5.
+  (gdb) r
+  Starting program: /tmp/debug_me
+
+  Breakpoint 1, my_inc (i=0x7fffffffe8a4) at debug_me.c:5
+  5         (*i)++;
+  (gdb) return
+  Make my_inc return now? (y or n) y
+  #0  main () at debug_me.c:15
+  15        printf("n=%d\n", n);
+
+** Watchpoint
+*************
+
+Le watchpoint permet de "surveiller" une zone mémoire.
+Sa capacité dépend fortement de l'architecture utilisé, il se peut même que
+les watchpoints ne soint pas disponibles.
+
+watch permet de surveiller les affectations:
+  (gdb) b main
+  Breakpoint 1 at 0x400505: file debug_me.c, line 12.
+  (gdb) r
+  Starting program: /tmp/debug_me
+
+  Breakpoint 1, main () at debug_me.c:12
+  12        n = -1;
+  (gdb) watch n
+  Hardware watchpoint 2: n
+  (gdb) c
+  Continuing.
+  n=0
+  Hardware watchpoint 2: n
+
+  Old value = 0
+  New value = -1
+  main () at debug_me.c:17
+  17        printf("n=%d\n", n);
+
+rwatch permet de surveiller les lectures:
+  (gdb) b main
+  Breakpoint 1 at 0x400505: file debug_me.c, line 12.
+  (gdb) r
+  Starting program: /tmp/debug_me
+
+  Breakpoint 1, main () at debug_me.c:12
+  12        n = -1;
+  (gdb) rwatch n
+  Hardware read watchpoint 2: n
+  (gdb) c
+  Continuing.
+  Hardware read watchpoint 2: n
+
+  Value = 0
+  0x000000000040051b in main () at debug_me.c:14
+  14        printf("n=%d\n", n);
+  (gdb) c
+  Continuing.
+  n=0
+  Hardware read watchpoint 2: n
+
+  Value = -1
+  0x0000000000400539 in main () at debug_me.c:17
+  17        printf("n=%d\n", n);
+
+awatch permet de surveiller les lectures/écritures:
+  (gdb) b main
+  Breakpoint 1 at 0x400505: file debug_me.c, line 12.
+  (gdb) r
+  Starting program: /tmp/debug_me
+
+  Breakpoint 1, main () at debug_me.c:12
+  12        n = -1;
+  (gdb) awatch n
+  Hardware access (read/write) watchpoint 2: n
+  (gdb) c
+  Continuing.
+  Hardware access (read/write) watchpoint 2: n
+
+  Old value = 0
+  New value = -1
+  0x00000000004004f2 in my_inc (i=0x7fffffffe8ac) at debug_me.c:5
+  5         (*i)++;
+  (gdb) c
+  Continuing.
+  Hardware access (read/write) watchpoint 2: n
+
+  Old value = -1
+  New value = 0
+  my_inc (i=0x7fffffffe8ac) at debug_me.c:6
+  6       }
+
+** Manipulation des breakpoints et watchpoints
+**********************************************
+
+Commande      Signification
+
+i b           Permet de lister les break/watchs
+d       <no>  Permet de supprimer un break/watch
+disable <no>  Permet de désactiver un break/watch
+enable  <no>  Permet d'activer un break/watch
+
+###############################################################################
+
+* Contrôle de la mémoire
+************************
+
+** Afficher la mémoire
+**********************
+
+GDB dispose de deux façons d'observer la mémoire:
+
+- Afficher
+  La commande 'p' (print) afficher la valeur d'une variable
+
+  (gdb) p n
+  $3 = 0
+
+- Dumper
+  La commande 'x' permet de déréférencer une variable pour afficher son contenu.
+  (gdb) x i
+  0x7fffffffe8ac: 0xffffffff
+  (gdb) n
+  6       }
+  (gdb) x i
+  0x7fffffffe8ac: 0x00000000
+
+  Cette commande accepte une taille en paramètre pour dumper plusieurs elements.
+  (gdb) x/2 i
+  0x7fffffffe8ac: 0x00000000      0x00000000
+
+- Formatage
+  Les commandes précédentes peuvent prendre des options de formatage.
+  (gdb) n
+  17        s = "hello";
+  (gdb)
+  19        n = -1;
+  (gdb) x/s s
+  0x4006b2:        "hello"
+  (gdb) x/6x s
+  0x4006b2:       0x68    0x65    0x6c    0x6c    0x6f    0x00
+
+
+** Modifier la mémoire
+**********************
+
+Il est possible de modifier la memoire avec gdb, il existe deux méthodes:
+
+- Variable
+  (gdb) set variable n = 4
+  (gdb) p n
+  $1 = 4
+
+- Par adresse
+  (gdb) p &n
+  $2 = (int *) 0x7fffffffe8a4
+  (gdb) set *(int *)0x7fffffffe8a4 = 0
+  (gdb) p n
+  $3 = 0
+
+###############################################################################

@@ -1,0 +1,28 @@
+/*
+** normal_plan.c for raytracer in /home/leprov_a//depot/rt/src/normal
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Fri May 25 19:26:14 2012 alexis leprovost
+** Last update Fri May 25 20:04:52 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"global.h"
+#include	"detail.h"
+#include	"calc.h"
+#include	"utils.h"
+
+int	normal_plan(double *n, t_detail *detail)
+{
+  if (n == NULL || detail == NULL)
+    return (EXIT_FAILURE);
+  n[X] = 0.000;
+  n[Y] = 0.000;
+  n[Z] = 100.000;
+  calc_rotation(n, detail->object->rotation, NORMAL_ROTATION);
+  modif_normal(detail, n);
+  return (EXIT_SUCCESS);
+}

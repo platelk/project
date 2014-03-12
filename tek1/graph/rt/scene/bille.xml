@@ -1,0 +1,88 @@
+<window Y="800" X="1400">
+  <scene NAME="Basic" ANTIALIASING="3">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.5"/>
+	<texture FREQUENCE="1.0">texture/bois.jpg</texture>
+	<color>FFFFFF</color>
+      </plan>
+      <sphere TYPE="nor">
+	<location X="-200" Y="60" Z="-50"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="100" REFLECTION="0.0" TRANSPARENCY="0.15"/>
+	<color>FFFFFF</color>
+	<radius>50</radius>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="0" Y="-100" Z="-20"/>
+	<rotation X="0" Y="0" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.5"/>
+	<radius>80</radius>
+	<color>000000</color>
+      </sphere>
+      <sphere ty="normal">
+	<location X="0" Y="30" Z="-60"/>
+	<rotation X="0" Y="0" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.2"/>
+	<texture FREQUENCE="1.0">texture/bille2.jpg</texture>
+	<radius>40</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="-250" Y="100" Z="-70"/>
+	<rotation X="0" Y="0" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.2"/>
+	<texture FREQUENCE="1.0">texture/bille3.jpg</texture>
+	<radius>30</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="0" Y="300" Z="-20"/>
+	<rotation X="0" Y="0" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.2"/>
+	<texture FREQUENCE="1.0">texture/bille4.jpg</texture>
+	<radius>80</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="100" Y="200" Z="-40"/>
+	<rotation X="0" Y="0" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.2"/>
+	<texture FREQUENCE="1.0">texture/bille5.jpg</texture>
+	<radius>60</radius>
+	<color>FFFFFF</color>
+      </sphere>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="-200" Y="400" Z="500"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="2000" Y="400" Z="500"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="-200" Y="-400" Z="500"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="-1000" Y="-200" Z="400"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

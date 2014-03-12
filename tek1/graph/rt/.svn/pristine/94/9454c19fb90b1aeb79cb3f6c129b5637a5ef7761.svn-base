@@ -1,0 +1,35 @@
+<window y="1000" x="1000">
+  <scene name="Basic" antialiasing="-1">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type="normal">
+	<location X="300" Y="0" Z="0"/>
+	<rotation X="30" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="50" REFLECTION="0.0" TRANSPARENCY="0.9"/>
+	<texture FREQUENCE="60.0">texture/lol.bmp</texture>
+	<color>FF0000</color>
+	<material>1.33</material>
+	<radius>50</radius>
+      </sphere>
+    </object>
+    <lights>
+      <light type="ambient">
+	<intensity>0.01</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="0" Y="200" Z="100"/>
+	<color>FFFFFF</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

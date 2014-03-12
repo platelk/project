@@ -1,0 +1,611 @@
+
+src/stack_exec/src/exec_select_execution.c,74
+int	exec_select_execution_other(19,380
+int	exec_select_execution(44,988
+
+src/stack_exec/src/exec_write_fd.c,26
+int	exec_write_fd(15,330
+
+src/stack_exec/src/exec_course_branch.c,219
+#define NODE_OR 27,537
+int	exec_course_branch_select(29,583
+int	exec_course_branch_execute(51,1058
+int	        exec_course_branch_other(80,1696
+int		exec_course_branch_or(108,2540
+int		exec_course_branch(131,3167
+
+src/stack_exec/src/exec_bultin.c,25
+int	exec_builtin(18,355
+
+src/stack_exec/src/exec_create_tabenv_var.c,61
+char	**exec_create_tabvar_env(exec_create_tabvar_env16,330
+
+src/stack_exec/src/exec_signal.c,54
+int	exec_signal_other(15,313
+int	exec_signal(39,843
+
+src/stack_exec/src/exec_count_child.c,30
+int		exec_count_child(14,298
+
+src/stack_exec/src/pipe/exec_pipe_mono.c,96
+int		exec_pipe_mono_father(22,433
+int		exec_pipe_mono_son(39,894
+int		exec_pipe_mono(60,1379
+
+src/stack_exec/src/pipe/exec_pipe_cascada_father.c,36
+int		exec_pipe_cascada_fath(22,433
+
+src/stack_exec/src/pipe/exec_pipe_current.c,53
+t_node		*exec_pipe_current(exec_pipe_current17,345
+
+src/stack_exec/src/pipe/exec_pipe_count.c,29
+int		exec_pipe_count(15,305
+
+src/stack_exec/src/pipe/exec_pipe.c,167
+int		exec_pipe_recursif_fathe(22,433
+int		exec_pipe_recursif_child(41,1097
+int		exec_pipe_recursif(63,1703
+int		exec_pipe_cascada(91,2486
+int		exec_pipe(118,3117
+
+src/stack_exec/src/exec_course_branch_execute.c,60
+int	exec_course_son(27,548
+int	exec_course_father(46,1010
+
+src/stack_exec/src/exec_check_slash.c,29
+int	exec_check_slash(14,299
+
+src/stack_exec/src/exec_command.c,190
+char		*exec_command_pathvar(exec_command_pathvar25,486
+static int		exec_command_check(54,1183
+int		exec_commmand_exec(76,1663
+int		exec_command_end(104,2313
+int		exec_command(127,2853
+
+src/stack_exec/src/exec_course_tree.c,30
+int		exec_course_tree(18,353
+
+src/stack_exec/src/exec_course_branch_other.c,44
+int		exec_course_branch_other_dolar(22,441
+
+src/stack_exec/src/exec_command_pathvar.c,67
+char		*exec_command_pathvar_none(exec_command_pathvar_none16,324
+
+src/stack_exec/src/redirection/exec_redirection_double_left.c,273
+int			exec_redirection_double_father(20,418
+int			exec_redirection_double_child(44,1002
+static int		exec_redirection_double_left_fork(57,1288
+char		*exec_redirection_double_left_loop(exec_redirection_double_left_loop87,1943
+int		exec_redirection_double_left(110,2544
+
+src/stack_exec/src/redirection/exec_redirection.c,139
+int		exec_redirection_dup(24,486
+int		exec_redirection_open(46,984
+int		exec_redirection_execute(64,1494
+int		exec_redirection(85,2018
+
+src/history/src/history_create_ptr_func.c,112
+char	**put_str_subs(put_str_subs18,375
+ptr_f_history	*create_ptr_func_history(create_ptr_func_history34,733
+
+src/history/src/history_freelist.c,45
+t_history	*free_history(free_history15,282
+
+src/history/src/history_subs_func_dollar.c,82
+static char    *trunc_str(trunc_str15,288
+char	*subs_dollar(subs_dollar29,508
+
+src/history/src/history_subs_func.c,247
+char	*subs_exclamation_mark(subs_exclamation_mark18,351
+char	*subs_interogation_mark(subs_interogation_mark27,499
+char	*subs_letter(subs_letter51,1028
+char	*subs_nbr(subs_nbr70,1426
+char	*subs_back_in_history(subs_back_in_history88,1756
+
+src/history/src/history_putlist.c,56
+void	history_fill(20,397
+  int	history_putlist(31,637
+
+src/history/src/history_substitution.c,95
+static char	*puterror(puterror19,388
+char	*history_substitution(history_substitution32,756
+
+src/history/src/history_create_list.c,229
+int	history_file_config(22,451
+t_history	*history_list_config(history_list_config49,1191
+static void	history_put_list(71,1682
+static int history_fill_list(81,1922
+t_history *history_create_list(history_create_list102,2398
+
+src/parsing_func.c,183
+char	*get_cmd_in_list(get_cmd_in_list28,573
+t_token	*analyse_cmd(analyse_cmd55,1220
+t_token	*creat_list_token(creat_list_token72,1496
+t_node	*parsing_func(parsing_func81,1651
+
+src/env/src/free_env.c,22
+void	env_free(15,281
+
+src/env/src/env.c,103
+t_env	*creat_list_env(creat_list_env19,354
+void	print_env(38,761
+t_env	*creat_env(creat_env47,890
+
+src/env/src/search_env.c,38
+char	*find_in_env(find_in_env18,344
+
+src/env/src/export_env.c,62
+int	len_env_list(21,406
+char	**export_env(export_env34,533
+
+src/globing/globing/utils.c,97
+int	my_wordtab_len(17,323
+int	my_count_str_in_tab(32,492
+char	*replace_str(replace_str42,599
+
+src/globing/globing/glob_list.c,182
+t_token	*put_in_list(put_in_list27,519
+t_token	*sep_in_dif_tok(sep_in_dif_tok49,882
+t_token	*glob_sep_tok(glob_sep_tok78,1388
+int	globing_var(106,1874
+int	glob_list(132,2893
+
+src/globing/globing/glob_hist.c,66
+void	glob_print_hist(22,437
+t_token	*glob_hist(glob_hist39,754
+
+src/globing/globing/glob_cmd.c,78
+char	*glob_cmd_in_dir(glob_cmd_in_dir19,377
+char	*glob_cmd(glob_cmd38,799
+
+src/globing/globing/glob_gest_tok_list.c,79
+int	check_alias(27,507
+t_token	*glob_gest_tok_list(glob_gest_tok_list38,667
+
+src/globing/globing/glob_match.c,23
+int	glob_match(11,253
+
+src/globing/globing/glob_select_flag.c,54
+int	my_is_in_str(13,281
+int	glob_select_flag(24,417
+
+src/globing/globing/glob_back_quote.c,193
+char	*glob_back_father(glob_back_father25,498
+t_token	*glob_back_son(glob_back_son47,943
+t_token	*glob_make_link(glob_make_link70,1470
+t_token	*glob_back_quotes(glob_back_quotes96,1905
+
+src/globing/globing/glob_alias.c,133
+void	reset_alias(21,413
+void	res_alias(30,529
+char	*glob_alias(glob_alias40,666
+t_token	*glob_gest_alias(glob_gest_alias60,975
+
+src/globing/globing/globing.c,199
+static char	*make_globing(make_globing22,434
+char	*glob_in_dir(glob_in_dir48,973
+char	*glob_in_env(glob_in_env66,1308
+char	*glob_in_alias(glob_in_alias84,1627
+char	*globing(globing103,2010
+
+src/globing/glob_env/globing_env.c,72
+char	*other_cas(other_cas24,473
+char	*globing_env(globing_env48,861
+
+src/sh_free.c,21
+void	sh_free(21,425
+
+src/main.c,73
+t_global	global;30,624
+static void	init_global(32,642
+int	main(47,982
+
+src/signal.c,102
+t_global	global;18,341
+void	signal_sigint(20,359
+void	start_signal(28,499
+void	stop_signal(38,695
+
+src/parsing/retoken_redir_ext.c,65
+t_bool	regroup_inibit_ext(16,345
+void	regroup_quote_ext(30,666
+
+src/parsing/check_cmd.c,25
+t_bool	check_cmd(18,365
+
+src/parsing/retoken_redir.c,155
+t_bool	regroup_red(19,426
+t_bool	regroup_quote(48,1095
+t_bool	regroup_history(74,1643
+t_bool	regroup_variable(103,2299
+t_bool	regroup_inibit(131,2920
+
+src/parsing/token_funct_mult.c,136
+t_bool	is_a_par(18,368
+t_bool	is_an_oper_cond(37,763
+t_bool	is_a_quote(56,1184
+t_bool	is_a_red_d(74,1609
+t_bool	is_a_red_s(93,2041
+
+src/parsing/my_rev_list.c,97
+int             my_list_sizes(15,327
+t_token		*getnode(getnode30,548
+int		my_rev_list(43,704
+
+src/parsing/check_bloc_exec_ext.c,96
+t_bool	check_bloc_exec_ext(18,389
+t_bool	get_spe_red_ext(33,746
+t_bool	check_red_ext(48,1111
+
+src/parsing/transform.c,28
+void	transform_inib(14,272
+
+src/parsing/retoken_redir_par.c,87
+t_bool	regroup_esp(17,371
+static	t_bool	check_par(29,594
+t_bool	regroup_par(50,1111
+
+src/parsing/free_child.c,47
+void	free_node(14,283
+void	free_token(36,581
+
+src/parsing/tokenizer.c,153
+f_token	*init_ptr_funct_token(init_ptr_funct_token19,361
+t_token	*pars_tokenizer(pars_tokenizer41,820
+int	add_token(67,1265
+void	aff_token(83,1580
+
+src/parsing/multired.c,59
+t_bool	there_are_two_red(14,286
+void	get_pre_exec(37,725
+
+src/parsing/reconstruct_token.c,179
+f_regroup	*init_ptr_funct_regroup(init_ptr_funct_regroup20,430
+t_bool	re_add_token(37,784
+void	change_token_exec(59,1227
+t_token	*reconstruct_token(reconstruct_token81,1555
+
+src/parsing/check_pipe.c,137
+static t_bool	get_next_pipe(19,410
+static t_bool	there_are_pipe(37,787
+static t_bool	check_pipe_ext(51,995
+t_bool	check_pipe(60,1189
+
+src/parsing/check_expression.c,63
+static int	get_next_pv(20,434
+t_bool	check_expression(38,766
+
+src/parsing/puterror.c,24
+t_bool	puterror(14,289
+
+src/parsing/my_rev_node.c,111
+static int             my_list_sizes(14,286
+static t_child		*getnode(getnode29,514
+int		my_rev_node(42,677
+
+src/parsing/check_bloc_exec.c,170
+static t_t_list	get_exec(22,499
+static t_bool	check_red(36,747
+static t_bool	there_are_red(65,1557
+static t_bool	get_spe_red(79,1764
+t_bool	check_bloc_exec(106,2569
+
+src/parsing/check_log.c,101
+static t_bool	get_next_log(20,411
+static t_bool	check_grammar_log(40,851
+t_bool	check_log(62,1280
+
+src/parsing/token_funct_word.c,155
+t_bool	is_a_inibited_char(15,331
+t_bool	is_a_spacer(36,667
+static t_bool	is_a_word_ext(55,1065
+t_bool	is_a_word(68,1370
+t_bool	is_an_alphanum(95,1925
+
+src/parsing/check_grammar_exec.c,178
+static	int	there_are_red(18,391
+static	t_bool	check_prefix_exec(36,783
+static t_bool	check_right(59,1237
+static t_bool	check_left(88,1887
+t_bool	check_grammar_exec(117,2553
+
+src/parsing/add_child.c,43
+int	add_child(15,301
+int	add_node(31,595
+
+src/parsing/concat_token.c,37
+t_token	*cat_token(cat_token16,344
+
+src/parsing/token_funct.c,101
+t_bool	is_a_dollar(15,309
+t_bool	is_a_pv(27,542
+t_bool	is_an_excla(39,766
+t_bool	is_a_esp(51,997
+
+src/my/src/my_strtok.c,118
+int	my_getword(16,332
+int	my_getchar(34,675
+char	*my_putword(my_putword51,972
+char	**my_strtok(my_strtok71,1363
+
+src/my/src/concat.c,40
+char	*my_strconcat(my_strconcat15,257
+
+src/my/src/is_singlestr.c,25
+int	is_singlestr(13,278
+
+src/my/src/my_strcpy.c,34
+char	*my_strcpy(my_strcpy11,249
+
+src/my/src/isanumber.c,22
+int	isanumber(15,290
+
+src/my/src/my_strlen.c,22
+int	my_strlen(11,245
+
+src/my/src/my_putchar.c,24
+void	my_putchar(13,266
+
+src/my/src/my_revstr.c,34
+char	*my_revstr(my_revstr15,292
+
+src/my/src/my_free_tab.c,25
+void	my_free_tab(15,290
+
+src/my/src/xtime.c,58
+#define	MAX_TIME_NUMBER	13,273
+char	*xtime(xtime15,300
+
+src/my/src/xopen.c,18
+int	xopen(13,273
+
+src/my/src/my_strmcat.c,36
+char	*my_strmcat(my_strmcat14,276
+
+src/my/src/my_strcat.c,34
+char	*my_strcat(my_strcat13,273
+
+src/my/src/check_base.c,23
+int	check_base(13,272
+
+src/my/src/my_clstr.c,21
+int	my_clstr(13,274
+
+src/my/src/get_next_line.c,109
+int	my_putlist(17,352
+char	*my_convertlist(my_convertlist29,624
+char	*get_next_line(get_next_line46,917
+
+src/my/src/my_strdup.c,34
+char	*my_strdup(my_strdup16,309
+
+src/my/src/malloc_tabint.c,44
+int	**malloc_int_tab(malloc_int_tab13,281
+
+src/my/src/my_tablen.c,22
+int	my_tablen(11,251
+
+src/my/src/my_strcmp.c,22
+int	my_strcmp(13,276
+
+src/my/src/my_strncmp.c,23
+int	my_strncmp(13,290
+
+src/my/src/my_getnbr.c,22
+int	my_getnbr(11,251
+
+src/my/src/strsearch.c,25
+int	my_strsearch(13,271
+
+src/my/src/my_putstr.c,22
+int	my_putstr(15,288
+
+src/my/src/xmalloc.c,30
+void	*xmalloc(xmalloc13,277
+
+src/edit/src/edit_store.c,92
+edit_allstore(22,427
+edit_rightstore(42,1003
+edit_leftstore(72,1794
+edit_paste(101,2497
+
+src/edit/src/edit_globing.c,190
+static char	*edit_getword(edit_getword23,469
+static t_line	*edit_recurrence(edit_recurrence52,1071
+aff_rch(81,1539
+*edit_autocomplete(edit_autocomplete109,2310
+edit_globing(136,2875
+
+src/edit/src/termcap_delete.c,27
+int	termcap_delete(18,359
+
+src/edit/src/edit_list.c,138
+void	edit_afflist(21,460
+static void	add_element(30,581
+int	edit_putlist(54,1089
+void	edit_freelist(71,1484
+int	edit_listlen(84,1642
+
+src/edit/src/termcap_raw.c,49
+int	termcap_raw(16,323
+int	termcap_echo(33,646
+
+src/edit/src/edit_prompt.c,123
+static int	custom_prompt(19,374
+static char	*default_prompt(default_prompt42,906
+char	*edit_prompt(edit_prompt68,1704
+
+src/edit/src/edit_clear.c,93
+edit_delete(20,377
+static void	suppr_letter(46,963
+edit_suppr(69,1385
+edit_clear(81,1671
+
+src/edit/src/edit_func.c,111
+edit_default(22,422
+edit_control(41,936
+static void	fill_func(69,1664
+t_efunc	*edit_func(edit_func98,2433
+
+src/edit/src/edit_move.c,129
+edit_leftmove(22,426
+edit_rightmove(44,883
+edit_switchmove(69,1364
+edit_goto_nextspace(80,1640
+edit_goto_prevspace(107,2261
+
+src/edit/src/edit_swap.c,18
+edit_swap(22,426
+
+src/edit/src/termcap_mode.c,49
+int	termcap_raw(16,323
+int	termcap_echo(33,645
+
+src/edit/src/termcap_put.c,24
+int	termcap_put(19,373
+
+src/edit/src/termcap_display.c,107
+int	termcap_ioctl(20,411
+void	ultim_func(27,542
+int	termcap_display(55,1325
+int	termcap_prompt(74,1887
+
+src/edit/src/edit_strstr.c,99
+static void	aff_rch(21,424
+static void	clear_rch(45,1311
+edit_core(54,1574
+edit_strstr(74,2191
+
+src/edit/src/edit_utils.c,215
+char	*edit_convertlist(edit_convertlist21,461
+t_line	*edit_convertstr(edit_convertstr40,783
+static t_line	*special_case(special_case54,974
+t_line	*edit_concatlist(edit_concatlist65,1197
+int	edit_cp(93,1698
+
+src/edit/src/edit_keyword.c,54
+void	edit_keyword(15,310
+int	edit_iskeyword(43,1085
+
+src/edit/src/edit_cmd.c,170
+static void	edit_exit(24,521
+int	edit_global(34,664
+static int	edit_strlen(50,981
+t_line   *edit_management(edit_management75,1433
+char	*edit_cmd(edit_cmd104,2248
+
+src/edit/src/edit_env.c,21
+int	edit_env(17,337
+
+src/edit/src/edit_history.c,48
+edit_uphistory(22,429
+edit_downhistory(41,929
+
+src/edit/src/termcap_init.c,25
+int	termcap_init(18,362
+
+src/edit/src/termcap_action.c,53
+int	termcap_move(19,378
+int	termcap_action(45,1180
+
+src/builtin/src/is_builtin.c,23
+int	is_builtin(18,358
+
+src/builtin/src/history/builtin_history_param_firstpart.c,99
+int	args_c(23,485
+int	args_r(37,754
+int	args_h(63,1163
+int	args_s(89,1607
+int	args_l(111,2126
+
+src/builtin/src/history/builtin_history_create_param.c,134
+char	**create_args_history(create_args_history19,472
+ptr_f_built_history *create_ptr_built_history(create_ptr_built_history34,721
+
+src/builtin/src/history/builtin_history_param_secondpart.c,19
+int	args_t(17,367
+
+src/builtin/src/history/builtin_history.c,60
+static int	param_history(19,423
+int	check_history(47,1075
+
+src/builtin/src/history/history_showlist.c,132
+int	put_error(17,330
+t_history	*advance_history(advance_history33,597
+void	show_param_history(50,920
+void	show_history(57,1063
+
+src/builtin/src/builtin_ptr_func.c,100
+builtin_ptr_f	*builtin_create_ptr_func(builtin_create_ptr_func18,351
+int	builtin_ptr_func(33,637
+
+src/builtin/src/cd/cd.c,74
+char	*get_pwd(get_pwd19,362
+int	check_cd_access(38,869
+int	cd(59,1275
+
+src/builtin/src/exit.c,25
+int	builtin_exit(19,351
+
+src/builtin/src/alias/builtin_alias.c,167
+static void	show_alias(20,405
+static char	*alias_concat(alias_concat32,686
+static int	my_subalias(54,1080
+int	builtin_alias(79,1654
+int	builtin_unalias(101,2214
+
+src/builtin/src/unsetenv/builtin_unsetenv.c,92
+static void	remove_var(18,371
+static int	exec_unsetenv(37,694
+int	check_unsetenv(66,1171
+
+src/builtin/src/setenv/builtin_setenv.c,176
+#define	ERROR_ONE	19,386
+void	create_variable(21,458
+void	change_variable(47,947
+void	check_exist_or_not(58,1161
+int	good_name_and_value(72,1465
+int	check_setenv(90,1914
+
+src/builtin/src/echo/echo.c,59
+char	*search_in_tab(search_in_tab19,372
+int	echo(33,550
+
+src/config/src/config_history.c,55
+int	config_history(18,364
+int	config_savehist(39,943
+
+src/config/src/config_keyword.c,56
+int	config_keyword(17,341
+int	config_iskeyword(32,720
+
+src/config/src/config_env.c,23
+int	config_env(19,380
+
+src/config/src/config_globing.c,27
+int	config_globing(16,323
+
+src/config/src/config_free.c,56
+static void	alias_free(17,340
+void	config_free(31,632
+
+src/config/src/config_alias.c,49
+int	my_putalias(19,381
+int	config_alias(36,834
+
+src/config/src/config_func.c,67
+int	config_comment(16,340
+t_func	*config_func(config_func23,450
+
+src/config/src/config_parser.c,101
+static t_config	*config_default(config_default18,367
+t_config	*config_parser(config_parser38,801
+
+src/config/src/config_prompt.c,153
+static int	escape_char(19,383
+static int	magic_number(39,717
+static int	check_quote(53,936
+static int	fill_prompt(63,1107
+int	config_prompt(92,1729
+
+./src/stack_exec/src/exec_convert.c,include

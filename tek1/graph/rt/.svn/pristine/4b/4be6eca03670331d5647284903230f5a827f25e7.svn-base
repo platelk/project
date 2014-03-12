@@ -1,0 +1,128 @@
+/*
+** inter_triangle.c for inter_triangle in /home/ozouf_h//rt/parser_3ds
+** 
+** Made by harold ozouf
+** Login   <ozouf_h@epitech.net>
+** 
+** Started on  Fri Jun  1 01:41:16 2012 harold ozouf
+** Last update Sun Jun  3 02:57:26 2012 harold ozouf
+*/
+
+#include	<math.h>
+#include	<stdlib.h>
+#include	"raytracer.h"
+#include	"camera.h"
+#include	"calc.h"
+#include        "utils.h"
+#include        "object.h"
+#include	"detail.h"
+#include	"init_triangle.h"
+#include	"inter.h"
+
+
+#define SAME_CLOCKNESS	1
+#define DIFF_CLOCKNESS	0
+
+int     check_same_clock_dir(double *pt1, double *pt2, double *pt3, double *norm)
+{
+  double        testi;
+  double        testj;
+  double        testk;
+  double        dotprod;
+
+  testi = (((pt2[Y] - pt1[Y]) * (pt3[Z] - pt1[Z]))	\
+	   - ((pt3[Y] - pt1[Y]) * (pt2[Z] - pt1[Z])));
+  testj = (((pt2[Z] - pt1[Z]) * (pt3[X] - pt1[X]))	\
+	   - ((pt3[Z] - pt1[Z]) * (pt2[X] - pt1[X])));
+  testk = (((pt2[X] - pt1[X]) * (pt3[Y] - pt1[Y]))	\
+	   - ((pt3[X] - pt1[X]) * (pt2[Y] - pt1[Y])));
+
+  dotprod = testi * norm[X] + testj * norm[Y] + testk * norm[Z];
+
+  if(dotprod < 0.000001)
+    return (DIFF_CLOCKNESS);
+  return (SAME_CLOCKNESS);
+}
+
+
+int     check_intersect_tri(double *pt1, double *pt2, double *pt3, double *linept, double *vect,
+			    double *pt_int)
+{
+  double        V1x;
+  double        V1y;
+  double        V1z;
+  double        V2x;
+  double        V2y;
+  double        V2z;
+  double        norm[3];
+  double        dotprod;
+  double        t;
+
+  V1x = pt2[X] - pt1[X];
+  V1y = pt2[Y] - pt1[Y];
+  V1z = pt2[Z] - pt1[Z];
+
+  V2x = pt3[X] - pt2[X];
+  V2y = pt3[Y] - pt2[Y];
+  V2z = pt3[Z] - pt2[Z];
+
+  norm[X] = V1y * V2z - V1z * V2y;
+  norm[Y] = V1z * V2x - V1x * V2z;
+  norm[Z] = V1x * V2y - V1y * V2x;
+
+  dotprod = norm[X] * vect[X] + norm[Y] * vect[Y] + norm[Z] * vect[Z];
+  if(dotprod < 0)
+    {
+      t = -(norm[X]*(linept[X] - pt1[X])+norm[Y] * (linept[Y] - pt1[Y]) + norm[Z] * (linept[Z] - pt1[Z]))/
+	(norm[X] * vect[X] + norm[Y] * vect[Y] + norm[Z] * vect[Z]);
+      if(t < 0.00000001)
+        return (EXIT_FAILURE);
+      pt_int[X] = linept[X] + vect[X] * t;
+      pt_int[Y] = linept[Y] + vect[Y] * t;
+      pt_int[Z] = linept[Z] + vect[Z] * t;
+      if(check_same_clock_dir(pt1, pt2, pt_int, norm) == SAME_CLOCKNESS)
+        {
+          if(check_same_clock_dir(pt2, pt3, pt_int, norm) == SAME_CLOCKNESS)
+            {
+              if(check_same_clock_dir(pt3, pt1, pt_int, norm) == SAME_CLOCKNESS)
+		return (EXIT_SUCCESS);
+            }
+        }
+    }
+  return (EXIT_FAILURE);
+}
+
+
+ int
+ inter_triangle(t_camera *camera, t_object *o, t_detail *detail, double *vector)
+ {
+   double        pt_int[3];
+   double                dist;
+   double		prod_scal;
+
+   pt_int[X] = 0;
+   pt_int[Y] = 0;
+   pt_int[Z] = 0;
+   if (o && o->son && camera && check_intersect_tri(((t_triangle *)o->son)->pt1, ((t_triangle *)o->son)->pt2, ((t_triangle *)o->son)->pt3, camera->position, vector, pt_int) == EXIT_SUCCESS)
+     {
+       dist = sqrt(pow(pt_int[X] - camera->position[X], 2) + pow(pt_int[Y] - camera->position[Y], 2) + pow(pt_int[Z] - camera->position[Z], 2));
+       detail->k = dist / sqrt(vector[X] * vector[X] + vector[Y] * vector[Y] + vector[Z] * vector[Z]);
+       //       printf("k = %f\n", detail->k);
+       detail->object = o;
+       copy_tab(detail->normal, ((t_triangle *)o->son)->n);
+       //       normalize_vector(detail->normal);
+       detail->non_initialize = 1;
+       return (EXIT_SUCCESS);
+     }
+   return (EXIT_FAILURE);
+ }
+
+int
+inter_blender(t_camera *camera, t_object *o, t_detail *detail, double *vector)
+{
+  camera = camera;
+  o = o;
+  detail = detail;
+  vector = vector;
+  return (EXIT_FAILURE);
+}

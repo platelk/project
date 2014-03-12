@@ -1,0 +1,79 @@
+==17834== Memcheck, a memory error detector
+==17834== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==17834== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==17834== Command: ./mysh
+==17834== Parent PID: 4408
+==17834== 
+==17834== Warning: ignored attempt to set SIGKILL handler in sigaction();
+==17834==          the SIGKILL signal is uncatchable
+==17834== Invalid write of size 8
+==17834==    at 0x403010: init_tab_func (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402DA6: opt (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402D37: my_printf (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x400E51: show_dir (show_dir.c:55)
+==17834==    by 0x401F9B: show_prompt (main_loop.c:24)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834==  Address 0x51e5b00 is 0 bytes after a block of size 80 alloc'd
+==17834==    at 0x4C2C04B: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17834==    by 0x402F71: init_tab_func (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402DA6: opt (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402D37: my_printf (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x400E51: show_dir (show_dir.c:55)
+==17834==    by 0x401F9B: show_prompt (main_loop.c:24)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834== 
+==17834== Invalid write of size 8
+==17834==    at 0x403010: init_tab_func (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402DA6: opt (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402D37: my_printf (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x400E03: show_dir (show_dir.c:51)
+==17834==    by 0x401F9B: show_prompt (main_loop.c:24)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834==  Address 0x51e5b90 is 0 bytes after a block of size 80 alloc'd
+==17834==    at 0x4C2C04B: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17834==    by 0x402F71: init_tab_func (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402DA6: opt (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402D37: my_printf (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x400E03: show_dir (show_dir.c:51)
+==17834==    by 0x401F9B: show_prompt (main_loop.c:24)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834== 
+==17834== Invalid write of size 8
+==17834==    at 0x403010: init_tab_func (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402DA6: opt (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402D37: my_printf (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x400E36: show_dir (show_dir.c:53)
+==17834==    by 0x401F9B: show_prompt (main_loop.c:24)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834==  Address 0x51e5c20 is 0 bytes after a block of size 80 alloc'd
+==17834==    at 0x4C2C04B: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17834==    by 0x402F71: init_tab_func (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402DA6: opt (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x402D37: my_printf (in /home/vink/projet/tek1/sys_unix/minishell1/mysh)
+==17834==    by 0x400E36: show_dir (show_dir.c:53)
+==17834==    by 0x401F9B: show_prompt (main_loop.c:24)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834== 
+==17834== Conditional jump or move depends on uninitialised value(s)
+==17834==    at 0x401098: get_next_line (get_next_line.c:32)
+==17834==    by 0x401FBF: show_prompt (main_loop.c:26)
+==17834==    by 0x4020BB: main_loop (main_loop.c:65)
+==17834==    by 0x401ED5: main (main.c:37)
+==17834==  Uninitialised value was created by a stack allocation
+==17834==    at 0x400F74: get_next_line (get_next_line.c:22)
+==17834== 
+==17834== 
+==17834== HEAP SUMMARY:
+==17834==     in use at exit: 0 bytes in 0 blocks
+==17834==   total heap usage: 305 allocs, 305 frees, 8,141 bytes allocated
+==17834== 
+==17834== All heap blocks were freed -- no leaks are possible
+==17834== 
+==17834== For counts of detected and suppressed errors, rerun with: -v
+==17834== ERROR SUMMARY: 40 errors from 4 contexts (suppressed: 2 from 2)

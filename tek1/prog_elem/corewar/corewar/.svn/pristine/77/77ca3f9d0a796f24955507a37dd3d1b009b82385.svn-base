@@ -1,0 +1,72 @@
+/*
+** display_msg.c for Corewar in /home/guiho_r/tek1/corewar/data/vm/source/graph
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Sat Mar 24 19:50:07 2012 ronan guiho
+** Last update Sat Mar 24 23:21:36 2012 ronan guiho
+*/
+
+#include <stdlib.h>
+
+#include "vm.h"
+#include "corewar.h"
+
+void		display_kenny_angel(t_vm *vm)
+{
+  FMOD_CHANNEL	*ch;
+
+  FMOD_System_PlaySound(vm->sound[EVENT][KILL_KENNY].sys, FMOD_CHANNEL_FREE,
+			vm->sound[EVENT][KILL_KENNY].sound, 0, &ch);
+  vm->image[GAME][KENNY_ANGEL].pos.x = 570;
+  vm->image[GAME][KENNY_ANGEL].pos.y = 400;
+  vm->nb_champ = 0;
+  while (vm->image[GAME][KENNY_ANGEL].pos.y > 220)
+    {
+      display_all(vm, 0);
+      SDL_BlitSurface(vm->image[GAME][KENNY_ANGEL].img, NULL, vm->sc,
+		      &vm->image[GAME][KENNY_ANGEL].pos);
+      vm->image[GAME][KENNY_ANGEL].pos.y =
+	vm->image[GAME][KENNY_ANGEL].pos.y - 2;
+      SDL_Flip(vm->sc);
+    }
+}
+int		key_msg_end(t_vm *vm)
+{
+  SDL_Event	event;
+  FMOD_CHANNEL	*ch;
+
+  SDL_WaitEvent(&event);
+  if (event.type == SDL_QUIT)
+    exit (1);
+  if (event.type == SDL_MOUSEBUTTONUP)
+    if (event.button.button == SDL_BUTTON_LEFT)
+      {
+	if ((event.button.x >= 672 && event.button.x <= 830) &&
+	    (event.button.y >= 571 && event.button.y <= 657))
+	  {
+	    FMOD_Channel_Stop(vm->sound[AMB][1].ch);
+	    vm->nb_champ = 0;
+	    display_kenny_angel(vm);
+	    return (1);
+	  }
+      }
+  return (0);
+}
+int		display_msg(t_vm *vm)
+{
+  pthread_cancel(vm->thread);
+  display_all(vm, 0);
+  vm->image[GAME][MSG_KENNY].pos.x = 600;
+  vm->image[GAME][MSG_KENNY].pos.y = 330;
+  SDL_BlitSurface(vm->image[GAME][MSG_KENNY].img, NULL, vm->sc,
+		  &vm->image[GAME][MSG_KENNY].pos);
+  while (42)
+    {
+      if ((key_msg_end(vm)) == 1)
+	return (1);
+      SDL_Flip(vm->sc);
+    }
+  return (0);
+}

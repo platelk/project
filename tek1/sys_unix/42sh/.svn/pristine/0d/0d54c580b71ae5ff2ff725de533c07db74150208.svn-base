@@ -1,0 +1,17 @@
+## 2011 - 2012
+## FEDORA 14
+
+setenv TEST "Lolollolollolo"
+setenv TOTO "AUTROLOLOLOLOLO"
+setenv BOUT "WAAAAAHhhaahhaahh"
+
+set autolist
+set complete
+set prompt="Simple:"
+set history=100
+set savehist=1000
+
+alias ll 'ls -l'
+alias rm 'rm -i'
+
+## EOF

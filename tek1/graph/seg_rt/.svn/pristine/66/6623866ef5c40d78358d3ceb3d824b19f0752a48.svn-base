@@ -1,0 +1,59 @@
+/*
+** client.h for client in /home/guiho_r/tek1/clustering/src/client
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Tue May  1 11:08:14 2012 ronan guiho
+** Last update Fri May 25 11:52:09 2012 ronan guiho
+*/
+
+#ifndef __CLIENT_H__
+#define __CLIENT_H__
+
+#include <stdio.h>
+#include <fcntl.h>
+#include <pthread.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+
+#include "plage.h"
+#include "my_strtok.h"
+
+#define CLIENT_THREAD	 4
+#define INVALID_SOCKET	-1
+#define SOCKET_ERROR	-1
+
+typedef int SOCKET;
+
+typedef struct		s_client
+{
+  int			id;
+  SOCKET		sock;
+  struct sockaddr_in	*csin;
+  int			ping;
+  int			size_csin;
+  int			latence;
+  int			core;
+  int			status;
+  t_plage		*plage;
+  struct timeval	tv;
+  struct s_client	*next;
+} t_client;
+
+int			client_core();
+char			*client_endtrame(char *str);
+void			*client_calculation(void *arg);
+int			client_calculation_send(char *buffer, int x, int y);
+char			*client_calculation_header(int x, int y0, int y1);
+int			client_listen();
+void			client_close(int seg);
+int			client_main(char *ip, int port);
+struct sockaddr_in	*client_sockaddr_create(char *ip, int port);
+
+#endif

@@ -1,0 +1,27 @@
+/*
+** display.h for raytracer in /home/leprov_a//depot/rt/inc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed May  2 18:46:02 2012 alexis leprovost
+** Last update Sun Jun  3 05:53:14 2012 ronan guiho
+*/
+
+#ifndef __DISPLAY_H__
+#define __DISPLAY_H__
+
+#include	"thread.h"
+#include	"global.h"
+
+int		aliasing(t_thread *thread, double x, double y, \
+			 double aliasing);
+int		antialiasing(t_thread *thread, double x, double y, \
+			     double antialiasing);
+int		display_image(t_global *);
+void		*display_image_thread(void *arg);
+int		display_image_thread_x(double y, t_thread *thread,
+				       double flag, t_normal_info *normal_info);
+t_color		*display_image_pixel(t_thread *, double, double, int);
+
+#endif

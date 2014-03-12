@@ -1,0 +1,70 @@
+/*
+** inter_sphere.c for raytracer in /home/leprov_a//depot/rt/src/inter
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Mon May  7 18:14:45 2012 alexis leprovost
+** Last update Sat Jun  2 13:17:44 2012 zoe phalippou
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+
+#include	"raytracer.h"
+#include	"camera.h"
+#include        "object.h"
+#include	"detail.h"
+#include	"calc.h"
+#include	"utils.h"
+#include	"inter.h"
+#include	"objects_neg.h"
+
+void	calc_cut_texture(double *k, t_object *obj, t_detail *detail, double *vector, t_camera *camera);
+
+int	inter_indice_sphere(t_camera *camera, t_object *object,
+			     double *vector, double *indice)
+{
+  double	pos[NB_DIMENSION];
+  double	u[NB_DIMENSION];
+
+  if (modif_position(camera->position, object, pos, INVERSE_ROTATION) ||
+      modif_vector(object->rotation, vector, u, INVERSE_ROTATION))
+    return (EXIT_FAILURE);
+  indice[A] = CARRE(u[X]) + CARRE(u[Y]) + CARRE(u[Z]);
+  indice[B] = 2.000 * ((pos[X] * u[X]) + (pos[Y] * u[Y]) + (pos[Z] * u[Z]));
+  indice[C] = CARRE(pos[X]) + CARRE(pos[Y]) + CARRE(pos[Z]) -
+    CARRE(((t_sphere *)object->son)->radius);
+  indice[DELTA] = CARRE(indice[B]) - (4.000 * indice[A] * indice[C]);
+  return (EXIT_SUCCESS);
+}
+
+int
+inter_sphere(t_camera *camera, t_object *object,
+	     t_detail *detail, double *vector)
+{
+  double	indice[NB_INDICE];
+  double	k[2];
+
+  if (!camera || !object || !detail || !vector ||
+      inter_indice_sphere(camera, object, vector, indice))
+    return (EXIT_FAILURE);
+  if (indice[DELTA] >= 0.0F)
+    {
+      if (calc_k(indice, k))
+	return (EXIT_FAILURE);
+      if (object->inhibitor)
+	obj_inhibitor(k, object, camera, vector);
+      calc_limit(object, camera->position, vector, &k[0]);
+      calc_limit(object, camera->position, vector, &k[1]);
+      if (!cmp_k(detail, k))
+	{
+	  detail->object = object;
+	  if (object->image != NULL && object->image->type_texture == 1)
+	    calc_cut_texture(k, object, detail, vector, camera);
+	  detail->k = SMALLER_POSITIVE_NUMBER(k[0], k[1]);
+	}
+
+    }
+  return (EXIT_SUCCESS);
+}

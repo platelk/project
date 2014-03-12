@@ -1,0 +1,46 @@
+/*
+** calc_management.c for raytracer in /home/leprov_a//depot/rt/src/calc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed May  2 18:58:55 2012 alexis leprovost
+** Last update Sun May 27 22:09:55 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"raytracer.h"
+#include	"global.h"
+#include	"detail.h"
+#include	"utils.h"
+#include	"color.h"
+#include	"calc.h"
+#include	"init.h"
+#include	"box.h"
+#include	"my.h"
+
+int	calc_management(t_global *global, t_color *color, double x, double y)
+{
+  t_object	*tmp;
+  t_detail	detail;
+  double	vector[NB_DIMENSION];
+
+  tmp = NULL;
+  tmp = global->scene->object;
+  if (restat_color(color) || calc_direction_vector(global, vector, x, y) ||
+      init_detail(&detail))
+    return (EXIT_FAILURE);
+  while (tmp)
+    {
+      /*      if (inter_ray_box(global->scene->camera, vector, tmp))*/
+      tmp->inter(global->scene->camera, tmp, &detail, vector);
+      tmp = tmp->next;
+    }
+  if (detail.object != NULL)
+    {
+      calc_detail(&detail, color, global->scene->camera, vector);
+      calc_effect(&detail, color, global->scene->light, vector);
+    }
+  return (EXIT_SUCCESS);
+}

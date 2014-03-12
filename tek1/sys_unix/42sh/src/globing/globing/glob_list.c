@@ -1,0 +1,159 @@
+/*
+** glob_list.c for glob in /home/vink/projet/sys_unix/42sh/src/globing/globing
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Tue Apr 17 12:14:50 2012 kevin platel
+** Last update Sat May 19 19:48:34 2012 kevin platel
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include	"my.h"
+
+#include	"t_history.h"
+#include	"history_create_ptr_func.h"
+#include	"history_substitution.h"
+
+#include "sh.h"
+#include "xsys.h"
+#include "token.h"
+#include "globing.h"
+#include "env.h"
+#include "alias.h"
+
+t_token	*put_in_list(t_token *t, int id, int spec, char *content)
+{
+  t_token	*new;
+
+  if (t)
+    {
+      new = xmalloc(sizeof(*new));
+      if (new == NULL)
+	return (NULL);
+      if (t)
+	{
+	  new->next = t->next;
+	  t->next = new;
+	}
+      new->id = id;
+      new->spec = spec;
+      new->content = my_strdup(content);
+      return (new);
+    }
+  return (t);
+}
+
+t_token	*sep_in_dif_tok(t_token *t, char *str, int spec)
+{
+  char	**tab;
+  int	i;
+  t_token	*tmp;
+
+  i = -1;
+  tab = my_strtok(str, " ", TOK_DELIM);
+  tmp = t;
+  while (t && tab && tab[++i])
+    {
+      if (i == 0)
+	{
+	  t->id = WORD;
+	  t->spec = spec;
+	  if (t->content)
+	    free(t->content);
+	  t->content = my_strdup(tab[i]);
+	}
+      else
+	t = put_in_list(t, WORD, spec, tab[i]);
+      if (t == NULL)
+	return (NULL);
+    }
+  (str) ? (free(str)) : (str = NULL);
+  my_free_tab(tab);
+  return (tmp);
+}
+
+t_token	*glob_sep_tok(t_token *t, char *str, int spec)
+{
+  char	**tab;
+  int	i;
+
+  i = 0;
+  tab = my_strtok(str, " ", TOK_DELIM);
+  while (t && tab && tab[i])
+    {
+      if (i == 0)
+	{
+	  t->id = WORD;
+	  t->spec = t->spec;
+	  if (t->content)
+	    free(t->content);
+	  t->content = my_strdup(tab[i]);
+	}
+      else
+	t = put_in_list(t, WORD, spec, tab[i]);
+      if (t == NULL)
+	return (NULL);
+      i++;
+    }
+  my_free_tab(tab);
+  (str) ? (free(str)) : (str = NULL);
+  return (t);
+}
+
+int	globing_var(t_token *t, t_global *glob, int flag, int f)
+{
+  if ((int) t->id == (int) WORD && ((int) t->spec == (int) VARIABLES
+				    || t->spec == (int) NONE) && glob)
+    t = glob_gest_alias(t, glob);
+  if (t && (int) t->id == (int) WORD
+      && ((int) t->spec == (int) VARIABLES || (int) t->spec == NONE))
+    {
+      if (flag < 0)
+	t = glob_sep_tok(t, globing(t->content, glob,
+				    glob_select_flag(t->content, -1)),
+			 t->spec);
+      else
+	t = glob_sep_tok(t, globing(t->content, glob, GLOB_ENV), t->spec);
+    }
+  if (t && f && (int) t->id == (int) WORD &&
+      ((int) t->spec == (int) VARIABLES || (int) t->spec == (int) D_QUOTE))
+    t = sep_in_dif_tok(t, globing_env(t->content,
+				      glob->env, glob, G_E_WITH_DOL | f), t->spec);
+  if (t && (int) t->id == (int) WORD && (((int) t->spec == (int) B_QUOTE)))
+    t = glob_back_quotes(t, glob);
+  if (t && (int) t->id == (int) WORD && (((int) t->spec == (int) PAR)))
+    t = glob_make_link(t, NULL, t->content);
+  return (t == NULL ? 1 : 0);
+}
+
+int	glob_list(t_token **tok, t_global *glob, int i, int f)
+{
+  t_token	*tmp;
+  t_token	*tmp2;
+  int	flag;
+
+  tmp = (*tok);
+  tmp2 = (*tok);
+  flag = -1;
+  while (tmp)
+    {
+      (my_strcmp(tmp2->content, "unsetenv") == 0) ? (flag = 1) : (flag = flag);
+      if (tmp && (tmp->id) != WORD && i == 0 && glob->config)
+	reset_alias(glob->config->alias);
+      if (((tmp)->id == WORD) && globing_var(tmp, glob, flag, f) > 0)
+	return (1);
+      if (tmp2 && ((tmp)->id == WORD) && (tmp) && (tmp)->content == NULL)
+	{
+	  tmp2->next = tmp->next;
+	  if (tmp && tmp2 == tmp)
+	    (*tok) = tmp->next;
+	}
+      (tmp->id != WORD) ? (flag = -1) : (flag = flag);
+      ((tmp2 = (tmp)) && (tmp) != NULL) ? (tmp = tmp->next) : (tmp = tmp);
+    }
+  ((*tok) && (*tok)->content == NULL) ? (*tok = NULL) : (*tok = *tok);
+  return (0);
+}

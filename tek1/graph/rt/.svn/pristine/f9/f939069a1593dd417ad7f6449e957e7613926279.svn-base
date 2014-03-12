@@ -1,0 +1,26 @@
+<window y=256 x=256>
+  <scene 1 >
+    <camera>
+      <location X=-1500 Y=0 Z=0 />
+      <fov>1000</fov>
+    </camera>
+    <object>
+	<tore type="normal">
+		<location X=0 Y=0 Z=0 />
+		
+		
+		
+		<rotation X="0" Y="0" Z="90" />
+		<perturbation X="0" Y="2.5" Z="0" />
+		<radius MAX="50" MIN="20" />
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" REFLECTION="0.0" PHONG="828.0" TRANSPARENCY="0.0" />
+	</tore>
+    </object>
+    <light type="diffuse">
+       <location X=-1000 Y=0 Z=0 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+  </scene>
+</window>

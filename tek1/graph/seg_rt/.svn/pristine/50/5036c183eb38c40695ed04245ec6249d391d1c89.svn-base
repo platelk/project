@@ -1,0 +1,27 @@
+/*
+** normal_cone.c for raytracer in /home/leprov_a//depot/rt/src/normal
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Fri May 25 19:30:26 2012 alexis leprovost
+** Last update Fri May 25 20:04:21 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"raytracer.h"
+#include	"global.h"
+#include	"detail.h"
+#include	"utils.h"
+
+int	normal_cone(double *n, t_detail *detail)
+{
+  if (n == NULL || detail == NULL)
+    return (EXIT_FAILURE);
+  n[X] = detail->position[X];
+  n[Y] = detail->position[Y];
+  n[Z] = (((t_cone *)detail->object->son)->angle * (-1.000)) * detail->position[Z];
+  modif_normal(detail, n);
+  return (EXIT_SUCCESS);
+}

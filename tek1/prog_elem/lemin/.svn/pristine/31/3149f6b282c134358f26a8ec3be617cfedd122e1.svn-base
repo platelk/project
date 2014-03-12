@@ -1,0 +1,50 @@
+##
+## Makefile for lem_in in /home/leprov_a//depot/lemin
+## 
+## Made by alexis leprovost
+## Login   <leprov_a@epitech.net>
+## 
+## Started on  Mon Apr  2 09:07:30 2012 alexis leprovost
+##
+
+NAME=	lem_in
+
+CFLAGS=	-Wall -Wextra -I$(INC) -g
+
+SRC=	./src/main.c \
+	./src/parser/parser_entry.c \
+	./src/parser/parser_room.c \
+	./src/parser/parser_free.c \
+	./src/parser/parser_init_ant.c \
+	./src/parser/parser_check_link.c \
+	./src/parser/parser_check_state.c \
+	./src/parser/parser_size_tab.c \
+	./src/parser/parser_room_analize.c \
+	./src/parser/parser_return_start.c \
+	./src/parser/parser_size_list.c \
+	./src/parser/parser_link.c \
+	./src/parser/parser_malloc_link.c \
+	./src/path/path_finding.c
+
+OBJ=	$(SRC:.c=.o)
+
+INC=	./inc/
+
+LIB=	./lib/
+
+all:	$(NAME)
+
+$(NAME):	$(OBJ)
+	make -C $(LIB)
+	gcc -o $(NAME) $(OBJ) -L$(LIB) -lmy
+	@rm -f *~
+	@rm -f *#
+
+clean:
+	rm -f $(OBJ)
+
+fclean:	clean
+	rm -f $(NAME)
+
+re:	fclean all
+

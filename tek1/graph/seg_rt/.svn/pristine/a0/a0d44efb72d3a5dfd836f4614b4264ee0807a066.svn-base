@@ -1,0 +1,23 @@
+<window y=256 x=256>
+  <scene>
+    <camera>
+      <location X=0 Y=0 Z=0 />
+      <fov>500</fov>
+    </camera>
+    <light type="diffuse">
+       <location x=0 y=1000 z=1000 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+    <object>
+	<sphere type="normal">
+		<location x=0 y=0 z=0 />
+		<rotation X="0455" Y="4566" Z="786" />
+		<perturbation X="0" Y="456" Z="456" />
+		<radius>50</radius>
+		<color>588AFF</color>
+		<effect BRIGHTNESS="0.8" REFLECTION="0.0" />
+	</sphere>
+    </object>
+  </scene>
+</window>

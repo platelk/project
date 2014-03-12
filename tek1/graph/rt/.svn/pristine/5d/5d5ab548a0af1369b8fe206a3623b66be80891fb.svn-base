@@ -1,0 +1,40 @@
+<window y=1000 x=1000>
+  <scene name=Basic antialiasing=0>
+    <cameras>
+      <camera>
+	<location X=-500 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type="normal">
+	<location X=0 Y=0 Z=-50/>
+	<rotation X=0 Y=0 Z=0/>
+	<color>FF0000</color>
+	<effect REFLECTION="0.3"/>
+      </plan>
+      <sphere type="normal">
+	<location X=0 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<color>FFFF00</color>
+	<effect REFLECTION=0.0/>
+	<radius>100</radius>
+	<procedural TYPE="damier" SIZE="10" COLOR1="FFFFFF" COLOR2="000000"/>
+      </sphere>
+      <cylindre type="normal">
+	<location X=0 Y=0 Z=0/>
+	<rotation X=0 Y=30 Z=0/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+    </object>
+      <lights>
+	<light type=diffuse>
+	  <location X=-500 Y=0 Z=500/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+      </lights>
+  </scene>
+</window>

@@ -1,0 +1,50 @@
+/*
+** client_main.c for client in /home/guiho_r/tek1/clustering/src/client
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Tue May  1 11:01:10 2012 ronan guiho
+** Last update Wed May  2 16:27:12 2012 ronan guiho
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include "client.h"
+
+int			client_main(char *ip, int port)
+{
+  SOCKET		csock;
+  struct sockaddr_in 	*csin;
+
+  csock = socket(AF_INET, SOCK_STREAM, 0);
+  if ((csin = client_sockaddr_create(ip, port)) == NULL)
+    return (EXIT_FAILURE);
+  if ((connect(csock, (struct sockaddr *)csin, sizeof(*csin))) == SOCKET_ERROR)
+    {
+      printf("Raytracer: Clustering: Error: Connection TimeOut.\n");
+      return (EXIT_FAILURE);
+    }
+  printf("[*] Raytracer: Clustering: Connect done !\n");
+  printf("[*] Raytracer: Clustering: Waiting...\n");
+
+  /* ================ TEST ======================= */
+
+  char buffer[1024] = "";
+
+  int test;
+  if ((test = recv(csock, buffer, 1024, 0)) == SOCKET_ERROR)
+      printf("Error de recption\n");
+  printf("[*] Raytracer: Clustering: ID Receive [%s].\n", buffer);
+  /* ============================================ */
+
+  close(csock);
+  return (EXIT_SUCCESS);
+}
+
+int	main(int ac, char **av)
+{
+  client_main(av[1], atoi(av[2]));
+}

@@ -1,0 +1,87 @@
+/*
+** glob_alias.c for 42sh in /home/vink/projet/sys_unix/42sh/src/globing/globing
+** 
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+** 
+** Started on  Mon Apr 23 10:43:30 2012 kevin platel
+** Last update Fri May 18 05:02:33 2012 kevin platel
+*/
+
+#include	<stdlib.h>
+#include	<unistd.h>
+
+#include	"globing.h"
+#include	"token.h"
+#include	"global.h"
+#include	"my.h"
+#include	"alias.h"
+#include	"utils.h"
+
+void	reset_alias(t_alias *alias)
+{
+  while (alias)
+    {
+      alias->flag = 0;
+      alias = alias->next;
+    }
+}
+
+void	res_alias(t_alias *alias)
+{
+  while (alias)
+    {
+      if (alias->flag <= 1)
+	alias->flag = 0;
+      alias = alias->next;
+    }
+}
+
+char	*glob_alias(char *str, t_alias *alias, int *c)
+{
+  int	i;
+
+  i = 0;
+  while (alias)
+    {
+      if (my_strcmp(str, alias->initial) == 0 && alias->flag == 0)
+	{
+	  alias->flag = *c;
+	  str = alias->alias;
+	  i++;
+	}
+      alias = alias->next;
+    }
+  if (i == 0)
+    *c = 0;
+  return (my_strdup(str));
+}
+
+t_token	*glob_gest_alias(t_token *t, t_global *glob)
+{
+  char	*str;
+  char	*tmp;
+  int	i;
+
+  str = NULL;
+  if (t)
+    {
+      str = my_strdup(t->content);
+      i = 1;
+      if (glob && glob->config)
+	{
+	  t = sep_in_dif_tok(t, glob_alias(t->content, glob->config->alias, &i),
+			     t->spec);
+	  if (i != 0)
+	    {
+	      i = 2;
+	      res_alias(glob->config->alias);
+	      tmp = glob_alias(str, glob->config->alias, &i);
+	      tmp != NULL ? (free(tmp)) : tmp;
+	      t = glob_gest_tok_list(t, glob, 0, str);
+	    }
+	}
+    }
+  (str) ? (free(str)) : (NULL);
+  return (t);
+}

@@ -1,0 +1,16 @@
+/*
+** determ_export.h for determ_export in /home/jordan/Projets/debug_rt/export
+** 
+** Made by jordan vanwalleghem
+** Login   <vanwal_j@epitech.net>
+** 
+** Started on  Thu May 31 19:51:48 2012 jordan vanwalleghem
+** Last update Thu May 31 17:54:40 2012 ronan guiho
+*/
+
+#ifndef	__DETERM_EXPORT__
+#define	__DETERM_EXPORT__
+
+void    determ_export(t_global *global, char *dest, int count);
+
+#endif

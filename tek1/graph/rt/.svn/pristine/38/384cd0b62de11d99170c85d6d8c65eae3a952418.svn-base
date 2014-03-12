@@ -1,0 +1,36 @@
+<window X="900" Y="900">
+<scene NAME="Basic" ANTIALIASING="0">
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    <object>
+      <cone TYPE="normal">
+	<location X="100" Y="50" Z="-10"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.4"/>
+	<color>00FF00</color>
+	<radius>35</radius>
+      </cone>
+      <cone TYPE="normal">
+	<location X="100" Y="-50" Z="-10"/>
+	<rotation X="30" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.4"/>
+	<color>FF0000</color>
+	<radius>120</radius>
+      </cone>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="-100" Y="0" Z="0"/>
+	<intensity>0.6</intensity>
+	<color>FFFFFF</color>
+      </light>
+      <light TYPE="ambient">
+	<intensity>0.05</intensity>
+      </light>
+    </lights>
+  </scene>
+
+</window>

@@ -1,0 +1,27 @@
+# schema : 
+#       [2]
+#
+#
+#     [3]
+#      |
+#   __[0]
+#  /   |
+# [1]  |
+#    \ |
+#    [4]
+#
+# nombre de fourmis
+5
+# description des salles
+0 35 31
+1 1 43
+##start
+2 31 3
+3 25 11
+##end
+4 14 48
+# description des tunnels
+0-1
+0-3
+1-4
+4-0

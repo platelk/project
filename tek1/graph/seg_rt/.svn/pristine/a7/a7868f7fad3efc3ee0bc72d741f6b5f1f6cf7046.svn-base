@@ -1,0 +1,26 @@
+/*
+** calc_k.c for raytracer in /home/leprov_a//depot/rt/src/calc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Mon May  7 18:27:50 2012 alexis leprovost
+** Last update Sat May 26 14:43:46 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<math.h>
+
+#include	"raytracer.h"
+#include	"inter.h"
+
+int	calc_k(double *indice, double *k)
+{
+  if (indice == NULL || k == NULL)
+    return (EXIT_FAILURE);
+  k[0] = ((indice[B] * (-1.000)) - sqrt(indice[DELTA])) /
+    ((2.00 * indice[A]) + EPSILON);
+  k[1] = ((indice[B] * (-1.000)) + sqrt(indice[DELTA])) /
+    ((2.00 * indice[A]) + EPSILON);
+  return (EXIT_SUCCESS);
+}

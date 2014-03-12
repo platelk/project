@@ -1,0 +1,78 @@
+##
+## Makefile for Makefile in /home/guiho_r/tek1/clustering
+## 
+## Made by ronan guiho
+## Login   <guiho_r@epitech.net>
+## 
+## Started on  Mon Apr 30 19:03:11 2012 ronan guiho
+## Last update Mon May  7 00:03:22 2012 ronan guiho
+##
+
+CC		=	gcc -lpthread -g
+
+NAME_SERVER	=	server
+NAME_CLIENT	=	client
+
+SRC_SERVER	=	./src/image.c \
+			./src/server/server_main.c \
+			./src/server/server_management.c \
+			./src/server/server_ping.c \
+			./src/server/server_ping_raz.c \
+			./src/server/server_ping_check_recv.c \
+			./src/server/server_close.c \
+			./src/server/server_listen.c \
+			./src/server/server_sockaddr_create.c \
+			./src/server/server_int_to_str.c \
+			./src/server/server_distribution.c \
+			./src/server/server_distribution_atribution.c \
+			./src/server/server_distribution_send.c \
+			./src/server/server_distribution_plage_calcul.c \
+			./src/server/server_client_id.c \
+			./src/server/server_client_receive.c \
+			./src/server/server_client_receive_analize.c \
+			./src/server/server_client_receive_remove.c \
+			./src/server/server_client_receive_send.c \
+			./src/server/server_client_receive_plage.c \
+			./src/server/server_client_remove.c \
+			./src/server/server_client_create.c \
+			./src/server/server_client_add.c \
+			./src/server/server_client_core.c \
+			./src/server/server_client_count.c \
+			./src/server/server_client_display.c \
+			./src/server/server_client_connected.c
+
+SRC_CLIENT	=	./src/client/client_main.c \
+			./src/client/client_close.c \
+			./src/client/client_core.c \
+			./src/client/client_calculation.c \
+			./src/client/client_calculation_send.c \
+			./src/client/client_calculation_header.c \
+			./src/client/client_listen.c \
+			./src/server/server_int_to_str.c \
+			./src/client/client_sockaddr_create.c
+
+OBJ_SERVER	=	$(SRC_SERVER:.c=.o)
+OBJ_CLIENT	=	$(SRC_CLIENT:.c=.o)
+
+CFLAGS		=	-I./inc/client -I./inc/server -I./lib/ -I./inc -Wall -Wextra
+
+LDFLAGS_SERVER	=	-L/usr/X11/lib -lmlx_$(HOSTTYPE) -lXext -lX11 -L./lib -lmy
+LDFLAGS_CLIENT	=	-L./lib -lmy
+
+all:			$(NAME_SERVER) $(NAME_CLIENT)
+
+$(NAME_SERVER):		$(OBJ_SERVER)
+			make -C ./lib/
+			$(CC) -o $(NAME_SERVER) $(OBJ_SERVER) $(LDFLAGS_SERVER)
+
+$(NAME_CLIENT):		$(OBJ_CLIENT)
+			make -C ./lib/
+			$(CC) -o $(NAME_CLIENT) $(OBJ_CLIENT) $(LDFLAGS_CLIENT)
+
+clean:
+			rm -f $(OBJ_SERVER) $(OBJ_CLIENT)
+
+fclean:
+			rm -f $(NAME_SERVER) $(NAME_CLIENT)
+
+re:			fclean all

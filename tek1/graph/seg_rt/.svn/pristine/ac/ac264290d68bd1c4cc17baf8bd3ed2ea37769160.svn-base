@@ -1,0 +1,134 @@
+/*
+** calc_effect.c for raytracer in /home/leprov_a//depot/rt/src/calc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed May  9 20:18:25 2012 alexis leprovost
+** Last update Tue May 29 10:14:36 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+#include	<math.h>
+
+#include	"raytracer.h"
+#include	"global.h"
+#include	"detail.h"
+#include	"object.h"
+#include	"color.h"
+#include	"light.h"
+#include	"utils.h"
+#include	"init.h"
+#include	"calc.h"
+#include	"my.h"
+
+int
+calc_effect(t_detail *detail, t_color *color, t_light *light, double *vector)
+{
+  t_color	tmp[CONST_REFL + 1];
+
+  if (detail == NULL || color == NULL || light == NULL || vector == NULL)
+    return (EXIT_FAILURE);
+  if (!detail->object->effect[REFLECTION])
+    light_management(detail, color, light, vector);
+  else
+    {
+      tmp[0].red = color->red;
+      tmp[0].green = color->green;
+      tmp[0].blue = color->blue;
+      calc_reflection(detail, tmp, light, vector);
+      color->red = tmp[0].red;
+      color->green = tmp[0].green;
+      color->blue = tmp[0].blue;
+    }
+  return (EXIT_SUCCESS);
+}
+
+/*
+int
+_calc_effect(t_detail *detail, t_color *color, t_light *light, double *vector)
+{
+  t_camera	camera;
+  t_color	final[2];
+  t_detail	tmp;
+  double	r[NB_DIMENSION];
+  int	i;
+
+  i = -1;
+  if (detail == NULL || color == NULL || light == NULL || vector == NULL)
+    return (EXIT_FAILURE);
+  if (!detail->object->effect[REFLECTION])
+    light_management(detail, color, light, vector);
+  else
+    {
+      final[0].red = color->red;
+      final[0].green = color->green;
+      final[0].blue = color->blue;
+      restat_color(color);
+      while (++i < CONST_REFL && detail->object && detail->object->effect[REFLECTION])
+	{
+	  cpy_point(detail->position, camera.position);
+	  get_vector_reflechie(vector, detail->normal, r);
+	  tmp.object = detail->object;
+	  get_near_object(&camera, &tmp, r, &final[1]);
+	  if (tmp.object != NULL)
+	    {
+	      light_management(detail, &final[0], light, vector);
+	      light_management(&tmp, &final[1], light, r);
+	      color->red += ((final[0].red * (1.0F - detail->object->effect[REFLECTION])) +
+			     (final[1].red * detail->object->effect[REFLECTION]));
+	      color->green += ((final[0].green * (1.0F - detail->object->effect[REFLECTION])) +
+			     (final[1].green * detail->object->effect[REFLECTION]));
+	      color->blue += ((final[0].blue * (1.0F - detail->object->effect[REFLECTION])) +
+			     (final[1].blue * detail->object->effect[REFLECTION]));
+	    }
+	  cpy_point(r, vector);
+	  cpy_point(tmp.normal, detail->normal);
+	  cpy_point(tmp.position, detail->position);
+	  detail->object = tmp.object;
+	}
+      color->red /= ((double)i + 1.0F);
+      color->green /= ((double)i + 1.0F);
+      color->blue /= ((double)i + 1.0F);
+    }
+  return (EXIT_SUCCESS);
+}
+
+int
+_calc_effect(t_detail *detail, t_color *color, t_light *light, double *vector)
+{
+  t_detail	*data;
+  t_color	tmp[2];
+  t_camera	camera;
+  double	r[NB_DIMENSION];
+  int	it;
+
+  if (detail == NULL || color == NULL || light == NULL || vector == NULL)
+    return (EXIT_FAILURE);
+  light_management(detail, color, light, vector);
+  restat_color(&tmp[1]);
+  data = detail;
+  it = 0;
+  while (it < CONST_REFL && data->k > CONST_ERROR && data->object->effect[REFLECTION])
+    {
+      cpy_point(detail->position, camera.position);
+      get_vector_reflechie(vector, detail->normal, r);
+      cpy_point(r, vector);
+      get_near_object(&camera, detail, vector, &tmp[0]);
+      if (data->k > CONST_ERROR)
+	{
+	  light_management(data, &tmp[0], light, vector);
+	  color->red = (color->red * (1.0F - data->object->effect[REFLECTION])) +
+	    (tmp[0].red * data->object->effect[REFLECTION]);
+	  color->green = (color->green * (1.0F - data->object->effect[REFLECTION])) +
+	    (tmp[0].green * data->object->effect[REFLECTION]);
+	  color->blue = (color->blue * (1.0F - data->object->effect[REFLECTION])) +
+	    (tmp[0].blue * data->object->effect[REFLECTION]);
+	  ++it;
+	}
+      data = detail;
+    }
+  return (EXIT_SUCCESS);
+}
+*/

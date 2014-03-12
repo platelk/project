@@ -1,0 +1,308 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALIAS_CONFIG_STRING	./include/config.h	20;"	d
+ALIAS_STRING_NUMBER	./include/config.h	29;"	d
+ALPHA_STRING	./include/my.h	15;"	d
+AMB_IN	./include/puterror.h	21;"	d
+AMB_OUT	./include/puterror.h	20;"	d
+AND	./include/token.h	/^    AND,$/;"	e	enum:e_token
+ARG	./include/token.h	/^    ARG,$/;"	e	enum:e_token
+AUTOLIST	./include/config.h	/^  AUTOLIST,$/;"	e	enum:e_option
+AUTOLIST_CONFIG_STRING	./include/config.h	21;"	d
+BACKWARD_STRING	./include/edit.h	78;"	d
+BAD_PLA	./include/puterror.h	22;"	d
+B_QUOTE	./include/token.h	/^    B_QUOTE,$/;"	e	enum:e_spec
+CD_MOVE_STRING	./include/edit.h	82;"	d
+CHAR_VAR_ENV	./include/env.h	15;"	d
+CLEAR_EDIT_STRING	./include/edit.h	37;"	d
+CLEAR_MOVE_STRING	./include/edit.h	81;"	d
+CMD	./include/token.h	/^    CMD,$/;"	e	enum:e_token
+COMPLETE	./include/config.h	/^  COMPLETE$/;"	e	enum:e_option
+COMPLETE_CONFIG_STRING	./include/config.h	22;"	d
+CONTROL_STRING	./include/edit.h	77;"	d
+CTRLB_EDIT_STRING	./include/edit.h	43;"	d
+CTRLD_EDIT_STRING	./include/edit.h	51;"	d
+CTRLFD_EDIT_STRING	./include/edit.h	55;"	d
+CTRLFG_EDIT_STRING	./include/edit.h	54;"	d
+CTRLF_EDIT_STRING	./include/edit.h	42;"	d
+CTRLH_EDIT_STRING	./include/edit.h	44;"	d
+CTRLK_EDIT_STRING	./include/edit.h	49;"	d
+CTRLP_EDIT_STRING	./include/edit.h	45;"	d
+CTRLR_EDIT_STRING	./include/edit.h	53;"	d
+CTRLT_EDIT_STRING	./include/edit.h	48;"	d
+CTRLU_EDIT_STRING	./include/edit.h	47;"	d
+CTRLW_EDIT_STRING	./include/edit.h	50;"	d
+CTRLX_EDIT_STRING	./include/edit.h	52;"	d
+CTRLY_EDIT_STRING	./include/edit.h	46;"	d
+CURSER_OFF	./include/edit.h	69;"	d
+CURSER_ON	./include/edit.h	68;"	d
+CUSTOM_CHAR	./include/edit.h	58;"	d
+DEFAULT_PROMPT_STRING	./include/edit.h	23;"	d
+DEFAULT_TERM_STRING	./include/edit.h	24;"	d
+DELETE	./include/edit.h	/^  DELETE,$/;"	e	enum:e_edit
+DELETE_EDIT_STRING	./include/edit.h	38;"	d
+DELIM_ALIAS_STRING	./include/config.h	35;"	d
+DELIM_ENV_STRING	./include/config.h	37;"	d
+DELIM_HISTORY_STRING	./include/config.h	32;"	d
+DELIM_PROMPT_STRING	./include/config.h	34;"	d
+DELIM_SAVEHIST_STRING	./include/config.h	33;"	d
+DELIM_SPACE_STRING	./include/config.h	36;"	d
+DOLLARS	./include/token.h	/^    DOLLARS,$/;"	e	enum:e_token
+DOWN	./include/edit.h	/^  DOWN$/;"	e	enum:e_edit
+DOWN_EDIT_STRING	./include/edit.h	34;"	d
+DOWN_MOVE_STRING	./include/edit.h	84;"	d
+D_QUOTE	./include/token.h	/^    D_QUOTE,$/;"	e	enum:e_spec
+D_RED_LEFT	./include/token.h	/^    D_RED_LEFT,$/;"	e	enum:e_token
+D_RED_RIGHT	./include/token.h	/^    D_RED_RIGHT,$/;"	e	enum:e_token
+D_RED_RIGHT_ERR	./include/token.h	/^    D_RED_RIGHT_ERR,$/;"	e	enum:e_token
+END_EDIT_STRING	./include/edit.h	41;"	d
+ENTER_EDIT_STRING	./include/edit.h	32;"	d
+ENV_CONFIG_STRING	./include/config.h	24;"	d
+ENV_STRING_NUMBER	./include/config.h	30;"	d
+ERROR	./include/token.h	/^    ERROR$/;"	e	enum:e_bool
+ESCAPE_EDIT_STRING	./include/edit.h	31;"	d
+ESP	./include/token.h	/^    ESP,$/;"	e	enum:e_token
+EXCLA	./include/token.h	/^    EXCLA,$/;"	e	enum:e_token
+EXIT_CHILD	./include/sh.h	23;"	d
+E_PAR	./include/token.h	/^    E_PAR,$/;"	e	enum:e_spec
+FALSE	./include/token.h	/^    FALSE,$/;"	e	enum:e_bool
+GLOB_ALIAS	./include/globing.h	28;"	d
+GLOB_CMD	./include/globing.h	27;"	d
+GLOB_DIR	./include/globing.h	24;"	d
+GLOB_ENV	./include/globing.h	26;"	d
+GLOB_SLASH	./include/globing.h	25;"	d
+G_E_WITHOUT_DOL	./include/globing.h	22;"	d
+G_E_WITH_DOL	./include/globing.h	21;"	d
+HIST	./include/config.h	/^  HIST,$/;"	e	enum:e_option
+HISTORY	./include/token.h	/^    HISTORY,$/;"	e	enum:e_spec
+HISTORY_CONFIG_STRING	./include/config.h	18;"	d
+HISTORY_STRING_NUMBER	./include/config.h	26;"	d
+HOSTNAME_STRING	./include/edit.h	26;"	d
+INIBIT	./include/token.h	/^    INIBIT,$/;"	e	enum:e_token
+INIT	./include/pipe.h	/^  INIT,$/;"	e	enum:s_state_pipe
+INSERT_OFF	./include/edit.h	66;"	d
+INSERT_ON	./include/edit.h	65;"	d
+LEFT	./include/edit.h	/^  LEFT,$/;"	e	enum:e_edit
+LEFT_EDIT_STRING	./include/edit.h	36;"	d
+LEFT_MOVE_STRING	./include/edit.h	80;"	d
+MAGIC_NUMBER	./include/config.h	46;"	d
+MAGIC_STRING	./include/config.h	44;"	d
+MAGIC_STRING_LENGTH	./include/config.h	45;"	d
+MAX_BUFFER_LENGTH	./include/edit.h	61;"	d
+MAX_EDIT_KEYWORD_NUMBER	./include/edit.h	62;"	d
+MAX_KEYWORD_NUMBER	./include/config.h	41;"	d
+MAX_LINE_NUMBER	./include/edit.h	63;"	d
+MAX_OPTION_NUMBER	./include/config.h	42;"	d
+MAX_PROMPT_LENGTH	./include/edit.h	60;"	d
+MISSING_N	./include/puterror.h	19;"	d
+NB_GLOB_FUNC	./include/globing.h	20;"	d
+NO	./include/xsys.h	/^  NO,$/;"	e	enum:e_print
+NONE	./include/token.h	/^    NONE$/;"	e	enum:e_spec
+NONE_STATE	./include/pipe.h	/^  NONE_STATE$/;"	e	enum:s_state_pipe
+NULL_CMD	./include/puterror.h	16;"	d
+NUMBER	./include/edit.h	21;"	d
+NUMBER_STRING	./include/my.h	14;"	d
+OR	./include/token.h	/^    OR,$/;"	e	enum:e_token
+PAR	./include/token.h	/^    PAR,$/;"	e	enum:e_spec
+PATH_CONFIG_STRING	./include/config.h	23;"	d
+PIPE	./include/token.h	/^    PIPE,$/;"	e	enum:e_token
+PROMPT_CHAR	./include/config.h	39;"	d
+PROMPT_CONFIG_STRING	./include/config.h	17;"	d
+PROMPT_STRING_NUMBER	./include/config.h	28;"	d
+PV	./include/token.h	/^    PV = 0,$/;"	e	enum:e_token
+PWD_STRING	./include/edit.h	28;"	d
+QUOTE	./include/token.h	/^    QUOTE,$/;"	e	enum:e_token
+READ	./include/pipe.h	/^  READ,$/;"	e	enum:s_state_action
+RIGHT	./include/edit.h	/^  RIGHT,$/;"	e	enum:e_edit
+RIGHT_EDIT_STRING	./include/edit.h	35;"	d
+RIGHT_MOVE_STRING	./include/edit.h	79;"	d
+SAVEHIST	./include/config.h	/^  SAVEHIST,$/;"	e	enum:e_option
+SAVEHIST_CONFIG_STRING	./include/config.h	19;"	d
+SAVEHIST_STRING_NUMBER	./include/config.h	27;"	d
+SEP_ENV	./include/env.h	14;"	d
+SPACE	./include/token.h	/^    SPACE,$/;"	e	enum:e_token
+START_EDIT_STRING	./include/edit.h	40;"	d
+STDIN	./include/pipe.h	/^  STDIN,$/;"	e	enum:s_entry
+STDOUT	./include/pipe.h	/^  STDOUT$/;"	e	enum:s_entry
+SUPPR_EDIT_STRING	./include/edit.h	39;"	d
+S_PAR	./include/token.h	/^    S_PAR,$/;"	e	enum:e_spec
+S_QUOTE	./include/token.h	/^    S_QUOTE,$/;"	e	enum:e_spec
+S_RED_LEFT	./include/token.h	/^    S_RED_LEFT,$/;"	e	enum:e_token
+S_RED_RIGHT	./include/token.h	/^    S_RED_RIGHT,$/;"	e	enum:e_token
+S_RED_RIGHT_ERR	./include/token.h	/^    S_RED_RIGHT_ERR,$/;"	e	enum:e_token
+TAB	./include/token.h	/^    TAB,$/;"	e	enum:e_token
+TAB_EDIT_STRING	./include/edit.h	56;"	d
+TERM_STRING	./include/edit.h	29;"	d
+TOK_BASE	./include/my_strtok.h	/^  TOK_BASE$/;"	e	enum:e_type
+TOK_DELIM	./include/my_strtok.h	/^  TOK_DELIM,$/;"	e	enum:e_type
+TOO_MANY	./include/puterror.h	18;"	d
+TRUE	./include/token.h	/^    TRUE,$/;"	e	enum:e_bool
+UNDERLINE_OFF	./include/edit.h	75;"	d
+UNDERLINE_ON	./include/edit.h	74;"	d
+UNKNOW	./include/token.h	/^    UNKNOW,$/;"	e	enum:e_token
+UNMATCH	./include/puterror.h	17;"	d
+UP	./include/edit.h	/^  UP,$/;"	e	enum:e_edit
+UP_EDIT_STRING	./include/edit.h	33;"	d
+UP_MOVE_STRING	./include/edit.h	83;"	d
+USERNAME_STRING	./include/edit.h	27;"	d
+VARIABLES	./include/token.h	/^    VARIABLES,$/;"	e	enum:e_spec
+VM_OFF	./include/edit.h	72;"	d
+VM_ON	./include/edit.h	71;"	d
+WORD	./include/token.h	/^    WORD,$/;"	e	enum:e_token
+WRITE	./include/pipe.h	/^  WRITE$/;"	e	enum:s_state_action
+X	./include/global.h	/^  X,$/;"	e	enum:s_motion
+Y	./include/global.h	/^  Y$/;"	e	enum:s_motion
+YES	./include/xsys.h	/^  YES$/;"	e	enum:e_print
+_T_HISTORY__	./include/t_history.h	12;"	d
+__ADD_CHILD_H__	./include/add_child.h	12;"	d
+__AFF_TREE_H__	./include/aff_tree.h	12;"	d
+__ALIAS_H__	./include/alias.h	12;"	d
+__BUILTIN_HISTORY_CREATE_PARAM_H__	./include/builtin_history_create_param.h	12;"	d
+__BUILTIN_HISTORY_PARAM_FIRSTPART_H__	./include/builtin_history_param_firstpart.h	12;"	d
+__BUILTIN_HISTORY_PARAM_SECONDPART_H__	./include/builtin_history_param_secondpart.h	12;"	d
+__BUILTIN_H__	./include/builtin.h	12;"	d
+__CHECK_BLLOC_EXEC_EXT_H__	./include/check_bloc_exec_ext.h	12;"	d
+__CHECK_BLOC_EXEC_H__	./include/check_bloc_exec.h	12;"	d
+__CHECK_CMD_H__	./include/check_cmd.h	12;"	d
+__CHECK_EXPRESSION_H__	./include/check_expression.h	12;"	d
+__CHECK_GRAMMAR_EXEC_H__	./include/check_grammar_exec.h	12;"	d
+__CHECK_LOG_H__	./include/check_log.h	12;"	d
+__CHECK_PIPE_H__	./include/check_pipe.h	12;"	d
+__CHILD_H__	./include/child.h	12;"	d
+__CONCAT_TOKEN_H__	./include/concat_token.h	12;"	d
+__CONFIG_H__	./include/config.h	12;"	d
+__EDIT_H__	./include/edit.h	12;"	d
+__ENV_H__	./include/env.h	12;"	d
+__ERROR_H__	./include/error.h	12;"	d
+__EXECUTE_H__	./include/execute.h	12;"	d
+__FREE_CHILD_H__	./include/free_child.h	12;"	d
+__GET_NEXT_LINE_H__	./include/get_next_line.h	12;"	d
+__GLOBAL_H__	./include/global.h	12;"	d
+__GLOBING_H__	./include/globing.h	12;"	d
+__HISTORY_CREATE_LIST_H__	./include/history_create_list.h	12;"	d
+__HISTORY_CREATE_PTR_FUNC_H__	./include/history_create_ptr_func.h	12;"	d
+__HISTORY_PUTLIST_H__	./include/history_putlist.h	12;"	d
+__HISTORY_SHOWLIST_H__	./include/history_showlist.h	12;"	d
+__HISTORY_SUBSTITUTION_H__	./include/history_substitution.h	12;"	d
+__HISTORY_SUBS_FUNC_H__	./include/history_subs_func.h	12;"	d
+__MY_H__	./include/my.h	12;"	d
+__MY_REV_LIST_H__	./include/my_rev_list.h	12;"	d
+__MY_REV_NODE_H__	./include/my_rev_node.h	12;"	d
+__MY_STRTOK_H__	./include/my_strtok.h	12;"	d
+__NODE_H__	./include/node.h	12;"	d
+__PIPE_H__	./include/pipe.h	12;"	d
+__PUT_ERROR_H__	./include/puterror.h	12;"	d
+__RECONSTRUCT_TOKEN_H__	./include/reconstruct_token.h	12;"	d
+__REGROUP_TOKEN_H__	./include/regroup_token.h	12;"	d
+__RETOKEN_REDIR_EXT_H__	./include/retoken_redir_ext.h	12;"	d
+__SH_H__	./include/sh.h	12;"	d
+__SIG_H__	./include/sig.h	12;"	d
+__TOKEN_FUNCT_H__	./include/token_funct.h	12;"	d
+__TOKEN_H__	./include/token.h	12;"	d
+__TREE_H__	./include/tree.h	12;"	d
+__UTILS_H__	./include/utils.h	12;"	d
+__XSYS_H__	./include/xsys.h	12;"	d
+alias	./include/alias.h	/^  char	*alias;$/;"	m	struct:s_alias
+alias	./include/config.h	/^  t_alias	*alias;$/;"	m	struct:s_config
+builtin_ptr_f	./include/builtin.h	/^typedef	int	(*builtin_ptr_f)(t_global *, char **);$/;"	t
+child	./include/node.h	/^  struct s_child	*child;$/;"	m	struct:s_node	typeref:struct:s_node::s_child
+child	./include/tree.h	/^  t_child	*child;$/;"	m	struct:s_node
+command	./include/t_history.h	/^  char	*command;$/;"	m	struct:s_history
+config	./include/global.h	/^  t_config	*config;$/;"	m	struct:s_global
+content	./include/node.h	/^  char			*content;$/;"	m	struct:s_node
+content	./include/token.h	/^  char			*content;$/;"	m	struct:s_token
+content	./include/tree.h	/^  char		*content;$/;"	m	struct:s_node
+ctrlc	./include/global.h	/^  int		ctrlc;$/;"	m	struct:s_global
+curser	./include/global.h	/^  int		curser[2];$/;"	m	struct:s_global
+data	./include/global.h	/^  t_line	*data;$/;"	m	struct:s_global
+dom	./include/global.h	/^  int		dom[2];$/;"	m	struct:s_global
+e_bool	./include/token.h	/^typedef	enum	e_bool$/;"	g
+e_edit	./include/edit.h	/^typedef enum e_edit$/;"	g
+e_option	./include/config.h	/^typedef enum e_option$/;"	g
+e_print	./include/xsys.h	/^typedef enum e_print$/;"	g
+e_spec	./include/token.h	/^typedef	enum	e_spec$/;"	g
+e_token	./include/token.h	/^typedef	enum	e_token$/;"	g
+e_type	./include/my_strtok.h	/^typedef enum e_type$/;"	g
+echo	./include/global.h	/^  int		echo;$/;"	m	struct:s_global
+env	./include/config.h	/^  t_env	*env;$/;"	m	struct:s_config
+env	./include/global.h	/^  t_env		*env;$/;"	m	struct:s_global
+exit	./include/global.h	/^  int		exit;$/;"	m	struct:s_global
+f_glob	./include/globing.h	/^typedef	t_token	*(*f_glob)(t_token *);$/;"	t
+f_regroup	./include/token.h	/^typedef        t_bool   (*f_regroup)(t_token **, t_token **);$/;"	t
+f_token	./include/token.h	/^typedef        t_bool   (*f_token)(t_token **tok, char **str);$/;"	t
+flag	./include/alias.h	/^  int	flag;$/;"	m	struct:s_alias
+hist	./include/global.h	/^  t_history	*hist;$/;"	m	struct:s_global
+id	./include/node.h	/^  enum e_token		id;$/;"	m	struct:s_node	typeref:enum:s_node::e_token
+id	./include/token.h	/^  t_t_list		id;$/;"	m	struct:s_token
+id	./include/tree.h	/^  t_t_list	id;$/;"	m	struct:s_node
+id_cmd	./include/t_history.h	/^  int	id_cmd;$/;"	m	struct:s_history
+initial	./include/alias.h	/^  char	*initial;$/;"	m	struct:s_alias
+len	./include/global.h	/^  int		len;$/;"	m	struct:s_global
+letter	./include/get_next_line.h	/^  char	letter;$/;"	m	struct:s_line
+name	./include/env.h	/^  char *name;$/;"	m	struct:s_env
+nd	./include/child.h	/^  struct s_node		*nd;$/;"	m	struct:s_child	typeref:struct:s_child::s_node
+nd	./include/tree.h	/^  t_node	*nd;$/;"	m	struct:s_child
+next	./include/alias.h	/^  struct s_alias *next;$/;"	m	struct:s_alias	typeref:struct:s_alias::s_alias
+next	./include/child.h	/^  struct s_child	*next;$/;"	m	struct:s_child	typeref:struct:s_child::s_child
+next	./include/env.h	/^  struct s_env *next;$/;"	m	struct:s_env	typeref:struct:s_env::s_env
+next	./include/get_next_line.h	/^  struct s_line	*next;$/;"	m	struct:s_line	typeref:struct:s_line::s_line
+next	./include/t_history.h	/^  struct s_history *next;$/;"	m	struct:s_history	typeref:struct:s_history::s_history
+next	./include/token.h	/^  struct s_token	*next;$/;"	m	struct:s_token	typeref:struct:s_token::s_token
+next	./include/tree.h	/^  t_child	*next;$/;"	m	struct:s_child
+option	./include/config.h	/^  int	*option;$/;"	m	struct:s_config
+prev	./include/alias.h	/^  struct s_alias *prev;$/;"	m	struct:s_alias	typeref:struct:s_alias::s_alias
+prev	./include/env.h	/^  struct s_env *prev;$/;"	m	struct:s_env	typeref:struct:s_env::s_env
+prev	./include/get_next_line.h	/^  struct s_line *prev;$/;"	m	struct:s_line	typeref:struct:s_line::s_line
+prev	./include/t_history.h	/^  struct s_history *prev;$/;"	m	struct:s_history	typeref:struct:s_history::s_history
+prompt	./include/config.h	/^  char	*prompt;$/;"	m	struct:s_config
+prompt	./include/global.h	/^  char		*prompt;$/;"	m	struct:s_global
+ptr_f_built_history	./include/builtin_history_create_param.h	/^typedef	int	(*ptr_f_built_history)(char **, t_history **);$/;"	t
+ptr_f_history	./include/history_create_ptr_func.h	/^typedef char	*(*ptr_f_history)(char *, t_history *);$/;"	t
+s_alias	./include/alias.h	/^typedef struct s_alias$/;"	s
+s_child	./include/child.h	/^typedef struct		s_child$/;"	s
+s_child	./include/tree.h	/^struct	s_child$/;"	s
+s_config	./include/config.h	/^typedef struct s_config$/;"	s
+s_entry	./include/pipe.h	/^typedef enum s_entry$/;"	g
+s_env	./include/env.h	/^typedef struct s_env$/;"	s
+s_global	./include/global.h	/^typedef struct s_global$/;"	s
+s_history	./include/t_history.h	/^typedef struct s_history$/;"	s
+s_line	./include/get_next_line.h	/^typedef struct	s_line$/;"	s
+s_motion	./include/global.h	/^typedef enum s_motion$/;"	g
+s_node	./include/node.h	/^typedef struct		s_node$/;"	s
+s_node	./include/tree.h	/^struct	s_node$/;"	s
+s_state_action	./include/pipe.h	/^typedef enum s_state_action$/;"	g
+s_state_action	./include/pipe.h	/^} s_state_action;$/;"	t	typeref:enum:s_state_action
+s_state_pipe	./include/pipe.h	/^typedef enum s_state_pipe$/;"	g
+s_token	./include/token.h	/^typedef	struct	s_token$/;"	s
+spec	./include/token.h	/^  t_t_spec		spec;$/;"	m	struct:s_token
+status	./include/get_next_line.h	/^  int	status;$/;"	m	struct:s_line
+status	./include/global.h	/^  int		status;$/;"	m	struct:s_global
+t_alias	./include/alias.h	/^} t_alias;$/;"	t	typeref:struct:s_alias
+t_bool	./include/token.h	/^  } t_bool;$/;"	t	typeref:enum:e_bool
+t_child	./include/child.h	/^} t_child;$/;"	t	typeref:struct:s_child
+t_child	./include/tree.h	/^typedef	struct	s_child	t_child;$/;"	t	typeref:struct:s_child
+t_config	./include/config.h	/^} t_config;$/;"	t	typeref:struct:s_config
+t_edit	./include/edit.h	/^} t_edit;$/;"	t	typeref:enum:e_edit
+t_efunc	./include/edit.h	/^typedef	int	(*t_efunc)(t_global *, t_line **, char *, char *);$/;"	t
+t_entry	./include/pipe.h	/^} t_entry;$/;"	t	typeref:enum:s_entry
+t_env	./include/env.h	/^} t_env;$/;"	t	typeref:struct:s_env
+t_func	./include/config.h	/^typedef int (*t_func)(char *, t_config *);$/;"	t
+t_global	./include/global.h	/^} t_global;$/;"	t	typeref:struct:s_global
+t_history	./include/t_history.h	/^} t_history;$/;"	t	typeref:struct:s_history
+t_line	./include/get_next_line.h	/^} t_line;$/;"	t	typeref:struct:s_line
+t_motion	./include/global.h	/^} t_motion;$/;"	t	typeref:enum:s_motion
+t_node	./include/node.h	/^} t_node;$/;"	t	typeref:struct:s_node
+t_node	./include/tree.h	/^typedef	struct	s_node	t_node;$/;"	t	typeref:struct:s_node
+t_option	./include/config.h	/^} t_option;$/;"	t	typeref:enum:e_option
+t_print	./include/xsys.h	/^} t_print;$/;"	t	typeref:enum:e_print
+t_state_pipe	./include/pipe.h	/^} t_state_pipe;$/;"	t	typeref:enum:s_state_pipe
+t_t_list	./include/token.h	/^  } t_t_list;$/;"	t	typeref:enum:e_token
+t_t_spec	./include/token.h	/^  } t_t_spec;$/;"	t	typeref:enum:e_spec
+t_token	./include/token.h	/^} t_token;$/;"	t	typeref:struct:s_token
+t_type	./include/my_strtok.h	/^} t_type;$/;"	t	typeref:enum:e_type
+time	./include/t_history.h	/^  char	*time;$/;"	m	struct:s_history
+value	./include/env.h	/^  char *value;$/;"	m	struct:s_env

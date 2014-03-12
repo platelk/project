@@ -1,0 +1,100 @@
+<window y="1000" x="1600">
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type="normal">
+	<location X="0" Y="-300" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="1.0">./texture/brique2.jpg</texture>
+	<color>00FFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="300" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="1.0">./texture/brique2.jpg</texture>
+	<size>50</size>
+	<limit>
+	  <x MIN="40" MAX=""/>
+	  <y MIN="" MAX=""/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="-100" Y="-350" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="1.0">./texture/brique.jpg</texture>
+	<size>50</size>
+	<limit>
+	  <x MIN="" MAX=""/>
+	  <y MIN="" MAX="50"/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="40" Y="350" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<texture FREQUENCE="1.0">./texture/brique.jpg</texture>
+	<size>50</size>
+	<limit>
+	  <x MIN="" MAX=""/>
+	  <y MIN="-50" MAX=""/>
+	</limit>
+	<color>00FFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" TRANSPARENCE="0.8"/>
+	<perturbation Y="2.0"/>
+	<color>A6D2E8</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-200"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.6" />
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="800"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<texture FREQUENCE="0.5">./texture/ciel.jpg</texture>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<color>A6D2E8</color>
+      </plan>
+      <plan type="normal">
+	<location X="1000" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<texture FREQUENCE="1.0">./texture/ciel.jpg</texture>
+	<effect BRIGHTNESS="0.3" PHONG="100000" REFLECTION="0.0" />
+	<color>A6D2E8</color>
+      </plan>
+    </object>
+    <lights>
+	<light type="diffuse">
+	  <location X="-500" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light type="diffuse">
+	  <location X="0" Y="0" Z="700"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light type="ambiant">
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>
+

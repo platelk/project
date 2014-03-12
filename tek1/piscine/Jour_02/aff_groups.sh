@@ -1,0 +1,1 @@
+groups vink | tr " " ","

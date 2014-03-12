@@ -1,0 +1,16 @@
+/*
+** import_jpg.h for import_jpg in /home/jordan/Projets/Epitech/rt/import
+** 
+** Made by jordan vanwalleghem
+** Login   <vanwal_j@epitech.net>
+** 
+** Started on  Tue May 29 17:50:50 2012 jordan vanwalleghem
+** Last update Wed May 30 19:27:44 2012 jordan vanwalleghem
+*/
+
+#ifndef	__IMPORT_JPG__
+#define	__IMPORT_JPG__
+
+int     import_jpg(char *file_name, t_image *mlx_img_struct, void *);
+
+#endif

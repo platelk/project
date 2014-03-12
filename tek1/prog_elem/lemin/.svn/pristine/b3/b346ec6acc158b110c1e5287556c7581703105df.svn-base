@@ -1,0 +1,66 @@
+/*
+** path_finding.c for lemin in /home/vink/projet/prog_elem/lemin/src/path
+** 
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+** 
+** Started on  Mon Apr  9 11:15:32 2012 kevin platel
+** Last update Mon Apr  9 13:10:23 2012 kevin platel
+*/
+
+#include <stdlib.h>
+#include "lemin.h"
+
+int	print_room(t_room *room)
+{
+  int	i;
+
+  while (room)
+    {
+      my_printf("\n--------\n");
+      my_printf("Name : %s\n", room->name);
+      my_printf("Weight : %d\n", room->weight);
+      my_printf("Status : %d\n", room->status);
+      for (i = 0; room->link[i] != NULL; i++)
+	{
+	  my_printf("\t\n////////\n");
+	  my_printf("\tLink->Name : %s\n", room->link[i]->name); 
+	  my_printf("\tLink->Weight : %d\n", room->link[i]->weight); 
+	  my_printf("\t\n////////\n");
+	}
+      my_printf("\n--------\n");
+      room = room->next;
+    }
+  return (0);
+}
+
+
+static int	attribute_weight_loop(t_room *room, int weight)
+{
+  int	i;
+
+  i = 0;
+  if (room == NULL)
+    return (0);
+  while (room->link[i] != NULL)
+    {
+      if (room->link[i]->weight == -1 || room->link[i]->weight > weight)
+	{
+	  room->link[i]->weight = weight;
+	  attribute_weight_loop(room->link[i], weight + 2);
+	}
+      i++;
+    }
+  return (0);
+}
+
+t_glob	*attribute_weight(t_glob *glob)
+{
+  t_room	*room_end;
+  room_end = parser_return_start_end(glob->room, END);
+  room_end->weight = 0;
+  if (attribute_weight_loop(room_end, 2) == -1)
+    return (NULL);
+  print_room(glob->room);
+  return (glob);
+}

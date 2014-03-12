@@ -1,0 +1,38 @@
+/*
+** texture_map_plan.c for texture in /home/guiho_r/tek1/rt/src/texture
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Wed May 16 10:44:38 2012 ronan guiho
+** Last update Sun May 27 17:43:49 2012 ronan guiho
+*/
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "utils.h"
+#include "calc.h"
+#include "image.h"
+#include "texture.h"
+#include "object.h"
+
+int		texture_mapping_plan(t_object *obj, t_color *color,
+				     double *old_pos)
+{
+  double	pos[3];
+  int		texture[2];
+
+  modif_vector(obj->rotation, old_pos, pos, INVERSE_ROTATION);
+  texture[X] = (int)(pos[X] * FREQUENCE_PLAN + obj->image->size[WIDTH] / 2.0);
+  texture[Y] = (int)(pos[Y] * FREQUENCE_PLAN + obj->image->size[HEIGHT] / 2.0);
+  while (texture[X] < 0)
+    texture[X] = texture[X] + (100 * obj->image->size[WIDTH]);
+  while (texture[Y] < 0)
+    texture[Y] = texture[Y] + (100 * obj->image->size[HEIGHT]);
+  texture[X] = texture[X] % obj->image->size[WIDTH];
+  texture[Y] = texture[Y] % obj->image->size[HEIGHT];
+  texture_getcolor(obj->image, color, texture);
+  return (EXIT_SUCCESS);
+}

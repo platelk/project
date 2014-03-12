@@ -1,0 +1,38 @@
+/*
+** main.c for teuquain in /home/vink/projet/rush/rush-troll-oz-pl/trunk/inc
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Thu Jun  7 10:54:28 2012 kevin platel
+** Last update Thu Jun  7 12:41:42 2012 kevin platel
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+
+#include	"my.h"
+#include	"teuquain.h"
+#include	"network.h"
+#include	"get_next_line.h"
+
+int
+main(int ac, char **av)
+{
+  t_param	param;
+  char	*buffer;
+
+  fprintf(stderr, "teuquain: Start\n");
+  fprintf(stderr, "send tram : <NYAN:HELO:platel_k:2016:REN:NYAN>\n");
+  my_putstr("NYAN:HELO:platel_k:2016:REN:NYAN");
+  fprintf(stderr, "teuquain: get param...");
+  while (net_get_param(&param) == NULL);
+  fprintf(stderr, "\tOk!\n");
+  fprintf(stderr, "teuquain: get packet ...\n");
+  while ((buffer = get_next_line(0)))
+    {
+      fprintf(stderr, "Buffer = [%s]\n", buffer);
+    }
+  fprintf(stderr, "teuquain: End\n");
+  return (0);
+}

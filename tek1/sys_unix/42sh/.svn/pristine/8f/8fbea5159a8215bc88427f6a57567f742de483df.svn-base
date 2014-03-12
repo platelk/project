@@ -1,0 +1,22 @@
+## 42SH 2011 - 2012
+## FEDORA DUMP
+
+setenv EDITOR "emacs"
+setenv PAGER "less"
+setenv PATH "/usr/sbin:/usr/bin:/sbin:/bin:/usr/school/sbin:/usr/school/bin:/usr/netsoul/sbin:/usr/netsoul/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin"
+setenv TEST "Super variable qui ne sers pas à grand chose"
+
+set autolist
+set complete
+set prompt="-\033[1;31m%t\033[0m- [\033[1;32m%~\033[0m] >> "
+set history=100
+set savehist=3
+
+alias ne 'emacs -nw'
+alias ll 'ls -l'
+alias la 'ls -la'
+alias ls 'ls --color'
+alias grep 'grep --color'
+alias rm 'rm -i'
+
+## EOF

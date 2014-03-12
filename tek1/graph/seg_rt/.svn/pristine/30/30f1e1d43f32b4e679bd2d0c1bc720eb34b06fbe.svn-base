@@ -1,0 +1,53 @@
+/*
+** import_bmp.c for Import BMP in /home/guiho_r/tek1/rtv1/src
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Sat Mar 31 23:56:26 2012 ronan guiho
+** Last update Sun Apr  1 00:49:05 2012 ronan guiho
+*/
+
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+#include "rtv1.h"
+
+int		open_filebmp(char *name)
+{
+  int		fd;
+
+  if ((fd = open(name, O_RDONLY)) == -1)
+    return (-1);
+  return (fd);
+}
+
+int		importbmp(t_image *img, char *name)
+{
+  int		fd;
+  int		x;
+  int		y;
+  int		i;
+  char		buffer[1024];
+
+  if ((fd = open_filebmp(name)) == -1)
+    return (EXIT_FAILURE);
+  read(fd, &buffer, 38);
+  y = img->height_img + 1;
+  while (--y > 0)
+    {
+      x = img->width_img + 1;
+      while (--x > 0)
+	{
+	  i = (y * img->sizeline) + (x * (img->bpp / 8));
+	  read(fd, &buffer, 4);
+	  img->data[i] = buffer[0];
+	  img->data[i + 1] = buffer[1];
+	  img->data[i + 2] = buffer[2];
+	}
+    }
+  return (EXIT_SUCCESS);
+}

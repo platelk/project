@@ -1,0 +1,26 @@
+<window y="500" x="500">
+  <background>./texture/ciel.xmp</background>
+  <scene name="Basic" antialiasing="0">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="50"/>
+	<rotation X="-25" Y="0" Z="0"/>
+	<fov>250</fov>
+      </camera>
+    </cameras>
+    <object>
+      <moebius type="normal">
+	<location X="100" Y="0" Z="0"/>
+	<color>FF0000</color>
+	<size A="50" B="50" C="50"/>
+      </moebius>
+    </object>
+    <lights>
+      <light type="diffuse">
+	<location X="0" Y="0" Z="1000"/>
+	<intensity>0.8</intensity>
+	<color>FFFFFF</color>
+      </light>
+    </lights>
+  </scene>
+</window>

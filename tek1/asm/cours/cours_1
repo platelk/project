@@ -1,0 +1,81 @@
+Gdb:
+
+Gdb permet d'afficher l'etat des registres avant l'execution du programme
+->gdb -q ./a.out
+
+->set dis intel
+permet d'afficher les instructions assembleur au format intel
+
+
+->list
+	affiche les lignes suivante du code
+
+->disassemble <func>
+
+	affiche le code ASM de la fonction
+
+-> info register <reg> (i r <reg>)
+   	affiche le contenu du registre demander
+
+->x/(o,x,u,t) ($var,addr)
+
+	      affiche le contenu de la memoire a l'addr indique sur 4octet
+	      pour plus faire x/N... N etant de nombre de segment que l'on veut examiner
+
+
+	      de base 4octect (1 mot)
+	      pour changer rajouter des indiquateur, b = 1, h = 2, w = 4, g = 8
+
+	      x/i pour afficher sous forme d'instruction
+
+	      x/s affiche directement une chaine
+	      x/Nc(o,x..) affiche la valeur en memoire et ca correspondance ASCII
+
+->nexti
+		avance a l'instruction suivant
+
+->break main
+	== place un point d'arret sur la fonction main, 
+->run
+	== lance le programme
+
+->bt
+	montre la pile	
+
+objdump:
+
+Objdump permet de voir les instructions assembleur.
+l'option -M permet de definir la synthaxe asm
+
+->objdump -D ./a.out == synthaxe AT&T
+->objdump -M intel -D ./a.out == synthaxe intel
+
+
+asm:
+
+Aux format intel:
+    operation <destination>, <source>
+
+
+REGISTRE:
+
+- les generaux :
+
+EAX == Accumulateur
+ECX == Compteur
+EDX == Donnees
+EBX == Base
+
+principalement des variables temporaire
+
+
+ESP == Pointeur de pile
+EBP == Pointeur de base
+ESI == Index de Source
+EDI == Index de Destination
+
+EIP == Pointeur d'instruction
+->pointeur sur l'instruction en cours
+
+
+ELFLAGS == employer pour les comparaisons et les segments de memoire

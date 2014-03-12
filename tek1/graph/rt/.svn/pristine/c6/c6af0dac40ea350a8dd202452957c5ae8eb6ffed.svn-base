@@ -1,0 +1,88 @@
+/*
+** import_bmp.c for Import BMP in /home/guiho_r/tek1/rtv1/src
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Sat Mar 31 23:56:26 2012 ronan guiho
+** Last update Sat Jun  2 07:18:02 2012 jordan vanwalleghem
+*/
+
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+#include "image.h"
+#include "mlx.h"
+#include "my.h"
+#include "header.h"
+
+t_image		*import_imagebmp(void *mlx_ptr, int x, int y)
+{
+  t_image	*image;
+
+  if ((image = malloc(sizeof(*image))) == NULL)
+    {
+      my_puterror("[*] Raytracer: Could not alloc.\n");
+      return (NULL);
+    }
+  if ((image->ptr = mlx_new_image(mlx_ptr, x, y)) == NULL)
+    {
+      my_puterror("[*] Raytracer: Could not create image.\n");
+      return (NULL);
+    }
+  image->data = mlx_get_data_addr(image->ptr, &image->bpp,
+				  &image->sizeline, &image->endian);
+  image->size[WIDTH] = x;
+  image->size[HEIGHT] = y;
+  return (image);
+}
+int		import_openbmp(char *name, int *width, int *height, char *buffer)
+{
+  int		fd;
+
+  if ((fd = open(name, O_RDONLY)) == -1)
+    return (-1);
+  if (read(fd, buffer, 18) != 18)
+    return (-1);
+  if (read(fd, width, 4) != 4)
+    return (-1);
+  if (read(fd, height, 4) != 4)
+    return (-1);
+  if (read(fd, buffer, 28) != 28)
+    return (-1);
+  return (fd);
+}
+
+t_image		*import_bmp(void *mlx_ptr, char *path)
+{
+  int		x;
+  int		y;
+  int		i;
+  int		fd;
+  t_image	*img;
+  int		size[2];
+  char		buffer[1024];
+
+  if ((fd = import_openbmp(path, &size[WIDTH], &size[HEIGHT], buffer)) == -1)
+    return (NULL);
+  if ((img = import_imagebmp(mlx_ptr, size[WIDTH], size[HEIGHT])) == NULL)
+    return (NULL);
+  y = size[HEIGHT] + 1;
+  while (--y > 0)
+    {
+      x = -1;
+      while (++x < size[WIDTH])
+	{
+	  i = (y * img->sizeline) + (x * (img->bpp / 8));
+	  if (read(fd, buffer, 4) < 0)
+	    return (NULL);
+	  img->data[i] = buffer[0];
+	  img->data[i + 1] = buffer[1];
+	  img->data[i + 2] = buffer[2];
+	}
+    }
+  return (img);
+}

@@ -1,0 +1,61 @@
+<window Y="800" X="1400">
+  <scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="-1000" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere TYPE="normal">
+	<location X="0" Y="-100" Z="0"/>
+	<rotation X="0" Y="90" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.2"/>
+	<texture FREQUENCE="1.0">texture/bonbon.jpg</texture>
+	<radius>100</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="700" Y="-100" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0"/>
+	<texture FREQUENCE="10.0">texture/marbre.jpg</texture>
+	<radius>300</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <tore TYPE="normal">
+	<location X="0" Y="0" Z="-40"/>
+	<rotation X="90" Y="40" Z="160"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="60.0">texture/rayure.jpg</texture>
+	<radius MIN="20" MAX="100"/>
+	<color>594429</color>
+      </tore>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.5"/>
+	<texture FREQUENCE="1.0">texture/marbre.jpg</texture>
+	<color>FFFFFF</color>
+      </plan>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="-200" Y="400" Z="500"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="-200" Y="-400" Z="500"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="-1000" Y="-200" Z="400"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

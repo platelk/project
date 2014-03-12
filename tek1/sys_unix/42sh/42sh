@@ -1,0 +1,337 @@
+database.bdd:char	*subs_nbr(subs_nbr70,1426
+database.bdd:char	*replace_str(replace_str42,599
+database.bdd:void	sh_free(21,425
+database.bdd:static void	init_global(32,642
+database.bdd:t_bool	regroup_red(19,426
+database.bdd:int		my_rev_node(42,677
+database.bdd:t_bool	is_a_pv(27,542
+database.bdd:edit_allstore(22,427
+database.bdd:edit_rightstore(42,1003
+database.bdd:int	edit_listlen(84,1642
+database.bdd:static char	*default_prompt(default_prompt42,906
+database.bdd:edit_default(22,422
+database.bdd:edit_leftmove(22,426
+database.bdd:edit_swap(22,426
+database.bdd:void	ultim_func(27,542
+database.bdd:static void	aff_rch(21,424
+database.bdd:edit_uphistory(22,429
+database.bdd:static int	param_history(19,423
+include/reconstruct_token.h:** reconstruct_token.h for reconstruct_token in /home/ozouf_h//42sh/srcs/parser/tokenizer
+include/sig.h:** sig.h for sig in /home/vink/projet/sys_unix/42sh/src
+include/history_showlist.h:** history_showlist.h for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+include/error.h:** error.h for error7 in /home/ozouf_h//42sh/src/parsing
+include/error.h:** Last update Fri May 18 18:42:53 2012 kevin platel
+include/regroup_token.h:** regroup_token.h for regroup_token in /home/ozouf_h//42sh/srcs/parser/tokenizer
+include/config.h:** config.h for 42sh in /home/leprov_a//depot/42sh/include
+include/my.h:** my.h for 42sh in /home/leprov_a//depot/42sh/src/config/lib
+include/builtin.h:** builtin.h for 42sh in /home/vink/projet/sys_unix/42sh/src/builtin/src
+include/env.h:** env.h for env in /home/vink/projet/sys_unix/42sh/include
+include/check_bloc_exec_ext.h:** check_bloc_exec_ext.h for check_bloc_exec_ext in /home/ozouf_h//42sh/src/parsing
+include/execute.h:** execute.h for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/unit_test
+include/my_rev_list.h:** my_rev_list.h for my_rev_list in /home/ozouf_h//42sh_local/srcs/parser/tokenizer
+include/node.h:** node.h for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+include/check_grammar_exec.h:** check_grammar_exec.h for check_grammar_exec in /home/ozouf_h//42sh/src/parsing
+include/check_cmd.h:** check_cmd.h for check_cmd in /home/ozouf_h//42sh/src/parsing
+include/token.h.edited:** token.h for token in /home/ozouf_h//42sh/include
+include/history_create_list.h:** history_create_list.h for 42sh in /home/phalip_z//42sh/src/builtin/src/history
+include/xsys.h:** xsys.h for xsys in /home/leprov_a//depot/42sh/src/config/lib
+include/check_bloc_exec.h:** check_bloc_exec.h for check_bloc_exec in /home/ozouf_h//42sh/src/parsing
+include/builtin_history_create_param.h:** builtin_history_param.h for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+include/builtin_history_create_param.h:** Last update Tue May  1 11:42:14 2012 zoe phalippou
+include/global.h:** global.h for 42sh in /home/leprov_a//depot/42sh/include
+include/alias.h:** alias.h for 42sh in /home/leprov_a//depot/42sh/src/config/inc
+include/alias.h:** Last update Sat May 19 14:33:42 2012 alexis leprovost
+include/puterror.h:** puterror.h for puterror in /home/ozouf_h//42sh/srcs/parser/tokenizer
+include/retoken_redir_ext.h:** retoken_redir_ext.h for retokrn in /home/ozouf_h//42sh/src/parsing
+include/aff_tree.h:** aff_tree.h for aff_tree in /home/ozouf_h//42sh/src/parsing
+include/check_expression.h:** check_expression.h for check_expression in /home/ozouf_h//42sh/src/parsing
+include/builtin_history_param_firstpart.h:** builtin_history_param.h for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+include/history_create_ptr_func.h:** history_create_ptr_func.h for history in /home/vink/projet/sys_unix/42sh
+include/check_pipe.h:** check_pipe.h for check_pipe in /home/ozouf_h//42sh/src/parsing
+include/token_funct.h:** token_funct.h for token_funct in /home/ozouf_h//42sh/srcs/parser/tokenizer
+include/globing.h:** globing.h for globing in /home/vink/projet/sys_unix/42sh/src/globing/globing
+include/utils.h:** utils.h for utils in /home/vink/projet/sys_unix/42sh/src/globing
+include/child.h:** child.h for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+include/tree.h:** tree.h for tree in /home/ozouf_h//42sh/src/parsing
+include/history_substitution.h:** history_substitution.h for hsitory in /home/vink/projet/sys_unix/42sh
+include/edit.h:** edit.h for 42sh in /home/leprov_a//depot/42sh/src/edit/inc
+include/history_subs_func.h:** subs_func_history.h for 42sh in /home/phalip_z//exos/projets/42sh
+include/concat_token.h:** concat_token.h for concat_token in /home/ozouf_h//42sh/srcs/parser/tokenizer
+include/builtin_history_param_secondpart.h:** builtin_history_param.h for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+include/sh.h:** sh.h for sh in /home/vink/projet/sys_unix/42sh
+include/add_child.h:** add_child.h for add_child in /home/ozouf_h//42sh/src/parsing
+include/my_rev_node.h:** my_rev_node.h for my_rev_node in /home/ozouf_h//42sh/src/parsing
+include/pipe.h:** pipe.h for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/pipe
+include/check_log.h:** check_log.h for check_log in /home/ozouf_h//42sh/src/parsing
+include/history_putlist.h:** put_history.h for 42sh in /home/phalip_z//exos/projets/42sh
+include/token.h:** token.h for token in /home/ozouf_h//42sh/include
+include/free_child.h:** free_child.h for free_child in /home/ozouf_h//42sh/src/parsing
+include/t_history.h:** t_history.h for 42sh in /home/phalip_z//exos/projets/42sh
+mouli_42sh.py:                 path = "./42sh",
+mouli_42sh.py:    print str("Mouli 42sh version " + version)
+mouli_42sh.py:    print "usage : ./42sh_test.py [option]"
+mouli_42sh.py:shell="./42sh"
+src/edit/src/edit_list.c:** edit_list.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_env.c:** edit_env.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_keyword.c:** edit_keyword.c for 42sh in /home/leprov_a//depot/42sh/src/edit
+src/edit/src/edit_strstr.c:** edit_strstr.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_move.c:** edit_move.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_func.c:** edit_func.c for 42sh in /home/leprov_a//depot/42sh/src/edit
+src/edit/src/termcap_mode.c:** termcap_canon.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/termcap_display.c:** termcap_display.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_swap.c:** edit_swap.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_history.c:** edit_history.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_clear.c:** edit_clear.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_cmd.c:** edit_cmd.c for 42sh in /home/vink/projet/sys_unix/42sh/src/edit/src
+src/edit/src/termcap_init.c:** termcap_init.c for 42sh in /home/leprov_a//depot/42sh/src/termcap/src
+src/edit/src/edit_prompt.c:** edit_prompt.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_prompt.c:** Started on  Mon Apr 16 17:42:41 2012 alexis leprovost
+src/edit/src/edit_utils.c:** edit_utils.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_utils.c:** Started on  Thu May 17 11:42:40 2012 alexis leprovost
+src/edit/src/termcap_put.c:** termcap_put.c for 42sh in /home/leprov_a//depot/42sh/src/edit
+src/edit/src/termcap_delete.c:** termcap_clear.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/termcap_raw.c:** termcap_canon.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_globing.c:** edit_globing.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/termcap_action.c:** termcap_move.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/src/edit_store.c:** edit_store.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+src/edit/Makefile:## Makefile for 42sh in /home/leprov_a//depot/42sh/src/config
+src/env/src/env.c:** env.c for env in /home/vink/projet/sys_unix/42sh/src/env
+src/env/src/free_env.c:** free_env.c for env in /home/vink/projet/sys_unix/42sh/src/env/src
+src/env/src/search_env.c:** search_env.c for env in /home/vink/projet/sys_unix/42sh/src/globing
+src/env/src/export_env.c:** export_env.c for env in /home/vink/projet/sys_unix/42sh/src/env/src
+src/sh_free.c:** sh_free.c for free in /home/vink/projet/sys_unix/42sh/src/env/src
+src/globing/globing/glob_select_flag.c:** glob_select_flag.c for glob in /home/vink/projet/sys_unix/42sh/src/globing/globing
+src/globing/globing/glob_hist.c:** glob_hist.c for glob_hist in /home/vink/projet/sys_unix/42sh/src
+src/globing/globing/glob_list.c:** glob_list.c for glob in /home/vink/projet/sys_unix/42sh/src/globing/globing
+src/globing/globing/globing.c:** globing.c for globing in /home/vink/projet/sys_unix/42sh/src/globing/globing
+src/globing/globing/globing.c:** Last update Tue May 22 10:11:42 2012 kevin platel
+src/globing/globing/glob_cmd.c:** glob_cmd.c for glob in /home/vink/projet/sys_unix/42sh/src/globing/globing/dir
+src/globing/globing/glob_gest_tok_list.c:** glob_gest_tok_list.c for 42s in /home/vink/projet/sys_unix/42sh
+src/globing/globing/glob_match.c:** glob_match.c for glob in /home/vink/projet/sys_unix/42sh/src/globing/globing
+src/globing/globing/glob_back_quote.c:** glob_back_quote.c for back_quotes in /home/vink/projet/sys_unix/42sh/src/globing/globing
+src/globing/globing/glob_back_quote.c:      fprintf(stderr, "42sh: Unable to create a new process.\n");
+src/globing/globing/utils.c:** utils.c for utils in /home/vink/projet/sys_unix/42sh/src/globing
+src/globing/globing/glob_alias.c:** glob_alias.c for 42sh in /home/vink/projet/sys_unix/42sh/src/globing/globing
+src/globing/glob_env/globing_env.c:** globing_env.c for globing_env in /home/vink/projet/sys_unix/42sh/src/globing
+src/parsing/check_log.c:** check_log.c for check_log in /home/ozouf_h//42sh/src/parsing
+src/parsing/add_child.c:** add_child.c for add_child in /home/ozouf_h//42sh/src/parsing
+src/parsing/retoken_redir.c:** retoken_redir.c for retoken_redir in /home/ozouf_h//42sh/srcs/parser/tokenizer
+src/parsing/free_child.c:** free_child.c for free_child in /home/ozouf_h//42sh/src/parsing
+src/parsing/token_funct_mult.c:** token_funct_mult.c for token_funct_mult in /home/ozouf_h//42sh/srcs/parser/tokenizer
+src/parsing/reconstruct_token.c:** reconstruct_token.c for reconstruct_token in /home/ozouf_h//42sh/srcs/parser/tokenizer
+src/parsing/my_rev_list.c:** my_rev_list.c for my_rev_list in /home/ozouf_h//42sh_local/srcs/parser/tokenizer
+src/parsing/check_expression.c:** check_expression.c for check_expression in /home/ozouf_h//42sh/src/parsing
+src/parsing/token_funct.c:** token_funct.c for token_funct.h in /home/ozouf_h//42sh/include
+src/parsing/token_funct_word.c:** token_funct_word.c for token_funct_word in /home/ozouf_h//42sh/srcs/parser/tokenizer
+src/parsing/retoken_redir_par.c:** retoken_redir_par.c for retoken_red_par in /home/ozouf_h//42sh/src/parsing
+src/parsing/puterror.c:** puterror.c for puterror in /home/ozouf_h//42sh/srcs/parser/tokenizer
+src/parsing/multired.c:** multired.c for multi in /home/ozouf_h//42sh/src/parsing
+src/parsing/check_grammar_exec.c:** check_grammar_exec.c for check_grammar_exec in /home/ozouf_h//42sh/src/parsing
+src/parsing/check_bloc_exec.c:** check_bloc_exec.c for check_bloc_exec in /home/ozouf_h//42sh/src/parsing
+src/parsing/retoken_redir_ext.c:** retoken_redir_ext.c for r_t_r_e in /home/ozouf_h//42sh/src/parsing
+src/parsing/tokenizer.c:** tokenizer.c for tokenizer in /home/ozouf_h//42sh/include
+src/parsing/tokenizer.c:** Started on  Mon Apr  9 15:42:01 2012 harold ozouf
+src/parsing/check_cmd.c:** check_cmd.c for check_cmd in /home/ozouf_h//42sh/src/parsing
+src/parsing/check_bloc_exec_ext.c:** check_bloc_exec_ext.c for c_b_e_e in /home/ozouf_h//42sh/src/parsing
+src/parsing/concat_token.c:** concat_token.c for concat_token in /home/ozouf_h//42sh/srcs/parser/tokenizer
+src/parsing/my_rev_node.c:** my_rev_node.c for my_rev_node7 in /home/ozouf_h//42sh/src/parsing
+src/parsing/transform.c:** transform.c for transform.c in /home/ozouf_h//42sh
+src/parsing/transform.c:** Started on  Wed May 16 18:25:42 2012 harold ozouf
+src/parsing/check_pipe.c:** check_pipe.c for check_pipe in /home/ozouf_h//42sh/src/parsing
+src/cscope.out:cscope 15 $HOME/projet/tek1/sys_unix/42sh/src               0000249074
+src/cscope.out:42 
+src/cscope.out:42 ià(
+src/cscope.out:42 
+src/cscope.out:142 
+src/cscope.out:242 cÚ¡ 
+src/cscope.out:142 
+src/cscope.out:242 
+src/cscope.out:420 
+src/cscope.out:425 
+src/cscope.out:426 cÚ¡ *
+src/cscope.out:642 #ifdeà
+src/cscope.out:42 
+src/cscope.out:142 
+src/cscope.out:420 
+src/cscope.out:421 
+src/cscope.out:422 
+src/cscope.out:423 
+src/cscope.out:427 
+src/cscope.out:428 *
+src/cscope.out:429 
+src/cscope.out:742 #iâdeà
+src/cscope.out:842 
+src/cscope.out:42 
+src/cscope.out:142 
+src/cscope.out:142 
+src/cscope.out:142 
+src/cscope.out:242 
+src/cscope.out:42 
+src/cscope.out:42 #ià!
+src/cscope.out:42 
+src/cscope.out:142 && !
+src/cscope.out:42 
+src/cscope.out:142 
+src/cscope.out:242 
+src/cscope.out:342 
+src/cscope.out:42 ià(
+src/cscope.out:42 #ià
+src/cscope.out:142 
+src/cscope.out:142 #ià
+src/cscope.out:42 
+src/cscope.out:42 
+src/cscope.out:142 
+src/cscope.out:420 
+src/cscope.out:421 (
+src/cscope.out:422 ? 
+src/cscope.out:423 : (è(*(
+src/cscope.out:425 #ià
+src/cscope.out:426 
+src/cscope.out:427 (
+src/cscope.out:428 || ((
+src/cscope.out:429 >ð(
+src/cscope.out:442 
+src/cscope.out:242 #iâdeà
+src/cscope.out:242 } 
+src/cscope.out:142 
+src/cscope.out:342 
+src/cscope.out:426 
+src/cscope.out:427 
+src/cscope.out:42 
+src/cscope.out:42 ià((
+src/cscope.out:42 
+src/cscope.out:42 
+src/cscope.out:142 #ifdeà
+src/cscope.out:42 #ià
+src/cscope.out:142 
+src/cscope.out:42 
+src/cscope.out:42 #ià
+src/cscope.out:42 #ià
+src/cscope.out:142 | (((
+src/cscope.out:142 (
+src/cscope.out:42 } 0)
+src/cscope.out:42 
+src/cscope.out:42 
+src/cscope.out:142 
+src/cscope.out:242 #ifdeà
+src/cscope.out:420 #ifdef 
+src/cscope.out:423 
+src/cscope.out:424 cÚ¡ **
+src/cscope.out:425 
+src/cscope.out:429 
+src/cscope.out:642 
+src/cscope.out:42 
+src/cscope.out:42 ià(
+src/cscope.out:242 (
+src/cscope.out:342 
+src/cscope.out:420  
+src/cscope.out:421 
+src/cscope.out:423 ià((
+src/cscope.out:424  
+src/cscope.out:425 
+src/cscope.out:427  
+src/cscope.out:428 
+src/cscope.out:542 
+src/cscope.out:142 0, 0, 0, 0 } }
+src/cscope.out:420 
+src/cscope.out:421 cÚ¡ 
+src/cscope.out:422 
+src/cscope.out:425 
+src/cscope.out:426 *
+src/cscope.out:427 
+src/cscope.out:428 
+src/cscope.out:442 
+src/cscope.out:542 þas 
+src/cscope.out:642 (è
+src/cscope.out:742 
+src/cscope.out:842 
+src/cscope.out:42 
+src/cscope.out:42 
+src/cscope.out:142 
+src/config/src/config_globing.c:** config_globing.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_prompt.c:** config_prompt.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_parser.c:** config_parser.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_keyword.c:** config_keyword.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_free.c:** config_free.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_func.c:** config_func.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_env.c:** config_env.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_alias.c:** config_alias.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/src/config_history.c:** config_history.c for 42sh in /home/leprov_a//depot/42sh/src/config/src
+src/config/Makefile:## Makefile for 42sh in /home/leprov_a//depot/42sh/src/config
+src/config/Makefile:## Last update Wed Apr 18 17:42:48 2012 alexis leprovost
+src/Project.ede:;; Object 42sh
+src/Project.ede:(ede-proj-project "42sh"
+src/Project.ede:  :name "42sh"
+src/Project.ede:   (ede-proj-target-makefile-program "42sh"
+src/Project.ede:    :name "42sh"
+src/signal.c:** signial.c for signal in /home/vink/projet/sys_unix/42sh/src
+src/stack_exec/src/exec_course_branch_other.c:** exec_course_branch_other.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_count_child.c:** exec_count_child.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_count_child.c:** Last update Mon Apr 23 17:42:33 2012 harold ozouf
+src/stack_exec/src/exec_course_branch_execute.c:** exec_course_branch_execute.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_signal.c:** exec_signal.c for exec_stack in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_select_execution.c:** exec_select_execution.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_check_slash.c:** exec_check_slash.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_check_slash.c:** Last update Mon Apr 23 17:42:03 2012 harold ozouf
+src/stack_exec/src/exec_bultin.c:** exec_bultin.c for exec_stack in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_write_fd.c:** exec_write_fd.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/redirection
+src/stack_exec/src/exec_course_branch.c:** exec_course_tree.c for exec_stack in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_command_pathvar.c:** exec_command_pathvar.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_command.c:** exec_command.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_course_tree.c:** exec_course_tree.c for exec_stack in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/redirection/exec_redirection.c:** exec_redirection.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/redirection
+src/stack_exec/src/redirection/exec_redirection.c:      fprintf(stderr, "42sh: Permission denied.\n");
+src/stack_exec/src/redirection/exec_redirection_double_left.c:** exec_redirection_double_left.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/redirection
+src/stack_exec/src/redirection/exec_redirection_double_left.c:      fprintf(stderr, "42sh: Unable to create a new process.\n");
+src/stack_exec/src/pipe/exec_pipe.c:** exec_pipe.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/pipe
+src/stack_exec/src/pipe/exec_pipe_cascada_father.c:** exec_pipe.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/pipe
+src/stack_exec/src/pipe/exec_pipe_mono.c:** exec_pipe_mono.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/pipe/exec_pipe_mono.c:      fprintf(stderr, "42sh: Unable to create a new process.\n");
+src/stack_exec/src/pipe/exec_pipe_current.c:** exec_pipe_current.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/pipe
+src/stack_exec/src/pipe/exec_pipe_count.c:** exec_pipe_count.c for exec_stack in /home/guiho_r/tek1/42sh/src/stack_exec/src/pipe
+src/stack_exec/src/exec_convert.c:** exec_convert.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/stack_exec/src/exec_create_tabenv_var.c:** exec_create_tabenv_var.c for stack_exec in /home/guiho_r/tek1/42sh/src/env/src
+src/stack_exec/Makefile:## Makefile for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec
+src/my/src/xmalloc.c:** xmalloc.c for xsys in /home/leprov_a//depot/42sh/src/config/lib
+src/my/src/my_revstr.c:** my_revstr.c for my in /home/leprov_a//depot/42sh/src/my/src
+src/my/src/malloc_tabint.c:** malloc_tabint.c for libmy in /home/guiho_r/tek1/42sh/src/stack_exec/src/pipe
+src/my/src/my_strmcat.c:** my_strmcat.c for test in /home/vink/projet/sys_unix/42sh
+src/my/src/xtime.c:** xtime.c for xsys in /home/leprov_a//depot/42sh/src/edit/lib
+src/my/src/strsearch.c:** strsearch.c for strsearch in /home/guiho_r/tek1/42sh/src/stack_exec/src
+src/my/src/xopen.c:** xopen.c for my in /home/leprov_a//depot/42sh/src/config/lib
+src/my/src/my_clstr.c:** my_clstr.c for my in /home/leprov_a//depot/42sh/src/my/src
+src/my/src/is_singlestr.c:** is_singlestr.c for my in /home/leprov_a//depot/42sh/src/my/src
+src/my/Makefile:## Makefile for my in /home/leprov_a//depot/42sh/src/config/lib
+src/main.c:** main.c for 42sh in /home/vink/projet/sys_unix/42sh/src
+src/parsing_func.c:** parsing_func.c for parsing in /home/vink/projet/sys_unix/42sh/src
+src/history/src/history_putlist.c:** put_history.c for 42sh in /home/phalip_z//exos/projets/42sh
+src/history/src/history_subs_func_dollar.c:** history_subs_func_dollar.c for 42sh in /home/phalip_z//42sh
+src/history/src/history_freelist.c:** history_freelist.c for 42sh in /home/phalip_z//42sh
+src/history/src/history_create_list.c:** history_create_list.c for 42sh in /home/phalip_z//42sh/src/history/src
+src/history/src/history_create_ptr_func.c:** history_create_ptr_func.c for hist in /home/vink/projet/sys_unix/42sh/src
+src/history/src/history_substitution.c:** history_substitution.c for history in /home/vink/projet/sys_unix/42sh/src
+src/history/src/history_subs_func.c:** subs_func_history.c for 42sh in /home/phalip_z//exos/projets/42sh
+src/builtin/src/cd/cd.c:** cd.c for cd in /home/vink/projet/sys_unix/42sh/src/builtin/cd
+src/builtin/src/builtin_ptr_func.c:** builtin_ptr_func.c for builtin in /home/vink/projet/sys_unix/42sh/src
+src/builtin/src/echo/echo.c:** echo.c for echo in /home/vink/projet/sys_unix/42sh/src/builtin/src/echo
+src/builtin/src/setenv/builtin_setenv.c:** builtin_setenv.c for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_setenv
+src/builtin/src/unsetenv/builtin_unsetenv.c:** builtin_unsetenv.c for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_unsetenv
+src/builtin/src/is_builtin.c:** is_builtin.c for is_builtin in /home/vink/projet/sys_unix/42sh/src/builtin/src
+src/builtin/src/alias/builtin_alias.c:** builtin_alias.c for 42sh in /home/leprov_a//depot/42sh/src/builtin/src/alias
+src/builtin/src/exit.c:** exit.c for exit in /home/vink/projet/sys_unix/42sh
+src/builtin/src/history/builtin_history.c:** builtin_history.c for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+src/builtin/src/history/history_showlist.c:** history_showlist.c for history in /home/vink/projet/sys_unix/42sh/src
+src/builtin/src/history/builtin_history_param_secondpart.c:** builtin_history_param.c for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+src/builtin/src/history/builtin_history_param_firstpart.c:** builtin_history_param.c for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+src/builtin/src/history/builtin_history_create_param.c:** builtin_history_create_param.c for 42sh in /home/phalip_z//exos/projets/42sh/42sh_builtin_history
+tags:CTRLF_EDIT_STRING	./include/edit.h	42;"	d
+tags:MAX_OPTION_NUMBER	./include/config.h	42;"	d
+test:42sh
+test:mouli_42sh.py
+test.py:        9 : "exit 42",
+test.py:        14 : "( grep -r 42 * > 42sh ) | ( V > I > V > E > L > E > F > L > A > N ) << POWA",
+test.py:	9 : 'echo 42sh',
+test.py:	31 : 'cat /etc/passwd | grep 42 | wc -l',
+test.py:	32 : 'ls -lRa ../../ | ls | ls | ls | tr -s 42 | ls | ls | ls | wc -l',
+test.py:	42 : 'ls /root && echo yes || echo no && echo test && echo coucou',
+Binary file test.pyc matches

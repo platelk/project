@@ -1,0 +1,92 @@
+<window Y="800" X="800" STEREOSCOPIE="-50">
+  <scene NAME="Basic" ANTIALIASING="-1" WIZZARD="0.0">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      <camera>
+    </cameras>
+    <object>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.0"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.0"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="100" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="100" REFLECTION="0.0"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="-100" Z="0"/>
+	<rotation X="-90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.0"/>
+	<color>FFFFFF</color>
+      </plan>
+      <sphere TYPE="normal">
+	<location X="600" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="1000" REFLECTION="0.2"/>
+	<color>FFFFFF</color>
+	<radius>25</radius>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="300" Y="-50" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" PHONG="100" REFLECTION="0.0"/>
+	<color>FF0000</color>
+	<radius>25</radius>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="700" Y="30" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" PHONG="1000" REFLECTION="0.4"/>
+	<color>FFFFFF</color>
+	<radius>10</radius>
+      </cylindre>
+      <sphere TYPE="normal">
+	<location X="500" Y="20" Z="70"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="100" REFLECTION="0.0" TRANSPARENCY="0.04"/>
+	<color>00FFFF</color>
+	<radius>25</radius>
+      </sphere>
+      <sphere TYPE="normal">
+	<location X="700" Y="-50" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.7" PHONG="1000"/>
+	<color>FFFF00</color>
+	<radius>15</radius>
+      </sphere>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="600" Y="60" Z="40"/>
+	<color>77AA00</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="500" Y="0" Z="50"/>
+	<color>FFAA77</color>
+	<intensity>0.4</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="0" Y="0" Z="50"/>
+	<color>FFAA77</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light TYPE="ambient">
+	<intensity>0.125</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

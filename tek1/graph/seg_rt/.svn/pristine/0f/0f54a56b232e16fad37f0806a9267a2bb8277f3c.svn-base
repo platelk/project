@@ -1,0 +1,72 @@
+/*
+** obj_init_image.c for obj in /home/vink/projet/graph/rt/src/obj
+**
+** Made by kevin platel
+** Login   <vink@epitech.net>
+**
+** Started on  Wed May 16 08:12:49 2012 kevin platel
+** Last update Sun May 27 12:41:59 2012 ronan guiho
+*/
+
+#include	<stdlib.h>
+#include	<stdio.h>
+#include	<unistd.h>
+
+#include	"global.h"
+#include	"init.h"
+#include	"raytracer.h"
+#include	"xml_chr.h"
+#include	"xml_tree.h"
+#include	"object.h"
+#include	"my.h"
+#include	"obj_create.h"
+#include	"obj_print.h"
+#include	"perlin_noise.h"
+
+int	obj_get_perlin_type(t_xtree *tree)
+{
+  char	*tmp;
+
+  if (tree)
+    {
+      tmp = xml_find_attr(tree->attr, "TYPE");
+      if (my_strcmp(tmp, "WOOD") == 0)
+	return (WOOD);
+      if (my_strcmp(tmp, "MARBEL") == 0)
+	return (MARBLE);
+      return (NONE);
+    }
+  return (NONE);
+}
+
+t_object	*obj_init_image(t_xtree *tree, t_object *new, void *mlx_ptr)
+{
+  t_xtree	*tmp;
+
+  tmp = xml_find_in_tree(tree, STRING_COL);
+  tmp != NULL ? (new->color = init_color(tmp->content)) : (new->color = NULL);
+  tmp = xml_find_in_tree(tree, STRING_TEX);
+  tmp != NULL ? (new->image = init_image(mlx_ptr, tmp->content, 0, 0))
+    : (new->image = NULL);
+  tmp = xml_find_in_tree(tree, STRING_BUMP);
+  tmp != NULL ? (new->image_bump = init_image(mlx_ptr, tmp->content, 0, 0))
+    : (new->image_bump = NULL);
+  tmp = xml_find_in_tree(tree, STRING_PERL);
+  if (tmp != NULL)
+    {
+      new->perlin = malloc(sizeof(*(new->perlin)));
+      if (new->perlin != NULL)
+	{
+	  new->perlin->effect = obj_get_perlin_type(tmp);
+	  new->perlin->persistance = 0.7;
+	  new->perlin->nbr_octave = 8;
+	  new->perlin->ceil = 0;
+	  new->perlin->begin = init_color(xml_find_attr(tmp->attr, "COLOR1"));
+	  new->perlin->end = init_color(xml_find_attr(tmp->attr, "COLOR2"));
+	  create_perlin_noise(new->perlin);
+	}
+    }
+  else
+    new->perlin = NULL;
+  return (new);
+}

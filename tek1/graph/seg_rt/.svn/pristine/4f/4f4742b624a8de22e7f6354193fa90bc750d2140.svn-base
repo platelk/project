@@ -1,0 +1,41 @@
+/*
+** modif_normal.c for raytracer in /home/leprov_a//depot/rt/src/utils
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Fri May 25 19:59:46 2012 alexis leprovost
+** Last update Fri May 25 20:19:00 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"global.h"
+#include	"detail.h"
+#include	"object.h"
+#include	"init.h"
+
+int	modif_normal(t_detail *detail, double *normal)
+{
+  t_camera	camera;
+  t_detail	tmp;
+
+  if (init_detail(&tmp))
+    return (EXIT_FAILURE);
+  camera.position[X] = detail->position[X];
+  camera.position[Y] = detail->position[Y];
+  camera.position[Z] = detail->position[Z];
+  camera.position[X] = camera.position[X] < 0.000 ? -1.000 : 1.000;
+  camera.position[Y] = camera.position[Y] < 0.000 ? -1.000 : 1.000;
+  camera.position[Z] = camera.position[Z] < 0.000 ? -1.000 : 1.000;
+  detail->object->inter(&camera, detail->object, &tmp, normal);
+  if (tmp.object && tmp.object->type == PLAN)
+    printf("%f\n", tmp.k);
+  if ((tmp.k >= 0.000 && tmp.k <= 0.1))
+    {
+      normal[X] *= (-1.000);
+      normal[Y] *= (-1.000);
+      normal[Z] *= (-1.000);
+    }
+  return (EXIT_SUCCESS);
+}

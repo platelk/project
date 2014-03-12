@@ -1,0 +1,58 @@
+/*
+** main.c for main in /home/ozouf_h//rush-troll-oz-pl/trunk/Domilkins
+** 
+** Made by harold ozouf
+** Login   <ozouf_h@epitech.net>
+** 
+** Started on  Fri Jun  8 16:15:23 2012 harold ozouf
+** Last update Fri Jun  8 17:00:13 2012 harold ozouf
+*/
+
+#include	<string.h>
+#include	<stdlib.h>
+#include	<stdio.h>
+#include	<unistd.h>
+
+void	attack_gate(int fd, char *magic, char *login, char *ville, char *num_gate)
+{
+  write(fd, magic, strlen(magic));
+  write(fd, ":", 1);
+  write(fd, ville, strlen(ville));
+  write(fd, ":", 1);
+  write(fd, login, strlen(login));
+  write(fd, ":", 1);
+  write(fd, num_gate, strlen(num_gate));
+  write(fd, ":", 1);
+  write(fd, magic, strlen(magic));
+  write(fd, "\n", 1);
+}
+
+void	write_rulez(int fd, char *magic, char *delais_max_attaque, char *nbr_portes, char *delai_porte)
+{
+  write(fd, magic, strlen(magic));
+  write(fd, ":", 1);
+  write(fd, delais_max_attaque, strlen(delais_max_attaque));
+  write(fd, ":", 1);
+  write(fd, nbr_portes, strlen(nbr_portes));
+  write(fd, ":", 1);
+  write(fd, delai_porte, strlen(delai_porte));
+  write(fd, ":", 1);
+  write(fd, magic, strlen(magic));
+  write(fd, "\n", 1);
+}
+
+int	main(int argc, char **argv)
+{
+  if (argc == 2)
+    {
+      if (!strcmp("--help", argv[1]))
+	printf("magic | delais_max_attak | nbr_porte | delais_porte | login | ville | num_gate \n");
+    }
+  if (argc == 8)
+    {
+      write_rulez(1, argv[1], argv[2], argv[3], argv[4]);
+      sleep(1);
+      attack_gate(1, argv[1], argv[5], argv[6], argv[7]);
+    }
+  return (0);
+}

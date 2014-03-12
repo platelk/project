@@ -1,0 +1,66 @@
+/*
+** shadow_management.c for raytracer in /home/leprov_a//depot/rt/src/shadow
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Sat May 12 01:35:14 2012 alexis leprovost
+** Last update Sat May 12 17:47:42 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+
+#include	"global.h"
+#include	"detail.h"
+#include	"color.h"
+#include	"object.h"
+#include	"init.h"
+
+int
+shadow_patch(t_camera *camera, double *position, t_obj_type flag)
+{
+  camera->position[X] = position[X];
+  camera->position[Y] = position[Y];
+  camera->position[Z] = position[Z];
+  if (flag == PLAN)
+    {
+      camera->position[X] > 0 ? (camera->position[X] -= EPSILON) :
+	(camera->position[X] += EPSILON);
+      camera->position[Y] > 0 ? (camera->position[Y] -= EPSILON) :
+	(camera->position[Y] += EPSILON);
+      camera->position[Z] > 0 ? (camera->position[Z] -= EPSILON) :
+	(camera->position[Z] += EPSILON);
+    }
+  return (EXIT_SUCCESS);
+}
+
+int
+shadow_management(t_detail *detail, t_color *color, double *vector)
+{
+  t_object	*tmp;
+  t_detail	shadow;
+  t_camera	camera;
+
+  shadow_patch(&camera, detail->position, detail->object->type);
+  tmp = detail->object;
+  while (tmp->prev)
+    tmp = tmp->prev;
+  init_detail(&shadow);
+  while (tmp)
+    {
+      tmp->inter(&camera, tmp, &shadow, vector);
+      tmp = tmp->next;
+    }
+  color = color;
+  if (shadow.k > 0.000 && shadow.k < 1.000)
+    {
+      color[2].red += ((color[0].red * shadow.k) *
+		       (CONST_SHAD / 100.000));
+      color[2].green += ((color[0].green * shadow.k) *
+			 (CONST_SHAD / 100.000));
+      color[2].blue += ((color[0].blue * shadow.k) *
+			(CONST_SHAD / 100.000));
+      return (EXIT_FAILURE);
+    }
+  return (EXIT_SUCCESS);
+}

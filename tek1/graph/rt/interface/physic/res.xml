@@ -1,0 +1,177 @@
+<window y="800" x="800">
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="90.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+<sphere type="normal">
+<location X="700.0" Y="-50.0" Z="-20.0"/>
+<rotation X="10.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.7" PHONG="1000"/>
+<color>FFFF00</color>
+<radius>15.0</radius>
+</sphere>
+<sphere type="normal">
+<location X="0.0" Y="20.0" Z="70.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.5" PHONG="1000"/>
+<color>00FFFF</color>
+<radius>25.0</radius>
+</sphere>
+</object>
+<lights>
+      <light type="diffuse">
+	<location X="600" Y="60" Z="40"/>
+	<color>77AA00</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="90.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+<sphere type="normal">
+<location X="700.0" Y="-50.0" Z="-21.0"/>
+<rotation X="10.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.7" PHONG="1000"/>
+<color>FFFF00</color>
+<radius>15.0</radius>
+</sphere>
+<sphere type="normal">
+<location X="0.0" Y="20.0" Z="69.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.5" PHONG="1000"/>
+<color>00FFFF</color>
+<radius>25.0</radius>
+</sphere>
+</object>
+<lights>
+      <light type="diffuse">
+	<location X="600" Y="60" Z="40"/>
+	<color>77AA00</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="90.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+<sphere type="normal">
+<location X="700.0" Y="-50.0" Z="-23.0"/>
+<rotation X="10.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.7" PHONG="1000"/>
+<color>FFFF00</color>
+<radius>15.0</radius>
+</sphere>
+<sphere type="normal">
+<location X="0.0" Y="20.0" Z="67.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.5" PHONG="1000"/>
+<color>00FFFF</color>
+<radius>25.0</radius>
+</sphere>
+</object>
+<lights>
+      <light type="diffuse">
+	<location X="600" Y="60" Z="40"/>
+	<color>77AA00</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="90.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+<sphere type="normal">
+<location X="700.0" Y="-50.0" Z="-26.0"/>
+<rotation X="10.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.7" PHONG="1000"/>
+<color>FFFF00</color>
+<radius>15.0</radius>
+</sphere>
+<sphere type="normal">
+<location X="0.0" Y="20.0" Z="64.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.5" PHONG="1000"/>
+<color>00FFFF</color>
+<radius>25.0</radius>
+</sphere>
+</object>
+<lights>
+      <light type="diffuse">
+	<location X="600" Y="60" Z="40"/>
+	<color>77AA00</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="90.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+<sphere type="normal">
+<location X="700.0" Y="-50.0" Z="-30.0"/>
+<rotation X="10.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.7" PHONG="1000"/>
+<color>FFFF00</color>
+<radius>15.0</radius>
+</sphere>
+<sphere type="normal">
+<location X="0.0" Y="20.0" Z="60.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<effect BRIGHTNESS="0.5" PHONG="1000"/>
+<color>00FFFF</color>
+<radius>25.0</radius>
+</sphere>
+</object>
+<lights>
+      <light type="diffuse">
+	<location X="600" Y="60" Z="40"/>
+	<color>77AA00</color>
+	<intensity>0.6</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+</window>

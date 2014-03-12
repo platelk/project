@@ -1,0 +1,41 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="50"/>
+	<rotation X="0" Y="-90" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0.1" PHONG="1000" TRANSPARENCY="0.0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	  <z MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="250" Y="0" Z="100"/>
+	<color>FFFFFF</color>
+	<intensity>0.4</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="500" Y="0" Z="100"/>
+	<color>FFFFFF</color>
+	<intensity>0.4</intensity>
+      </light>
+      <light TYPE="diffuse">
+	<location X="0" Y="0" Z="100"/>
+	<color>FFFFFF</color>
+	<intensity>0.4</intensity>
+      </light>
+    </lights>
+  </scene>
+</window>

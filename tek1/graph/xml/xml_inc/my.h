@@ -1,0 +1,43 @@
+/*
+** my.h for 42sh in /home/leprov_a//depot/42sh/src/config/lib
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Mon Apr 16 01:00:35 2012 alexis leprovost
+** Last update Mon May  7 13:20:41 2012 kevin platel
+*/
+
+#ifndef __MY_H__
+#define __MY_H__
+
+#define	NUMBER_STRING	"+-0123456789"
+#define	ALPHA_STRING	"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+#include	<stdlib.h>
+
+void	my_free_tab(char **tab);
+void	my_putchar(char c);
+void	my_putnbr(int nb);
+int	my_putstr(char *str);
+int	my_strlen(char *str);
+int	my_tablen(char **tab);
+int	my_strcmp(char *s1, char *s2);
+int	my_strncmp(char *s1, char *s2, int n);
+int	check_base(char c, char *base);
+int	my_getnbr(char *str);
+int	is_a_number(char *str);
+int	is_a_singlestr(char c, char *str);
+int	my_clstr(char *str, int size);
+int	my_puterror(char *str);
+int	my_power_rec(int nb, int pow);
+int	my_strstr(char *s1, char *s2);
+char	*my_strdup(char *str);
+char	*my_strndup(char *str, int size);
+char	*my_strcat(char *s1, char *s2);
+char	*my_strmcat(char *s1, char *s2);
+char	*my_strcpy(char *s1, char *s2);
+char	*epur_str(char *str);
+void	*xmalloc(size_t size);
+
+#endif

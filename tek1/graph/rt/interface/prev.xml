@@ -1,0 +1,24 @@
+<window Y=256 X=256>
+  <scene ANTIALIASING=1 >
+    <camera>
+      <location X=-1500 Y=0 Z=0 />
+      <fov>1000</fov>
+    </camera>
+    <object>
+	<sphere TYPE="normal">
+		<location X=0 Y=0 Z=0 />
+		
+		<rotation X="0" Y="0" Z="0" />
+		<perturbation X="0" Y="50" Z="0" />
+		<radius>100</radius>
+		<color>FF1C6B</color>
+		<effect BRIGHTNESS="0.0" REFLECTION="0.0" PHONG="1.0" TRANSPARENCY="0.0" />
+	</sphere>
+    </object>
+    <light TYPE="diffuse">
+       <location X=-1000 Y=0 Z=0 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+  </scene>
+</window>

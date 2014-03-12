@@ -1,0 +1,52 @@
+<window y=1050 x=1680>
+  <scene name=Basic antialiasing=0>
+    <cameras>
+      <camera>
+	<location X=-1000 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type=normal>
+	<location X=0 Y=240 Z=0/>
+	<rotation X=-90 Y=0 Z=-10/>
+	<template>./texture/texture.xpm</template>
+	<radius>100</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <tore type=normal>
+	<location X=0 Y=-175 Z=0/>
+	<rotation X=0 Y=0 Z=43/>
+	<template>./texture/fire.xpm</template>
+	<radius MIN="40" MAX="100"/>
+	<color>FFFFFF</color>
+      </tore>
+      <cylindre type=normal>
+	<location X=0 Y=20 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<template>./texture/bouteille.xpm</template>
+	<radius>70</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <plan type=normal>
+	<location X=0 Y=0 Z=-150/>
+	<rotation X=0 Y=0 Z=0/>
+	<template>./texture/pave.xpm</template>
+	<color>FFFFFF</color>
+      </plan>
+    </object>
+    <lights>
+	<light type=diffuse>
+	  <location X=-1000 Y=0 Z=0/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light type=diffuse>
+	  <location X=-1000 Y=0 Z=30/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

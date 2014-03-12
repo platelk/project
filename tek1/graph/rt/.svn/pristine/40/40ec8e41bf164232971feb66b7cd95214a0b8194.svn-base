@@ -1,0 +1,38 @@
+<window X="1000" Y="1000">
+<scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <hyperboloide TYPE="normal">
+	<location X="200" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.5" PHONG="100"/>
+	<texture FREQUENCE="0.3" TYPE="cut" COLOR="000000" INTERVAL="150" KEEP="no">texture/pokemon.jpg</texture>
+	<constante A="10" B="10" C="100"/>
+	<perturbation Z="1.0"/>
+	<color>FF0000</color>
+      </hyperboloide>
+      <hyperboloide TYPE="normal">
+	<location X="200" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.5" PHONG="100"/>
+	<constante A="10" B="25" C="100"/>
+	<perturbation Y="1.0"/>
+	<color>FF0000</color>
+      </hyperboloide>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="0" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+
+</window>

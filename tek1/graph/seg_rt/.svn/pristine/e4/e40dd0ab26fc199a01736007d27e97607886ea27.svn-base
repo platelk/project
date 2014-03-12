@@ -1,0 +1,35 @@
+<window x="500" y="500">
+<scene ALIASING="5" NAME="txt">
+    <export EXT=".bmp"/>
+    <cameras>
+      <camera>
+	<location X="5" Y="5" Z="5"/>
+	<rotation X="5" Y="5" Z="5"/>
+	<fov>500</fov>
+      </camera>
+    </cameras>
+    <object>
+	<sphere type="normal">
+		<location X="55" Y="0" Z="0" />
+		<rotation X="0" Y="88" Z="0" />
+		<perturbation X="0" Y="0" Z="0" />
+		<effect BIRGHTNESS="0" REFLECTION="0" />
+	</sphere>
+      <tore type="full">
+	<location X="50" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<perturbation X="0" Y="0" Z="0"/>
+	<color>FFEA50</color>
+	<radius MAX="100" MIN="50"/>
+      </tore>
+    </object>
+    <lights>
+      <light type="dif">
+	<location X="5" Y="5" Z="5"/>
+	<color>EEAA50</color>
+	<inten>50</inten>
+      </light>
+    </lights>
+  </scene>
+
+</window>

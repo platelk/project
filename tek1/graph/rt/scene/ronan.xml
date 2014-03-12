@@ -1,0 +1,57 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic" ANTIALIASING="-2">
+    <cameras>
+      <camera>
+	<location X="-900" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.5"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="50" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="1000" REFLECTION="0.5"/>
+	<color>00FF00</color>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="-50" Z="0"/>
+	<rotation X="-90" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.5" PHONG="1000" REFLECTION="0.5"/>
+	<color>FF0000</color>
+      </plan>
+      <cubetroue TYPE="normal">
+	<location X="-870" Y="-4" Z="0"/>
+	<rotation X="-10" Y="20" Z="-15"/>
+	<effect BRIGHTNESS="0.4" PHONG="5000" REFLECTION="0.5"/>
+	<radius>8.8</radius>
+	<color>0000FF</color>
+      </cubetroue>
+      <tore TYPE="normal">
+	<location X="-870" Y="4" Z="0"/>
+	<rotation X="0" Y="0" Z="30"/>
+	<effect BRIGHTNESS="0.4" PHONG="1000" REFLECTION="0.5"/>
+	<radius MIN="1" MAX="3"/>
+	<color>FF0000</color>
+      </tore>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="-900" Y="0" Z="0"/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="diffuse">
+	  <location X="-400" Y="0" Z="0"/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

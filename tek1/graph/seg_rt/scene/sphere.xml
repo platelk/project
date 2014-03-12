@@ -1,0 +1,28 @@
+<window y=1000 x=1000>
+  <scene name=Basic antialiasing=0>
+    <cameras>
+      <camera>
+	<location X=-1000 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <cylindre type=normal>
+	<location X=0 Y=0 Z=0/>
+	<rotation X=45 Y=0 Z=0/>
+	<template>./texture/fire.xpm</template>
+	<effect BRIGHTNESS=0.5 PHONG=1 REFLECTION=0.0/>
+	<radius>100</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+    </object>
+    <lights>
+	<light type=diffuse>
+	  <location X=-1000 Y=0 Z=0/>
+	  <intensity>0.2</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

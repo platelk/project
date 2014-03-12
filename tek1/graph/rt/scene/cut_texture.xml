@@ -1,0 +1,74 @@
+<window Y="900" X="1500">
+  <scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="-1500" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere TYPE="normal">
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="90" Y="90" Z="-10"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="1.0" TYPE="cut" COLOR="000000" INTERVAL="150" KEEP="yes">texture/art.jpg</texture>
+	<radius>100</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <cylindre TYPE="normal">
+	<location X="-200" Y="-300" Z="-50"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="0.3" TYPE="cut" COLOR="000000" INTERVAL="50" KEEP="yes">texture/images.jpg</texture>
+	<radius>40</radius>
+	<color>FFFFFF</color>
+      </cylindre>
+      <cone TYPE="normal">
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="-10"/>
+	<effect BRIGHTNESS="0.9" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="0.3" TYPE="cut" COLOR="000000" INTERVAL="50" KEEP="yes">texture/images.jpg</texture>
+	<radius>80</radius>
+	<color>FFFFFF</color>
+      </cone>
+      <sphere TYPE="normal">
+	<location X="-50" Y="300" Z="100"/>
+	<rotation X="0" Y="0" Z="-30"/>
+	<effect BRIGHTNESS="0.5" PHONG="1" REFLECTION="0.0"/>
+	<texture FREQUENCE="4.0" TYPE="cut" COLOR="000000" INTERVAL="150" KEEP="yes">texture/damier.jpg</texture>
+	<radius>100</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1" PHONG="1000" REFLECTION="0.4"/>
+	<texture FREQUENCE="1.0" TYPE="cut" COLOR="000000" INTERVAL="150" KEEP="yes">texture/damier.jpg</texture>
+	<color>FFFFFF</color>
+      </plan>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="-200" Y="400" Z="500"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+ 	<light TYPE="diffuse">
+	  <location X="-400" Y="-600" Z="0"/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+ 	<light TYPE="diffuse">
+	  <location X="-400" Y="-200" Z="0"/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+ 	<light TYPE="diffuse">
+	  <location X="-200" Y="0" Z="200"/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

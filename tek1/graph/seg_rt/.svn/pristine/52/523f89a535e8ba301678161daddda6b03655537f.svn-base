@@ -1,0 +1,25 @@
+/*
+** box.h for box in /home/ozouf_h//rt/src/box
+** 
+** Made by harold ozouf
+** Login   <ozouf_h@epitech.net>
+** 
+** Started on  Tue May 15 14:25:59 2012 harold ozouf
+** Last update Wed May 16 15:31:00 2012 harold ozouf
+*/
+
+#ifndef		__BOX_H__
+# define	__BOX_H__
+
+#include	"object.h"
+
+typedef void    (*t_init_boxes)(t_object *);
+
+void	init_b_sphere(t_object *o);
+void	init_b_tore(t_object *o);
+int     inter_box(t_object *b1, t_object *b2);
+void	init_b_inf(t_object *o);
+int	inter_ray_box(t_camera *c, double *vec, t_object *o);
+void	init_box(t_object *o);
+
+#endif

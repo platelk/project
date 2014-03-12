@@ -1,0 +1,19 @@
+exp ::= log (';' (log)? )* 
+
+## ===>>  ex: {[ls] ; [ls]}, entre [] == log, entre {} == exp
+
+log ::= bloc_exec (('&&' | '||') bloc_exec)*
+
+bloc_exec ::= cmd ( (('|' cmd)*) ('>' | '>>' file) )
+
+cmd ::= bin ((param)*) ((('<' | '<<') mot)?)
+
+bin ::= .. Caractere imprimable .. | var
+
+param ::= .. Caractere imprimable .. | var
+
+var ::= '$', [A-Z]*
+
+string ::= quote? imp* quote? 
+
+imp ::= [A-Z] | [a-z] | []

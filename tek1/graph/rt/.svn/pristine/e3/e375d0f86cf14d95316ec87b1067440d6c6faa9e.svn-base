@@ -1,0 +1,63 @@
+<window y="500" x="500" name="lol">
+  <scene NAME="txt" ALIASING="-5">
+    <export EXT=".bmp"/>
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type="normal">
+	<location X="1500" Y="0" Z="400"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+	<radius>100</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="500" Y="-100" Z="-100"/>
+	<rotation X="0" Y="60" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>00FF00</color>
+	<radius>75</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="100" Y="-100" Z="300"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="1.0"/>
+	<color>FFFFFF</color>
+	<radius>100</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="2500" Y="0" Z="400"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+	<radius>100</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="500" Y="-900" Z="100"/>
+	<rotation X="0" Y="60" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>00FF00</color>
+	<radius>75</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="1200" Y="-500" Z="100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="1.0"/>
+	<color>FFFFFF</color>
+	<radius>100</radius>
+      </sphere>
+    </object>
+    <lights>
+      <light type="dif">
+	<location X="5" Y="5" Z="5"/>
+	<color>EEAA50</color>
+	<inten>50</inten>
+      </light>
+    </lights>
+  </scene>
+</window>

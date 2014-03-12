@@ -1,0 +1,12 @@
+<scene name=NAME value=Value width=700 height=700 mode=1>
+     <camera pos_x=-5000 pos_y=8000 pos_z=50000 dist=1000 rot_y=10/>
+     <object>
+	<cyl pos_x=-100 pos_y=4000 pos_z=200 r=3000 color=80000000 />
+	<cyl pos_x=-6000 pos_y=1200 pos_z=0 r=1500 color=800000 />
+	<plan pos_x=0 pos_y=-1000 pos_z=0 r=0 color=50666888 />
+	<plan pos_x=0 pos_y=-2000 pos_z=0 r=0 rot_z=80 color=50608 />
+     </object>
+     <light>
+	<light pos_x=800 pos_y=10000 pos_z=9900 />
+     </light>
+</scene>

@@ -1,0 +1,12 @@
+# schema :
+# [start/end]
+#
+# nombre de fourmis
+10
+# description des salles
+##start
+start 1 2
+##end
+end 1 2
+# description des tunnels
+start-end

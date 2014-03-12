@@ -1,0 +1,662 @@
+<window x="500" y="1000">
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-0.0625" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-23.875" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-47.6875" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-71.5" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-95.3125" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-119.125" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-142.9375" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-166.75" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-190.5625" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-214.375" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-238.1875" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-262.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-285.8125" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-309.625" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-333.4375" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-357.25" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-381.0625" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-404.875" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-428.6875" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="0">
+<cameras>
+<camera>
+<location X="-452.5" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>640.0</fov>
+</camera>
+</cameras>
+<object>
+	<tore type="normal">
+		<location X="0" Y="0" Z="0"/>
+		<rotation X="0" Y="0" Z="90"/>
+		<perturbation X="0" Y="2.5" Z="0"/>
+		<radius MAX="50" MIN="20"/>
+		<color>46FF8A</color>
+		<effect BRIGHTNESS="0.14" PHONG="828.0" REFLECTION="0.0" TRANSPARENCY="0.0"/>
+	</tore>
+      <tore type="normal">
+	<location X="2000" Y="0" Z="0"/>
+	<rotation X="90" Y="0" Z="40"/>
+	<effect BRIGHTNESS="0.5" REFLECTION="0"/>
+	<color>FF0000</color>
+	<radius MAX="500" MIN="100"/>
+      </tore>
+    </object>
+<lights>
+	<light type="diffuse">
+	  <location X="0" Y="1000" Z="1000"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+</scene>
+</window>

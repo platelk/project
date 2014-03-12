@@ -1,0 +1,66 @@
+<window y="1000" x="1000">
+  <scene NAME="Basic" ANTIALIASING="-50">
+    <cameras>
+      <camera>
+	<location X="-10" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>640</fov>
+      </camera>
+    </cameras>
+    <object>
+      <cubetroue TYPE="normal">
+	<location X="5" Y="0" Z="0"/>
+	<rotation X="45" Y="-80" Z="45"/>
+	<color>FF0000</color>
+	<effect BRIGHTNESS="0.2" PHONG="1000" REFLECTION="0.0"/>
+	<radius>11.8</radius>
+      </cubetroue>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="-100" Y="0" Z="0"/>
+	<intensity>0.6</intensity>
+	<color>FFFFFF</color>
+      </light>
+    </lights>
+  </scene>
+  <scene NAME="Basic" ANTIALIASING="-5">
+    <cameras>
+      <camera>
+	<location X="-10" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>640</fov>
+      </camera>
+    </cameras>
+    <object>
+      <cubetroue TYPE="normal">
+	<location X="5" Y="0" Z="0"/>
+	<rotation X="45" Y="-80" Z="45"/>
+	<color>0000FF</color>
+	<effect BRIGHTNESS="0.2" PHONG="1000" REFLECTION="0.4"/>
+	<radius>11.8</radius>
+      </cubetroue>
+      <cubetroue TYPE="normal">
+	<location X="5" Y="5" Z="5"/>
+	<rotation X="45" Y="0" Z="45"/>
+	<color>FF00FF</color>
+	<effect BRIGHTNESS="0.2" PHONG="100" REFLECTION="0.4" TRANSPARENCY="0.5"/>
+	<radius>2.8</radius>
+      </cubetroue>
+      <sphere TYPE="normal">
+	<location X="5" Y="5" Z="5"/>
+	<rotation X="45" Y="0" Z="45"/>
+	<color>FFFFFF</color>
+	<effect BRIGHTNESS="0.2" PHONG="1000" REFLECTION="0.5" TRANSPARENCY="0.0"/>
+	<radius>2</radius>
+      </sphere>
+    </object>
+    <lights>
+      <light TYPE="diffuse">
+	<location X="-100" Y="0" Z="0"/>
+	<intensity>0.6</intensity>
+	<color>FFFFFF</color>
+      </light>
+    </lights>
+  </scene>
+</window>

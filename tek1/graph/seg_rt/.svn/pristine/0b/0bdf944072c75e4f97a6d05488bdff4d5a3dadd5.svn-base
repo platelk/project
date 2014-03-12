@@ -1,0 +1,47 @@
+/*
+** texture.h for texture in /home/guiho_r/tek1/rt/src/texture
+**
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+**
+** Started on  Thu May 10 14:14:55 2012 ronan guiho
+** Last update Sat May 26 17:55:23 2012 kevin platel
+*/
+
+#ifndef __TEXTURE_H__
+#define __TEXTURE_H__
+
+#include "image.h"
+#include "color.h"
+
+#define FREQUENCE	1.0
+#define FREQUENCE_PLAN	5.0
+#define FREQUENCE_CYLI	1.0
+
+typedef	int	(*t_mapping)(t_object *, t_color *, double *, t_image *);
+
+typedef enum
+{
+  U,
+  V,
+  T
+} t_utils;
+
+typedef enum
+{
+  TEXTURE,
+  BUMP
+} t_flag_mapping;
+
+int	texture_getcolor(t_image *texture, t_color *color,
+			 int *pos);
+int	texture_mapping(t_object *obj, t_color *color,
+			double *pos, int *utils);
+int	texture_bumpmapping(t_detail *detail, double *vector);
+int	texture_mapping_sphere(t_object *obj, t_color *color, double *pos, t_image *image);
+int	texture_mapping_plan(t_object *obj, t_color *color, double *old_pos, t_image *image);
+int	texture_mapping_cylindre(t_object *obj, t_color *color, double *old_pos, t_image *image);
+int	texture_mapping_tore(t_object *obj, t_color *color, double *old_pos, t_image *image);
+int	texture_mapping_cone(t_object *obj, t_color *color, double *old_pos, t_image *image);
+
+#endif

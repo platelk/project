@@ -1,0 +1,106 @@
+/*
+** edit_func.c for 42sh in /home/leprov_a//depot/42sh/src/edit
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed Apr 25 11:13:16 2012 alexis leprovost
+** Last update Sat May 19 21:17:02 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<unistd.h>
+
+#include	"global.h"
+#include	"edit.h"
+#include	"xsys.h"
+#include	"t_history.h"
+#include	"get_next_line.h"
+#include	"my.h"
+
+int
+edit_default(t_global *global, t_line **line, char *prompt, char *buff)
+{
+  prompt = prompt;
+  if ((edit_listlen(*line) + global->len) <
+      MAX_LINE_NUMBER &&
+      (edit_listlen(*line) + global->len) <
+      ((global->dom[Y] - 1) * global->dom[X]))
+    {
+      if (buff && my_strlen(buff) == 1 && buff[0] >= 32)
+	edit_putlist(line, buff[0]);
+      else
+	edit_putlist(line, '~');
+      termcap_action(1, RIGHT_MOVE_STRING, global, 1);
+      termcap_display(*line, global);
+    }
+  return (EXIT_SUCCESS);
+}
+
+int
+edit_control(t_global *global, t_line **line, char *prompt, char *buff)
+{
+  t_line	*tmp;
+  char	*flag;
+  int	cm;
+  int	i;
+
+  prompt = prompt;
+  tmp = *line;
+  flag = (!my_strncmp(START_EDIT_STRING, buff,
+		      (my_strlen(START_EDIT_STRING) - 1))) ?
+    LEFT_MOVE_STRING : RIGHT_MOVE_STRING;
+  cm = (!my_strncmp(START_EDIT_STRING, buff,
+		    (my_strlen(START_EDIT_STRING) - 1))) ? edit_cp(*line) :
+    (edit_listlen(*line) - edit_cp(*line));
+  i = (!my_strncmp(START_EDIT_STRING, buff,
+		   (my_strlen(START_EDIT_STRING) - 1))) ? -1 : 1;
+  termcap_action(cm, flag, global, i);
+  while (tmp)
+    {
+      tmp->status = 0;
+      if (i > 0 && !tmp->next)
+	tmp->status = 1;
+      tmp = tmp->next;
+    }
+  return (EXIT_SUCCESS);
+}
+
+static void	fill_func(t_efunc *func)
+{
+  func[0] = &edit_delete;
+  func[1] = &edit_leftmove;
+  func[2] = &edit_rightmove;
+  func[3] = &edit_uphistory;
+  func[4] = &edit_downhistory;
+  func[5] = &edit_suppr;
+  func[6] = &edit_clear;
+  func[7] = &edit_control;
+  func[8] = &edit_control;
+  func[9] = &edit_leftmove;
+  func[10] = &edit_rightmove;
+  func[11] = &edit_delete;
+  func[12] = &edit_uphistory;
+  func[13] = &edit_swap;
+  func[14] = &edit_allstore;
+  func[15] = &edit_rightstore;
+  func[16] = &edit_leftstore;
+  func[17] = &edit_paste;
+  func[18] = &edit_switchmove;
+  func[19] = &edit_goto_prevspace;
+  func[20] = &edit_goto_nextspace;
+  func[21] = &edit_globing;
+  func[22] = &edit_strstr;
+  func[23] = &edit_default;
+  func[MAX_EDIT_KEYWORD_NUMBER] = NULL;
+}
+
+t_efunc	*edit_func(void)
+{
+  t_efunc	*func;
+
+  if ((func = xmalloc(sizeof(*func) * (MAX_EDIT_KEYWORD_NUMBER + 1))) == NULL)
+    return (NULL);
+  fill_func(func);
+  return (func);
+}

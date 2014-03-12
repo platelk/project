@@ -1,0 +1,72 @@
+<window y=1000 x=1000>
+  <background>./texture/fire.xpm</background>
+  <scene name=Basic antialiasing=-1>
+    <cameras>
+      <camera>
+	<location X=-900 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan type=normal>
+	<location X=0 Y=0 Z=-40/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS="0.6" PHONG="1000"/>
+	<bump_mapping>./texture/pave_bump.xpm</bump_mapping>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type=normal>
+	<location X=0 Y=0 Z=40/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0.1 PHONG=1000/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type=normal>
+	<location X=0 Y=50 Z=0/>
+	<rotation X=90 Y=0 Z=0/>
+	<effect BRIGHTNESS=0.5 PHONG=1000 REFLECTION=0.1/>
+	<color>00FF00</color>
+      </plan>
+      <plan type=normal>
+	<location X=0 Y=-50 Z=0/>
+	<rotation X=-90 Y=0 Z=0/>
+	<effect BRIGHTNESS=0.5 PHONG=1000 REFLECTION=0.1/>
+	<color>FF0000</color>
+      </plan>
+      <cubetroue type=normal>
+	<location X=-870 Y=-4 Z=0/>
+	<rotation X=-10 Y=20 Z=-15/>
+	<effect BRIGHTNESS=0.4 PHONG=1000 REFLECTION=0.4/>
+	<radius>11.8</radius>
+	<color>0000FF</color>
+      </cubetroue>
+      <cylindre type=normal>
+	<location X=-870 Y=0 Z=0/>
+	<rotation X=0 Y=0 Z=0/>
+	<effect BRIGHTNESS=0.4 PHONG=1000 REFLECTION=0.2/>
+	<radius>1.2</radius>
+	<color>00FF00</color>
+      </cylindre>
+      <tore type=normal>
+	<location X=-870 Y=4 Z=0/>
+	<rotation X=0 Y=0 Z=30/>
+	<effect BRIGHTNESS=0.4 PHONG=1000 REFLECTION=0.4/>
+	<radius MIN=1 MAX=3 />
+	<color>FF0000</color>
+      </tore>
+    </object>
+    <lights>
+	<light type=diffuse>
+	  <location X=-900 Y=0 Z=0/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light type=diffuse>
+	  <location X=-400 Y=0 Z=0/>
+	  <intensity>0.7</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

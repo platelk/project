@@ -1,0 +1,13 @@
+Tr /1 0 x\	H /x 0 0\
+   |0 1 y|	  |0 y 0|
+   \0 0 1/	  \0 0 1/
+
+
+R /cos(phi) -sin(phi) 0\
+  |sin(phi)  cos(phi) 0|
+  \   0         0     1/
+
+
+S /cos(2phi)  sin(2phi) 0\
+  |sin(2phi) -cos(2phi) 0|
+  \    0          0     1/

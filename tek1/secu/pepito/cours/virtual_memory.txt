@@ -1,0 +1,151 @@
+Epitech Security Laboratory                            L. `Zerk' Michaux
+
+
+                        Epitech 1 - B2 Securite
+          Introduction to memory segmentation - IA32 Architecture
+
+                                                             Febuary 2012
+
+______Figure 0_________________________________________________________/
+
+                              Memory
+                                                 Higher Memory Addresses
+                 +-----------------------------+
+                 |        kernel space         |
+  [1] 0xc0000000 +-----------------------------+
+                 |~~~~~~~ random offset ~~~~~~~|
+                 +-----------------------------+
+                 | |                           |
+                 | v          Stack            |
+                 +-----------------------------+
+                 | / / / / / / / / / / / / / / |
+                 +-----------------------------+
+                 | |                           |
+                 | v      Shared memory        |
+                 +-----------------------------+
+                 | / / / / / / / / / / / / / / |
+             brk +-----------------------------+
+                 | ^                           |
+                 | |          Heap             |
+       Start brk +-----------------------------+
+                 |~~~~~~~ random offset ~~~~~~~|
+                 +-----------------------------+
+                 |             bss             |
+                 +-----------------------------+
+                 |            data             |
+                 +-----------------------------+
+                 |            text             |
+  [2] 0x08048000 +-----------------------------+
+                 | / / / / / / / / / / / / / / |
+      0x00000000 +-----------------------------+
+                                                  Lower Memory Addresses
+
+
+
+______Code sample - Figure 1 & 2_______________________________________/
+
+|  int func1(int le, int et, char *input)
+|  {
+|    char buf[4];
+|    int  value;
+|
+|    value = le + et;
+|    strcpy(buf, input);
+|    printf("%s : %i\n", buf, value);
+|    return (value);
+|  }
+|
+|  int func0(char *in)
+|  {
+|    return (func1(13, 37, in));
+|  }
+
+
+______Figure 1_________________________________________________________/
+
+                             Stack
+                                                 Higher Memory Addresses
+                 |              .               |
+                 |              .               |
+                 |              .               |
+                 +------------------------------+
+		 |    Parameters of func0()     |
+                 +------------------------------+
+                 |  Return address of func0()   | -> eip [4]
+		 +------------------------------+
+		 |      SFP[3] of func0()       | -> ebp [4]
+		 +------------------------------+
+                 |     Locales of func0()       |
+         ebp [4] +------------------------------+ --+
+		 |    Parameters of func1()     |   |
+		 +------------------------------+   |
+		 |  Return address of func1()   |   |
+		 +------------------------------+   | Figure 2
+		 |      SFP[3] of func1()       |   |
+		 +------------------------------+   |
+		 |     Locales of func1()       |   |
+         esp [4] +------------------------------+ --+
+                 |              |               |
+		 |              v               |
+		                                  Lower Memory Addresses
+
+
+______Figure 2_________________________________________________________/
+
+
+		     Stack context for func1()
+					          Higher Memory Addresses
+                 |              .               |
+		 |              .               |
+		 +------------------------------+ --+
+                 |            input             |   |
+		 +------------------------------+   |
+		 |             et               |   | Parameters
+		 +------------------------------+   |
+		 |             le               |   |
+		 +------------------------------+ --+
+		 |        Return address        |
+	 	 +------------------------------+
+                 |             SFP              |
+		 +------------------------------+ --+
+		 |             buf              |   |
+		 +------------------------------+   | Local variables
+		 |            value             |   |
+		 +------------------------------+ --+
+		 |              |               |
+		 |              v               |
+					          Lower Memory addresses
+
+
+______Notes____________________________________________________________/
+
+[1], [2] : Ces adresses peuvent changer en fonction du systeme ou de
+           l'architecture sur lesquels le processus est actif.
+	   Les adresses donnees sont valides sur la plupart des unices
+	   sous x86.
+
+[3]      : SFP, Saved Frame Pointer. Il s'agit du "pointeur de base
+           sauvegarde. L'adresse contenue a cet endroit sera placee dans
+           ebp a la fin de l'execution de la fonction courante.
+
+[4]      : eip, ebp, esp, registres de processeur x86.
+
+	   - eip : Extended Instruction Pointer, contient l'adresse de
+	   l'instruction actuellement executee dans ce processus.
+	   Generalement ce registre pointe sur une adresse contenue dans
+	   le segment de code (text).
+
+	   - ebp : Extended Base Pointer, contient l'adresse de la "base"
+	   du contexte de la fonction courante. A la fin de l'execution
+	   de la fonction courante l'adresse contenue dans ebp sera
+	   placee dans esp.
+
+	   - esp : Extended Stack Pointer, contient l'adresse de la "fin"
+	   du contexte de la fonction courante, et par la meme la fin de
+	   la pile.
+
+
+______Bibliography_____________________________________________________/
+
+"Smashing the stack for fun and profit" ~ Aleph One
+                       http://www.phrack.org/issues.html?id=14&issue=49

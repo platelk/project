@@ -1,0 +1,73 @@
+/*
+** obj_type.c for obj in /home/vink/projet/graph/xml/obj_src
+**
+** Made by kevin platel
+** Login   <vink@epitech.net>
+**
+** Started on  Tue May  8 12:33:56 2012 kevin platel
+** Last update Tue May 15 17:50:06 2012 ronan guiho
+*/
+
+#include	<stdlib.h>
+
+#include	<stdio.h>
+#include	"object.h"
+#include	"my.h"
+#include	"inter.h"
+
+int	obj_get_type(char *name)
+{
+  char	*tab[NB_TYPE + 1];
+  int	i;
+
+  tab[SPHERE] = STRING_SPH;
+  tab[PLAN] = STRING_PLA;
+  tab[CYL] = STRING_CYL;
+  tab[CON] = STRING_CON;
+  tab[TORE] = STRING_TOR;
+  tab[CUBE_TROUE] = STRING_CUBET;
+  tab[NB_TYPE] = NULL;
+  i = 0;
+  while (tab[i])
+    {
+      if (my_strcmp(tab[i], name) == 0)
+	return (i);
+      i++;
+    }
+  return (-1);
+}
+
+int	obj_get_light_type(char *name)
+{
+  char	*tab[3 + 1];
+  int	i;
+
+  tab[AMBIENT] = "ambient";
+  tab[PARALLELE] = "parallele";
+  tab[DIFFUSE] = "diffuse";
+  tab[3] = NULL;
+  i = 0;
+  while (tab[i])
+    {
+      if (my_strcmp(tab[i], name) == 0)
+	return (i);
+      i++;
+    }
+  return (-1);
+}
+
+t_inter	obj_get_inter_fct(int i)
+{
+  t_inter	tab[NB_TYPE + 1];
+
+  tab[SPHERE] = &inter_sphere;
+  tab[PLAN] = &inter_plan;
+  tab[CYL] = &inter_cylindre;
+  tab[CON] = &inter_cone;
+  tab[TORE] = &inter_tore;
+  tab[CUBE_TROUE] = &inter_cubetroue;
+  tab[NB_TYPE] = NULL;
+  if (i > NB_TYPE || i < 0)
+    return (NULL);
+  return (tab[i]);
+}

@@ -1,0 +1,15 @@
+/*
+** mnemos.h for Corewar in /home/decene_a//afs/Projets/Korewar/Doc/SVN/corewar
+** 
+** Made by alexandre deceneux
+** Login   <decene_a@epitech.net>
+** 
+** Started on  Tue Mar 13 15:47:30 2012 alexandre deceneux
+** Last update Tue Mar 13 15:48:07 2012 alexandre deceneux
+*/
+
+void    live(char **params, t_champ *champ);
+void    ld(char **params, t_champ *champ);
+void    st(char **params, t_champ *champ);
+void    add(char **params, t_champ *champ);
+void    sub(char **params, t_champ *champ);

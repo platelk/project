@@ -1,0 +1,37 @@
+/*
+** texture_bumpmap.c for texture in /home/guiho_r/tek1/rt/src/texture
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Tue May 15 16:45:42 2012 ronan guiho
+** Last update Mon May 28 12:21:17 2012 ronan guiho
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "calc.h"
+#include "init.h"
+#include "object.h"
+#include "texture.h"
+
+#define EPSI 1.3
+
+int		texture_bumpmapping(t_detail *detail, double *vector)
+{
+  double        coef;
+  t_color	color;
+  double	average;
+  int		utils[2];
+
+  utils[0] = (int)detail->object->type;
+  utils[1] = BUMP;
+  texture_mapping(detail->object, &color, detail->position, utils);
+  average = /*ABS(255.0 - */((color.green + color.red + color.blue) / 3.0)/*)*/;
+  coef = (average / 255.0) * EPSI;
+  vector[X] += coef;
+  vector[Y] += coef;
+  vector[Z] += coef;
+  return (EXIT_SUCCESS);
+}

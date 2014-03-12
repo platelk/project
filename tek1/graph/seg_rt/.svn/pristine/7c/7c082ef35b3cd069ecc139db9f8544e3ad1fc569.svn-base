@@ -1,0 +1,37 @@
+/*
+** calc.h for raytracer in /home/leprov_a//depot/rt/inc
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Wed May  2 19:29:43 2012 alexis leprovost
+** Last update Fri May 25 12:55:59 2012 alexis leprovost
+*/
+
+#ifndef __CALC_H__
+#define __CALC_H__
+
+#include	"global.h"
+#include	"color.h"
+#include	"limit.h"
+#include	"detail.h"
+
+#define	NORMAL_ROTATION		1.000
+#define INVERSE_ROTATION	-1.000
+
+int	calc_management(t_global *global, t_color *color, double x, double y);
+int	calc_direction_vector(t_global *global, double *vector, double x, double y);
+int	calc_any_vector(double *p1, double *p2, double *v);
+int	calc_rotation(double *vector, double *rotation, double flag);
+int	calc_k(double *indice, double *k);
+int	calc_limit(t_limit *limit, double *position, double *vector, double *k);
+int	calc_detail(t_detail *detail, t_color *color, t_camera *camera, double *vector);
+int	calc_color(t_color *color, t_detail *detail);
+int	calc_point(double *position, double *vector, double *location, double k);
+int	calc_effect(t_detail *detail, t_color *color, t_light *light, double *vector);
+int	calc_perturbation(t_object *object, double *position, double *normal);
+double	calc_angle(double *u, double *v);
+double	calc_ps(double *u, double *v);
+int     calc_normal(t_camera *c, t_detail *d, double *v, double *n);
+
+#endif

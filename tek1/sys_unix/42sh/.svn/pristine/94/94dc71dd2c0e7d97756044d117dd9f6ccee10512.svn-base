@@ -1,0 +1,124 @@
+/*
+** exec_redirection_double_left.c for stack_exec in /home/guiho_r/tek1/42sh/src/stack_exec/src/redirection
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Sun Apr 15 10:28:55 2012 ronan guiho
+** Last update Wed May 16 17:11:14 2012 ronan guiho
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include "my.h"
+#include "sh.h"
+#include "execute.h"
+
+int			exec_redirection_double_father(int *fd, t_child *tmp_node, \
+						       t_env *env, t_global *global)
+{
+  int		status;
+
+  if ((close(fd[1])) == -1)
+    return (EXIT_CHILD);
+  if ((dup2(fd[0], 0)) == -1)
+    return (EXIT_CHILD);
+  if ((status = exec_command(tmp_node->nd, env, global)) >= EXIT_FAILURE)
+    return (status);
+  return (EXIT_SUCCESS);
+}
+
+int			exec_redirection_double_child(int *fd, char *buffer)
+{
+  if ((close(fd[0])) == -1)
+    return (EXIT_CHILD);
+  if ((dup2(fd[1], 1)) == -1)
+    return (EXIT_CHILD);
+  if (buffer != NULL)
+    {
+      exec_write_fd(buffer, fd[1]);
+      free(buffer);
+    }
+  return (EXIT_SUCCESS);
+}
+static int		exec_redirection_double_left_fork(t_child *tmp_node,
+							  t_env *env,
+							  char *buffer,
+							  t_global *global)
+{
+  pid_t		pid;
+  int		fd[2];
+  int		status;
+
+  if ((pipe(fd)) == -1)
+    return (EXIT_CHILD);
+  if ((pid = fork()) == -1)
+    {
+      fprintf(stderr, "42sh: Unable to create a new process.\n");
+      return (EXIT_CHILD);
+    }
+  if (pid == 0)
+    {
+      if ((exec_redirection_double_child(fd, buffer)) == EXIT_CHILD)
+	return (EXIT_CHILD);
+    }
+  else
+    {
+      if ((status = exec_redirection_double_father(fd, tmp_node, \
+						   env, global)) >= EXIT_FAILURE)
+	return (status);
+    }
+  return (EXIT_SUCCESS);
+}
+
+char		*exec_redirection_double_left_loop(t_global *global, \
+						   char *buffer, \
+						   char *stop_word)
+{
+  int		rtrn_read;
+  char		*buffer_write;
+
+  if (my_strcmp(buffer, stop_word) != 0)
+    buffer_write = my_strdup(buffer);
+  while (my_strcmp(buffer, stop_word) != 0)
+    {
+      if (global->echo == 0)
+	fprintf(stderr, "? ");
+      if ((rtrn_read = read(0, buffer, 1024)) <= 0)
+	return (NULL);
+      buffer[rtrn_read] = '\0';
+      if (my_strcmp(buffer, stop_word) != 0)
+	if ((buffer_write = my_strconcat(buffer_write, buffer)) == NULL)
+	  return (NULL);
+    }
+  return (buffer_write);
+}
+
+int		exec_redirection_double_left(t_node  *master_node, \
+					     t_global *global, int stat)
+{
+  int		rtrn_read;
+  t_child	*tmp_node;
+  char		*stop_word;
+  char		buffer[1024];
+  char		*buffer_write;
+
+  tmp_node = master_node->child;
+  if (global->echo == 0)
+    fprintf(stderr, "? ");
+  if ((rtrn_read = read(0, buffer, 1024)) <= 0)
+    return ((rtrn_read == 0) ? EXIT_SUCCESS : EXIT_FAILURE);
+  buffer[rtrn_read] = '\0';
+  if ((stop_word = my_strconcat(tmp_node->next->nd->content, "\n")) == NULL)
+    return (EXIT_FAILURE);
+  if ((buffer_write = exec_redirection_double_left_loop(global, buffer, \
+							stop_word)) == NULL)
+    return (EXIT_FAILURE);
+  free(stop_word);
+  if ((stat = exec_redirection_double_left_fork(tmp_node, global->env, \
+						buffer_write, global)) >= EXIT_FAILURE)
+    return (stat);
+  return (EXIT_CHILD);
+}

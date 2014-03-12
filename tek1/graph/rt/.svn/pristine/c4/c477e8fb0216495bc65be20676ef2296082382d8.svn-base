@@ -1,0 +1,77 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="-500" Y="0" Z="250"/>
+	<rotation X="0" Y="-10" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="-100" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="100" Z="0"/>
+	<rotation X="90" Y="0" Z="0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+      <plan TYPE="normal">
+	<location X="100" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+      <plan TYPE="normal">
+	<location X="-100" Y="0" Z="0"/>
+	<rotation X="0" Y="90" Z="0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+      <plan TYPE="normal">
+	<location X="0" Y="0" Z="100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<color>FFFFFF</color>
+	<limit>
+	  <x MIN="-100" MAX="100"/>
+	  <y MIN="-100" MAX="100"/>
+	</limit>
+      </plan>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="-500" Y="0" Z="250"/>
+	  <intensity>0.3</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light TYPE="ambient">
+	  <intensity>0.1</intensity>
+	</light>
+    </lights>
+  </scene>
+</window>

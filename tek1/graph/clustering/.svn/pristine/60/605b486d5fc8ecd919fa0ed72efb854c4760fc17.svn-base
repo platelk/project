@@ -1,0 +1,25 @@
+/*
+** server.h for server in /home/guiho_r/tek1/clustering/src/server
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Tue May  1 13:55:01 2012 ronan guiho
+** Last update Tue May  1 15:43:29 2012 ronan guiho
+*/
+
+#ifndef __SERVER_H__
+#define __SERVER_H__
+
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+
+#define INVALID_SOCKET	-1
+#define SOCKET_ERROR	-1
+#define MAX_CLIENT	50
+
+typedef int SOCKET;
+
+#endif

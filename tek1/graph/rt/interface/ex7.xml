@@ -1,0 +1,3442 @@
+<window x="1000" y="1000">
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="25.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="50.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="75.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="100.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="125.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="150.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="175.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="200.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="225.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="250.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="275.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="300.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="325.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="350.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="375.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="400.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="425.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="450.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="475.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="500.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="475.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="450.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="425.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="400.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="375.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="350.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="325.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="300.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="275.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="250.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="225.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="200.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="175.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="150.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="125.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="100.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="75.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="50.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="25.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+<scene name="Basic" antialiasing="1">
+<cameras>
+<camera>
+<location X="0.0" Y="0.0" Z="0.0"/>
+<rotation X="0.0" Y="0.0" Z="0.0"/>
+<fov>1000.0</fov>
+</camera>
+</cameras>
+<object>
+      <plan type="normal">
+	<location X="0" Y="0" Z="-100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <plan type="normal">
+	<location X="0" Y="0" Z="150"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.1"/>
+	<color>FFFFFF</color>
+      </plan>
+      <cylindre type="normal">
+	<location X="250" Y="-80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="250" Y="80" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9" TRANSPARENCY="0.5"/>
+	<color>0000FF</color>
+	<radius>25</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="-60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <cylindre type="normal">
+	<location X="500" Y="60" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.9"/>
+	<color>0000FF</color>
+	<radius>20</radius>
+      </cylindre>
+      <sphere type="normal">
+	<location X="375" Y="70" Z="40"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.3"/>
+	<color>FF0000</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="350" Y="0" Z="-75"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF8888</color>
+	<radius>20</radius>
+      </sphere>
+      <sphere type="normal">
+	<location X="400" Y="-70" Z="-20"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<color>FF0000</color>
+	<radius>15</radius>
+      </sphere>
+    </object><lights>
+      <light type="diffuse">
+	<location X="150" Y="200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.7</intensity>
+      </light>
+      <light type="diffuse">
+	<location X="150" Y="-200" Z="95"/>
+	<color>FFFFFF</color>
+	<intensity>0.8</intensity>
+      </light>
+      <light type="ambient">
+	<intensity>0.1</intensity>
+      </light>
+    </lights>
+</scene>
+</window>

@@ -1,0 +1,81 @@
+/*
+** calc_cut_texture.c for rt in /home/phalip_z//rt
+** 
+** Made by zoe phalippou
+** Login   <phalip_z@epitech.net>
+** 
+** Started on  Thu May 31 15:51:57 2012 zoe phalippou
+** Last update Fri Jun  1 18:29:47 2012 zoe phalippou
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "color.h"
+#include "image.h"
+#include "object.h"
+#include "texture.h"
+
+static	int	put_nbr_k(t_object *obj)
+{
+  if (obj->type == SPHERE || obj->type == CON || obj->type == CYL
+      || obj->type == PARABOLOIDE ||  obj->type == HYPERBOLOIDE)
+    return (2);
+  if (obj->type == PLAN)
+    return (1);
+  return (0);
+}
+
+static int	condition_color(t_color *tcolor, t_color *color, int diff)
+{
+  if ((tcolor->green <= (color->green + (double)diff)
+       && tcolor->green >= (color->green - (double)diff))
+      && (tcolor->red <= (color->red + (double)diff)
+	  && tcolor->red >= (color->red - (double)diff)) &&
+      (tcolor->blue <= (color->blue + (double)diff)
+       && tcolor->blue >= (color->blue - (double)diff)))
+    return (EXIT_SUCCESS);
+  return (EXIT_FAILURE);
+}
+
+void	calc_cut_texture(double *k, t_object *obj, t_detail *detail)
+{
+  double	pos[NB_DIMENSION];
+  int		nb_k;
+  t_color	*color;
+  int		utils[2];
+  int		i;
+
+  i = -1;
+  if (detail->object && detail->object->type)
+    {
+      utils[0] = (int)detail->object->type;
+      utils[1] = TEXTURE;
+      printf("\n\n\nYES\n\n\n");
+    }
+  printf("--------------------------------- CUT ---------------------------\n");
+  nb_k = put_nbr_k(obj);
+  color = malloc(sizeof(*color));
+  while (++i < nb_k)
+    {
+      texture_mapping(obj, color, pos, utils);
+      printf("green = %f, blue = %f, red = %f \n", color->green, color->blue, color->red);
+      if (obj->image->cut_texture->flag == 1)
+	{
+	  if (condition_color(obj->image->cut_texture->tcolor,
+			      color, obj->image->cut_texture->interval))
+	    {
+	      k[i] = -1.000;
+	    }
+	}
+      else if (obj->image->cut_texture->flag == 0)
+	  if (!condition_color(obj->image->cut_texture->tcolor,
+			      color, obj->image->cut_texture->interval))
+	  {
+	  k[i] = -1.000;
+	  printf("NO\n");
+	  }
+      /*      printf("le k[i] ----->   %f  ET i alors ----->  %d\n", k[i], i);*/
+
+    }
+}

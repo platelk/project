@@ -1,0 +1,24 @@
+<window Y=256 X=256>
+  <scene ANTIALIASING=1 >
+    <camera>
+      <location X=-1500 Y=0 Z=0 />
+      <fov>1000</fov>
+    </camera>
+    <object>
+	<sphere TYPE="normal">
+		<location X=0 Y=0 Z=0 />
+		<texture TYPE="cut" COLOR="None" KEEP="no" FREQUENCE="1.0" INTERVAL="0.5"  >/home/vink/projet/graph/rt/texture/bille1.jpg</texure>
+		<rotation X="0" Y="0" Z="0" />
+		<perturbation X="0" Y="0" Z="0" />
+		<radius>60</radius>
+		<color>E51EFF</color>
+		<effect BRIGHTNESS="0.25" REFLECTION="0.0" PHONG="346.0" TRANSPARENCY="0.0" />
+	</sphere>
+    </object>
+    <light TYPE="diffuse">
+       <location X=-1000 Y=0 Z=0 />
+      <color>FFFFFF</color>
+      <intensity>0.6</intensity>
+    </light>
+  </scene>
+</window>

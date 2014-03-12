@@ -1,0 +1,155 @@
+/*
+** edit_globing.c for 42sh in /home/leprov_a//depot/42sh/src/edit/src
+** 
+** Made by alexis leprovost
+** Login   <leprov_a@epitech.net>
+** 
+** Started on  Sat Apr 28 18:20:41 2012 alexis leprovost
+** Last update Sat May 19 11:06:48 2012 alexis leprovost
+*/
+
+#include	<stdlib.h>
+#include	<unistd.h>
+
+#include	"global.h"
+#include	"edit.h"
+#include	"xsys.h"
+#include	"t_history.h"
+#include	"get_next_line.h"
+#include	"globing.h"
+#include	"my_strtok.h"
+#include	"my.h"
+
+static char	*edit_getword(t_line *line, int *pos)
+{
+  t_line	*tmp;
+  char		*word;
+  int	i;
+
+  i = -1;
+  *pos = 0;
+  tmp = line;
+  while (tmp && !tmp->status)
+    {
+      if (tmp->letter == ' ' || tmp->letter == '\t')
+	*pos += 1;
+      tmp = tmp->next;
+    }
+  if (edit_cp(line) == 0)
+    *pos += 1;
+  if (tmp == NULL ||
+      ((word = xmalloc(sizeof(*word) * (edit_listlen(line) + 2))) == NULL))
+    return (my_strdup("*"));
+  word[++i] = '*';
+  while (tmp && (tmp->letter != ' ' && tmp->letter != '\t'))
+    {
+      word[++i] = tmp->letter;
+      tmp = tmp->prev;
+    }
+  return (my_revstr(word));
+}
+
+static t_line	*edit_recurrence(char **tab, int reccur)
+{
+  t_line	*complete;
+  int	flag;
+  int	i;
+  int	n;
+
+  complete = NULL;
+  n = 0;
+  flag = 0;
+  while (!flag)
+    {
+      i = 0;
+      while (tab[++i])
+	if (my_strncmp(&tab[0][reccur], &tab[i][reccur], n))
+	  flag = 1;
+      ++n;
+    }
+  if (n == 1)
+    return (NULL);
+  else
+    {
+      tab[0][reccur + (n - 1)] = '\0';
+      complete = edit_convertstr(&tab[0][reccur]);
+    }
+  return (complete);
+}
+
+static void
+aff_rch(char **tab, t_global *global, t_line *line)
+{
+  char	**tmp;
+  int	i;
+
+  i = -1;
+  termcap_action(1, CURSER_OFF, NULL, 0);
+  termcap_action((edit_listlen(line) - edit_cp(line)),
+		 RIGHT_MOVE_STRING, global, 1);
+  termcap_action(1, DOWN_MOVE_STRING, NULL, 0);
+  termcap_action(global->dom[X], LEFT_MOVE_STRING, NULL, 0);
+  while (tab && tab[++i])
+    {
+      termcap_action(1, UNDERLINE_ON, NULL, 0);
+      if ((tmp = my_strtok(tab[i], "/", TOK_DELIM)) != NULL)
+	{
+	  printf("%s\n", tmp[my_tablen(tmp) - 1]);
+	  my_free_tab(tmp);
+	}
+      termcap_action(1, UNDERLINE_OFF, NULL, 0);
+    }
+  my_putstr(global->prompt);
+  edit_global(global, 1);
+  termcap_action(edit_cp(line), RIGHT_MOVE_STRING, global, 1);
+  termcap_action(1, CURSER_ON, NULL, 0);
+}
+
+static t_line
+*edit_autocomplete(char *str, char *path, t_global *global, t_line *line)
+{
+  t_line	*complete;
+  char	**tab;
+  int	len;
+
+  complete = NULL;
+  if ((tab = my_strtok(str, " \t", TOK_DELIM)) == NULL)
+    return (NULL);
+  len = my_tablen(tab);
+  if (len == 1)
+    {
+      if (tab[0][my_strlen(tab[0]) - 1] == '*')
+	complete = NULL;
+      else
+	complete = edit_convertstr(&tab[0][my_strlen(path) - 1]);
+    }
+  else
+    {
+      complete = edit_recurrence(tab, my_strlen(path) - 1);
+      aff_rch(tab, global, line);
+    }
+  my_free_tab(tab);
+  return (complete);
+}
+
+int
+edit_globing(t_global *global, t_line **line, char *prompt, char *buff)
+{
+  t_line	*data;
+  char	*path;
+  char	*sol;
+  int	pos;
+
+  buff = buff;
+  prompt = prompt;
+  path = edit_getword(*line, &pos);
+  if ((sol = globing(path, global,
+		     glob_select_flag(path, pos) | GLOB_SLASH)) == NULL)
+    return (EXIT_FAILURE);
+  data = edit_autocomplete(sol, path, global, *line);
+  termcap_action(edit_listlen(data), RIGHT_MOVE_STRING, global, 1);
+  *line = edit_concatlist(*line, data, edit_cp(*line));
+  termcap_display(*line, global);
+  (sol) ? free(sol) : (sol = NULL);
+  return (EXIT_SUCCESS);
+}

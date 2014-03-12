@@ -1,0 +1,48 @@
+<window y=1000 x=1000>
+  <scene name=Basic antialiasing=3>
+    <cameras>
+      <camera>
+	<location X=-1000 Y=0 Z=0/>
+	<rotation X=10 Y=0 Z=0/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere type=normal>
+	<location X=0 Y=0 Z=0/>
+	<rotation X=90 Y=190 Z=0/>
+	<effect BRIGHTNESS=0.4 REFLECTION=0.7/>
+	<perlin COLOR1="FF0000" COLOR2="00FF00" />
+	<radius>100</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <sphere type=normal>
+	<location X=300 Y=-150 Z=100/>
+	<rotation X=90 Y=190 Z=0/>
+	<effect BRIGHTNESS=0.4 REFLECTION=0.7/>
+	<perlin COLOR1="FFFFFF" COLOR2="000000" />
+	<radius>250</radius>
+	<color>FFFFFF</color>
+      </sphere>
+      <sphere type=normal>
+	<location X=-150 Y=100 Z=40/>
+	<rotation X=90 Y=190 Z=0/>
+	<effect BRIGHTNESS=0.4 REFLECTION=0.7/>
+	<perlin COLOR1="00FFFF" COLOR2="FFFF00" />
+	<radius>40</radius>
+      </sphere>
+    </object>
+    <lights>
+	<light type=diffuse>
+	  <location X=-1000 Y=-500 Z=0/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+	<light type=diffuse>
+	  <location X=-1000 Y=500 Z=0/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

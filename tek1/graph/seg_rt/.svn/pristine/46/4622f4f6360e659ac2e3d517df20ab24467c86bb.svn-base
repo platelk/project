@@ -1,0 +1,25 @@
+/*
+** perlin_texture.c for perlin in /home/guiho_r/tek1/rt/src/texture
+** 
+** Made by ronan guiho
+** Login   <guiho_r@epitech.net>
+** 
+** Started on  Tue May 15 17:27:59 2012 ronan guiho
+** Last update Tue May 15 17:40:05 2012 ronan guiho
+*/
+
+#include <stdlib.h>
+
+#include "image.h"
+
+t_image		*perlin_texture(t_color *begin, t_color *end)
+{
+  t_perlin	*perlin;
+  t_image	*texture;
+
+  if ((perlin = malloc(sizeof(*perlin))) == NULL)
+    return (NULL);
+  if ((texture = malloc(sizeof(*texture))) == NULL)
+    return (NULL);
+  return (texture);
+}

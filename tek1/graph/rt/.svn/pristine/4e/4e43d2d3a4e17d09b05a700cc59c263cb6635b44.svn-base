@@ -1,0 +1,35 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="0" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>1000</fov>
+      </camera>
+    </cameras>
+    <object>
+      <paraboloide TYPE="normal">
+	<location X="1000" Y="0" Z="0"/>
+	<rotation X="45" Y="0" Z="45"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.0" PHONG="100"/>
+	<radius>10</radius>
+	<color>FF0000</color>
+	<perturbation Y="2.5" Z="2.5"/>
+      </paraboloide>
+      <sphere TYPE="normal">
+	<location X="200" Y="0" Z="0"/>
+	<rotation X="45" Y="0" Z="45"/>
+	<effect BRIGHTNESS="0.0" REFLECTION="0.5" PHONG="100" TRANSPARENCY="0.0"/>
+	<radius>20</radius>
+	<color>FFFFFF</color>
+      </sphere>
+    </object>
+    <lights>
+	<light TYPE="diffuse">
+	  <location X="0" Y="0" Z="0"/>
+	  <intensity>0.6</intensity>
+	  <color>FFFFFF</color>
+	</light>
+    </lights>
+  </scene>
+</window>

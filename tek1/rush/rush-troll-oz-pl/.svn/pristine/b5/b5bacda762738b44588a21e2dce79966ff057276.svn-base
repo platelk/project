@@ -1,0 +1,75 @@
+/*
+** network.c for teuquain in /home/vink/projet/rush/rush-troll-oz-pl/trunk
+**
+** Made by kevin platel
+** Login   <platel_k@epitech.net>
+**
+** Started on  Thu Jun  7 11:03:00 2012 kevin platel
+** Last update Thu Jun  7 12:37:53 2012 kevin platel
+*/
+
+#include	<stdlib.h>
+
+#include	"my.h"
+#include	"utils.h"
+#include	"get_next_line.h"
+#include	"teuquain.h"
+
+int *
+create_door(int nb_door)
+{
+  int	*door;
+  int	i;
+
+  door = malloc(sizeof(*door) * nb_door);
+  if (door == NULL)
+    return (NULL);
+  i = 0;
+  while (i < nb_door)
+    {
+      door[i] = 0;
+      i++;
+    }
+  return (door);
+}
+
+t_param	*
+net_get_param(t_param *param)
+{
+  char	*buffer;
+  char	**tab;
+
+  buffer = get_next_line(0);
+  if (buffer == NULL)
+    return (NULL);
+  tab = my_strtok(buffer, ":");
+  if (tab == NULL || my_tab_len(tab) != 5)
+    return (NULL);
+  if (my_strcmp(tab[0], MAGIK) != 0)
+    return (NULL);
+  param->delai_attak = my_getnbr(tab[1]);
+  param->nb_door = my_getnbr(tab[2]);
+  param->door = create_door(param->nb_door);
+  param->delai_door = my_getnbr(tab[3]);
+  if (my_strcmp(tab[4], MAGIK) != 0)
+    return (NULL);
+  return (param);
+}
+
+t_attak	*
+net_get_attak(char *buffer, t_attak *attak)
+{
+  char	**tab;
+
+  tab = my_strtok(buffer, ":");
+  if (tab == NULL || my_tab_len(tab) != 4)
+    return (NULL);
+  if (my_strcmp(tab[0], MAGIK) != 0)
+    return (NULL);
+  attak->city = my_strdup(tab[1]);
+  attak->login = my_strdup(tab[2]);
+  attak->num_door = my_getnbr(tab[3]);
+  if (my_strcmp(tab[4], MAGIK) != 0)
+    return (NULL);
+  return (attak);
+}

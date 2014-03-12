@@ -1,0 +1,23 @@
+<window x=500 y=500>
+<scene>
+	<camera>
+		<location X="-500" Y="0" Z="0" />
+		<rotation X="0" Y="0" Z="0" />
+		<fov>400</fov>
+	</camera>
+<object>
+	<sphere TYPE="normal">
+		<location X="0" Y="0" Z="0" />
+		<rotation X="0" Y="0" Z="0" />
+		
+		
+		
+		<perturbation X="0" Y="1.5" Z="0" />
+		<radius>60</radius>
+		<color>3022FF</color>
+		<effect BRIGHTNESS="0.0" REFLECTION="0.0" PHONG="1.0" TRANSPARENCY="0.0" />
+	</sphere>
+</object>
+</scene>
+
+</window>

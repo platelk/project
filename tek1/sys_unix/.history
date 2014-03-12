@@ -1,0 +1,202 @@
+19:18
+cat EOF | ls >> test >> test
+19:18
+ls | setenv TOTO ; env
+19:18
+echo "$PWD"
+19:18
+echo /home/vink/rendu/42sh-2016-platel_k
+19:18
+echo "/home/vink/rendu/42sh-2016-platel_k"
+19:18
+echo "
+19:18
+unalias ls ; unalias ll ; alias ls ls --color ; alias ll ls -l ; ll ; echo "doit etre en couleur"
+19:18
+alias pub cd /u/all/ $USER/public/ ; pub
+19:18
+setenv COUCOU $PWD ; ls coucou
+19:18
+ls | grep "a" | wc -c
+19:18
+ls;(cd;pwd)
+19:18
+"ls > toto ; ls < toto"
+19:18
+history ;
+19:18
+echo "plop et `locate cat`"
+19:18
+alias toto coucou ; echo toto
+19:18
+. ~/.tcshrc
+19:18
+ls && pwd || pwd && ls
+19:18
+setenv p `ls / | tail | grep var` ; env | grep p
+19:18
+`ls` > toto
+19:18
+( cat fake | wc ) && fake || echo `locate vlc`
+19:18
+vlc ; kill %+
+19:18
+vlc & ; ls $(echo /home) ; vlc & ; fg %-
+19:18
+echo "oui je te pourri a coup de VLC" && vlc || echo "chancard\!"
+19:18
+echo "oui je te pourri a coup de VLC"
+19:18
+setenv PAGER most ; setenv PRZ przzz ; echo "$PRZ..." ; sleep 1 ; man bash | grep metacharacter
+19:18
+((ls) ; ((echo parenthesis) ;; ((pwd))) ;;; (echo EOT) ;;;;)
+19:18
+echo ((((((((((((parenthesis)))))))))))) || echo dommage
+19:18
+. ~/.tcshrc && echo "Reload : success" || echo "Reload : failure"
+19:18
+`perl -e print Backquote.x4`
+19:18
+echo "inhibiteur et `echo `" recursif "`` sans parenthese"
+19:18
+ls|(ls|tr a-zA-Z n-za-mN-ZA-M)
+19:18
+cat | cat -e
+19:21
+ls
+19:21
+ll
+19:21
+lol
+19:21
+ls $HOME
+19:21
+ls
+19:21
+cd
+19:21
+ls
+19:21
+cd *-
+19:21
+ls
+19:21
+cd -
+19:21
+ls
+19:21
+ll
+19:21
+env -i ./msh
+19:21
+ls
+19:21
+ll
+19:21
+cd src/
+19:22
+ls
+19:22
+norme `find . -name "*.c"`
+19:22
+~/norme `find . -name "*.c"`
+19:23
+~/norme `find . -name "*.c"` -nocheat
+19:23
+~/norme `find . -name "*.h"` -nocheat
+19:23
+
+19:23
+ll
+19:23
+lol
+19:23
+asdf
+19:23
+asds
+19:23
+s
+19:23
+sf
+19:23
+fs
+19:23
+f
+19:23
+sf
+19:23
+s g
+19:23
+sg
+19:23
+e
+19:23
+t
+19:23
+w
+19:23
+t
+19:23
+ll
+19:23
+cd parsing
+19:23
+ls
+19:24
+cd ..
+19:24
+ls
+19:24
+ll
+19:24
+cd ..
+19:24
+ls
+19:24
+cd ../../../../../../../../../
+19:24
+l
+19:24
+ls
+19:24
+cd s
+19:24
+cd srv/
+19:24
+; ls
+19:24
+ll
+19:24
+l ; ;
+19:24
+; ; ls ; ll
+19:27
+ll
+19:36
+ls
+19:36
+cd
+19:36
+ls
+19:36
+ll
+19:36
+ls
+19:36
+llle
+19:36
+ls
+19:36
+cd projet/sys_unix/
+19:36
+ls
+19:36
+ne Makefile
+19:36
+ls
+19:36
+ll
+19:36
+{0}
+19:36
+; s
